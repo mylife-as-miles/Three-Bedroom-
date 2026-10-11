@@ -39,7 +39,7 @@ All lengths in metres, angles in degrees, world coordinates (not room-local) unl
       "start": [x, y], "end": [x, y],     // the wall's CENTRE line
       "thickness": 0.30,                  // exterior ~0.30–0.40, interior partitions ~0.10–0.15
       "height": null,                     // null => up to the ceiling of the rooms it bounds
-      "finish_left": "plaster_teal",      // face on the LEFT when walking start->end
+      "finish_left": null,                // face on the LEFT when walking start->end; null => wall_finish_default of the room it bounds
       "finish_right": "exterior",         // face on the RIGHT ('exterior' for outside faces)
       "skirting": {"height": 0.12, "depth": 0.018},
       "openings": [
@@ -98,6 +98,12 @@ All lengths in metres, angles in degrees, world coordinates (not room-local) unl
   ]
 }
 ```
+
+## Wall rules
+
+* Each wall segment bounds **at most one room on each side**. Split long exterior walls at partition junctions.
+* Exterior segments meet at their centre-line intersections. Partitions run between the interior faces of the walls they abut.
+* Every room polygon edge must be covered by the face of some wall segment (validator checks this, tolerance 1 cm).
 
 ## Finish keys
 

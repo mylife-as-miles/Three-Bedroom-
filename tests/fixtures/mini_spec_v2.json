@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "name": "fixture_mini_v2",
+  "storey": {"default_ceiling_height": 2.6, "slab_thickness": 0.25},
+  "rooms": [
+    {"id": "living_placeholder", "name": "Living room (placeholder)", "references": [], "placeholder": true,
+     "polygon": [[0,0],[3.0,0],[3.0,4.0],[0,4.0]], "floor_finish": "concrete_bare", "floor_plank_direction_deg": 0,
+     "wall_finish_default": "plaster_white", "ceiling_finish": "plaster_smooth", "ceiling": {"type": "flat", "height": 2.6}},
+    {"id": "hall", "name": "Hall", "references": ["MOOD07"], "placeholder": false,
+     "polygon": [[3.1,0],[5.1,0],[5.1,4.0],[3.1,4.0]], "floor_finish": "timber_worn_boards", "floor_plank_direction_deg": 90,
+     "wall_finish_default": "plaster_sage", "ceiling_finish": "plaster_textured", "ceiling": {"type": "flat", "height": 2.6}},
+    {"id": "bedroom_1", "name": "Bedroom (fixture, sloped)", "references": [], "placeholder": false,
+     "polygon": [[5.2,0],[8.7,0],[8.7,4.0],[5.2,4.0]], "floor_finish": "timber_worn_boards", "floor_plank_direction_deg": 0,
+     "wall_finish_default": "plaster_teal", "ceiling_finish": "plaster_textured",
+     "ceiling": {"type": "sloped", "height": 2.6, "slopes": [{"wall": "W_ext_n3", "knee_height": 1.2, "pitch_deg": 40}]}}
+  ],
+  "walls": [
+    {"id": "W_ext_s1", "kind": "exterior", "start": [-0.15,-0.15], "end": [3.05,-0.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "WIN_lp_1", "type": "window", "offset": 1.0, "width": 1.1, "sill_height": 0.85, "height": 1.45, "connects": ["living_placeholder", "exterior"], "details": {"panes": "casement_pair"}}]},
+    {"id": "W_ext_s2", "kind": "exterior", "start": [3.05,-0.15], "end": [5.15,-0.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "D_entrance", "type": "door", "offset": 0.6, "width": 0.9, "sill_height": 0.0, "height": 2.05, "connects": ["stairwell", "hall"], "hinge": "end", "swing_into": "hall", "leaf": "panel_wood", "details": {}}]},
+    {"id": "W_ext_s3", "kind": "exterior", "start": [5.15,-0.15], "end": [8.85,-0.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": []},
+    {"id": "W_ext_e1", "kind": "exterior", "start": [8.85,-0.15], "end": [8.85,4.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "WIN_br1_e", "type": "window", "offset": 1.5, "width": 1.1, "sill_height": 0.85, "height": 1.4, "connects": ["bedroom_1", "exterior"], "details": {"curtains": "patterned_pair", "panes": "double_hung"}}]},
+    {"id": "W_ext_n3", "kind": "exterior", "start": [8.85,4.15], "end": [5.15,4.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "DORMER_br1", "type": "dormer", "offset": 1.2, "width": 1.0, "sill_height": 0.8, "height": 1.2, "connects": ["bedroom_1", "exterior"], "details": {"depth": 1.0, "roof": "gable", "panes": "casement_pair"}}]},
+    {"id": "W_ext_n2", "kind": "exterior", "start": [5.15,4.15], "end": [3.05,4.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": []},
+    {"id": "W_ext_n1", "kind": "exterior", "start": [3.05,4.15], "end": [-0.15,4.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": []},
+    {"id": "W_ext_w1", "kind": "exterior", "start": [-0.15,4.15], "end": [-0.15,-0.15], "thickness": 0.3, "height": null, "finish_left": null, "finish_right": "exterior", "skirting": {"height": 0.12, "depth": 0.018}, "openings": []},
+    {"id": "W_int_p1", "kind": "interior", "start": [3.05,0.0], "end": [3.05,4.0], "thickness": 0.1, "height": null, "finish_left": null, "finish_right": null, "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "DW_living", "type": "doorway", "offset": 1.5, "width": 1.2, "sill_height": 0.0, "height": 2.1, "connects": ["living_placeholder", "hall"], "leaf": "none", "details": {"casing": "white_moulded"}}]},
+    {"id": "W_int_p2", "kind": "interior", "start": [5.15,0.0], "end": [5.15,4.0], "thickness": 0.1, "height": null, "finish_left": null, "finish_right": null, "skirting": {"height": 0.12, "depth": 0.018}, "openings": [
+      {"id": "D_br1", "type": "door", "offset": 0.4, "width": 0.82, "sill_height": 0.0, "height": 2.03, "connects": ["hall", "bedroom_1"], "hinge": "start", "swing_into": "bedroom_1", "leaf": "panel_white", "details": {}}]}
+  ],
+  "items": [
+    {"id": "FURN_br1_bed", "room": "bedroom_1", "category": "furniture", "type": "bed", "position": [7.6,1.6,0], "yaw_deg": 90, "dimensions": [1.4,2.0,0.55], "wall": "W_ext_e1", "interactive": false, "evidence": ["design"], "confidence": 1.0, "notes": "fixture"},
+    {"id": "FURN_br1_nightstand", "room": "bedroom_1", "category": "furniture", "type": "nightstand", "position": [8.45,2.65,0], "yaw_deg": 90, "dimensions": [0.45,0.4,0.55], "wall": "W_ext_e1", "interactive": true, "evidence": ["design"], "confidence": 1.0, "notes": "fixture; drawer"},
+    {"id": "PROP_br1_lamp", "room": "bedroom_1", "category": "light_fixture", "type": "table_lamp", "position": [8.45,2.65,0.55], "yaw_deg": 90, "dimensions": [0.25,0.25,0.45], "wall": null, "interactive": true, "evidence": ["design"], "confidence": 1.0, "notes": "fixture"},
+    {"id": "FURN_hall_rug", "room": "hall", "category": "decor", "type": "rug", "position": [4.1,2.0,0], "yaw_deg": 0, "dimensions": [1.2,2.6,0.01], "wall": null, "interactive": false, "evidence": ["design"], "confidence": 1.0, "notes": "fixture"},
+    {"id": "FURN_hall_coat_rack", "room": "hall", "category": "furniture", "type": "coat_rack", "position": [4.85,0.35,0], "yaw_deg": 0, "dimensions": [0.45,0.45,1.8], "wall": null, "interactive": false, "evidence": ["design"], "confidence": 1.0, "notes": "fixture"}
+  ],
+  "lights": [
+    {"id": "LGT_hall_pendant", "room": "hall", "type": "pendant_shade", "position": [4.1,2.0,2.6], "notes": "fixture"},
+    {"id": "LGT_br1_fan", "room": "bedroom_1", "type": "ceiling_fan_light", "position": [6.9,1.5,2.6], "notes": "fixture"}
+  ],
+  "cameras": [
+    {"ref": "FIX01", "room": "bedroom_1", "position": [5.6,0.4,1.6], "look_at": [8.0,3.0,1.2], "horizontal_fov_deg": 75, "roll_deg": 0, "confidence": 1.0, "notes": "fixture camera"},
+    {"ref": "FIX02", "room": "hall", "position": [4.6,0.5,1.6], "look_at": [3.0,3.0,1.3], "horizontal_fov_deg": 75, "roll_deg": 0, "confidence": 1.0, "notes": "fixture camera looking into the living placeholder"}
+  ],
+  "spawn": {"room": "hall", "position": [4.1,1.0,0], "yaw_deg": 0},
+  "uncertainties": []
+}
