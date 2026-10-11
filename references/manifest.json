@@ -1,5 +1,5 @@
 {
-  "note": "Pixels and filenames are preserved exactly as supplied. 'apartment' views are the canonical architectural source; 'asset_kit' is an object-identity reference; 'night_mood'/'ui_mood' guide lighting tone only. None of these images may be used as runtime textures or billboards.",
+  "note": "Pixels and filenames are preserved exactly as supplied. 'role' gives each image's use under the current scope (every room except the living room; see docs/CONVENTIONS.md section 0). None of these images may be used as runtime textures or billboards.",
   "references": [
     {
       "id": "UI01",
@@ -8,6 +8,7 @@
       "width": 735,
       "height": 511,
       "sha256": "f3b3738c47867a3a3451c0115a6e6ae3ba3d787fcd32a39f635590dce1340e8d",
+      "role": "mood:ui",
       "description": "Third-party game UI screenshot (NAKWON). Mood/UI-density reference only; not the apartment."
     },
     {
@@ -17,6 +18,7 @@
       "width": 960,
       "height": 540,
       "sha256": "5d2cc11b400d84eb2e48898808758c0820a584a36101fb8fb625ed62d072fee6",
+      "role": "canonical:bathroom",
       "description": "High angle from inside bathroom looking out through doorway: washer, vanity, mirror, toilet, white tile; living area beyond (sofa, floor lamp, TV unit, plates)."
     },
     {
@@ -26,6 +28,7 @@
       "width": 960,
       "height": 540,
       "sha256": "a7d9ba9710ed40bcc9636c89b71c053e60ea1944dc73800a0ccf976fb33244f3",
+      "role": "living_room:out_of_scope",
       "description": "Overview of the apartment's prop/architecture kit laid out on platforms. Object identity + proportion reference."
     },
     {
@@ -35,6 +38,7 @@
       "width": 960,
       "height": 540,
       "sha256": "801180181a502a7b43f1790ddd85209c8b9075aa72e16fefd8190dbde0431ac4",
+      "role": "living_room:out_of_scope",
       "description": "Sleeping-end corner: brick window wall (2 windows, blinds, radiator), desk + green banker lamp + chair, blue bookcase in corner, plaster end wall with AC unit and posters, CRT on floor, boxes, nightstand + lamp, dumbbells."
     },
     {
@@ -44,6 +48,7 @@
       "width": 960,
       "height": 540,
       "sha256": "995db29e513b9143a2c7a2d001ed35be314b9fd4a613715956f0654e98380c17",
+      "role": "living_room:out_of_scope",
       "description": "Closer view of blue bookcase, CRT with box, cardboard boxes, posters, nightstand, bed corner."
     },
     {
@@ -53,6 +58,7 @@
       "width": 960,
       "height": 540,
       "sha256": "c553005a8ffaa51e52953e3e6f57c4545d5d2db9873e7cde4b5e146784464bbb",
+      "role": "living_room:out_of_scope",
       "description": "High-angle kitchen counter: steel sink, green kettle, toaster, coffee maker, white gas stove, open shelves on brick, blue cabinets, range hood, side counter, microwave."
     },
     {
@@ -62,6 +68,7 @@
       "width": 960,
       "height": 540,
       "sha256": "ffaceea7f9efc4a2b91e0e1622887722a96895928af39376f48e63929cb9bdd6",
+      "role": "living_room:out_of_scope",
       "description": "High overhead of nearly the whole room: bookcase/bed end at top, sofa centre, barn door + bathroom, fridge, kitchen run on right wall, dining table, round side table + lamp lower-left near window wall, TV unit on left wall."
     },
     {
@@ -71,6 +78,7 @@
       "width": 960,
       "height": 540,
       "sha256": "62aa56a9355ff7d51caa0fae3dcee845d6490f8c030f4ba21d232a808b2550e4",
+      "role": "living_room:out_of_scope",
       "description": "Floor-level view along the room toward the bookcase end: round table foreground left, plates wall, fan, barn door, kitchen table + stools on right."
     },
     {
@@ -80,6 +88,7 @@
       "width": 960,
       "height": 540,
       "sha256": "d5e1b8fdb83790e44e045c5db605caffca7b2b902400581581f6be94b378f7e8",
+      "role": "living_room:out_of_scope",
       "description": "From floor-lamp/window side toward the kitchen wall: sofa + coffee table, barn door to tiled bathroom, wall clock, fridge, kitchen, dining table + stools, entrance door at far right, electrical panel."
     },
     {
@@ -89,6 +98,7 @@
       "width": 960,
       "height": 540,
       "sha256": "7db2e4962009b93813af3bdd9fcd89b5bd397b6afe728054be02ece258b7fee9",
+      "role": "living_room:out_of_scope",
       "description": "Long view from the bed/metal-shelf end toward the kitchen + entrance end: metal shelf, barn door, washer visible, sofa, coffee table, kitchen, white entrance door, easel, plates wall, TV."
     },
     {
@@ -98,6 +108,7 @@
       "width": 960,
       "height": 540,
       "sha256": "a4cf36d295f64a9fd0e2ebba2566f741322ba090c4acf50ab777ee6f20131af6",
+      "role": "living_room:out_of_scope",
       "description": "From the bed looking toward kitchen end: metal shelf, plates, TV unit, windows, desk with green lamp, ceiling fan."
     },
     {
@@ -107,6 +118,7 @@
       "width": 960,
       "height": 540,
       "sha256": "5809cf948220d4543ee77f3cbad8e35e951085d047494dc7e3a01c7934d3f8d1",
+      "role": "living_room:out_of_scope",
       "description": "From the kitchen side toward the bookcase end: easel, round table, windows, radiator, plates, TV unit, dining table, sofa, bookcase, metal shelf."
     },
     {
@@ -116,6 +128,7 @@
       "width": 960,
       "height": 540,
       "sha256": "78b1844f0996ffb580ba8424be8843b7678edaa1b1b61f7bf375517988df6ec0",
+      "role": "living_room:out_of_scope",
       "description": "From behind the sofa facing the brick window wall: round table + lamp, plate collection, TV unit, windows, desk, bookcase, AC, posters, CRT."
     },
     {
@@ -125,6 +138,7 @@
       "width": 1920,
       "height": 1080,
       "sha256": "c8bc980ce1184990ce33f49df42d73f66eecb2f9a7408510554fec9afedacc97",
+      "role": "canonical:kitchen",
       "description": "Dim Japanese domestic kitchen at night: low-key practical lighting, cluttered lived-in tableware."
     },
     {
@@ -134,6 +148,7 @@
       "width": 739,
       "height": 415,
       "sha256": "a5082b6236068551cf982b39e8c52846a7b40a18b0852e7f3c03955c8211cbb7",
+      "role": "mood:lighting",
       "description": "Worn apartment interior (ArtStation, M. Khalifa): desaturated grime, window light, lived-in detail. Third-party artwork - mood only."
     },
     {
@@ -143,6 +158,7 @@
       "width": 752,
       "height": 408,
       "sha256": "a08425fe95d2f53979875ec2a8f1317a9c012614f995f48a61cb7d67c1fec886",
+      "role": "canonical:bedroom_1",
       "description": "Teal attic bedroom, warm window bounce, clutter density."
     },
     {
@@ -152,6 +168,7 @@
       "width": 764,
       "height": 401,
       "sha256": "aa9c030bbb46330e4b07c9f98393253097e7c980dc8d56aa47439d96adb719f7",
+      "role": "canonical:bedroom_2",
       "description": "Attic bedroom with red curtains, warm late light, CRT glow."
     },
     {
@@ -161,6 +178,7 @@
       "width": 1920,
       "height": 1080,
       "sha256": "4b671b44c98c169e302ac7e5448ac2a38996f77c589620c2f6bbdac504696187",
+      "role": "mood:lighting",
       "description": "Attic den: single bare bulb, warm low key, strong practical-light falloff."
     },
     {
@@ -170,6 +188,7 @@
       "width": 736,
       "height": 417,
       "sha256": "6c7cfa8e7f71d63bf012a8aee661f456758eabab18d22055333bf058bf4c625b",
+      "role": "canonical:bedroom_3",
       "description": "Bedroom lit by bedside lamp: warm pool of practical light, soft fabric."
     },
     {
@@ -179,6 +198,7 @@
       "width": 1080,
       "height": 544,
       "sha256": "2083aee41fc20b59ba1a389194f35b06a5dbf6e107eb723f721845f0a9132d4b",
+      "role": "canonical:hall_tone",
       "description": "Dim dining room under a single pendant: cool shadow, newspapers, horror tone."
     }
   ]

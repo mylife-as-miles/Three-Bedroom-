@@ -7,7 +7,7 @@ Durable resume point. Update at the end of every phase/iteration. Newest entries
 | Phase | Gate | Status |
 |---|---|---|
 | 0 Environment & toolchain | Verified reproducible toolchain | **PASSED** 2026-10-11 (see `docs/toolchain_audit.md`) |
-| 1 Architectural blockout | Architecture convincingly corresponds to all reference views | in progress |
+| 1 Architectural blockout | Rooms correspond to their canonical references; plan is architecturally coherent | in progress |
 | 2 Major furniture | Space recognisable without detailed materials | not started |
 | 3 High-quality geometry | Foreground objects survive close examination | not started |
 | 4 Photoreal materials | Independent material-critic approval | not started |
@@ -26,6 +26,8 @@ Durable resume point. Update at the end of every phase/iteration. Newest entries
 * D-002 Git LFS unavailable (budget exhausted) → plain git binaries, size-capped, reproducible from scripts.
 * D-003 Delivery repository is the session-scoped `mylife-as-miles/Three-Bedroom-`, not `StarKnightt/three-bedroom` (outside authorised scope).
 * D-004 Reference set is 20 images: 11 apartment views (APT01–APT11), 1 asset-kit overview (KIT01), 7 night-mood + 1 UI-mood references. Canonical architecture derives only from APT* (+KIT01 for object identity).
+* D-006 **Scope directive (project owner, 2026-10-11): build every room except the living room.** Rooms: bedroom_1 (MOOD03), bedroom_2 (MOOD04), bedroom_3 (MOOD06), kitchen (MOOD01), bathroom (APT01), hall (MOOD07 tone). The living room is an empty walled placeholder whose doorways line up with the hall. The 11 loft views (APT02–APT11, KIT01) are out of current scope. This supersedes the brief's "reconstruct the 10-image apartment" target. Spec schema bumped to v2 (multi-room, sloped attic ceilings, door hinge/swing).
+* D-007 Two attic bedrooms ⇒ the flat is a top-floor unit under one roof; attic slopes must come from one consistent roof geometry.
 * D-005 Static lighting will be baked in Blender (Cycles) into lightmap UVs and applied at runtime; dynamic lights (phone flashlight, toggled practicals) stay real-time. Godot's own lightmapper needs a RenderingDevice which the GPU-less host and the Compatibility target do not provide.
 
 ## Iteration log
@@ -35,6 +37,7 @@ Durable resume point. Update at the end of every phase/iteration. Newest entries
 * Proved the full pipeline Blender → GLB → Godot → Web → Chromium frame capture.
 * Ingested references byte-identically; manifest + contact sheets.
 * Tried Git LFS: rejected by GitHub (budget). Switched to plain git.
+* Scope directive received (D-006); conventions, schema (v2) and reference roles updated before any geometry was built.
 
 ## Open blockers / limitations
 

@@ -34,6 +34,19 @@ CLASSIFICATION = [
     ("MOOD07", "eab2cda4-image.png", "night_mood", "Dim dining room under a single pendant: cool shadow, newspapers, horror tone."),
 ]
 
+# Role of each reference under the 2026-10-11 scope (all rooms except the living room).
+ROLES = {
+    "APT01": "canonical:bathroom",
+    "MOOD03": "canonical:bedroom_1",
+    "MOOD04": "canonical:bedroom_2",
+    "MOOD06": "canonical:bedroom_3",
+    "MOOD01": "canonical:kitchen",
+    "MOOD07": "canonical:hall_tone",
+    "MOOD02": "mood:lighting",
+    "MOOD05": "mood:lighting",
+    "UI01": "mood:ui",
+}
+
 def main():
     entries = []
     for rid, name, kind, desc in CLASSIFICATION:
@@ -42,15 +55,20 @@ def main():
         with Image.open(p) as im:
             w, h = im.size
         entries.append({"id": rid, "file": f"originals/{name}", "kind": kind, "width": w, "height": h,
-                        "sha256": hashlib.sha256(data).hexdigest(), "description": desc})
+                        "sha256": hashlib.sha256(data).hexdigest(),
+                        "role": ROLES.get(rid, "living_room:out_of_scope"), "description": desc})
     on_disk = sorted(x.name for x in ORIG.iterdir())
     assert sorted(e["file"].split("/")[1] for e in entries) == on_disk, "manifest/originals mismatch"
     (ROOT / "references" / "manifest.json").write_text(json.dumps({
-        "note": "Pixels and filenames are preserved exactly as supplied. 'apartment' views are the canonical architectural source; 'asset_kit' is an object-identity reference; 'night_mood'/'ui_mood' guide lighting tone only. None of these images may be used as runtime textures or billboards.",
+        "note": "Pixels and filenames are preserved exactly as supplied. 'role' gives each image's use under the current scope (every room except the living room; see docs/CONVENTIONS.md section 0). None of these images may be used as runtime textures or billboards.",
         "references": entries}, indent=2) + "\n")
-    for kinds, out in ((("apartment", "asset_kit"), "contact_sheet_apartment.jpg"),
-                       (("night_mood", "ui_mood"), "contact_sheet_mood.jpg")):
-        sel = [e for e in entries if e["kind"] in kinds]
+    sheets = (
+        (lambda e: e["role"].startswith("canonical:"), "contact_sheet_canonical_rooms.jpg"),
+        (lambda e: e["role"] == "living_room:out_of_scope", "contact_sheet_living_room_out_of_scope.jpg"),
+        (lambda e: e["role"].startswith("mood:"), "contact_sheet_mood.jpg"),
+    )
+    for keep, out in sheets:
+        sel = [e for e in entries if keep(e)]
         tw, th, cols = 480, 270, 4
         rows = (len(sel) + cols - 1) // cols
         sheet = Image.new("RGB", (cols * tw, rows * (th + 24)), (18, 18, 18))
@@ -65,7 +83,7 @@ def main():
                 im.thumbnail((tw, th))
                 x, y = (i % cols) * tw, (i // cols) * (th + 24)
                 sheet.paste(im, (x + (tw - im.width) // 2, y + 24 + (th - im.height) // 2))
-                d.text((x + 6, y + 3), f'{e["id"]}  {e["file"].split("/")[1]}', fill=(235, 235, 235), font=font)
+                d.text((x + 6, y + 3), f'{e["id"]}  {e["role"]}', fill=(235, 235, 235), font=font)
         sheet.save(ROOT / "references" / out, quality=90)
     print(f"{len(entries)} references; apartment views: {sum(e['kind']=='apartment' for e in entries)}")
 
