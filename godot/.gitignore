@@ -1,0 +1,3 @@
+# Godot 4 cache / import artefacts (also covered by the repository root .gitignore)
+.godot/
+/android/
