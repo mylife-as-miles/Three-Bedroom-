@@ -70,7 +70,7 @@ stealth grass that is not `is-position-future-exposed?`. Thresholds come from `g
 "safeguard" lambda (`safeguard-stealth|unaware|combat-checkpoint`) is handed to native code. The name
 suggests native re-checks it before it commits (INFERRED).
 
-### 2.2 The world-state *rebuild* shell (used by 3,395 of 3,812 level scripts)
+### 2.2 The world-state *rebuild* shell (used by 3,395 of 3,809 level scripts)
 
 A level script does not save its own state. Each time it spawns (fresh load, checkpoint restore, chapter select)
 it **rebuilds** its state from the task graph.
@@ -181,7 +181,7 @@ predicates decide level loading (`systems/resources` §3.3).
 | Claim | Label |
 |---|---|
 | svars are player stats (`stat-value?`/`set-svar-value`) defined in `player-stat.bin` | CONFIRMED |
-| level scripts rebuild state from task graph each spawn | CONFIRMED (3,395/3,812 have `task-check`) |
+| level scripts rebuild state from task graph each spawn | CONFIRMED (3,395/3,809 have `task-check`) |
 | drawer flags never written by DC | CONFIRMED |
 | drawer flags written by native at runtime | HIGH |
 | state-script variables not restored by checkpoint | INFERRED |
