@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "sid_database.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 268683559,
+  "sha256": "8541735ddf0c71f11cdbac9396bd5f89ada399472e37132658853f589ca43dd6",
+  "record_count": 562611,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

@@ -1,0 +1,9 @@
+.private/
+game/
+extracted/
+*.bin
+*.psarc
+*.rar
+*.asm
+*.dcpl
+__pycache__/

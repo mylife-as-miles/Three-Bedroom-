@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "system_index.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 15453666,
+  "sha256": "64d766def6fe2f4e9c6662547e497dea10763791c2ef947aff03975c26cc49f0",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

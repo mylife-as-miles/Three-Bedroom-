@@ -1,0 +1,9 @@
+stateDiagram-v2
+    state "check-if-player-already-has-weapon" as s0
+    state "checkpoint" as s1
+    state "done" as s2
+    state "disabled" as s3
+    s0 --> s1: player-requested-interact
+    s0 --> s3: start
+    s0 --> s3: item-given
+    s1 --> s2: start

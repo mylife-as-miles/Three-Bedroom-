@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "cross_references.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 87904528,
+  "sha256": "733bcd22d1cec41006ba5d4d864fb83d37e4d991cf15f0c8d99a17a9bbeb2058",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

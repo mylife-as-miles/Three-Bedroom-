@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "calls.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 355094036,
+  "sha256": "01cf17506da1c3369c37a6730b6866278abcfc7862096933f57d3096157d7df0",
+  "record_count": 644423,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

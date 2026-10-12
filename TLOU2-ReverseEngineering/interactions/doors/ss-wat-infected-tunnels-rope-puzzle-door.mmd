@@ -1,0 +1,10 @@
+stateDiagram-v2
+    state "task-check" as s0
+    state "wait-for-open" as s1
+    state "stay-open" as s2
+    state "complete" as s3
+    s0 --> s3: start
+    s0 --> s1: task-complete
+    s0 --> s1: start
+    s1 --> s3: task-complete
+    s1 --> s2: player-requested-interact

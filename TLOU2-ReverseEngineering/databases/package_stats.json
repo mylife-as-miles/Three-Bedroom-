@@ -1,0 +1,188 @@
+{
+  "files": [
+    {
+      "path": "databases/coverage.json",
+      "bytes": 770
+    },
+    {
+      "path": "databases/dependencies.json",
+      "bytes": 760148
+    },
+    {
+      "path": "databases/package_stats.json",
+      "bytes": 2532
+    },
+    {
+      "path": "databases/sid_database.json",
+      "bytes": 31739680
+    },
+    {
+      "path": "databases/entries.json",
+      "bytes": 7433446
+    },
+    {
+      "path": "databases/startup_manifest.json",
+      "bytes": 310692
+    },
+    {
+      "path": "databases/system_index.json",
+      "bytes": 2186204
+    },
+    {
+      "path": "databases/prior_reconciliation.json",
+      "bytes": 126
+    },
+    {
+      "path": "databases/cross_references.json",
+      "bytes": 9995283
+    },
+    {
+      "path": "databases/modules.json",
+      "bytes": 2225379
+    },
+    {
+      "path": "databases/startup_deduplication.json",
+      "bytes": 87
+    },
+    {
+      "path": "databases/auxiliary_coverage.json",
+      "bytes": 538
+    },
+    {
+      "path": "databases/interaction_definitions.json",
+      "bytes": 41974
+    },
+    {
+      "path": "databases/unresolved_transitions.json",
+      "bytes": 48155
+    },
+    {
+      "path": "databases/engine_api.json",
+      "bytes": 1345413
+    },
+    {
+      "path": "databases/reference_validation.json",
+      "bytes": 709
+    },
+    {
+      "path": "databases/handoff_reconciliation.json",
+      "bytes": 4437
+    },
+    {
+      "path": "databases/calls.json",
+      "bytes": 19043539
+    },
+    {
+      "path": "databases/events.json",
+      "bytes": 534208
+    },
+    {
+      "path": "databases/parse_errors.json",
+      "bytes": 3
+    },
+    {
+      "path": "databases/validation.json",
+      "bytes": 306
+    },
+    {
+      "path": "databases/functions.json",
+      "bytes": 14753001
+    },
+    {
+      "path": "databases/file_manifest.json",
+      "bytes": 507422
+    },
+    {
+      "path": "databases/state_scripts.json",
+      "bytes": 1796747
+    },
+    {
+      "path": "databases/call_graph.json",
+      "bytes": 9529775
+    },
+    {
+      "path": "databases/level_resources.json",
+      "bytes": 173076
+    },
+    {
+      "path": "databases/event_graph.json",
+      "bytes": 651360
+    },
+    {
+      "path": "databases/graphs/power_lock_event_candidates.json",
+      "bytes": 27524
+    },
+    {
+      "path": "interactions/ladders/evidence.json",
+      "bytes": 112026
+    },
+    {
+      "path": "interactions/keypads/evidence.json",
+      "bytes": 63764
+    },
+    {
+      "path": "interactions/doors/evidence.json",
+      "bytes": 20876
+    },
+    {
+      "path": "interactions/safes/evidence.json",
+      "bytes": 65658
+    },
+    {
+      "path": "interactions/drawers/evidence.json",
+      "bytes": 51865
+    },
+    {
+      "path": "interactions/ropes/evidence.json",
+      "bytes": 51615
+    },
+    {
+      "path": "interactions/notes/evidence.json",
+      "bytes": 384108
+    },
+    {
+      "path": "interactions/pushables/evidence.json",
+      "bytes": 87226
+    },
+    {
+      "path": "interactions/examine/evidence.json",
+      "bytes": 292634
+    },
+    {
+      "path": "interactions/generators/evidence.json",
+      "bytes": 412678
+    },
+    {
+      "path": "interactions/workbench/evidence.json",
+      "bytes": 203952
+    },
+    {
+      "path": "interactions/cabinets/evidence.json",
+      "bytes": 49057
+    },
+    {
+      "path": "interactions/investigate/evidence.json",
+      "bytes": 57995
+    },
+    {
+      "path": "interactions/pickups/evidence.json",
+      "bytes": 157808
+    },
+    {
+      "path": "level_design/examples/ss-pat-library-jokebook-interaction.json",
+      "bytes": 6517
+    },
+    {
+      "path": "level_design/examples/ss-pat-library-globe-interact.json",
+      "bytes": 15989
+    },
+    {
+      "path": "level_design/examples/ss-pat-library-heater-interaction.json",
+      "bytes": 14640
+    }
+  ],
+  "total_derived_json_bytes": 105160942,
+  "descriptive_literal_occurrences_redacted": 53005,
+  "newly_redacted_occurrences": 0,
+  "note": "53,005 descriptive literal occurrences were redacted in the first successful packaging pass; subsequent packaging preserves them."
+}

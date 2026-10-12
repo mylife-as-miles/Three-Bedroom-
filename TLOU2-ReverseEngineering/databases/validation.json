@@ -1,0 +1,16 @@
+{
+  "manifest_files": 8004,
+  "extracted_hashes_verified": 8004,
+  "call_references_verified": 644423,
+  "state_scripts_verified": 5431,
+  "sid_hashes_verified": 562611,
+  "parser_errors": 0,
+  "independent_comparable_targets": 4095,
+  "prior_scripts_matched": 621,
+  "interaction_definitions": 273,
+  "hud_names": 111,
+  "resource_groups_verified": 3348,
+  "resource_edges_verified": 52545,
+  "nested_duplicates_verified": 1714,
+  "property_tests": "passed"
+}

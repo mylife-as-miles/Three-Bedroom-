@@ -1,0 +1,15 @@
+stateDiagram-v2
+    state "initial" as s0
+    state "on-ground" as s1
+    state "pick-up-ladder" as s2
+    state "hold" as s3
+    state "drop-ladder" as s4
+    s4 --> s1: start
+    s3 --> s4: update
+    s3 --> s4: player-attacked
+    s0 --> s1: enable
+    s0 --> s1: start
+    s1 --> s0: disable
+    s1 --> s2: start
+    s1 --> s2: start
+    s2 --> s3: start

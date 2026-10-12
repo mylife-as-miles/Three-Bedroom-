@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "evidence.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 781053,
+  "sha256": "3b3c60c484921186b3efdd472c3d3286dd8a9d110d8f66c7269df76d68278f9e",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

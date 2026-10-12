@@ -1,0 +1,14 @@
+stateDiagram-v2
+    state "initial" as s0
+    state "task-check" as s1
+    state "waiting-to-push-camera" as s2
+    state "push-camera" as s3
+    state "done" as s4
+    [*] --> s0
+    s0 --> s1: start
+    s3 --> s4: start
+    s3 --> s2: start
+    s1 --> s4: start
+    s1 --> s2: start
+    s1 --> s2: update
+    s2 --> s3: inside

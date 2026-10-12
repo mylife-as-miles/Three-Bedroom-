@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "file_manifest.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 1537942,
+  "sha256": "2edc3e45ce6201686f9cf091848ab1d02219f17eb026a8d5c21e5b37cd1f6add",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

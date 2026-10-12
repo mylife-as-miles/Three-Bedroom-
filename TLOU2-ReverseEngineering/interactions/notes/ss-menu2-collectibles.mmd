@@ -1,0 +1,16 @@
+stateDiagram-v2
+    state "setup" as s0
+    state "--script--" as s1
+    state "not-focused" as s2
+    state "menu" as s3
+    state "loading-examine" as s4
+    state "examine" as s5
+    state "--all--" as s6
+    s6 --> s2: tab-focus-lost
+    s5 --> s3: inspect-exit
+    s4 --> s5: inspect-enter
+    s4 --> s3: update
+    s3 --> s4: update
+    s2 --> s3: focus-gained
+    s2 --> s3: tab-focus-gained
+    s0 --> s2: start

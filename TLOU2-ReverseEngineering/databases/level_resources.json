@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "level_resources.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 3714023,
+  "sha256": "7ff330e95fe13811c3279a3e1106faafae7a20bac7bf477721c7d01aa53d7e0c",
+  "record_count": 3348,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

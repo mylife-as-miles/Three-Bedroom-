@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "state_scripts.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 12990545,
+  "sha256": "7e433cc2af394bf4dbeee562ac16d9b49a7ddea9c535ad0b40fd1851d70841a8",
+  "record_count": 5431,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

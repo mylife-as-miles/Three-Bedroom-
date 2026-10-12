@@ -1,0 +1,29 @@
+stateDiagram-v2
+    state "wait-interact" as s0
+    state "examine-enter-cut" as s1
+    state "examine-enter-2" as s2
+    state "examine-enter-blend" as s3
+    state "examine-idle" as s4
+    state "fridge" as s5
+    state "read" as s6
+    state "examine-exit-cut" as s7
+    state "examine-exit-blend" as s8
+    state "done" as s9
+    state "complete" as s10
+    [*] --> s0
+    s9 --> s10: start
+    s2 --> s4: start
+    s3 --> s4: start
+    s1 --> s2: start
+    s8 --> s9: start
+    s8 --> s0: start
+    s7 --> s9: start
+    s7 --> s0: start
+    s4 --> s8: update
+    s4 --> s7: update
+    s4 --> s5: interact-request-in-examine
+    s4 --> s6: update
+    s5 --> s4: interact-request-complete
+    s6 --> s4: update
+    s0 --> s3: player-requested-interact
+    s0 --> s1: player-requested-interact

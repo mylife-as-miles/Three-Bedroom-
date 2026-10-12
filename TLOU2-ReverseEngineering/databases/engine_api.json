@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "engine_api.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 10137839,
+  "sha256": "023429a7a10158601c0c11a8c74fb7fb5a5df94475234910542f7c6506ed9e80",
+  "record_count": 8102,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

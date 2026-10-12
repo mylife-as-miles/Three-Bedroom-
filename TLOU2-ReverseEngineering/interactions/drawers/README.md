@@ -1,0 +1,11 @@
+# Drawers
+
+CONFIRMED: `ss-openable-drawer` is an eleven-state choreography controller. The recovered path, alternatives and per-state calls are in [evidence](evidence.md). The exact source is identified by the manifest hash, not an upstream fixture.
+
+The handle is a measured joint: the interaction event resolves the active object and calls `get-joint-position(..., handle)`. Alignment derives a path goal from animation AP references. Movement and facing checks precede entry; holstering runs alongside approach. Script branches on crouch/tension and height, sets entry/pickup/exit clip symbols and phase/frame thresholds, then drives the existing animation engine. Named heights include 30/35/50/70/80/90/120 cm across different stance families. CONFIRMED: those are labels, not a complete verified threshold partition.
+
+CONFIRMED: `joint-ik-characters` creates left/right hand solvers targeting invisible proxy objects. The helper `drawer-atachments` (original spelling) updates proxy locators through AP reference transforms, animation phase and edge/pickup offsets. It uses `get-ap-ref-from-align`, locator interpolation, world offsets and optional 180-degree rotation; entry/pickup/abort paths stop solvers. The script also calls `player-ik-root-adjust`. UNKNOWN: native IK mathematics, root-motion integration and rig constraints.
+
+CONFIRMED: loot can be pre-placed, tagged as an IGC pickup or returned by `get-openable-spawned-pickup`. Item identity/fullness/grip/scale are reusable pickup interfaces. Attachment explicitly targets rightHand or leftHand; pickup sound uses wrist SIDs. At the stow-phase-controlled helper path the script calls `player-apply-pickup` at 0x1A00; melee abort also calls it at 0x12E78. HIGH CONFIDENCE: script schedules collection while native pickup owns its application. UNKNOWN: internal amount/clamping/despawn/save order.
+
+CONFIRMED: opened/item-picked booleans are local declarations read by the script, while `scav-anim-active` is a player fact. Their presence does not prove the drawer save serializer. Wood/metal sound packages exist, but direct animation-event-to-bank routing is not recovered. An offline experiment should compare high/low drawers, crouched/standing entry, full inventory, attacked/evade exit and save/reload before editing any timing. No experiment was run here.

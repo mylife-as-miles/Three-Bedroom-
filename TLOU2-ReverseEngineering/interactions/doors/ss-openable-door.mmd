@@ -1,0 +1,5 @@
+stateDiagram-v2
+    state "wait-interact" as s0
+    state "complete" as s1
+    [*] --> s0
+    s0 --> s1: player-requested-interact

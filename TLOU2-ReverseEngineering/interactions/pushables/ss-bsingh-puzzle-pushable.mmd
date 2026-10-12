@@ -1,0 +1,11 @@
+stateDiagram-v2
+    state "init" as s0
+    state "idle" as s1
+    state "grab-init" as s2
+    state "grabbed" as s3
+    state "un-grab" as s4
+    s2 --> s3: start
+    s3 --> s4: update
+    s1 --> s2: player-requested-interact
+    s0 --> s1: start
+    s4 --> s1: start

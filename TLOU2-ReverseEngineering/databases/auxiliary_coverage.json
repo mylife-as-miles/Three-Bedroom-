@@ -1,0 +1,26 @@
+{
+  "json_files": 44,
+  "txt_files": 1,
+  "empty_json_files": [
+    "dc1/level-sets/ss-nor-stalker-listen-mode-reminder.json",
+    "dc1/level-sets/ss-ski-coastal-note-prompt-activator.json"
+  ],
+  "resource_records": 3348,
+  "unique_readable_strings": 13538,
+  "new_dictionary_hashes_including_tokens": 6298,
+  "new_hashes_matching_dc_words": 0,
+  "resource_fields": {
+    "levels": 3348,
+    "looks": 3348,
+    "level-sets": 3348,
+    "levels-pc": 3348,
+    "level-sets-pc": 3348,
+    "name": 3348,
+    "actors-pc": 3348,
+    "actors": 3348
+  },
+  "all_auxiliary_parse_errors": 0,
+  "resource_groups": 3348,
+  "resource_reference_edges": 52545,
+  "json_documents": 2439
+}

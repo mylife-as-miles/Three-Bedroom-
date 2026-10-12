@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "functions.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 136983891,
+  "sha256": "aa4160691e0eb4f4a8070f9a6f4a818fa9251eb22fa1411d7e0e433b31b6956a",
+  "record_count": 178581,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

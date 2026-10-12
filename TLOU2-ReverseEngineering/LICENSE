@@ -1,0 +1,20 @@
+MIT License
+
+Copyright (c) 2026 TLOU2 interaction research contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the independently authored software and documentation in this directory,
+to deal in it without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies,
+and to permit persons to whom it is furnished to do so, subject to these conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of this independently authored software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE.
+
+This license does not grant rights to Naughty Dog/Sony game assets or third-party
+tools/databases. Those are not part of the distributed project. Upstream licenses
+remain applicable to private dependencies; see tools/TOOLCHAIN.md.

@@ -1,0 +1,20 @@
+stateDiagram-v2
+    state "wait-for-data" as s0
+    state "setup" as s1
+    state "input-code" as s2
+    state "finish-combo" as s3
+    state "success" as s4
+    state "fail" as s5
+    state "investigate" as s6
+    state "--all--" as s7
+    s5 --> s2: hud-reset
+    s3 --> s5: start
+    s3 --> s4: start
+    s2 --> s3: hud-fail
+    s2 --> s3: hud-success
+    s2 --> s6: investigate-started
+    s6 --> s2: investigate-begin-exit
+    s6 --> s2: update
+    s1 --> s3: start
+    s1 --> s2: start
+    s0 --> s1: hud-set-data

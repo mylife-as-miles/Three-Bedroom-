@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "events.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 8090754,
+  "sha256": "f04a127faa3541d6b57db27b85062ea035484c9bb211a7c18d5f84956521c09e",
+  "record_count": 29705,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

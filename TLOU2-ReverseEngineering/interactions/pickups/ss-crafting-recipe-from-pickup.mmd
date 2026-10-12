@@ -1,0 +1,17 @@
+stateDiagram-v2
+    state "--all--" as s0
+    state "setup" as s1
+    state "wait-for-pickup" as s2
+    state "wait-to-play-tutorial" as s3
+    state "stun-bomb-tutorial" as s4
+    state "wait-input" as s5
+    [*] --> s1
+    s1 --> s2: start
+    s4 --> s2: start
+    s4 --> s3: start
+    s2 --> s5: player-pickup
+    s2 --> s5: upgrade-manual-found
+    s2 --> s3: player-pickup
+    s5 --> s2: input-timer
+    s5 --> s2: update
+    s3 --> s4: update

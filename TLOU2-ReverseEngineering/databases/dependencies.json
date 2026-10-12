@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "dependencies.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 8157206,
+  "sha256": "b334f41e848ebb994b5bf39819d81bae9290d084ea5fd25f253b7242a28d4132",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

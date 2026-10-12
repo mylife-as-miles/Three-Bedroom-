@@ -1,0 +1,15 @@
+# Proposed mods, in increasing scope
+
+These are design recommendations based on observed interfaces, not implemented or tested mods. No asset extraction for redistribution, mod compilation, repack or game modification was performed.
+
+1. **Best first proof of concept: drawer interaction diagnostics.** Add a toggled developer overlay showing measured handle height, selected enter/pickup/exit clip, animation phase and current interaction state for one existing drawer. CONFIRMED calls already include debug-draw-string-2d, get-joint-position, get-animation-phase and named selection variables. Reuse that path to validate the architecture in game before changing timing. Test standing/crouching, empty/full inventory and attacked/evade exit; disable the overlay to verify baseline behavior. YELLOW because it depends on existing native debug/UI APIs. This provides actual evidence rather than changing an unmapped distance field.
+
+2. **A repeatable display-object inspection.** Use an existing noncollectible actor with the examination/investigation contract, existing animation/camera, read action and cancel cleanup. Change the appropriate used/availability policy without adding quantity or collecting a treasure twice. HIGH CONFIDENCE feasibility of composition; exact actor binding and native collection semantics need a controlled runtime test. Do not reset flags on a collectible blindly.
+
+3. **A note-informed custom lock puzzle.** Combine an existing inspectable note, keypad/safe world controller, shared HUD lock UI, explicit success event and existing object-scoped opened flag. Add alternate authored codes or staged hints while retaining cancellation/attack cleanup. HIGH CONFIDENCE reuse of APIs; code struct semantics and level wiring require verification.
+
+4. **A multi-object power restoration sequence.** Author state/task gates for an existing generator, switch and door/light actors. Connect validated event receivers, sound/camera feedback and persistent completion. Reuse known assets and locomotion, rather than inventing a new electrical simulator. YELLOW composition; ORANGE if new rope/physics/electrical primitives are required.
+
+5. **A new field-maintenance interaction.** Reuse workbench choreography/menus and existing weapon or prop animations to build an authored repair/inspection sequence with resource costs, condition/hint choices and a world consequence. This is a genuinely new interaction built from existing contracts. HIGH CONFIDENCE of the architectural pattern; UNKNOWN support for new inventory/upgrade storage or arbitrary models/animations. Start with cosmetic/state effects and existing resources; new native mechanics move the project into ORANGE.
+
+Progression criteria: compile an isolated copy with a pinned dconstruct version; retain source/output hashes; confirm entry, cancel, attack and complete paths; compare save/reload and duplicated collection; measure original interaction behavior. These are experiments for the next phase. The present work reconstructs and documents architecture first.

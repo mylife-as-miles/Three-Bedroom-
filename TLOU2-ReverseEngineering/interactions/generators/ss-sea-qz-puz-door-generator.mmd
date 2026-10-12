@@ -1,0 +1,13 @@
+stateDiagram-v2
+    state "task-check" as s0
+    state "wait-interact" as s1
+    state "start-generator" as s2
+    state "already-complete" as s3
+    state "complete" as s4
+    s3 --> s4: start
+    s2 --> s4: start
+    s0 --> s3: start
+    s0 --> s4: start
+    s0 --> s1: start
+    s0 --> s1: task-complete
+    s1 --> s2: player-requested-interact

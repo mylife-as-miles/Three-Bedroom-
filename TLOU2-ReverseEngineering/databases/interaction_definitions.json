@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "interaction_definitions.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 794527,
+  "sha256": "396dbaa6f60394a965f82cb939a1fe34a8d407b3c79faf541373dca9587dd0b7",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}

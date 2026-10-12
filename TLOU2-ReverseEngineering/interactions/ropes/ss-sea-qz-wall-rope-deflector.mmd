@@ -1,0 +1,13 @@
+stateDiagram-v2
+    state "task-check" as s0
+    state "spawn-deflector" as s1
+    state "complete" as s2
+    s1 --> s2: task-complete
+    s0 --> s2: start
+    s0 --> s2: task-complete
+    s0 --> s2: start
+    s0 --> s2: start
+    s0 --> s2: task-complete
+    s0 --> s1: start
+    s0 --> s1: task-complete
+    s0 --> s1: start

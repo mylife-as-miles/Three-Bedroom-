@@ -1,0 +1,9 @@
+{
+  "storage": "gzip-json",
+  "file": "call_graph.json.gz",
+  "schema_version": 1,
+  "uncompressed_bytes": 235692363,
+  "sha256": "d500e1805eaf61822cf1a50bcc57ec01ed07c6fb761090b7ea1831746a960519",
+  "record_count": null,
+  "note": "Derived metadata only; descriptive literals are redacted. Load via tools/analysis/data.py or gzip."
+}
