@@ -1,0 +1,15 @@
+# Proprietary game data — NEVER commit
+.private/
+game/
+extracted/
+*.psarc
+*.rar
+*.bin
+!tools/**/*.py
+# large regenerable intermediates
+databases/_generated_large/
+__pycache__/
+*.pyc
+.venv/
+# dconstruct is CC BY-NC-ND 4.0: diffs against its source stay local (see tools/extract/dconstruct_linux/PATCHES.md)
+tools/extract/dconstruct_linux/patches/
