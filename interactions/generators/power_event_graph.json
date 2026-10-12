@@ -1,0 +1,163 @@
+{
+  "schema": {
+    "description": "Power -> world event graph for TLOU2R PC 1.6 DC scripts. Nodes are state scripts (optionally :state), native systems or world objects; edges are the mechanism that carries the signal.",
+    "edge_kinds": {
+      "send": "send-event(event, target, args...) - DC call, CONFIRMED in source",
+      "broadcast": "broadcast-event(event, args...) - DC call, CONFIRMED in source",
+      "native-event": "event delivered by the engine, not sent by any DC script (e.g. player-requested-interact)",
+      "task": "task-complete!(node, sub) in sender; receivers react to the engine-broadcast task-complete event and test task-active?/task-complete?",
+      "remote-var": "set-boolean/get-boolean on another script instance's declared variable (no event)",
+      "svar": "save variable set-svar/get-svar (persistent)",
+      "native-call": "direct call of a native function on a world object (door-open, interactable-enable, set-light-process-intensity ...)",
+      "light-event": "turn-on-light/turn-off-light (DC wrappers in script-user-funcs-impl.bin) send turn-on / turn-on-instantly / turn-off to a light entity; turn-on-instantly has 0 DC handlers -> native light entity"
+    },
+    "confidence_legend": ["CONFIRMED", "HIGH CONFIDENCE", "INFERRED", "UNKNOWN"]
+  },
+  "shared_component": {
+    "id": "ss-motor-start-minigame",
+    "file": "ss-t2/ss-motor-start-minigame.bin",
+    "attached_to": "the generator / outboard-motor object itself (events are sent to the object name, e.g. obj-pat-library-generator-1)",
+    "inputs": {
+      "start-motor-minigame": "arg0 optional impulse d-array symbol; default motor-minigame-default-impulse-levels",
+      "pull-attempt": "sent by the level script every frame joypad-command-active?(minigame-interact, 6) is true",
+      "exit-minigame": "level script on stick-pressed-down?(move,0.30) or minigame-exit",
+      "motor-minigame-play-running-idle": "level script after success (only ss-pat-generator-start sends it)",
+      "motor-minigame-turn-off-power": "0 senders in DC"
+    },
+    "outputs": {
+      "pull-attempt-result": "broadcast, arg0 int: -1 input ignored, 0 fail, 1 successful pull, 2 successful pull at max count",
+      "motor-minigame-success": "broadcast, arg0 = target object; only handler is the script's own alt-hud state",
+      "success/failed": "send to HUD widget w-power (ss-hud2-motor-minigame) which replies hud-anim-complete"
+    }
+  },
+  "examples": [
+    {
+      "id": "patrol-jackson-library",
+      "level": "Patrol (Jackson) - library basement generator",
+      "nodes": [
+        {"id": "native-interact", "kind": "native", "label": "native interactable system"},
+        {"id": "ss-pat-generator-start", "kind": "level-script", "file": "ss-patrol/ss-pat-generator-start.bin"},
+        {"id": "obj-pat-library-generator-1", "kind": "object+script", "script": "ss-motor-start-minigame"},
+        {"id": "ss-pat-library-bed-area-dina-1", "kind": "npc-script", "file": "ss-patrol/ss-pat-library-bed-area-dina.bin"},
+        {"id": "ss-vox-pat-library-generator-1", "kind": "vo-script"},
+        {"id": "door-pat-firefly-symbol-1", "kind": "native door"},
+        {"id": "library-lights", "kind": "lights", "members": ["rt-stairway-generator-light-1", "rt-lower-uplight-a-1", "rt-lower-uplight-b-1", "rt-generator-led-1", "rt-heater-1", "rt-workbench-a/b/c-1"]},
+        {"id": "workbench-68", "kind": "workbench script instance"},
+        {"id": "task:patrol/pat-library-generator", "kind": "task"}
+      ],
+      "edges": [
+        {"from": "native-interact", "to": "ss-pat-generator-start:wait-for-events", "kind": "native-event", "event": "player-requested-interact", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:move-to-entry", "to": "ss-pat-library-bed-area-dina-1", "kind": "send", "event": "interacted-with-generator", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:enter-igc", "to": "obj-pat-library-generator-1", "kind": "send", "event": "start-motor-minigame", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:idle-igc", "to": "obj-pat-library-generator-1", "kind": "send", "event": "pull-attempt", "conf": "CONFIRMED"},
+        {"from": "obj-pat-library-generator-1", "to": "ss-pat-generator-start", "kind": "broadcast", "event": "pull-attempt-result", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:pull-cord-fail", "to": "ss-vox-pat-library-generator-1", "kind": "send", "event": "vox-pat-generator-fail", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:pull-cord", "to": "library-lights", "kind": "light-event", "event": "sputter flicker (wait-pat-light-flicker)", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "obj-pat-library-generator-1", "kind": "send", "event": "motor-minigame-play-running-idle", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "ss-pat-library-bed-area-dina-1", "kind": "send", "event": "block-workbench-door", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "door-pat-firefly-symbol-1", "kind": "native-call", "call": "door-open(door-pat-firefly-symbol-1, 1)", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "library-lights", "kind": "light-event", "call": "pat-library-turn-on-generator-related-lights() + turn-on-light(rt-workbench-*)", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "workbench-68", "kind": "remote-var", "call": "set-boolean(light-on?, 1, workbench-68); interactable-enable(workbench-68)", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "task:patrol/pat-library-generator", "kind": "task", "call": "task-complete!(patrol, pat-library-generator)", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:power-on", "to": "ss-vox-pat-library-generator-1", "kind": "send", "event": "vox-first-workbench", "conf": "CONFIRMED"},
+        {"from": "ss-pat-generator-start:exit-igc", "to": "ss-pat-library-bed-area-dina-1", "kind": "send", "event": "player-exited-generator", "conf": "CONFIRMED"}
+      ],
+      "persistence": "task-check -> already-complete replays door-open + lights when task-complete?(patrol, pat-library-generator) (CONFIRMED)"
+    },
+    {
+      "id": "hospital-basement",
+      "level": "Seattle Day 2 Abby - hospital basement (medicine / hospital-annex)",
+      "nodes": [
+        {"id": "ss-med-ratking-igc-first-generator", "kind": "level-script", "file": "ss-medicine/hospital-annex/ss-med-ratking-igc-first-generator.bin"},
+        {"id": "gen-med-hospital-first-1", "kind": "object+script", "script": "ss-motor-start-minigame"},
+        {"id": "ss-med-hospital-power-switch-1", "kind": "level-script", "file": "ss-medicine/hospital-annex/ss-med-hospital-power-switch.bin"},
+        {"id": "ss-med-hos-accessibility-1", "kind": "accessibility script"},
+        {"id": "ss-vox-med-hospital-basement-back-rooms-1", "kind": "vo-script"},
+        {"id": "ss-med-light-flicker-on", "kind": "light script", "file": "ss-medicine/hospital-annex/ss-med-light-flicker-on.bin"},
+        {"id": "ss-med-ratking-first-quarantine-door", "kind": "door script"},
+        {"id": "ss-med-ratking-igc-open-ambulance-bay", "kind": "door script"},
+        {"id": "ss-med-ratking-powered-door-single", "kind": "door script (+ spawned ss-med-ratking-powered-door-light-manager)"},
+        {"id": "ss-med-ratking-powered-door-animated", "kind": "door script (mash struggle)"},
+        {"id": "task:medicine/med-hospital-basement-back-rooms", "kind": "task"},
+        {"id": "player-flashlight", "kind": "player"}
+      ],
+      "edges": [
+        {"from": "ss-med-ratking-igc-first-generator:enter-igc", "to": "gen-med-hospital-first-1", "kind": "send", "event": "start-motor-minigame", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:enter-igc", "to": "ss-vox-med-hospital-basement-back-rooms-1", "kind": "send", "event": "generator-interact", "conf": "CONFIRMED"},
+        {"from": "gen-med-hospital-first-1", "to": "ss-med-ratking-igc-first-generator", "kind": "broadcast", "event": "pull-attempt-result", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:success", "to": "player-flashlight", "kind": "send", "event": "flashlight-set-target-object(obj-circuit-breaker-1) / flashlight-clear-target-object", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:success", "to": "ss-vox-med-hospital-basement-back-rooms-1", "kind": "send", "event": "generator-on", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:success", "to": "ss-med-hospital-power-switch-1", "kind": "send", "event": "blend-light-on (0 DC handlers)", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:enable-power-switch", "to": "ss-med-hospital-power-switch-1", "kind": "send", "event": "force-power-on", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:enable-power-switch", "to": "ss-med-hos-accessibility-1", "kind": "send", "event": "generator-on", "conf": "CONFIRMED"},
+        {"from": "ss-med-hospital-power-switch-1:wait-interact", "to": "int-hos-power-switch-1", "kind": "native-call", "call": "interactable-enable on force-power-on", "conf": "CONFIRMED"},
+        {"from": "ss-med-hospital-power-switch-1:interact", "to": "task:medicine/med-hospital-basement-back-rooms", "kind": "task", "call": "task-complete!(medicine, med-hospital-basement-back-rooms)", "conf": "CONFIRMED"},
+        {"from": "ss-med-hospital-power-switch-1:interact", "to": "*", "kind": "broadcast", "event": "generator-on", "conf": "CONFIRMED"},
+        {"from": "*generator-on", "to": "ss-med-light-flicker-on:wait-activate", "kind": "broadcast", "event": "generator-on -> flicker-on: turn-on-light(each of med-generator-room-lights)", "conf": "CONFIRMED"},
+        {"from": "*generator-on", "to": "ss-med-ratking-first-quarantine-door:wait-door-broken", "kind": "broadcast", "event": "generator-on -> door-broken: disable squeeze-through-powered-door-8, animate-start door-powered-8, send go-locked, interactable-set-unavailable(int-locked-sliding-door-1)", "conf": "CONFIRMED"},
+        {"from": "*generator-on", "to": "ss-med-ratking-igc-open-ambulance-bay:wait-for-power", "kind": "broadcast", "event": "generator-on -> break-down: kill-entity(obj-door-amb-bay-1)", "conf": "CONFIRMED"},
+        {"from": "task:medicine/med-hospital-basement-back-rooms", "to": "ss-med-ratking-powered-door-single:wait-power", "kind": "task", "event": "task-complete -> task-active?(medicine, med-hospital-basement-power-on) -> unlock-and-open", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-powered-door-single:unlock-and-open", "to": "self door", "kind": "native-call", "call": "door-enable-systemic(self,1); door-lock(self,0,1); door-lock(self,0,0)", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-powered-door-single:unlock-and-open", "to": "ss-med-ratking-powered-door-light-manager (same entity)", "kind": "send", "event": "go-unlocked (red/green/orange door lamps)", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-igc-first-generator:enable-power-switch", "to": "ss-med-ratking-powered-door-animated:wait-power-on", "kind": "send", "event": "force-power-on is HANDLED here but the only DC sender targets ss-med-hospital-power-switch-1", "conf": "CONFIRMED (handler) / UNKNOWN (who delivers it)"},
+        {"from": "ss-med-ratking-powered-door-animated:success", "to": "*", "kind": "broadcast", "event": "opened-powered-door -> ss-med-ratking-igc-chase-gurney-hall:wait-enter-hall", "conf": "CONFIRMED"},
+        {"from": "ss-med-ratking-powered-door-animated:destroyed", "to": "door lamp manager", "kind": "send", "event": "go-unpowered; broadcast door-destroyed", "conf": "CONFIRMED"}
+      ],
+      "persistence": "task gates (med-hospital-basement-back-rooms / -power-on) re-derive door and light state in each task-check (CONFIRMED)"
+    },
+    {
+      "id": "seattle-qz-gate",
+      "level": "Seattle Day 1 Ellie - QZ wall gate puzzle (seattlearrival)",
+      "nodes": [
+        {"id": "ss-sea-qz-wall-generator-start", "kind": "level-script", "file": "ss-seattlearrival/ss-sea-qz-wall-generator-start.bin"},
+        {"id": "obj-sea-generator-1", "kind": "object+script", "script": "ss-motor-start-minigame"},
+        {"id": "ss-sea-qz-puzzle-gate-1", "kind": "puzzle script", "file": "ss-seattlearrival/ss-sea-qz-puzzle-gate.bin"},
+        {"id": "door-qz-gate-side-1", "kind": "native door"},
+        {"id": "carry-object-sea-rope-6", "kind": "carry rope used as power cable"},
+        {"id": "ss-qz-door-puzzle", "kind": "second-stage puzzle script"},
+        {"id": "svar:sea-qz-door-opened", "kind": "save variable"}
+      ],
+      "edges": [
+        {"from": "ss-sea-qz-wall-generator-start:wait-interact", "to": "door-qz-gate-side-1", "kind": "native-call", "call": "interactable-disable(door-qz-gate-side-1)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-wall-generator-start:enter-igc", "to": "obj-sea-generator-1", "kind": "send", "event": "start-motor-minigame", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-wall-generator-start:success", "to": "door-qz-gate-side-1", "kind": "native-call", "call": "interactable-enable(door-qz-gate-side-1)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-wall-generator-start:success", "to": "ss-sea-qz-puzzle-gate-1", "kind": "remote-var", "call": "set-boolean(generator-on, 1, ss-sea-qz-puzzle-gate-1)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-wall-generator-start:success", "to": "superPoint-RT-generator-Shape-1..5", "kind": "native-call", "call": "set-light-process-intensity(...,1.0)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-puzzle-gate-1:wait-interact", "to": "ss-sea-qz-puzzle-gate-1:open-gate|no-power|plug-in|plug-out", "kind": "native-event", "event": "player-requested-interact (button/junction box); no-power branch when first-plug-in-1 false", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-puzzle-gate-1:wait-interact", "to": "svar:sea-qz-door-opened", "kind": "svar", "call": "wait until is-door-open?(door-qz-gate-side-1) -> set-svar(sea-qz-door-opened,1); door-enable-systemic(door,0)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-qz-puzzle-gate-1:open-gate", "to": "task:seattle-arrival/sea-qz-door-puzzle", "kind": "task", "call": "task-complete!; send dina-prank to ss-vox-sea-qz-door-puzzle-1", "conf": "CONFIRMED"},
+        {"from": "ss-qz-door-puzzle:first-state", "to": "door-qz-gate-side-1", "kind": "send", "event": "set-door-open (0 DC handlers -> native door, HIGH CONFIDENCE)", "conf": "CONFIRMED (send)"}
+      ],
+      "persistence": "svar sea-qz-door-opened + task sea-qz-door-puzzle-two; reload path calls door-open(door-qz-gate-side-1, 0) and waits is-door-open? (CONFIRMED)"
+    },
+    {
+      "id": "seattle-hub-hotel",
+      "level": "Seattle Day 1 Ellie - downtown hub hotel generator / checkpoint gate",
+      "nodes": [
+        {"id": "ss-sea-horse-hotel-generator", "kind": "level-script"},
+        {"id": "obj-sea-hotel-generator-1", "kind": "object+script", "script": "ss-motor-start-minigame"},
+        {"id": "ss-sea-horse-keypad-1", "kind": "keypad script"},
+        {"id": "obj-sea-horse-checkpoint-gate-4", "kind": "animated gate prop (not a native door)"},
+        {"id": "svar:sea-horse-finding-gas", "kind": "save variable (progress counter 0..8)"}
+      ],
+      "edges": [
+        {"from": "ss-sea-horse-hotel-generator:no-gas-enter-igc", "to": "obj-sea-hotel-generator-1", "kind": "send", "event": "start-motor-minigame (no gas: scripted fail path)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-horse-hotel-generator:enter-igc", "to": "svar:sea-horse-finding-gas", "kind": "svar", "call": "set-svar(sea-horse-finding-gas, 7)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-horse-hotel-generator:enter-igc", "to": "ss-sea-horse-keypad-1", "kind": "send", "event": "turned-on (0 DC handlers; keypad gates on the svar instead)", "conf": "CONFIRMED"},
+        {"from": "svar:sea-horse-finding-gas", "to": "ss-sea-horse-keypad-1", "kind": "svar", "call": "< 7 -> interactable-set-unavailable + override-interact-def(int-sea-horse-keypad-1, interact-needs-power-npc-blockable)", "conf": "CONFIRMED"},
+        {"from": "ss-sea-horse-keypad-1:success", "to": "obj-sea-horse-checkpoint-gate-4", "kind": "native-call", "call": "animate_(gate, sea-hub-open-checkpoint-gate--gate); set-svar(sea-horse-finding-gas, 8); broadcast keypad-success", "conf": "CONFIRMED"}
+      ]
+    },
+    {
+      "id": "theater",
+      "level": "Seattle Day 1 Ellie - theater generator",
+      "edges": [
+        {"from": "ss-the-generator:enter", "to": "obj-the-generator-1", "kind": "send", "event": "start-motor-minigame", "conf": "CONFIRMED"},
+        {"from": "ss-the-generator:success", "to": "task:theater/the-generator", "kind": "task", "call": "task-complete!(theater, the-generator); flicker light-gene-room-1/-b-1; set-table-shader-material-values-param(*the-lobby-generator-light*, 1.0)", "conf": "CONFIRMED"},
+        {"from": "task:theater/the-generator", "to": "ss-the-lighting-controller", "kind": "task", "call": "light-controller-on: *the-lobby-wall-sconce* = 1.0, obj-the-radio-1 blendOffset0 = 1.0", "conf": "CONFIRMED"},
+        {"from": "task:theater/the-generator", "to": "ss-snd-the-generator-lp", "kind": "task", "call": "play generator / building / light-buzz loops; stop on task the-guitar-play-a", "conf": "CONFIRMED"},
+        {"from": "task:theater/the-generator", "to": "ss-the-radio / ss-the-dina-couch / ss-the-broken-glass", "kind": "task", "conf": "CONFIRMED"}
+      ]
+    }
+  ]
+}

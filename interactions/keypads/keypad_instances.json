@@ -1,0 +1,47 @@
+{
+ "_doc": "Code-entry devices (keypads/code doors) in TLOU2R PC 1.6 DC. All codes hardcoded in DC.",
+ "keypads": [
+  {
+   "script": "ss-seattlearrival/ss-sea-arrival-keypad",
+   "location": "Seattle Day 1 QZ wall main gate",
+   "prop": "obj-12916",
+   "interactable": "int-sea-lever-gate-2",
+   "code": "0512",
+   "code_storage": "float literal 512.0 with code-length > 3 (=f, eps 0.01)",
+   "code_note": "collectible-sea-qz-generator-note (back side)",
+   "note_gating": "\"051\" without note -> fail; failure without note -> exit to no-code hints",
+   "hud_mode": "hack prompt-stack (is-tumbler 0, hack 1)",
+   "success_event": "broadcast keypad-success(self)",
+   "persistence": "task-complete! seattle-arrival/sea-qz-door-open-gate",
+   "status": "CONFIRMED"
+  },
+  {
+   "script": "ss-seattlearrival/ss-sea-horse-keypad",
+   "location": "Seattle hub hotel courtyard gate",
+   "prop": "obj-sea-horse-keypad-1",
+   "interactable": "int-sea-horse-keypad-1",
+   "code": "5345",
+   "code_storage": "float literal 5345.0",
+   "code_note": "collectible-sea-qz-generator-note passed to HUD only (unused); real source of the code UNKNOWN (localized notes not in corpus)",
+   "note_gating": "none; requires svar sea-horse-finding-gas == 7 and generator turned-on event",
+   "hud_mode": "hack prompt-stack",
+   "success_event": "broadcast keypad-success(self)",
+   "persistence": "svar sea-horse-finding-gas=8, svar-bit sea-horse-load-levels[10], task hotel-courtyard",
+   "status": "CONFIRMED"
+  },
+  {
+   "script": "ss-watchtower/ss-wat-infected-tunnels-door-input-code",
+   "location": "Watchtower/Capitol Hill infected tunnels facility door",
+   "prop": "obj-wat-infected-tunnels-door-input-code-door-1",
+   "interactable": "int-wat-infected-tunnels-door-input-code-1",
+   "code": "1-5-2-4-3",
+   "code_storage": "DC d-array wat-door-input-code--correct-code (5 boxed i32)",
+   "code_note": "collectible-wat-doorcode-soda / collectible-wat-doorcode",
+   "note_gating": "pickup-scan exclusion only",
+   "hud_mode": "keypad (is-tumbler 0, hack 0, 5 slots)",
+   "success_event": "send vox-keypad-success to ss-vox-wat-infected-tunnels-facility-explore-1",
+   "persistence": "none written (task read)",
+   "status": "CONFIRMED"
+  }
+ ]
+}

@@ -1,0 +1,613 @@
+{
+ "source": "item-drop.bin (data-only; no DC code references these tables -> consumed natively)",
+ "tables": {
+  "*cabinet-drop-table*": [
+   {
+    "category": "none",
+    "prob_per_difficulty?": [
+     0.75,
+     0.65,
+     0.52,
+     0.42,
+     0.42,
+     0.3,
+     0.3
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   },
+   {
+    "category": "ammo",
+    "prob_per_difficulty?": [
+     0.1,
+     0.15,
+     0.2,
+     0.2,
+     0.2,
+     0.25,
+     0.25
+    ],
+    "type_table_items": [
+     {
+      "item": "ammo-pistol",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-mpx5",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-xcaliber",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-rifle",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-vepr",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-shotgun",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-shotgun-baserri",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-arrow",
+      "weight?": 0.02
+     },
+     {
+      "item": "ammo-crossbow",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver-joel",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "crafting",
+    "prob_per_difficulty?": [
+     0.15,
+     0.2,
+     0.28,
+     0.38,
+     0.38,
+     0.45,
+     0.45
+    ],
+    "type_table_items": [
+     {
+      "item": "alcohol",
+      "weight?": 0.1
+     },
+     {
+      "item": "rag",
+      "weight?": 0.1
+     },
+     {
+      "item": "explosive",
+      "weight?": 0.1
+     },
+     {
+      "item": "canister",
+      "weight?": 0.1
+     },
+     {
+      "item": "blade",
+      "weight?": 0.1
+     },
+     {
+      "item": "binding",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "full-item",
+    "prob_per_difficulty?": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   }
+  ],
+  "*drawer-drop-table*": [
+   {
+    "category": "none",
+    "prob_per_difficulty?": [
+     0.75,
+     0.65,
+     0.52,
+     0.42,
+     0.42,
+     0.3,
+     0.3
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   },
+   {
+    "category": "ammo",
+    "prob_per_difficulty?": [
+     0.1,
+     0.15,
+     0.2,
+     0.2,
+     0.2,
+     0.25,
+     0.25
+    ],
+    "type_table_items": [
+     {
+      "item": "ammo-pistol",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-xcaliber",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-rifle",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-vepr",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-shotgun",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-shotgun-baserri",
+      "weight?": 0.05
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "crafting",
+    "prob_per_difficulty?": [
+     0.15,
+     0.2,
+     0.28,
+     0.38,
+     0.38,
+     0.45,
+     0.45
+    ],
+    "type_table_items": [
+     {
+      "item": "alcohol",
+      "weight?": 0.1
+     },
+     {
+      "item": "rag",
+      "weight?": 0.1
+     },
+     {
+      "item": "explosive",
+      "weight?": 0.1
+     },
+     {
+      "item": "canister",
+      "weight?": 0.1
+     },
+     {
+      "item": "blade",
+      "weight?": 0.1
+     },
+     {
+      "item": "binding",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "full-item",
+    "prob_per_difficulty?": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   }
+  ],
+  "*rogue-cabinet-drop-table*": [
+   {
+    "category": "none",
+    "prob_per_difficulty?": [
+     0.75,
+     0.65,
+     0.52,
+     0.42,
+     0.42,
+     0.3,
+     0.3
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   },
+   {
+    "category": "ammo",
+    "prob_per_difficulty?": [
+     0.1,
+     0.15,
+     0.2,
+     0.2,
+     0.2,
+     0.25,
+     0.25
+    ],
+    "type_table_items": [
+     {
+      "item": "ammo-pistol",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-mpx5",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-xcaliber",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-rifle",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-vepr",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-shotgun",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-shotgun-baserri",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-arrow",
+      "weight?": 0.02
+     },
+     {
+      "item": "ammo-crossbow",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver-joel",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "crafting",
+    "prob_per_difficulty?": [
+     0.15,
+     0.2,
+     0.28,
+     0.38,
+     0.38,
+     0.45,
+     0.45
+    ],
+    "type_table_items": [
+     {
+      "item": "alcohol",
+      "weight?": 0.1
+     },
+     {
+      "item": "rag",
+      "weight?": 0.1
+     },
+     {
+      "item": "explosive",
+      "weight?": 0.1
+     },
+     {
+      "item": "canister",
+      "weight?": 0.1
+     },
+     {
+      "item": "blade",
+      "weight?": 0.1
+     },
+     {
+      "item": "binding",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "full-item",
+    "prob_per_difficulty?": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   }
+  ],
+  "*rogue-drawer-drop-table*": [
+   {
+    "category": "none",
+    "prob_per_difficulty?": [
+     0.75,
+     0.65,
+     0.52,
+     0.42,
+     0.42,
+     0.3,
+     0.3
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   },
+   {
+    "category": "ammo",
+    "prob_per_difficulty?": [
+     0.1,
+     0.15,
+     0.2,
+     0.2,
+     0.2,
+     0.25,
+     0.25
+    ],
+    "type_table_items": [
+     {
+      "item": "ammo-pistol",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-xcaliber",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-rifle",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-vepr",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-shotgun",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-shotgun-baserri",
+      "weight?": 0.05
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "crafting",
+    "prob_per_difficulty?": [
+     0.15,
+     0.2,
+     0.28,
+     0.38,
+     0.38,
+     0.45,
+     0.45
+    ],
+    "type_table_items": [
+     {
+      "item": "alcohol",
+      "weight?": 0.1
+     },
+     {
+      "item": "rag",
+      "weight?": 0.1
+     },
+     {
+      "item": "explosive",
+      "weight?": 0.1
+     },
+     {
+      "item": "canister",
+      "weight?": 0.1
+     },
+     {
+      "item": "blade",
+      "weight?": 0.1
+     },
+     {
+      "item": "binding",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "full-item",
+    "prob_per_difficulty?": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   }
+  ],
+  "*default-drop-table*": [
+   {
+    "category": "none",
+    "prob_per_difficulty?": [
+     0.3,
+     0.25,
+     0.2,
+     0.15,
+     0.1,
+     0.05,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   },
+   {
+    "category": "ammo",
+    "prob_per_difficulty?": [
+     0.25,
+     0.3,
+     0.3,
+     0.35,
+     0.35,
+     0.4,
+     0.4
+    ],
+    "type_table_items": [
+     {
+      "item": "ammo-pistol",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-mpx5",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-xcaliber",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-rifle",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-rifle-vepr",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-shotgun",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-shotgun-baserri",
+      "weight?": 0.05
+     },
+     {
+      "item": "ammo-arrow",
+      "weight?": 0.02
+     },
+     {
+      "item": "ammo-crossbow",
+      "weight?": 0.1
+     },
+     {
+      "item": "ammo-revolver-joel",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "crafting",
+    "prob_per_difficulty?": [
+     0.45,
+     0.45,
+     0.5,
+     0.5,
+     0.55,
+     0.55,
+     0.6
+    ],
+    "type_table_items": [
+     {
+      "item": "alcohol",
+      "weight?": 0.1
+     },
+     {
+      "item": "rag",
+      "weight?": 0.1
+     },
+     {
+      "item": "explosive",
+      "weight?": 0.1
+     },
+     {
+      "item": "canister",
+      "weight?": 0.1
+     },
+     {
+      "item": "blade",
+      "weight?": 0.1
+     },
+     {
+      "item": "binding",
+      "weight?": 0.1
+     }
+    ],
+    "type_table_ref": null
+   },
+   {
+    "category": "full-item",
+    "prob_per_difficulty?": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "type_table_items": [],
+    "type_table_ref": 0
+   }
+  ]
+ }
+}

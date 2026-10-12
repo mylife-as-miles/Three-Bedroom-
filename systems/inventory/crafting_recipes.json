@@ -1,0 +1,387 @@
+{
+ "source": "crafting-system.bin",
+ "note": "raw_amounts are uint32-array contents as dumped; unit semantics (whole vs partial ingredients) UNKNOWN",
+ "recipes": [
+  {
+   "recipe": "recipe-health-kit",
+   "output": "health-kit",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "alcohol",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "rag",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-pipe-bomb",
+   "output": "pipe-bomb",
+   "output_raw_amounts": [
+    2
+   ],
+   "ingredients": [
+    {
+     "item": "alcohol",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "canister",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-ammo-arrow",
+   "output": "ammo-arrow",
+   "output_raw_amounts": [
+    2
+   ],
+   "ingredients": [
+    {
+     "item": "binding",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "blade",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-smoke-bomb",
+   "output": "smoke-bomb",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "canister",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-molotov",
+   "output": "molotov",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "alcohol",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "rag",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-shiv",
+   "output": "shiv",
+   "output_raw_amounts": [
+    2
+   ],
+   "ingredients": [
+    {
+     "item": "binding",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "blade",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-trap-bomb",
+   "output": "trap-bomb",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "canister",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-ammo-arrow-explosive",
+   "output": "ammo-arrow-explosive",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "binding",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-ammo-xcaliber",
+   "output": "ammo-xcaliber",
+   "output_raw_amounts": [
+    2
+   ],
+   "ingredients": [
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "blade",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-silencer",
+   "output": "silencer",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "rag",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "canister",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-ammo-shotgun-dragons-breath",
+   "output": "ammo-shotgun-dragons-breath",
+   "output_raw_amounts": [
+    2
+   ],
+   "ingredients": [
+    {
+     "item": "alcohol",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-stun-bomb",
+   "output": "stun-bomb",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "canister",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-melee-upgrade",
+   "output": "melee-upgrade",
+   "output_raw_amounts": [
+    1
+   ],
+   "ingredients": [
+    {
+     "item": "binding",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "blade",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "recipe": "recipe-ammo-rifle-vepr",
+   "output": "ammo-rifle-vepr",
+   "output_raw_amounts": [
+    5
+   ],
+   "ingredients": [
+    {
+     "item": "explosive",
+     "raw_amounts": [
+      4
+     ]
+    },
+    {
+     "item": "blade",
+     "raw_amounts": [
+      4
+     ]
+    }
+   ]
+  }
+ ],
+ "item_id_to_recipe_id": {
+  "silencer": {
+   "0x000": "silencer",
+   "0x008": "recipe-silencer",
+   "_type": "item-to-recipe"
+  },
+  "trap-bomb": {
+   "0x000": "trap-bomb",
+   "0x008": "recipe-trap-bomb",
+   "_type": "item-to-recipe"
+  },
+  "molotov": {
+   "0x000": "molotov",
+   "0x008": "recipe-molotov",
+   "_type": "item-to-recipe"
+  },
+  "ammo-arrow-explosive": {
+   "0x000": "ammo-arrow-explosive",
+   "0x008": "recipe-ammo-arrow-explosive",
+   "_type": "item-to-recipe"
+  },
+  "shiv": {
+   "0x000": "shiv",
+   "0x008": "recipe-shiv",
+   "_type": "item-to-recipe"
+  },
+  "melee-upgrade": {
+   "0x000": "melee-upgrade",
+   "0x008": "recipe-melee-upgrade",
+   "_type": "item-to-recipe"
+  },
+  "ammo-rifle-vepr": {
+   "0x000": "ammo-rifle-vepr",
+   "0x008": "recipe-ammo-rifle-vepr",
+   "_type": "item-to-recipe"
+  },
+  "stun-bomb": {
+   "0x000": "stun-bomb",
+   "0x008": "recipe-stun-bomb",
+   "_type": "item-to-recipe"
+  },
+  "smoke-bomb": {
+   "0x000": "smoke-bomb",
+   "0x008": "recipe-smoke-bomb",
+   "_type": "item-to-recipe"
+  },
+  "health-kit": {
+   "0x000": "health-kit",
+   "0x008": "recipe-health-kit",
+   "_type": "item-to-recipe"
+  },
+  "ammo-arrow": {
+   "0x000": "ammo-arrow",
+   "0x008": "recipe-ammo-arrow",
+   "_type": "item-to-recipe"
+  },
+  "ammo-shotgun-dragons-breath": {
+   "0x000": "ammo-shotgun-dragons-breath",
+   "0x008": "recipe-ammo-shotgun-dragons-breath",
+   "_type": "item-to-recipe"
+  },
+  "pipe-bomb": {
+   "0x000": "pipe-bomb",
+   "0x008": "recipe-pipe-bomb",
+   "_type": "item-to-recipe"
+  },
+  "ammo-xcaliber": {
+   "0x000": "ammo-xcaliber",
+   "0x008": "recipe-ammo-xcaliber",
+   "_type": "item-to-recipe"
+  }
+ },
+ "crafting_menu_ingredients_raw": [
+  "alcohol",
+  "rag",
+  "canister",
+  "explosive",
+  "binding",
+  "blade",
+  "casing"
+ ]
+}

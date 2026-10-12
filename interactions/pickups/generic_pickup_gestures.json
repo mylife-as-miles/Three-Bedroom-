@@ -1,0 +1,279 @@
+{
+ "source": "anim-player/player-misc.bin :: player-pickup-anim(hand, player-loc, velocity, item-loc) (script-lambda, 0 DC callers -> called natively)",
+ "inputs": {
+  "arg_0": "hand (0 = left, else right) [INFERRED from l-hand/r-hand branch names]",
+  "var_3": "facing angle player->item (deg)",
+  "var_8": "item height along player local-y (m)",
+  "var_9": "angle between player forward and velocity",
+  "var_10": "speed",
+  "moving_pickup": "speed >= 2.0 (1.4 crouched; 0.8 in tense sprint) and stick >= 0.10 (0.80 crouched) -> *-move-fw/bw-part--gesture"
+ },
+ "height_thresholds_seen": [
+  0.35,
+  0.7,
+  0.71,
+  0.75,
+  0.95,
+  1.15,
+  1.21,
+  1.35
+ ],
+ "gesture_defs_in": [
+  "gestures/ellie-pickup-gestures.bin (118 gesture-def)",
+  "gestures/abby-pickup-gestures.bin (83 gesture-def)"
+ ],
+ "fact_gate": "74 Ellie + 74 Abby pickup gesture-defs carry a fact-criteria on scav-anim-active (set by openables in scavenge-exit/complete)",
+ "families": {
+  "abby-pickup-crouch-idle-floor": [
+   "abby-pickup-crouch-idle-floor-back-l-hand-gesture",
+   "abby-pickup-crouch-idle-floor-back-r-hand-gesture",
+   "abby-pickup-crouch-idle-floor-forward-l-hand-gesture",
+   "abby-pickup-crouch-idle-floor-forward-r-hand-gesture",
+   "abby-pickup-crouch-idle-floor-left-l-hand-gesture",
+   "abby-pickup-crouch-idle-floor-right-r-hand-gesture"
+  ],
+  "abby-pickup-crouch-idle-high": [
+   "abby-pickup-crouch-idle-high-forward-l-hand-gesture",
+   "abby-pickup-crouch-idle-high-forward-r-hand-gesture",
+   "abby-pickup-crouch-idle-high-left-l-hand-gesture",
+   "abby-pickup-crouch-idle-high-right-r-hand-gesture"
+  ],
+  "abby-pickup-crouch-idle-low": [
+   "abby-pickup-crouch-idle-low-forward-l-hand-gesture",
+   "abby-pickup-crouch-idle-low-forward-r-hand-gesture",
+   "abby-pickup-crouch-idle-low-left-l-hand-gesture",
+   "abby-pickup-crouch-idle-low-right-r-hand-gesture"
+  ],
+  "abby-pickup-crouch-idle-mid": [
+   "abby-pickup-crouch-idle-mid-forward-l-hand-gesture",
+   "abby-pickup-crouch-idle-mid-forward-r-hand-gesture",
+   "abby-pickup-crouch-idle-mid-left-l-hand-gesture",
+   "abby-pickup-crouch-idle-mid-right-r-hand-gesture"
+  ],
+  "abby-pickup-relaxed-idle-80cm": [
+   "abby-pickup-relaxed-idle-80cm-forward-l-hand-gesture",
+   "abby-pickup-relaxed-idle-80cm-forward-r-hand-gesture",
+   "abby-pickup-relaxed-idle-80cm-left-l-hand-gesture",
+   "abby-pickup-relaxed-idle-80cm-right-r-hand-gesture"
+  ],
+  "abby-pickup-relaxed-idle-high": [
+   "abby-pickup-relaxed-idle-high-forward-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-high-forward-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-high-forward-l-hand-gesture",
+   "abby-pickup-relaxed-idle-high-forward-r-hand-gesture",
+   "abby-pickup-relaxed-idle-high-left-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-high-left-l-hand-gesture",
+   "abby-pickup-relaxed-idle-high-right-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-high-right-r-hand-gesture"
+  ],
+  "abby-pickup-relaxed-idle-low": [
+   "abby-pickup-relaxed-idle-low-forward-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-low-forward-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-low-forward-l-hand-gesture",
+   "abby-pickup-relaxed-idle-low-forward-r-hand-gesture",
+   "abby-pickup-relaxed-idle-low-left-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-low-left-l-hand-gesture",
+   "abby-pickup-relaxed-idle-low-right-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-low-right-r-hand-gesture"
+  ],
+  "abby-pickup-relaxed-idle-mid": [
+   "abby-pickup-relaxed-idle-mid-forward-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-forward-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-forward-l-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-forward-r-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-left-close-l-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-left-l-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-right-close-r-hand-gesture",
+   "abby-pickup-relaxed-idle-mid-right-r-hand-gesture"
+  ],
+  "abby-pickup-tense-idle-high": [
+   "abby-pickup-tense-idle-high-forward-close-l-hand-gesture",
+   "abby-pickup-tense-idle-high-forward-close-r-hand-gesture",
+   "abby-pickup-tense-idle-high-forward-l-hand-gesture",
+   "abby-pickup-tense-idle-high-forward-r-hand-gesture",
+   "abby-pickup-tense-idle-high-left-close-l-hand-gesture",
+   "abby-pickup-tense-idle-high-left-l-hand-gesture",
+   "abby-pickup-tense-idle-high-right-close-r-hand-gesture",
+   "abby-pickup-tense-idle-high-right-r-hand-gesture"
+  ],
+  "abby-pickup-tense-idle-mid": [
+   "abby-pickup-tense-idle-mid-forward-close-l-hand-gesture",
+   "abby-pickup-tense-idle-mid-forward-close-r-hand-gesture",
+   "abby-pickup-tense-idle-mid-forward-l-hand-gesture",
+   "abby-pickup-tense-idle-mid-forward-r-hand-gesture",
+   "abby-pickup-tense-idle-mid-left-close-l-hand-gesture",
+   "abby-pickup-tense-idle-mid-left-l-hand-gesture",
+   "abby-pickup-tense-idle-mid-right-close-r-hand-gesture",
+   "abby-pickup-tense-idle-mid-right-r-hand-gesture"
+  ],
+  "abby-pickup-uneasy-idle-high": [
+   "abby-pickup-uneasy-idle-high-forward-l-hand-gesture",
+   "abby-pickup-uneasy-idle-high-forward-r-hand-gesture",
+   "abby-pickup-uneasy-idle-high-left-l-hand-gesture",
+   "abby-pickup-uneasy-idle-high-right-r-hand-gesture"
+  ],
+  "abby-pickup-uneasy-idle-low": [
+   "abby-pickup-uneasy-idle-low-forward-l-hand-gesture",
+   "abby-pickup-uneasy-idle-low-forward-r-hand-gesture",
+   "abby-pickup-uneasy-idle-low-left-l-hand-gesture",
+   "abby-pickup-uneasy-idle-low-right-r-hand-gesture"
+  ],
+  "abby-pickup-uneasy-idle-mid": [
+   "abby-pickup-uneasy-idle-mid-forward-l-hand-gesture",
+   "abby-pickup-uneasy-idle-mid-forward-r-hand-gesture",
+   "abby-pickup-uneasy-idle-mid-left-l-hand-gesture",
+   "abby-pickup-uneasy-idle-mid-right-r-hand-gesture"
+  ],
+  "ellie-pickup-crouch-idle-floor": [
+   "ellie-pickup-crouch-idle-floor-back-l-hand-gesture",
+   "ellie-pickup-crouch-idle-floor-back-r-hand-gesture",
+   "ellie-pickup-crouch-idle-floor-forward-l-hand-gesture",
+   "ellie-pickup-crouch-idle-floor-forward-r-hand-gesture",
+   "ellie-pickup-crouch-idle-floor-left-l-hand-gesture",
+   "ellie-pickup-crouch-idle-floor-right-r-hand-gesture"
+  ],
+  "ellie-pickup-crouch-idle-high": [
+   "ellie-pickup-crouch-idle-high-forward-l-hand-gesture",
+   "ellie-pickup-crouch-idle-high-forward-r-hand-gesture",
+   "ellie-pickup-crouch-idle-high-left-l-hand-gesture",
+   "ellie-pickup-crouch-idle-high-right-r-hand-gesture"
+  ],
+  "ellie-pickup-crouch-idle-low": [
+   "ellie-pickup-crouch-idle-low-forward-l-hand-gesture",
+   "ellie-pickup-crouch-idle-low-forward-r-hand-gesture",
+   "ellie-pickup-crouch-idle-low-left-l-hand-gesture",
+   "ellie-pickup-crouch-idle-low-right-r-hand-gesture"
+  ],
+  "ellie-pickup-crouch-idle-mid": [
+   "ellie-pickup-crouch-idle-mid-forward-l-hand-gesture",
+   "ellie-pickup-crouch-idle-mid-forward-r-hand-gesture",
+   "ellie-pickup-crouch-idle-mid-left-l-hand-gesture",
+   "ellie-pickup-crouch-idle-mid-right-r-hand-gesture"
+  ],
+  "ellie-pickup-prone-idle-10cm": [
+   "ellie-pickup-prone-idle-10cm-back-l-hand-gesture",
+   "ellie-pickup-prone-idle-10cm-back-r-hand-gesture",
+   "ellie-pickup-prone-idle-10cm-forward-l-hand-gesture",
+   "ellie-pickup-prone-idle-10cm-forward-r-hand-gesture",
+   "ellie-pickup-prone-idle-10cm-left-l-hand-gesture",
+   "ellie-pickup-prone-idle-10cm-right-r-hand-gesture"
+  ],
+  "ellie-pickup-relaxed-idle-80cm": [
+   "ellie-pickup-relaxed-idle-80cm-forward-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-80cm-forward-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-80cm-left-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-80cm-right-r-hand-gesture"
+  ],
+  "ellie-pickup-relaxed-idle-high": [
+   "ellie-pickup-relaxed-idle-high-forward-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-forward-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-forward-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-forward-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-left-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-left-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-right-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-high-right-r-hand-gesture"
+  ],
+  "ellie-pickup-relaxed-idle-low": [
+   "ellie-pickup-relaxed-idle-low-forward-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-forward-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-forward-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-forward-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-left-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-left-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-right-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-low-right-r-hand-gesture"
+  ],
+  "ellie-pickup-relaxed-idle-mid": [
+   "ellie-pickup-relaxed-idle-mid-forward-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-forward-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-forward-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-forward-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-left-close-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-left-l-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-right-close-r-hand-gesture",
+   "ellie-pickup-relaxed-idle-mid-right-r-hand-gesture"
+  ],
+  "ellie-pickup-tense-idle-high": [
+   "ellie-pickup-tense-idle-high-forward-close-l-hand-gesture",
+   "ellie-pickup-tense-idle-high-forward-close-r-hand-gesture",
+   "ellie-pickup-tense-idle-high-forward-l-hand-gesture",
+   "ellie-pickup-tense-idle-high-forward-r-hand-gesture",
+   "ellie-pickup-tense-idle-high-left-close-l-hand-gesture",
+   "ellie-pickup-tense-idle-high-left-l-hand-gesture",
+   "ellie-pickup-tense-idle-high-right-close-r-hand-gesture",
+   "ellie-pickup-tense-idle-high-right-r-hand-gesture"
+  ],
+  "ellie-pickup-tense-idle-mid": [
+   "ellie-pickup-tense-idle-mid-forward-close-l-hand-gesture",
+   "ellie-pickup-tense-idle-mid-forward-close-r-hand-gesture",
+   "ellie-pickup-tense-idle-mid-forward-l-hand-gesture",
+   "ellie-pickup-tense-idle-mid-forward-r-hand-gesture",
+   "ellie-pickup-tense-idle-mid-left-close-l-hand-gesture",
+   "ellie-pickup-tense-idle-mid-left-l-hand-gesture",
+   "ellie-pickup-tense-idle-mid-right-close-r-hand-gesture",
+   "ellie-pickup-tense-idle-mid-right-r-hand-gesture"
+  ],
+  "ellie-pickup-uneasy-idle-high": [
+   "ellie-pickup-uneasy-idle-high-forward-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-high-forward-r-hand-gesture",
+   "ellie-pickup-uneasy-idle-high-left-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-high-right-r-hand-gesture"
+  ],
+  "ellie-pickup-uneasy-idle-low": [
+   "ellie-pickup-uneasy-idle-low-forward-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-low-forward-r-hand-gesture",
+   "ellie-pickup-uneasy-idle-low-left-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-low-right-r-hand-gesture"
+  ],
+  "ellie-pickup-uneasy-idle-mid": [
+   "ellie-pickup-uneasy-idle-mid-forward-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-mid-forward-r-hand-gesture",
+   "ellie-pickup-uneasy-idle-mid-left-l-hand-gesture",
+   "ellie-pickup-uneasy-idle-mid-right-r-hand-gesture"
+  ],
+  "ellie-scav-tense-crouch-pickup-0cm": [
+   "ellie-scav-tense-crouch-pickup-0cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-crouch-pickup-0cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-crouch-pickup-100cm": [
+   "ellie-scav-tense-crouch-pickup-100cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-crouch-pickup-100cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-crouch-pickup-60cm": [
+   "ellie-scav-tense-crouch-pickup-60cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-crouch-pickup-60cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-pickup-110cm": [
+   "ellie-scav-tense-pickup-110cm-left-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-110cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-pickup-110cm-right-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-110cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-pickup-160cm": [
+   "ellie-scav-tense-pickup-160cm-left-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-160cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-pickup-160cm-right-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-160cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-pickup-50cm": [
+   "ellie-scav-tense-pickup-50cm-left-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-50cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-pickup-50cm-right-arm--move-bw-part--gesture",
+   "ellie-scav-tense-pickup-50cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-sprint-pickup-110cm": [
+   "ellie-scav-tense-sprint-pickup-110cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-sprint-pickup-110cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-sprint-pickup-160cm": [
+   "ellie-scav-tense-sprint-pickup-160cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-sprint-pickup-160cm-right-arm--move-fw-part--gesture"
+  ],
+  "ellie-scav-tense-sprint-pickup-70cm": [
+   "ellie-scav-tense-sprint-pickup-70cm-left-arm--move-fw-part--gesture",
+   "ellie-scav-tense-sprint-pickup-70cm-right-arm--move-fw-part--gesture"
+  ]
+ },
+ "count": 178
+}

@@ -1,0 +1,393 @@
+{
+ "_doc": "Safe instances in TLOU2R PC 1.6 from activities.bin safes-found objectives (tools/analysis/safes_extract_activities.py). Codes are spawner tags in level packages (not in DC). Note mapping by name/group is INFERRED except bit 13.",
+ "trophy_mask_all": 16383,
+ "safes": [
+  {
+   "safe_index_bit": 0,
+   "objective_id": "flo-flood-gate-safe",
+   "objective_text": "OBJECTIVE_FLO_FLOOD_GATE_SAFE",
+   "activity": "flooded-city-collectibles",
+   "chapter_title_sid": "CHAPTER_21_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-flo-rapids-gate-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[0]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 1,
+   "objective_id": "fob-bakery-safe",
+   "objective_text": "OBJECTIVE_FOB_BAKERY_SAFE",
+   "activity": "hostile-territory-collectibles",
+   "chapter_title_sid": "CHAPTER_28_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-fob-chinatown-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[1]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 2,
+   "objective_id": "fob-gun-cache-safe",
+   "objective_text": "OBJECTIVE_FOB_GUN_CACHE_SAFE",
+   "activity": "on-foot-collectibles",
+   "chapter_title_sid": "CHAPTER_25_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-fob-on-foot-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[2]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 3,
+   "objective_id": "med-infected-apartment-safe",
+   "objective_text": "OBJECTIVE_MED_INFECTED_APARTMENT_SAFE",
+   "activity": "sky-bridge-collectibles",
+   "chapter_title_sid": "CHAPTER_33_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[3]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 4,
+   "objective_id": "med-gym-safe",
+   "objective_text": "OBJECTIVE_MED_GYM_SAFE",
+   "activity": "descent-collectibles",
+   "chapter_title_sid": "CHAPTER_34_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[4]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 5,
+   "objective_id": "nor-pharmacy-safe",
+   "objective_text": "OBJECTIVE_NOR_PHARMACY_SAFE",
+   "activity": "finding-nora-collectibles",
+   "chapter_title_sid": "CHAPTER_18_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-nor-pharmacy-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[5]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 6,
+   "objective_id": "nor-ambush-apartment-safe",
+   "objective_text": "OBJECTIVE_NOR_AMBUSH_APARTMENT_SAFE",
+   "activity": "finding-nora-collectibles",
+   "chapter_title_sid": "CHAPTER_18_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-nor-apt-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[6]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 7,
+   "objective_id": "pat-supermarket-safe",
+   "objective_text": "OBJECTIVE_PAT_SUPERMARKET_SAFE",
+   "activity": "patrol-collectibles",
+   "chapter_title_sid": "CHAPTER_4_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[7]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 8,
+   "objective_id": "res-runner-garage-safe",
+   "objective_text": "OBJECTIVE_RES_RUNNER_GARAGE_SAFE",
+   "activity": "hillcrest-collectibles",
+   "chapter_title_sid": "CHAPTER_16_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-res-garage-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[8]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 9,
+   "objective_id": "sea-courthouse-safe",
+   "objective_text": "OBJECTIVE_SEA_COURTHOUSE_SAFE",
+   "activity": "downtown-collectibles",
+   "chapter_title_sid": "CHAPTER_9_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[9]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 10,
+   "objective_id": "sea-west-gate-safe",
+   "objective_text": "OBJECTIVE_SEA_WEST_GATE_SAFE",
+   "activity": "downtown-collectibles",
+   "chapter_title_sid": "CHAPTER_9_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[10]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 11,
+   "objective_id": "ski-ferry-safe",
+   "objective_text": "OBJECTIVE_SKI_FERRY_SAFE",
+   "activity": "coast-1-collectibles",
+   "chapter_title_sid": "CHAPTER_31_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-ski-coastal-explore-boat-mid-safe-note",
+   "code_note_confidence": "INFERRED",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[11]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 12,
+   "objective_id": "wat-thrift-store-safe",
+   "objective_text": "OBJECTIVE_WAT_THRIFT_STORE_SAFE",
+   "activity": "capitol-hill-collectibles",
+   "chapter_title_sid": "CHAPTER_11_COLLECTIBLE_TITLE",
+   "script": "ss/ss-tumbler-safe",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": null,
+   "code_note_confidence": "UNKNOWN",
+   "persistence": [
+    "ss-svar(opened,self)",
+    "svar-bit safes-found[12]",
+    "svar safes-opened"
+   ]
+  },
+  {
+   "safe_index_bit": 13,
+   "objective_id": "sea-bank-safe",
+   "objective_text": "OBJECTIVE_SEA_BANK_SAFE",
+   "activity": "downtown-collectibles",
+   "chapter_title_sid": "CHAPTER_9_COLLECTIBLE_TITLE",
+   "script": "ss-seattlearrival/ss-sea-horse-bank-vault",
+   "combination_source": "spawner tag code-for-safe (level data, not in corpus)",
+   "combination": null,
+   "combination_status": "UNKNOWN",
+   "code_note": "collectible-sea-vault-code-note",
+   "code_note_confidence": "CONFIRMED",
+   "persistence": [
+    "svar sea-horse-bank-vault",
+    "svar-bit safes-found[13]",
+    "svar safes-opened"
+   ]
+  }
+ ],
+ "non_checklist_safes": [
+  {
+   "script": "ss-rogue/ss-rogue-tumbler-safe",
+   "mode": "No Return siege safe",
+   "combination": "not entered (dial minigame unreachable; code acquired via siege-safe-code-acquired from ss-siege-manager)",
+   "code_items": [
+    "siege-treasure-for-safe-0",
+    "siege-treasure-for-safe-1",
+    "siege-treasure-for-safe-2",
+    "siege-collectible-alt-0..3 (spawners)"
+   ],
+   "status": "CONFIRMED"
+  },
+  {
+   "script": "ss-rogue/ss-rogue-safe + ss-rogue-safe-combo",
+   "mode": "legacy rogue lockbox safe-res-rogue-1",
+   "code_items": [
+    "collectible-rogue-test-note",
+    "collectible-rogue-safe-note-pickup-1"
+   ],
+   "status": "INFERRED legacy"
+  },
+  {
+   "script": "ss-test/ss-test-mdavies/ss-tumbler-safe-test",
+   "mode": "prototype (modules-debug)",
+   "status": "CONFIRMED"
+  }
+ ],
+ "code_notes_in_treasures_bin": [
+  {
+   "treasure": "collectible-sea-vault-code-note",
+   "title": "HUD_COL_NOTE_SEA_VAULT_CODE_NOTE",
+   "text": "HUD_COL_NOTE_SEA_VAULT_CODE_NOTE_TEXT",
+   "group": "downtown",
+   "spawner_or_region": "sea-hub-bank-robber-combination-note"
+  },
+  {
+   "treasure": "collectible-sea-vault-hunter-note",
+   "title": "HUD_COL_NOTE_SEA_BANK_NOTE",
+   "text": "HUD_COL_NOTE_SEA_BANK_NOTE_TEXT",
+   "group": "downtown",
+   "spawner_or_region": "sea-hub-vault-hunter-note"
+  },
+  {
+   "treasure": "collectible-wat-doorcode",
+   "title": "HUD_COL_NOTE_WAT_DOORCODE",
+   "text": "HUD_COL_NOTE_WAT_DOORCODE_TEXT_BACK",
+   "group": "tunnels",
+   "spawner_or_region": "wat-infected-tunnels-facility-explore-breakroom-code"
+  },
+  {
+   "treasure": "collectible-wat-doorcode-soda",
+   "title": "HUD_COL_NOTE_WAT_DOORCODE_SODA",
+   "text": "HUD_COL_NOTE_WAT_DOORCODE_SODA_TEXT",
+   "group": "tunnels",
+   "spawner_or_region": "wat-tunnels-facility-soda-note"
+  },
+  {
+   "treasure": "collectible-res-garage-safe-note",
+   "title": "HUD_COL_NOTE_RES_INFECTED_STREETS_SAFE",
+   "text": "HUD_COL_NOTE_RES_INFECTED_BAR_SAFE_TEXT",
+   "group": "hillcrest",
+   "spawner_or_region": "res-jesse-infected-streets-code"
+  },
+  {
+   "treasure": "collectible-nor-apt-safe-note",
+   "title": "HUD_COL_NOTE_NOR_APT_SAFE",
+   "text": "HUD_COL_NOTE_NOR_APT_SAFE_NOTE_TEXT",
+   "group": "finding-nora",
+   "spawner_or_region": "nor-ellie-alone-apt-safe-note"
+  },
+  {
+   "treasure": "collectible-nor-pharmacy-safe-note",
+   "title": "HUD_COL_NOTE_NOR_PHARMACY_SAFE_NOTE",
+   "text": "HUD_COL_NOTE_NOR_PHARMACY_SAFE_NOTE_TEXT",
+   "group": "finding-nora",
+   "spawner_or_region": "nor-hospital-approach-swim-safe-note"
+  },
+  {
+   "treasure": "collectible-flo-rapids-gate-safe-note",
+   "title": "HUD_COL_NOTE_FLO_RAPIDS_GATE_SAFE_NOTE",
+   "text": "HUD_COL_NOTE_FLO_RAPIDS_GATE_SAFE_NOTE_TEXT",
+   "group": "flooded-city",
+   "spawner_or_region": "flo-boat-explore-gate-safe-code-note"
+  },
+  {
+   "treasure": "collectible-fob-on-foot-safe-note",
+   "title": "HUD_COL_NOTE_FOB_ON_FOOT_SAFE",
+   "text": "HUD_COL_NOTE_FOB_ON_FOOT_SAFE_TEXT",
+   "group": "on-foot",
+   "spawner_or_region": "fob-on-foot-gun-cache-note"
+  },
+  {
+   "treasure": "collectible-fob-chinatown-safe-note",
+   "title": "HUD_COL_NOTE_FOB_CHINATOWN_SAFE_NOTE",
+   "text": "HUD_COL_NOTE_FOB_CHINATOWN_SAFE_NOTE_TEXT",
+   "group": "hostile-territory",
+   "spawner_or_region": "fob-hostile-territory-bakery-safe-note"
+  },
+  {
+   "treasure": "collectible-ski-coastal-explore-boat-mid-safe-note",
+   "title": "HUD_COL_NOTE_SKI_BOAT_MID",
+   "text": "HUD_COL_NOTE_SKI_BOAT_MID_TEXT",
+   "group": "coast-1",
+   "spawner_or_region": "ski-coastal-explore-boat-mid-safe-note"
+  },
+  {
+   "treasure": "collectible-rogue-test-note",
+   "title": "HUD_COL_NOTE_RES_INFECTED_STREETS_SAFE",
+   "text": "HUD_COL_NOTE_RES_INFECTED_BAR_SAFE_TEXT",
+   "group": "rogue",
+   "spawner_or_region": "res-jesse-infected-streets-code"
+  },
+  {
+   "treasure": "siege-treasure-for-safe-0",
+   "title": "HUD_ROGUE_SIEGE_SAFE_CODE",
+   "text": "HUD_ROGUE_SIEGE_SAFE_CODE_DESC",
+   "group": "rogue",
+   "spawner_or_region": "res-jesse-infected-streets-code"
+  },
+  {
+   "treasure": "siege-treasure-for-safe-1",
+   "title": "HUD_ROGUE_SEIGE_SAFE_CODE",
+   "text": "SEIGE_SAFE_CODE_DESC_1",
+   "group": "rogue",
+   "spawner_or_region": "res-jesse-infected-streets-code"
+  },
+  {
+   "treasure": "siege-treasure-for-safe-2",
+   "title": "SEIGE_SAFE_CODE",
+   "text": "SEIGE_SAFE_CODE_DESC_2",
+   "group": "rogue",
+   "spawner_or_region": "res-jesse-infected-streets-code"
+  }
+ ]
+}

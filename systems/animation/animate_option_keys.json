@@ -1,0 +1,3546 @@
+{
+ "source": "dconstruct .dcpl, every #%alloc-array(single-frame,16,N,1) consumed by animate_/wait-animate_",
+ "records": 12150,
+ "consumers": {
+  "animate_": 8440,
+  "wait-animate_": 3710
+ },
+ "pairs_per_call": {
+  "1": 2182,
+  "2": 1925,
+  "3": 4205,
+  "4": 1808,
+  "5": 1219,
+  "6": 439,
+  "7": 219,
+  "8": 67,
+  "9": 53,
+  "10": 19,
+  "11": 6,
+  "12": 3,
+  "13": 1,
+  "14": 1,
+  "15": 2,
+  "16": 1
+ },
+ "native_param_type": "ssAnimateParams (dconstruct boxed-type table)",
+ "keys": [
+  {
+   "key": 0,
+   "meaning": "flag-0 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "NPC IGC mostly; co-occurs with 36/20/24",
+   "count": 45,
+   "value_types": {
+    "u8": 44,
+    "u64": 1
+   },
+   "top_values": [
+    [
+     "1",
+     31
+    ],
+    [
+     "0",
+     13
+    ],
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-spawner-locator",
+     1
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 29,
+    "animate_": 16
+   },
+   "target_kind": {
+    "self": 5,
+    "other": 40
+   }
+  },
+  {
+   "key": 1,
+   "meaning": "flag-1 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "player+NPC; co-occurs with 2/3/4; set by drawer/cabinet/safe player anims",
+   "count": 119,
+   "value_types": {
+    "u8": 119
+   },
+   "top_values": [
+    [
+     "1",
+     113
+    ],
+    [
+     "0",
+     6
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 64,
+    "wait-animate_": 55
+   },
+   "target_kind": {
+    "self": 10,
+    "other": 30,
+    "player": 79
+   }
+  },
+  {
+   "key": 2,
+   "meaning": "flag-2 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "co-occurs with 1/3/4",
+   "count": 70,
+   "value_types": {
+    "u8": 70
+   },
+   "top_values": [
+    [
+     "1",
+     69
+    ],
+    [
+     "0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 36,
+    "wait-animate_": 34
+   },
+   "target_kind": {
+    "other": 41,
+    "self": 14,
+    "player": 15
+   }
+  },
+  {
+   "key": 3,
+   "meaning": "flag-3 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "357 uses; co-occurs with 1/4/5; drawer/cabinet player anims",
+   "count": 357,
+   "value_types": {
+    "u8": 357
+   },
+   "top_values": [
+    [
+     "1",
+     346
+    ],
+    [
+     "0",
+     11
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 176,
+    "wait-animate_": 181
+   },
+   "target_kind": {
+    "other": 167,
+    "self": 27,
+    "player": 163
+   }
+  },
+  {
+   "key": 4,
+   "meaning": "flag-4 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "co-occurs with 2/3/51",
+   "count": 140,
+   "value_types": {
+    "u8": 140
+   },
+   "top_values": [
+    [
+     "1",
+     140
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 56,
+    "animate_": 84
+   },
+   "target_kind": {
+    "self": 18,
+    "other": 93,
+    "player": 29
+   }
+  },
+  {
+   "key": 5,
+   "meaning": "flag-5 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "player-only; drawer/cabinet set 5+87 together",
+   "count": 36,
+   "value_types": {
+    "u8": 36
+   },
+   "top_values": [
+    [
+     "1",
+     36
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 17,
+    "animate_": 19
+   },
+   "target_kind": {
+    "player": 33,
+    "other": 3
+   }
+  },
+  {
+   "key": 6,
+   "meaning": "flag-6 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "NPC; vehicle passengers",
+   "count": 38,
+   "value_types": {
+    "u8": 38
+   },
+   "top_values": [
+    [
+     "1",
+     35
+    ],
+    [
+     "arg_3",
+     2
+    ],
+    [
+     "arg_0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 25,
+    "wait-animate_": 13
+   },
+   "target_kind": {
+    "self": 2,
+    "other": 36
+   }
+  },
+  {
+   "key": 7,
+   "meaning": "flag-7 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "vehicle/turret/bipod contexts (with 49/70/71/85)",
+   "count": 36,
+   "value_types": {
+    "u8": 36
+   },
+   "top_values": [
+    [
+     "1",
+     35
+    ],
+    [
+     "0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 18,
+    "animate_": 18
+   },
+   "target_kind": {
+    "player": 25,
+    "other": 11
+   }
+  },
+  {
+   "key": 8,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 2,
+    "wait-animate_": 3
+   },
+   "target_kind": {
+    "player": 5
+   }
+  },
+  {
+   "key": 9,
+   "meaning": "flag-9 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "cinematic contexts",
+   "count": 24,
+   "value_types": {
+    "u8": 24
+   },
+   "top_values": [
+    [
+     "1",
+     22
+    ],
+    [
+     "0",
+     2
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 24
+   },
+   "target_kind": {
+    "self": 10,
+    "other": 14
+   }
+  },
+  {
+   "key": 10,
+   "meaning": "ap-ref (align bound-frame / locator)",
+   "confidence": "CONFIRMED",
+   "evidence": "values are get-spawner-locator/get-bound-frame/get-object-locator; wrapper animate-start(obj,anim,locator,...)",
+   "count": 11021,
+   "value_types": {
+    "u64": 11015,
+    "?": 6
+   },
+   "top_values": [
+    [
+     "<expr>",
+     11010
+    ],
+    [
+     "var_9",
+     5
+    ],
+    [
+     "arg_2",
+     3
+    ],
+    [
+     "arg_1",
+     2
+    ],
+    [
+     "var_4",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-spawner-locator",
+     9691
+    ],
+    [
+     "fn:get-bound-frame",
+     534
+    ],
+    [
+     "fn:get-object-locator",
+     350
+    ],
+    [
+     "fn:get-joint-parented-bound-frame",
+     176
+    ],
+    [
+     "fn:get-object-parented-bound-frame",
+     90
+    ],
+    [
+     "fn:get-joint-locator",
+     65
+    ],
+    [
+     "fn:boat-get-ap-ref",
+     48
+    ],
+    [
+     "var:ap",
+     44
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 3468,
+    "animate_": 7553
+   },
+   "target_kind": {
+    "other": 7936,
+    "player": 2555,
+    "self": 530
+   }
+  },
+  {
+   "key": 12,
+   "meaning": "camera mode (i32 enum)",
+   "confidence": "HIGH",
+   "evidence": "squeeze-through passes gap-dodge-camera-mode(); drawer passes camera-required-low? (1/0); boat 9",
+   "count": 47,
+   "value_types": {
+    "i32": 47
+   },
+   "top_values": [
+    [
+     "8",
+     14
+    ],
+    [
+     "<expr>",
+     7
+    ],
+    [
+     "5",
+     7
+    ],
+    [
+     "1",
+     4
+    ],
+    [
+     "9",
+     4
+    ],
+    [
+     "2",
+     3
+    ],
+    [
+     "11",
+     3
+    ],
+    [
+     "4",
+     3
+    ],
+    [
+     "6",
+     2
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-self-id",
+     2
+    ],
+    [
+     "fn:gap-dodge-camera-mode",
+     1
+    ],
+    [
+     "fn:transform-world-to-localspace",
+     1
+    ],
+    [
+     "fn:vector-between-objects",
+     1
+    ],
+    [
+     "fn:get-spawner-locator",
+     1
+    ],
+    [
+     "fn:get-closest-npc-to-locator",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 18,
+    "wait-animate_": 29
+   },
+   "target_kind": {
+    "player": 47
+   }
+  },
+  {
+   "key": 13,
+   "meaning": "collision / ground mode (i32 enum 0/2/3/5)",
+   "confidence": "INFERRED",
+   "evidence": "ss-examine: 2 if tag collision-ground? else 0; anim-npc has s_script-full-body-*-collide states",
+   "count": 246,
+   "value_types": {
+    "i32": 246
+   },
+   "top_values": [
+    [
+     "2",
+     182
+    ],
+    [
+     "<expr>",
+     21
+    ],
+    [
+     "5",
+     17
+    ],
+    [
+     "3",
+     14
+    ],
+    [
+     "0",
+     5
+    ],
+    [
+     "4",
+     3
+    ],
+    [
+     "10",
+     2
+    ],
+    [
+     "arg_7",
+     1
+    ],
+    [
+     "8",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:blend-to-enter-2",
+     1
+    ],
+    [
+     "var:blend-to-idle",
+     1
+    ],
+    [
+     "var:override-move-settings",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 112,
+    "wait-animate_": 134
+   },
+   "target_kind": {
+    "player": 99,
+    "other": 119,
+    "self": 28
+   }
+  },
+  {
+   "key": 14,
+   "meaning": "ap-ref channel name",
+   "confidence": "CONFIRMED",
+   "evidence": "values apReference-*, car, humvee, boat-AP-ref",
+   "count": 340,
+   "value_types": {
+    "u64": 340
+   },
+   "top_values": [
+    [
+     "apReference-truck",
+     54
+    ],
+    [
+     "car",
+     39
+    ],
+    [
+     "apReference-player",
+     20
+    ],
+    [
+     "apReference-spine-d",
+     20
+    ],
+    [
+     "<expr>",
+     15
+    ],
+    [
+     "apReference-bloater",
+     14
+    ],
+    [
+     "humvee",
+     11
+    ],
+    [
+     "apReference-abby-grapple-AP",
+     10
+    ],
+    [
+     "boat-AP-ref",
+     10
+    ],
+    [
+     "apReference-low",
+     10
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     6
+    ],
+    [
+     "fn:ss-workbench--get-workbench-weapon-def-based-on-current-weapon",
+     6
+    ],
+    [
+     "var:interior-apref-ch",
+     3
+    ],
+    [
+     "fn:event-arg-symbol",
+     2
+    ],
+    [
+     "var:enter-anim",
+     1
+    ],
+    [
+     "fn:get-best-entry-phase",
+     1
+    ],
+    [
+     "fn:get-bound-frame",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 240,
+    "wait-animate_": 100
+   },
+   "target_kind": {
+    "other": 222,
+    "player": 97,
+    "self": 21
+   }
+  },
+  {
+   "key": 16,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 4,
+   "value_types": {
+    "u8": 4
+   },
+   "top_values": [
+    [
+     "1",
+     4
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 1,
+    "wait-animate_": 3
+   },
+   "target_kind": {
+    "other": 2,
+    "player": 2
+   }
+  },
+  {
+   "key": 17,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 4,
+    "animate_": 1
+   },
+   "target_kind": {
+    "player": 2,
+    "other": 3
+   }
+  },
+  {
+   "key": 19,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 5
+   },
+   "target_kind": {
+    "other": 3,
+    "player": 2
+   }
+  },
+  {
+   "key": 20,
+   "meaning": "end frame (f32, frames)",
+   "confidence": "HIGH",
+   "evidence": "abort-frame, bow-swap-frame, med-ratking-squeeze-get-end-frame(); npc-move-to-start-in-motion: 18+fade*30",
+   "count": 256,
+   "value_types": {
+    "i32": 2,
+    "f32": 253,
+    "u64": 1
+   },
+   "top_values": [
+    [
+     "<expr>",
+     15
+    ],
+    [
+     "1365.00",
+     10
+    ],
+    [
+     "264.00",
+     8
+    ],
+    [
+     "150.00",
+     7
+    ],
+    [
+     "30.00",
+     6
+    ],
+    [
+     "1259.00",
+     6
+    ],
+    [
+     "110.00",
+     5
+    ],
+    [
+     "70.00",
+     5
+    ],
+    [
+     "145.00",
+     5
+    ],
+    [
+     "155.00",
+     5
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     19
+    ],
+    [
+     "fn:get-animation-frame",
+     2
+    ],
+    [
+     "var:frame-to-gameplay-ik",
+     1
+    ],
+    [
+     "fn:med-ratking-squeeze-get-end-frame",
+     1
+    ],
+    [
+     "var:abort-frame",
+     1
+    ],
+    [
+     "var:bow-swap-frame",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 113,
+    "wait-animate_": 143
+   },
+   "target_kind": {
+    "other": 193,
+    "player": 46,
+    "self": 17
+   }
+  },
+  {
+   "key": 22,
+   "meaning": "end phase (f32 0..1)",
+   "confidence": "HIGH",
+   "evidence": "end-phase-for-first-anim; typical 0.5-0.95",
+   "count": 59,
+   "value_types": {
+    "f32": 59
+   },
+   "top_values": [
+    [
+     "<expr>",
+     6
+    ],
+    [
+     "0.90",
+     6
+    ],
+    [
+     "0.50",
+     4
+    ],
+    [
+     "0.75",
+     4
+    ],
+    [
+     "0.60",
+     4
+    ],
+    [
+     "0.45",
+     3
+    ],
+    [
+     "0.87",
+     3
+    ],
+    [
+     "0.22",
+     3
+    ],
+    [
+     "0.70",
+     3
+    ],
+    [
+     "0.30",
+     2
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:end-phase-for-first-anim",
+     2
+    ],
+    [
+     "fn:var-approach-target",
+     2
+    ],
+    [
+     "fn:get-locator-distance",
+     1
+    ],
+    [
+     "fn:get-object-locator",
+     1
+    ],
+    [
+     "fn:get-animation-entry",
+     1
+    ],
+    [
+     "fn:get-animation-duration",
+     1
+    ],
+    [
+     "fn:rotate-vector",
+     1
+    ],
+    [
+     "fn:quat-from-axis-angle",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 14,
+    "wait-animate_": 45
+   },
+   "target_kind": {
+    "other": 37,
+    "player": 18,
+    "self": 4
+   }
+  },
+  {
+   "key": 24,
+   "meaning": "exit mode (i32 enum)",
+   "confidence": "HIGH (name) / INFERRED (values)",
+   "evidence": "squeeze-through passes gap-dodge-exit-mode(); var exit-mode; drawer: 18 if crouch else 1",
+   "count": 547,
+   "value_types": {
+    "i32": 547
+   },
+   "top_values": [
+    [
+     "2",
+     226
+    ],
+    [
+     "18",
+     88
+    ],
+    [
+     "<expr>",
+     51
+    ],
+    [
+     "9",
+     31
+    ],
+    [
+     "14",
+     26
+    ],
+    [
+     "20",
+     19
+    ],
+    [
+     "10",
+     15
+    ],
+    [
+     "1",
+     14
+    ],
+    [
+     "16",
+     12
+    ],
+    [
+     "6",
+     11
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:ddict-get",
+     4
+    ],
+    [
+     "var:exit-mode",
+     2
+    ],
+    [
+     "fn:lerp-scale",
+     2
+    ],
+    [
+     "fn:rogue-get-next-random-number-for-category",
+     2
+    ],
+    [
+     "fn:say",
+     2
+    ],
+    [
+     "fn:gap-dodge-exit-mode",
+     1
+    ],
+    [
+     "fn:rotate-locator-lookat",
+     1
+    ],
+    [
+     "fn:get-weapon-def-id",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 186,
+    "wait-animate_": 361
+   },
+   "target_kind": {
+    "player": 222,
+    "other": 317,
+    "self": 8
+   }
+  },
+  {
+   "key": 25,
+   "meaning": "reference object (u64)",
+   "confidence": "UNKNOWN",
+   "evidence": "1 use: drawer scavenge-exit passes current-interactable-scav",
+   "count": 1,
+   "value_types": {
+    "u64": 1
+   },
+   "top_values": [
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:current-interactable-scav",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 1
+   },
+   "target_kind": {
+    "player": 1
+   }
+  },
+  {
+   "key": 27,
+   "meaning": "fade-in curve (u8 enum or curve symbol)",
+   "confidence": "HIGH",
+   "evidence": "get-curve-type(); uniform-s/ease-in symbols; paired with 28 in code order",
+   "count": 1106,
+   "value_types": {
+    "u8": 1072,
+    "u64": 31,
+    "f32": 3
+   },
+   "top_values": [
+    [
+     "2",
+     915
+    ],
+    [
+     "4",
+     51
+    ],
+    [
+     "3",
+     33
+    ],
+    [
+     "uniform-s",
+     27
+    ],
+    [
+     "1",
+     14
+    ],
+    [
+     "25",
+     9
+    ],
+    [
+     "8",
+     9
+    ],
+    [
+     "<expr>",
+     8
+    ],
+    [
+     "9",
+     6
+    ],
+    [
+     "10",
+     6
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-curve-type",
+     7
+    ],
+    [
+     "var:anim-curve-id",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 626,
+    "wait-animate_": 480
+   },
+   "target_kind": {
+    "other": 609,
+    "player": 453,
+    "self": 44
+   }
+  },
+  {
+   "key": 28,
+   "meaning": "fade-in / blend-in seconds",
+   "confidence": "CONFIRMED",
+   "evidence": "blend-to-exit-2, fade-in-time, blend-time vars; simple-animate(obj,anim,spawner,fade-in,fade-out)",
+   "count": 8641,
+   "value_types": {
+    "f32": 8631,
+    "i32": 9,
+    "u64": 1
+   },
+   "top_values": [
+    [
+     "0.50",
+     4134
+    ],
+    [
+     "0.00",
+     1168
+    ],
+    [
+     "<expr>",
+     585
+    ],
+    [
+     "0.20",
+     531
+    ],
+    [
+     "0.30",
+     500
+    ],
+    [
+     "1.00",
+     319
+    ],
+    [
+     "0.60",
+     244
+    ],
+    [
+     "0.10",
+     221
+    ],
+    [
+     "0.70",
+     191
+    ],
+    [
+     "0.80",
+     133
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     298
+    ],
+    [
+     "var:blend-time",
+     11
+    ],
+    [
+     "var:fade-time",
+     11
+    ],
+    [
+     "var:fade-in-time",
+     9
+    ],
+    [
+     "var:cinematic-fade-time",
+     6
+    ],
+    [
+     "var:next-fade-time",
+     6
+    ],
+    [
+     "fn:ddict-get",
+     5
+    ],
+    [
+     "var:selection-fade-in-duration",
+     5
+    ]
+   ],
+   "consumer": {
+    "animate_": 5588,
+    "wait-animate_": 3053
+   },
+   "target_kind": {
+    "other": 5584,
+    "player": 2561,
+    "self": 496
+   }
+  },
+  {
+   "key": 29,
+   "meaning": "fade-out curve (u8 enum or curve symbol)",
+   "confidence": "HIGH",
+   "evidence": "animate-fade-out sets 29=arg next to 30; ease-out symbol",
+   "count": 786,
+   "value_types": {
+    "u8": 776,
+    "f32": 1,
+    "u64": 9
+   },
+   "top_values": [
+    [
+     "2",
+     648
+    ],
+    [
+     "4",
+     86
+    ],
+    [
+     "3",
+     27
+    ],
+    [
+     "<expr>",
+     6
+    ],
+    [
+     "ease-out",
+     6
+    ],
+    [
+     "uniform-s",
+     3
+    ],
+    [
+     "1",
+     3
+    ],
+    [
+     "arg_4",
+     1
+    ],
+    [
+     "1.00",
+     1
+    ],
+    [
+     "25",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-curve-type",
+     6
+    ]
+   ],
+   "consumer": {
+    "animate_": 434,
+    "wait-animate_": 352
+   },
+   "target_kind": {
+    "other": 465,
+    "player": 293,
+    "self": 28
+   }
+  },
+  {
+   "key": 30,
+   "meaning": "fade-out / blend-out seconds",
+   "confidence": "CONFIRMED",
+   "evidence": "blend-from-exit, anim-exit-fade-out, selection-fade-out-duration vars",
+   "count": 7483,
+   "value_types": {
+    "f32": 7476,
+    "i32": 4,
+    "u8": 1,
+    "u64": 2
+   },
+   "top_values": [
+    [
+     "0.50",
+     4044
+    ],
+    [
+     "0.00",
+     902
+    ],
+    [
+     "0.20",
+     380
+    ],
+    [
+     "1.00",
+     370
+    ],
+    [
+     "0.30",
+     364
+    ],
+    [
+     "0.60",
+     275
+    ],
+    [
+     "0.70",
+     204
+    ],
+    [
+     "<expr>",
+     197
+    ],
+    [
+     "0.10",
+     133
+    ],
+    [
+     "0.80",
+     119
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     266
+    ],
+    [
+     "var:blend-to-idle",
+     6
+    ],
+    [
+     "var:blend-to-enter-2",
+     4
+    ],
+    [
+     "var:blend-from-exit",
+     4
+    ],
+    [
+     "var:enter-to-idle-fade-time",
+     4
+    ],
+    [
+     "var:selection-fade-out-duration",
+     4
+    ],
+    [
+     "var:blend-from-idle",
+     2
+    ],
+    [
+     "var:blend-in-sec-to-cine",
+     2
+    ]
+   ],
+   "consumer": {
+    "animate_": 4694,
+    "wait-animate_": 2789
+   },
+   "target_kind": {
+    "other": 4913,
+    "player": 2170,
+    "self": 400
+   }
+  },
+  {
+   "key": 31,
+   "meaning": "loop",
+   "confidence": "CONFIRMED",
+   "evidence": "tag loop-idle?, idle-force-loop; player-script has s_script-*-loop state variants",
+   "count": 911,
+   "value_types": {
+    "u8": 911
+   },
+   "top_values": [
+    [
+     "1",
+     876
+    ],
+    [
+     "0",
+     32
+    ],
+    [
+     "<expr>",
+     2
+    ],
+    [
+     "arg_4",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:tag-specified?",
+     1
+    ],
+    [
+     "var:loop-idle?",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 885,
+    "wait-animate_": 26
+   },
+   "target_kind": {
+    "other": 631,
+    "player": 217,
+    "self": 63
+   }
+  },
+  {
+   "key": 32,
+   "meaning": "flag-32 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "261 uses; with 56 speed in stub-igc / bindpose / safe dial",
+   "count": 261,
+   "value_types": {
+    "u8": 261
+   },
+   "top_values": [
+    [
+     "1",
+     261
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 171,
+    "wait-animate_": 90
+   },
+   "target_kind": {
+    "other": 146,
+    "player": 99,
+    "self": 16
+   }
+  },
+  {
+   "key": 34,
+   "meaning": "flag-34 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "value sometimes object-anim-playing?(...)",
+   "count": 22,
+   "value_types": {
+    "u8": 22
+   },
+   "top_values": [
+    [
+     "1",
+     21
+    ],
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:object-anim-playing?",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 20,
+    "wait-animate_": 2
+   },
+   "target_kind": {
+    "other": 17,
+    "player": 5
+   }
+  },
+  {
+   "key": 35,
+   "meaning": "hand-IK mode? (i32 enum)",
+   "confidence": "INFERRED",
+   "evidence": "strong co-occurrence with 37/38 hand ap-refs",
+   "count": 64,
+   "value_types": {
+    "i32": 64
+   },
+   "top_values": [
+    [
+     "2",
+     24
+    ],
+    [
+     "5",
+     23
+    ],
+    [
+     "1",
+     7
+    ],
+    [
+     "3",
+     4
+    ],
+    [
+     "6",
+     3
+    ],
+    [
+     "4",
+     2
+    ],
+    [
+     "7",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 21,
+    "wait-animate_": 43
+   },
+   "target_kind": {
+    "other": 14,
+    "self": 3,
+    "player": 47
+   }
+  },
+  {
+   "key": 36,
+   "meaning": "flag-36 (i32 0/1)",
+   "confidence": "UNKNOWN",
+   "evidence": "rare",
+   "count": 18,
+   "value_types": {
+    "i32": 18
+   },
+   "top_values": [
+    [
+     "0",
+     9
+    ],
+    [
+     "1",
+     9
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 17,
+    "animate_": 1
+   },
+   "target_kind": {
+    "player": 11,
+    "other": 7
+   }
+  },
+  {
+   "key": 37,
+   "meaning": "left-hand ap-ref channel",
+   "confidence": "HIGH",
+   "evidence": "apReference-hand-l*, ap-Ref-*-hand-l, handle_ik_l_pull",
+   "count": 30,
+   "value_types": {
+    "u64": 30
+   },
+   "top_values": [
+    [
+     "apReference-hand-l",
+     16
+    ],
+    [
+     "apReference-hand-l-dina",
+     4
+    ],
+    [
+     "handle_ik_l_pull",
+     3
+    ],
+    [
+     "apReference-hand-l-joel",
+     1
+    ],
+    [
+     "apReference-hand-r-joel",
+     1
+    ],
+    [
+     "apReference-hand-l-ellie",
+     1
+    ],
+    [
+     "apReference-hand-r-ellie",
+     1
+    ],
+    [
+     "ap-Ref-manny-hand-l",
+     1
+    ],
+    [
+     "ap-Ref-abby-hand-l",
+     1
+    ],
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 13,
+    "animate_": 17
+   },
+   "target_kind": {
+    "other": 12,
+    "player": 14,
+    "self": 4
+   }
+  },
+  {
+   "key": 38,
+   "meaning": "right-hand ap-ref channel",
+   "confidence": "HIGH",
+   "evidence": "apReference-hand-r*",
+   "count": 29,
+   "value_types": {
+    "u64": 29
+   },
+   "top_values": [
+    [
+     "apReference-hand-r",
+     23
+    ],
+    [
+     "apReference-hand-r-dina",
+     4
+    ],
+    [
+     "ap-Ref-manny-hand-r",
+     1
+    ],
+    [
+     "ap-Ref-abby-hand-r",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 12,
+    "animate_": 17
+   },
+   "target_kind": {
+    "other": 15,
+    "player": 10,
+    "self": 4
+   }
+  },
+  {
+   "key": 40,
+   "meaning": "layer type (i32; 1 = partial/gesture layer)",
+   "confidence": "HIGH",
+   "evidence": "get-layer-type(); always with 41/75 on partial anims; animate-done(obj,anim,loc,layer,...)",
+   "count": 565,
+   "value_types": {
+    "i32": 565
+   },
+   "top_values": [
+    [
+     "1",
+     545
+    ],
+    [
+     "<expr>",
+     8
+    ],
+    [
+     "0",
+     7
+    ],
+    [
+     "arg_3",
+     5
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-layer-type",
+     6
+    ]
+   ],
+   "consumer": {
+    "animate_": 537,
+    "wait-animate_": 28
+   },
+   "target_kind": {
+    "other": 258,
+    "player": 277,
+    "self": 30
+   }
+  },
+  {
+   "key": 41,
+   "meaning": "target script layer state name",
+   "confidence": "CONFIRMED",
+   "evidence": "values s_script-gesture-0..3 / s_script-gesture-add-0..1 = state names in anim-player/player-script.bin",
+   "count": 31,
+   "value_types": {
+    "u64": 31
+   },
+   "top_values": [
+    [
+     "s_script-gesture-0",
+     12
+    ],
+    [
+     "s_script-gesture-add-0",
+     10
+    ],
+    [
+     "s_script-gesture-2",
+     5
+    ],
+    [
+     "s_script-gesture-1",
+     2
+    ],
+    [
+     "s_script-gesture-add-1",
+     1
+    ],
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:tumble-anim-layer-name",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 22,
+    "wait-animate_": 9
+   },
+   "target_kind": {
+    "player": 31
+   }
+  },
+  {
+   "key": 42,
+   "meaning": "layer / pair blend weight (f32)",
+   "confidence": "INFERRED",
+   "evidence": "pickup-anim-pair-weight",
+   "count": 8,
+   "value_types": {
+    "f32": 8
+   },
+   "top_values": [
+    [
+     "<expr>",
+     3
+    ],
+    [
+     "0.33",
+     2
+    ],
+    [
+     "0.40",
+     2
+    ],
+    [
+     "0.00",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:pickup-anim-pair-weight",
+     2
+    ],
+    [
+     "fn:lerp-scale",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 7,
+    "wait-animate_": 1
+   },
+   "target_kind": {
+    "other": 2,
+    "player": 6
+   }
+  },
+  {
+   "key": 43,
+   "meaning": "look / overlay gesture anim",
+   "confidence": "HIGH",
+   "evidence": "tag look-gesture; *-gesture anims; player-script *-gesture states contain anim-node-gesture",
+   "count": 78,
+   "value_types": {
+    "u64": 78
+   },
+   "top_values": [
+    [
+     "npc-m-head-look-ambi-gesture",
+     14
+    ],
+    [
+     "npc-m-head-look-ambi-part-gesture",
+     13
+    ],
+    [
+     "<expr>",
+     8
+    ],
+    [
+     "npc-m-head-look-ambi-tpose-gesture",
+     5
+    ],
+    [
+     "npc-m-rifle-aggr-idle-aim-gesture",
+     4
+    ],
+    [
+     "dog-ambi-sit-idle-look-gesture",
+     4
+    ],
+    [
+     "npc-m-p-aggr-idle-aim-add-gesture",
+     4
+    ],
+    [
+     "ellie-igc-guitar-directional-look-gesture",
+     3
+    ],
+    [
+     "efg-operating-room-01--gesture",
+     2
+    ],
+    [
+     "ellie-look-poi-gesture",
+     2
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:look-gesture",
+     8
+    ]
+   ],
+   "consumer": {
+    "animate_": 62,
+    "wait-animate_": 16
+   },
+   "target_kind": {
+    "other": 53,
+    "self": 15,
+    "player": 10
+   }
+  },
+  {
+   "key": 44,
+   "meaning": "mirror",
+   "confidence": "CONFIRMED",
+   "evidence": "mirror?, mirror, left-side, mirror-anim",
+   "count": 57,
+   "value_types": {
+    "u8": 57
+   },
+   "top_values": [
+    [
+     "<expr>",
+     50
+    ],
+    [
+     "1",
+     5
+    ],
+    [
+     "arg_2",
+     1
+    ],
+    [
+     "arg_3",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:mirror?",
+     22
+    ],
+    [
+     "var:mirror",
+     9
+    ],
+    [
+     "var:left-side",
+     8
+    ],
+    [
+     "fn:!get-boolean",
+     8
+    ],
+    [
+     "var:mirror-anim",
+     3
+    ],
+    [
+     "fn:point-to-vector",
+     2
+    ],
+    [
+     "var:mirrored",
+     2
+    ],
+    [
+     "fn:vector-dot",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 40,
+    "wait-animate_": 17
+   },
+   "target_kind": {
+    "other": 11,
+    "player": 28,
+    "self": 18
+   }
+  },
+  {
+   "key": 45,
+   "meaning": "motion (root) blend time? (f32)",
+   "confidence": "INFERRED",
+   "evidence": "blend-in-sec-from-gate-enter, get-player-speed()/get-animation-speed() based values",
+   "count": 149,
+   "value_types": {
+    "f32": 149
+   },
+   "top_values": [
+    [
+     "0.50",
+     32
+    ],
+    [
+     "0.00",
+     23
+    ],
+    [
+     "<expr>",
+     15
+    ],
+    [
+     "0.60",
+     15
+    ],
+    [
+     "1.00",
+     14
+    ],
+    [
+     "0.40",
+     8
+    ],
+    [
+     "0.10",
+     6
+    ],
+    [
+     "0.20",
+     5
+    ],
+    [
+     "0.25",
+     5
+    ],
+    [
+     "0.30",
+     5
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:blend-in-sec-from-gate-enter",
+     2
+    ],
+    [
+     "fn:get-player-speed",
+     2
+    ],
+    [
+     "fn:*",
+     1
+    ],
+    [
+     "fn:lerp",
+     1
+    ],
+    [
+     "fn:get-animation-speed",
+     1
+    ],
+    [
+     "var:current-interactable-scav",
+     1
+    ],
+    [
+     "fn:get-animation-duration",
+     1
+    ],
+    [
+     "fn:lerp-scale",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 59,
+    "wait-animate_": 90
+   },
+   "target_kind": {
+    "other": 40,
+    "player": 94,
+    "self": 15
+   }
+  },
+  {
+   "key": 46,
+   "meaning": "motion blend-out? (f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "11 uses",
+   "count": 11,
+   "value_types": {
+    "f32": 11
+   },
+   "top_values": [
+    [
+     "0.50",
+     5
+    ],
+    [
+     "0.20",
+     2
+    ],
+    [
+     "0.10",
+     2
+    ],
+    [
+     "1.00",
+     1
+    ],
+    [
+     "0.00",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 7,
+    "wait-animate_": 4
+   },
+   "target_kind": {
+    "other": 4,
+    "player": 7
+   }
+  },
+  {
+   "key": 48,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 1,
+   "value_types": {
+    "u8": 1
+   },
+   "top_values": [
+    [
+     "1",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 1
+   },
+   "target_kind": {
+    "other": 1
+   }
+  },
+  {
+   "key": 49,
+   "meaning": "flag-49 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "63 uses, NPC/vehicle",
+   "count": 63,
+   "value_types": {
+    "u8": 63
+   },
+   "top_values": [
+    [
+     "1",
+     63
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 22,
+    "animate_": 41
+   },
+   "target_kind": {
+    "other": 52,
+    "player": 11
+   }
+  },
+  {
+   "key": 51,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 16,
+   "value_types": {
+    "u8": 16
+   },
+   "top_values": [
+    [
+     "1",
+     16
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 14,
+    "wait-animate_": 2
+   },
+   "target_kind": {
+    "other": 14,
+    "self": 2
+   }
+  },
+  {
+   "key": 52,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 2,
+   "value_types": {
+    "u8": 2
+   },
+   "top_values": [
+    [
+     "0",
+     2
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 2
+   },
+   "target_kind": {
+    "other": 2
+   }
+  },
+  {
+   "key": 54,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "f32": 5
+   },
+   "top_values": [
+    [
+     "0.80",
+     1
+    ],
+    [
+     "0.50",
+     1
+    ],
+    [
+     "0.10",
+     1
+    ],
+    [
+     "0.25",
+     1
+    ],
+    [
+     "0.05",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 5
+   },
+   "target_kind": {
+    "other": 1,
+    "self": 3,
+    "player": 1
+   }
+  },
+  {
+   "key": 56,
+   "meaning": "playback speed",
+   "confidence": "CONFIRMED",
+   "evidence": "animation-speed, speed-pct, anim-speed; animate-start/done pass 0.0 = hold pose; -1.0 = reverse",
+   "count": 661,
+   "value_types": {
+    "f32": 661
+   },
+   "top_values": [
+    [
+     "0.00",
+     304
+    ],
+    [
+     "0.50",
+     96
+    ],
+    [
+     "<expr>",
+     75
+    ],
+    [
+     "1.00",
+     38
+    ],
+    [
+     "-1.00",
+     30
+    ],
+    [
+     "1.70",
+     16
+    ],
+    [
+     "0.80",
+     14
+    ],
+    [
+     "2.00",
+     11
+    ],
+    [
+     "1.10",
+     8
+    ],
+    [
+     "-0.50",
+     6
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     14
+    ],
+    [
+     "var:animation-speed",
+     10
+    ],
+    [
+     "var:speed-pct",
+     9
+    ],
+    [
+     "var:anim-speed",
+     5
+    ],
+    [
+     "var:dina-anim-speed",
+     4
+    ],
+    [
+     "var:pull-speed",
+     4
+    ],
+    [
+     "fn:get-bound-frame",
+     4
+    ],
+    [
+     "var:squeeze-speed",
+     4
+    ]
+   ],
+   "consumer": {
+    "animate_": 540,
+    "wait-animate_": 121
+   },
+   "target_kind": {
+    "other": 390,
+    "player": 167,
+    "self": 104
+   }
+  },
+  {
+   "key": 57,
+   "meaning": "start frame",
+   "confidence": "CONFIRMED",
+   "evidence": "start-frame, tasked-in-start-frame vars; get-animation-frame(other) for sync",
+   "count": 640,
+   "value_types": {
+    "f32": 639,
+    "i32": 1
+   },
+   "top_values": [
+    [
+     "<expr>",
+     403
+    ],
+    [
+     "40.00",
+     18
+    ],
+    [
+     "10.00",
+     13
+    ],
+    [
+     "30.00",
+     12
+    ],
+    [
+     "140.00",
+     11
+    ],
+    [
+     "1.00",
+     10
+    ],
+    [
+     "17.00",
+     9
+    ],
+    [
+     "15.00",
+     8
+    ],
+    [
+     "0.00",
+     8
+    ],
+    [
+     "150.00",
+     7
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:get-animation-frame",
+     280
+    ],
+    [
+     "var:start-frame",
+     35
+    ],
+    [
+     "var:tasked-in-start-frame",
+     23
+    ],
+    [
+     "fn:*",
+     22
+    ],
+    [
+     "var:frame-count",
+     7
+    ],
+    [
+     "fn:wat-chain-door-get-door-abort-start-frame",
+     6
+    ],
+    [
+     "var:current-phase",
+     5
+    ],
+    [
+     "var:task-in-start-frame",
+     4
+    ]
+   ],
+   "consumer": {
+    "animate_": 451,
+    "wait-animate_": 189
+   },
+   "target_kind": {
+    "other": 485,
+    "self": 21,
+    "player": 134
+   }
+  },
+  {
+   "key": 58,
+   "meaning": "start phase",
+   "confidence": "CONFIRMED",
+   "evidence": "get-animation-phase(), get-best-entry-phase(); animate-done passes 1.0",
+   "count": 525,
+   "value_types": {
+    "f32": 508,
+    "u64": 1,
+    "i32": 12,
+    "?": 4
+   },
+   "top_values": [
+    [
+     "<expr>",
+     293
+    ],
+    [
+     "1.00",
+     56
+    ],
+    [
+     "0.00",
+     36
+    ],
+    [
+     "0.50",
+     21
+    ],
+    [
+     "0.99",
+     16
+    ],
+    [
+     "0.60",
+     16
+    ],
+    [
+     "0.20",
+     13
+    ],
+    [
+     "1",
+     12
+    ],
+    [
+     "arg_0",
+     8
+    ],
+    [
+     "arg_4",
+     6
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     133
+    ],
+    [
+     "fn:get-animation-phase",
+     114
+    ],
+    [
+     "fn:get-best-entry-phase",
+     42
+    ],
+    [
+     "fn:ss-workbench--get-workbench-weapon-def-based-on-current-weapon",
+     42
+    ],
+    [
+     "fn:get-spawner-locator",
+     34
+    ],
+    [
+     "fn:evaluate-point-curve",
+     30
+    ],
+    [
+     "fn:get-self-id",
+     24
+    ],
+    [
+     "var:anim-phase",
+     18
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 108,
+    "animate_": 417
+   },
+   "target_kind": {
+    "other": 345,
+    "player": 115,
+    "self": 65
+   }
+  },
+  {
+   "key": 59,
+   "meaning": "i32 0..5 (start/phase mode?)",
+   "confidence": "UNKNOWN",
+   "evidence": "animate-start/animate-done pass 0; squeeze/ledge pass 1",
+   "count": 200,
+   "value_types": {
+    "i32": 200
+   },
+   "top_values": [
+    [
+     "1",
+     146
+    ],
+    [
+     "0",
+     34
+    ],
+    [
+     "4",
+     7
+    ],
+    [
+     "2",
+     6
+    ],
+    [
+     "5",
+     4
+    ],
+    [
+     "<expr>",
+     2
+    ],
+    [
+     "3",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 116,
+    "wait-animate_": 84
+   },
+   "target_kind": {
+    "other": 127,
+    "player": 49,
+    "self": 24
+   }
+  },
+  {
+   "key": 60,
+   "meaning": "stick-abort fade seconds",
+   "confidence": "CONFIRMED",
+   "evidence": "blend-from-exit-stick-abort-fade-sec, stick-abort-fade-sec",
+   "count": 416,
+   "value_types": {
+    "f32": 415,
+    "u64": 1
+   },
+   "top_values": [
+    [
+     "0.50",
+     113
+    ],
+    [
+     "1.00",
+     99
+    ],
+    [
+     "0.80",
+     45
+    ],
+    [
+     "0.70",
+     43
+    ],
+    [
+     "0.00",
+     23
+    ],
+    [
+     "0.60",
+     17
+    ],
+    [
+     "0.75",
+     17
+    ],
+    [
+     "1.50",
+     12
+    ],
+    [
+     "<expr>",
+     7
+    ],
+    [
+     "0.95",
+     6
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:*",
+     4
+    ],
+    [
+     "var:blend-from-exit-stick-abort-fade-sec",
+     3
+    ],
+    [
+     "fn:ss-workbench--get-workbench-weapon-def-based-on-current-weapon",
+     2
+    ],
+    [
+     "var:stick-abort-fade-sec",
+     1
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 394,
+    "animate_": 22
+   },
+   "target_kind": {
+    "player": 406,
+    "other": 9,
+    "self": 1
+   }
+  },
+  {
+   "key": 61,
+   "meaning": "stick-abort frame (i32)",
+   "confidence": "CONFIRMED",
+   "evidence": "blend-from-exit-stick-abort-frame, stick-abort-frame, abort-frame",
+   "count": 460,
+   "value_types": {
+    "i32": 457,
+    "f32": 1,
+    "u64": 2
+   },
+   "top_values": [
+    [
+     "<expr>",
+     20
+    ],
+    [
+     "80",
+     9
+    ],
+    [
+     "22",
+     9
+    ],
+    [
+     "420",
+     9
+    ],
+    [
+     "50",
+     8
+    ],
+    [
+     "30",
+     8
+    ],
+    [
+     "210",
+     7
+    ],
+    [
+     "60",
+     7
+    ],
+    [
+     "230",
+     6
+    ],
+    [
+     "260",
+     6
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:abort-frame",
+     4
+    ],
+    [
+     "var:blend-from-exit-stick-abort-frame",
+     3
+    ],
+    [
+     "fn:*",
+     3
+    ],
+    [
+     "fn:ddict-get",
+     2
+    ],
+    [
+     "fn:ss-workbench--get-workbench-weapon-def-based-on-current-weapon",
+     2
+    ],
+    [
+     "var:ABORT-PHASE",
+     1
+    ],
+    [
+     "var:animation-duration-frames",
+     1
+    ],
+    [
+     "fn:round",
+     1
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 426,
+    "animate_": 34
+   },
+   "target_kind": {
+    "player": 445,
+    "other": 13,
+    "self": 2
+   }
+  },
+  {
+   "key": 62,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     3
+    ],
+    [
+     "<expr>",
+     1
+    ],
+    [
+     "0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 5
+   },
+   "target_kind": {
+    "player": 5
+   }
+  },
+  {
+   "key": 63,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 2,
+   "value_types": {
+    "u8": 2
+   },
+   "top_values": [
+    [
+     "1",
+     1
+    ],
+    [
+     "0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 2
+   },
+   "target_kind": {
+    "player": 2
+   }
+  },
+  {
+   "key": 66,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 2,
+   "value_types": {
+    "f32": 2
+   },
+   "top_values": [
+    [
+     "20.00",
+     2
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 1,
+    "wait-animate_": 1
+   },
+   "target_kind": {
+    "player": 2
+   }
+  },
+  {
+   "key": 67,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 1,
+   "value_types": {
+    "u8": 1
+   },
+   "top_values": [
+    [
+     "1",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 1
+   },
+   "target_kind": {
+    "player": 1
+   }
+  },
+  {
+   "key": 68,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 4,
+   "value_types": {
+    "u8": 4
+   },
+   "top_values": [
+    [
+     "1",
+     4
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 3,
+    "animate_": 1
+   },
+   "target_kind": {
+    "other": 4
+   }
+  },
+  {
+   "key": 69,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 2,
+   "value_types": {
+    "i32": 2
+   },
+   "top_values": [
+    [
+     "0",
+     2
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 2
+   },
+   "target_kind": {
+    "other": 2
+   }
+  },
+  {
+   "key": 70,
+   "meaning": "i32 enum (player IGC)",
+   "confidence": "UNKNOWN",
+   "evidence": "co-occurs with 71/72; player-stumble 10, workbench-exit 10",
+   "count": 137,
+   "value_types": {
+    "i32": 137
+   },
+   "top_values": [
+    [
+     "1",
+     50
+    ],
+    [
+     "2",
+     31
+    ],
+    [
+     "10",
+     19
+    ],
+    [
+     "12",
+     16
+    ],
+    [
+     "0",
+     10
+    ],
+    [
+     "6",
+     5
+    ],
+    [
+     "8",
+     2
+    ],
+    [
+     "11",
+     2
+    ],
+    [
+     "4",
+     1
+    ],
+    [
+     "<expr>",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 45,
+    "wait-animate_": 92
+   },
+   "target_kind": {
+    "player": 119,
+    "other": 17,
+    "self": 1
+   }
+  },
+  {
+   "key": 71,
+   "meaning": "i32 enum (player IGC)",
+   "confidence": "UNKNOWN",
+   "evidence": "co-occurs with 70/72",
+   "count": 92,
+   "value_types": {
+    "i32": 92
+   },
+   "top_values": [
+    [
+     "1",
+     82
+    ],
+    [
+     "0",
+     9
+    ],
+    [
+     "12",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 71,
+    "animate_": 21
+   },
+   "target_kind": {
+    "player": 84,
+    "other": 4,
+    "self": 4
+   }
+  },
+  {
+   "key": 72,
+   "meaning": "flag-72 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 27,
+   "value_types": {
+    "u8": 27
+   },
+   "top_values": [
+    [
+     "1",
+     27
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 21,
+    "animate_": 6
+   },
+   "target_kind": {
+    "player": 23,
+    "self": 1,
+    "other": 3
+   }
+  },
+  {
+   "key": 74,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 11,
+   "value_types": {
+    "u8": 11
+   },
+   "top_values": [
+    [
+     "1",
+     11
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 11
+   },
+   "target_kind": {
+    "player": 11
+   }
+  },
+  {
+   "key": 75,
+   "meaning": "joint / blend mask set (symbol)",
+   "confidence": "HIGH",
+   "evidence": "*upperbody--left-hard--right-hard--fb*, *scav-drawer-exit-l-hand*",
+   "count": 111,
+   "value_types": {
+    "u64": 111
+   },
+   "top_values": [
+    [
+     "*upperbody--left-hard--right-hard--fb*",
+     28
+    ],
+    [
+     "*default-upperbody-gestures*",
+     24
+    ],
+    [
+     "*upperbody--left-soft--right-hard--fb*",
+     9
+    ],
+    [
+     "<expr>",
+     7
+    ],
+    [
+     "*ellie-inspect-talk*",
+     5
+    ],
+    [
+     "*upperbody--left-medium--right-medium--fb*",
+     4
+    ],
+    [
+     "*upperbody--left-hard--right-medium--fb*",
+     4
+    ],
+    [
+     "*upperbody--head--fb*",
+     4
+    ],
+    [
+     "*upperbody--left-none--right-medium--fb--EFM-Boo",
+     3
+    ],
+    [
+     "*far-left-arm-upperbody-gestures*",
+     2
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 107,
+    "wait-animate_": 4
+   },
+   "target_kind": {
+    "other": 3,
+    "player": 107,
+    "self": 1
+   }
+  },
+  {
+   "key": 77,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 13,
+   "value_types": {
+    "u8": 13
+   },
+   "top_values": [
+    [
+     "1",
+     13
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 8,
+    "animate_": 5
+   },
+   "target_kind": {
+    "player": 10,
+    "self": 2,
+    "other": 1
+   }
+  },
+  {
+   "key": 78,
+   "meaning": "i32 enum (NPC)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 46,
+   "value_types": {
+    "i32": 46
+   },
+   "top_values": [
+    [
+     "2",
+     30
+    ],
+    [
+     "1",
+     11
+    ],
+    [
+     "0",
+     4
+    ],
+    [
+     "3",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 29,
+    "animate_": 17
+   },
+   "target_kind": {
+    "other": 46
+   }
+  },
+  {
+   "key": 79,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 9,
+   "value_types": {
+    "u8": 9
+   },
+   "top_values": [
+    [
+     "1",
+     9
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 5,
+    "wait-animate_": 4
+   },
+   "target_kind": {
+    "other": 7,
+    "player": 2
+   }
+  },
+  {
+   "key": 81,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 3,
+    "wait-animate_": 2
+   },
+   "target_kind": {
+    "other": 2,
+    "self": 2,
+    "player": 1
+   }
+  },
+  {
+   "key": 82,
+   "meaning": "sync/continue flag (u8)",
+   "confidence": "INFERRED",
+   "evidence": "co-occurs with 57 start-frame copied from another object (lift 11x); var start-fresh?",
+   "count": 241,
+   "value_types": {
+    "u8": 238,
+    "u64": 3
+   },
+   "top_values": [
+    [
+     "1",
+     227
+    ],
+    [
+     "<expr>",
+     11
+    ],
+    [
+     "arg_6",
+     2
+    ],
+    [
+     "arg_5",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:object-anim-playing?",
+     3
+    ],
+    [
+     "fn:!",
+     2
+    ],
+    [
+     "fn:event-arg-boolean",
+     2
+    ],
+    [
+     "var:reverence-obj",
+     1
+    ],
+    [
+     "var:start-fresh?",
+     1
+    ]
+   ],
+   "consumer": {
+    "animate_": 188,
+    "wait-animate_": 53
+   },
+   "target_kind": {
+    "other": 219,
+    "player": 18,
+    "self": 4
+   }
+  },
+  {
+   "key": 83,
+   "meaning": "horse binding",
+   "confidence": "CONFIRMED",
+   "evidence": "alloc-horse-binding(), *-horse-binding symbols",
+   "count": 18,
+   "value_types": {
+    "u64": 18
+   },
+   "top_values": [
+    [
+     "grappler-horse-binding",
+     6
+    ],
+    [
+     "lev-horse-binding",
+     4
+    ],
+    [
+     "<expr>",
+     4
+    ],
+    [
+     "afm-horse-chase-mount-lev-binding",
+     2
+    ],
+    [
+     "passenger-horse-binding",
+     1
+    ],
+    [
+     "player-horse-front-seat-binding",
+     1
+    ]
+   ],
+   "named_sources": [
+    [
+     "fn:alloc-horse-binding",
+     4
+    ],
+    [
+     "var:horse",
+     2
+    ],
+    [
+     "fn:get-player-horse-id",
+     1
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 3,
+    "animate_": 15
+   },
+   "target_kind": {
+    "self": 8,
+    "other": 10
+   }
+  },
+  {
+   "key": 84,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 24,
+   "value_types": {
+    "u8": 24
+   },
+   "top_values": [
+    [
+     "1",
+     21
+    ],
+    [
+     "0",
+     3
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 13,
+    "wait-animate_": 11
+   },
+   "target_kind": {
+    "other": 14,
+    "player": 8,
+    "self": 2
+   }
+  },
+  {
+   "key": 85,
+   "meaning": "animated-camera id/name",
+   "confidence": "HIGH",
+   "evidence": "workbench animates a spawned 'workbench-camera' with 85=workbench-enter, later camera-fade-out(workbench-enter,...)",
+   "count": 63,
+   "value_types": {
+    "u64": 63
+   },
+   "top_values": [
+    [
+     "cin-san-abby-boats-away-camera",
+     7
+    ],
+    [
+     "<expr>",
+     7
+    ],
+    [
+     "follow",
+     4
+    ],
+    [
+     "aim",
+     4
+    ],
+    [
+     "struggle",
+     3
+    ],
+    [
+     "workbench-enter",
+     2
+    ],
+    [
+     "apply-upgrade",
+     2
+    ],
+    [
+     "workbench-pullout-weapon-from-bag",
+     2
+    ],
+    [
+     "workbench-put-previous-weapon-in-bag",
+     2
+    ],
+    [
+     "workbench-disassemble-weapon",
+     2
+    ]
+   ],
+   "named_sources": [
+    [
+     "var:active-cam-name",
+     7
+    ]
+   ],
+   "consumer": {
+    "wait-animate_": 28,
+    "animate_": 35
+   },
+   "target_kind": {
+    "player": 21,
+    "other": 21,
+    "self": 21
+   }
+  },
+  {
+   "key": 86,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 27,
+   "value_types": {
+    "u8": 27
+   },
+   "top_values": [
+    [
+     "1",
+     27
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "wait-animate_": 9,
+    "animate_": 18
+   },
+   "target_kind": {
+    "self": 4,
+    "other": 23
+   }
+  },
+  {
+   "key": 87,
+   "meaning": "flag-87 (u8)",
+   "confidence": "UNKNOWN",
+   "evidence": "only drawer/cabinet/keypad/npc-begs",
+   "count": 8,
+   "value_types": {
+    "u8": 8
+   },
+   "top_values": [
+    [
+     "1",
+     8
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 8
+   },
+   "target_kind": {
+    "player": 8
+   }
+  },
+  {
+   "key": 88,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 19,
+   "value_types": {
+    "u8": 19
+   },
+   "top_values": [
+    [
+     "1",
+     19
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 19
+   },
+   "target_kind": {
+    "other": 18,
+    "self": 1
+   }
+  },
+  {
+   "key": 89,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 1,
+   "value_types": {
+    "u8": 1
+   },
+   "top_values": [
+    [
+     "1",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 1
+   },
+   "target_kind": {
+    "other": 1
+   }
+  },
+  {
+   "key": 90,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 5,
+   "value_types": {
+    "u8": 5
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 4,
+    "wait-animate_": 1
+   },
+   "target_kind": {
+    "other": 4,
+    "player": 1
+   }
+  },
+  {
+   "key": 91,
+   "meaning": "rare (u8/f32)",
+   "confidence": "UNKNOWN",
+   "evidence": "",
+   "count": 6,
+   "value_types": {
+    "u8": 6
+   },
+   "top_values": [
+    [
+     "1",
+     5
+    ],
+    [
+     "0",
+     1
+    ]
+   ],
+   "named_sources": [],
+   "consumer": {
+    "animate_": 3,
+    "wait-animate_": 3
+   },
+   "target_kind": {
+    "player": 6
+   }
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+  "_about": "Workbench data schema reconstructed from dconstruct .asm struct dumps (workbench-settings*.bin, weapon-upgrades.bin, player-upgrade-settings.bin) cross-referenced with the byte offsets read by ss-t2/ss-workbench.bin and workbench-script-funcs-impl.bin. Type names in quotes are the real DC type names printed by dconstruct; field names are analyst labels.",
+  "_confidence_legend": "C = CONFIRMED (offset read in DC code and value seen in data); H = HIGH CONFIDENCE; I = INFERRED (from usage only); U = UNKNOWN (present in data, never read by DC)",
+  "workbench-state-def": {
+    "instance": "*curr-workbench-state* (workbench-settings.bin) - one global shared by every workbench",
+    "fields": {
+      "0x00": ["ptr workbench-anim-state-def", "anim-state the world script is playing now; written before signal(curr-state-updated)", "C"]
+    }
+  },
+  "workbench-weapon-def": {
+    "instances": "*<weapon>-workbench-weapon* in workbench-settings-ellie/abby.bin, *t2r-<weapon>-workbench-weapon* in t2r-workbench-settings-*.bin, *invalid-workbench-weapon* (fallback) in workbench-settings.bin",
+    "lookup": "ss-workbench--get-workbench-weapon-def-based-on-current-weapon(w): is-rogue-mode? -> *t2r-workbench-weapons-<abby|ellie>* else *workbench-weapons-<abby|ellie>*; miss -> *invalid-workbench-weapon*",
+    "fields": {
+      "0x000": ["map upgrade-id -> workbench-upgrade-def", "per-upgrade animation/mesh overrides", "C"],
+      "0x008": ["string", "disassembled parts look (e.g. parts-pistl-beretta-look)", "C"],
+      "0x010": ["bool", "parts object is a weapon process (spawn-weapon-process + bundles) instead of a SimpleObject", "C"],
+      "0x018": ["sid", "default magazine mesh on parts object", "C"],
+      "0x020": ["sid", "upgrade id that swaps the magazine mesh (e.g. increase-capacity)", "C"],
+      "0x028": ["symbol-array", "bullet/shell mesh names on parts object (shown per ammo-in-clip)", "C"],
+      "0x030": ["bool", "consume a round on first disassemble this visit (weapons-disassembled-this-interact logic)", "H"],
+      "0x038": ["sid", "attach point for display weapon (leftHand everywhere)", "C"],
+      "0x040": ["sid/ptr", "investigate params for inspect (default *investigate-workbench-p-params*)", "C"],
+      "0x048": ["sid", "key into *workbench-pan-cams* (bow|rifle|pistol|default)", "C"],
+      "0x050": ["script-lambda", "condition selecting alt investigate params", "C"],
+      "0x058": ["sid/ptr", "alt investigate params", "C"],
+      "0x060": ["workbench-anim-state-def", "ENTER", "C"],
+      "0x068": ["float", "default phase for backpack swap / flashlight-off during enter (0.10)", "C"],
+      "0x070": ["sid", "apReference-spine-d (never read by DC)", "U"],
+      "0x078": ["float", "enter phase at which the HUD menu page is pushed (0.50)", "C"],
+      "0x080": ["workbench-anim-state-def", "ENTER-ABORT anims (never read by DC)", "U"],
+      "0x088": ["workbench-anim-state-def", "EXIT", "C"],
+      "0x090": ["float", "default exit phase for flashlight-on / backpack swap", "C"],
+      "0x098": ["sid", "ap-ref channel for exit feather-blend (animate_ key 14)", "C"],
+      "0x0A0": ["int", "exit animate_ key 61 default (50/70/-1)", "C"],
+      "0x0A4": ["float", "exit animate_ key 60 default (0.50)", "C"],
+      "0x0A8": ["workbench-anim-state-def", "IDLE (weapon in hands)", "C"],
+      "0x0B0": ["script-lambda", "condition for alt idle", "C"],
+      "0x0B8": ["workbench-anim-state-def", "IDLE alt", "C"],
+      "0x0C0": ["workbench-anim-state-def", "IDLE ON TABLE (disassembled)", "C"],
+      "0x0C8": ["workbench-anim-def", "idle camera anim (never read by DC)", "U"],
+      "0x0D0": ["workbench-anim-state-def", "PUTBACK (weapon into bag)", "C"],
+      "0x0D8": ["point-curve", "never read by DC", "U"],
+      "0x0E0": ["float-array", "pullout abort-blend times per abort range", "C"],
+      "0x0E8": ["point-curve", "pullout inverse-phase curve (putback phase -> pullout start phase)", "C"],
+      "0x0F0": ["script-lambda", "condition for alt putback", "C"],
+      "0x0F8": ["workbench-anim-state-def", "PUTBACK alt", "C"],
+      "0x100": ["workbench-anim-state-def", "PULLOUT (weapon from bag); its player anim also gates has-animation?", "C"],
+      "0x108": ["point-curve(ranges)", "pullout interruptible phase ranges", "C"],
+      "0x110": ["float-array", "putback abort-blend times", "C"],
+      "0x118": ["point-curve", "putback inverse-phase curve", "C"],
+      "0x120": ["script-lambda", "condition for alt pullout", "C"],
+      "0x128": ["workbench-anim-state-def", "PULLOUT alt", "C"],
+      "0x130": ["workbench-anim-state-def", "DISASSEMBLE default", "C"],
+      "0x138": ["point-curve(ranges)", "disassemble interruptible phase ranges", "C"],
+      "0x140": ["float-array", "assemble abort-blend times", "C"],
+      "0x148": ["point-curve", "assemble inverse-phase curve", "C"],
+      "0x150": ["float", "disassemble phase -> send show-upgrade-screen", "C"],
+      "0x158": ["script-lambda", "condition for alt disassemble (e.g. empty weapon)", "C"],
+      "0x160": ["workbench-anim-state-def", "DISASSEMBLE alt", "C"],
+      "0x168": ["float", "alt-disassemble show-upgrade-screen phase", "C"],
+      "0x170": ["workbench-anim-state-def", "ASSEMBLE default", "C"],
+      "0x178": ["point-curve(ranges)", "assemble interruptible phase ranges", "C"],
+      "0x180": ["float-array", "disassemble abort-blend times", "C"],
+      "0x188": ["point-curve", "disassemble inverse-phase curve", "C"],
+      "0x190": ["float", "assemble phase before honouring weapon-change / exit", "C"],
+      "0x194": ["float", "assemble phase -> send hide-upgrade-screen", "C"],
+      "0x198": ["workbench-anim-state-def", "APPLY-UPGRADE default", "C"],
+      "0x1A0": ["float", "default phase at which the visual upgrade is applied", "C"],
+      "0x1A4": ["float", "default phase -> send menu-fade-in", "C"],
+      "0x1A8": ["point-curve(ranges)", "apply-upgrade interruptible phase ranges", "C"],
+      "0x1B0": ["float-array", "never read by DC", "U"],
+      "0x1B8": ["map light-type -> workbench-anim-state-def", "ENTER override when lights are off (lamp-switch-on anims)", "C"],
+      "0x1C0": ["map light-type -> workbench-anim-state-def", "EXIT override when lights are on (lamp-switch-off anims)", "C"],
+      "0x1C8": ["bool", "is-invalid flag (1 only in *invalid-workbench-weapon*)", "H"]
+    }
+  },
+  "workbench-anim-state-def": {
+    "size": "0x58",
+    "fields": {
+      "0x00": ["workbench-anim-def", "player (master clock)", "C"],
+      "0x08": ["workbench-anim-def", "camera (played on dummy camera object, animate_ key 85 = camera id)", "C"],
+      "0x10": ["workbench-anim-def", "display weapon", "C"],
+      "0x18": ["workbench-anim-def", "weapon strap process", "C"],
+      "0x20": ["workbench-anim-def", "anim backpack", "C"],
+      "0x28": ["workbench-anim-def", "disassembled parts object", "C"],
+      "0x30": ["workbench-anim-def", "bench tools object", "C"],
+      "0x38": ["script-lambda", "per-state hook; script-lambda track polls it until it returns true (used for side effects such as set-weapon-extra-joint-mods)", "C"],
+      "0x40": ["float", "backpack swap phase override (-1 = use weapon-def)", "C"],
+      "0x44": ["int", "exit key 61 override (-1 = use weapon-def)", "C"],
+      "0x48": ["float", "exit key 60 override", "C"],
+      "0x4C": ["float", "flashlight fade time", "C"],
+      "0x50": ["float", "flashlight toggle phase", "C"],
+      "0x54": ["float", "phase after which menu events may interrupt (enter only; -1 = never)", "C"]
+    }
+  },
+  "workbench-anim-def": {
+    "size": "0x30",
+    "fields": {
+      "0x00": ["sid", "animation name", "C"],
+      "0x08": ["float", "blend-in -> animate_ key 28", "C"],
+      "0x0C": ["int", "always 2 in data; never read by DC", "U"],
+      "0x10": ["float", "-> animate_ key 30 (usually 0.0; 0.75 on lamp variants). Meaning UNKNOWN", "I"],
+      "0x14": ["int", "always 2 in data; never read by DC", "U"],
+      "0x18": ["float", "playback speed -> animate_ key 56 (strap)", "H"],
+      "0x1C": ["float", "event phase A: attach weapon / lights-on / hide mag+bullets", "C"],
+      "0x20": ["float", "event phase B: detach weapon / backpack weapons visibility / show mag", "C"],
+      "0x28": ["sid", "secondary (partial-layer) anim played with animate_ key 40=1", "C"]
+    }
+  },
+  "workbench-upgrade-def": {
+    "location": "values of workbench-weapon-def.0x000 map",
+    "fields": {
+      "0x00": ["workbench-anim-state-def", "idle-on-table override after this upgrade is owned", "C"],
+      "0x08": ["workbench-anim-state-def", "assemble override after this upgrade is owned", "C"],
+      "0x10": ["workbench-anim-state-def", "disassemble override after this upgrade is owned", "C"],
+      "0x18": ["workbench-anim-state-def", "APPLY-UPGRADE anim for this upgrade", "C"],
+      "0x20": ["float", "phase at which visual bundle is applied", "C"],
+      "0x24": ["float", "phase -> send menu-fade-in", "C"],
+      "0x28": ["point-curve(ranges)", "interruptible ranges during apply", "C"],
+      "0x38": ["float", "strap re-animate phase", "C"],
+      "0x40": ["sid", "magazine mesh after upgrade (e.g. parts-pistl-beretta-mag-extend)", "C"],
+      "0x48": ["sid", "extra mesh toggled on the parts object", "C"],
+      "0x50": ["map other-upgrade -> workbench-upgrade-def", "combination overrides (anim/phases depend on already-owned upgrades)", "C"],
+      "0x58": ["script-lambda", "hook evaluated during apply (e.g. reset weapons-disassembled-this-interact)", "C"]
+    }
+  },
+  "workbench-player-character-def": {
+    "instances": "*ellie-workbench-player-character*, *abby-workbench-player-character*",
+    "fields": {"0x00": ["sid", "hand-in-bag idle anim (<char>-workbench-hand-in-bag-idle--<char>)", "C"], "0x08": ["sid", "camera anim (0 in data)", "C"]}
+  },
+  "weapon-upgrade-bundles (cost data)": {
+    "instance": "*weapon-upgrade-bundles* (weapon-upgrades.bin): map weapon -> weapon-upgrade-bundles {0x00 sid weapon, 0x08 weapon-visual-mods (base joints/shader blends), 0x10 weapon-upgrade-bundle-array}",
+    "grounded": "*weapon-upgrade-bundles-grounded-override* has the same shape for 5 weapons (name suggests Grounded difficulty; selection is native)",
+    "bundle_entry": {
+      "0x00": ["sid", "bundle/upgrade id", "C"],
+      "0x08": ["string", "id string", "C"],
+      "0x10": ["string", "debug label", "C"],
+      "0x18": ["string", "badge icon", "C"],
+      "0x20": ["weapon-visual-mods", "joint mods to show/hide + shader blend offsets when applied", "C"],
+      "0x28": ["weapon-upgrade-ref-array", "(type-enum, index) into *weapon-upgrades*[weapon][type] stat sets", "C"],
+      "0x30": ["crafting-item-array", "[ {item sid (parts), uint32-array counts} ] = COST; DC reads counts[0] of entry 0", "C"],
+      "0x38": ["sid", "title loc id", "C"],
+      "0x40": ["sid", "title caps loc id", "C"],
+      "0x48": ["sid", "description loc id", "C"],
+      "0x50": ["sid", "craft loop sfx (menu reads +80 of lookup-weapon-upgrade-by-bundle-id)", "C"],
+      "0x60": ["string", "large workbench icon", "C"]
+    },
+    "accessors": "lookup-weapon-upgrade-bundle-resources(weapon, upgrade) -> crafting-item-array (native); get-raw-weapon-upgrade-bundles(weapon) (native); lookup-weapon-upgrade-by-bundle-id (native)"
+  },
+  "weapon-upgrades (stat data)": {
+    "instance": "*weapon-upgrades*: map weapon -> map stat-type -> weapon-upgrade-set {0x00 int type, 0x04 count, 0x08 array of {.. 0x08 typed payload e.g. weapon-upgrade-recoil/silencer ..}}",
+    "type_names": "*weapon-upgrade-type-names* enum (28 entries: none, reload-speed, reload-multiple, fire-rate, clip-capacity, recoil, accuracy, stability, scope, scope-sway, ..., sway, penetration, range-finder-settings)"
+  },
+  "holster upgrades": {
+    "instance": "*holster-upgrades* = [short-gun-second-holster, long-gun-second-holster]; cost read as lookup-player-upgrade(id)+0x18 from *player-upgrades-defs-map* (player-upgrade-settings.bin); value 0 in data",
+    "confidence": "C"
+  },
+  "script globals (module variables in workbench-script-funcs-impl.bin)": {
+    "all-weapons-acquired": "d-array, rebuilt by world script from player-inv-selection-get-sub-slot-items-filtered(0)+(2) minus excluded-weapons; read by menu",
+    "excluded-weapons": "rifle-mpx5, flamethrower, rifle-tommy-abby-player, pistol-revolver-joel-player, rifle-assault-firefly-ellie-player, shotgun-remington-pump-bill",
+    "excluded-upgrades": "bayonet, silencer, scope-efp, fire-arrows, explosive-arrows, bipod-active, rangefinder-timed, rangefinder-smart, burst-fire-active",
+    "spawned-weapons-by-id / spawned-weapon-parts-by-id": "d-dict weapon -> spawned display weapon / parts object",
+    "weapons-disassembled-this-interact": "d-dict weapon -> bool",
+    "weapons-num-bullets-in-clip": "d-dict weapon -> int (snapshot at enter)",
+    "upgrade-queue / weapon-queue": "d-arrays appended by apply-upgrade-event (upgrade, weapon); head consumed at apply-upgrade end",
+    "available-upgrades--workbench, w-weapon-slots--workbench, w-upgrade-slots--workbench": "menu-side lists",
+    "rechamber-anims": "d-dict used by stat helpers (get-reload-time)"
+  }
+}

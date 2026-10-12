@@ -1,0 +1,3042 @@
+{
+ "source": "mesh-audio-config.bin (dconstruct asm)",
+ "suffix_tables": {
+  "suffixes-weapon-effect": [
+   "clip-eject",
+   "revolver-open",
+   "whoosh",
+   "cylinder-eject",
+   "wpn-lift",
+   "pump-forward",
+   "insert-round",
+   "clip-insert",
+   "holster",
+   "breech-open",
+   "charge-back",
+   "revolver-close",
+   "insert-round-clip",
+   "wpn-pat",
+   "unholster",
+   "bolt-close-end",
+   "hammer-forward",
+   "extract",
+   "wpn-grab",
+   "charge-release",
+   "revolver-close-fast",
+   "pickup",
+   "clash-off",
+   "switch",
+   "breech-close",
+   "clash-hit",
+   "cylinder-reload",
+   "pump-back",
+   "hammer-back",
+   "bolt-close",
+   "bolt-open",
+   "wpn-brush",
+   "ammo-pickup",
+   "grab"
+  ],
+  "suffixes-mesh-effect-door-material": [
+   "drawer-pull-relaxed",
+   "cab-pull-relaxed",
+   "door-rattle-med",
+   "drawer-close-crouch",
+   "door-rattle-lrg",
+   "cab-close-crouch",
+   "drawer-close-relaxed",
+   "door-wall-hit",
+   "drawer-pull-crouch",
+   "cab-close-relaxed",
+   "bits-door-aggr-rattle",
+   "door-rattle-sml",
+   "bits-burst-aggr-push",
+   "bits-burst-aggr-pull",
+   "door-push-npc-open-relaxed",
+   "drawer-pull-tense",
+   "bits-burst-ambi-180",
+   "door-push-crouch",
+   "cab-close-tense",
+   "door-push-npc-close-relaxed",
+   "door-pull-crouch",
+   "door-push-relaxed",
+   "drawer-close-tense",
+   "door-latch",
+   "bits-door-wall-hits-ambi-180",
+   "door-pull-relaxed",
+   "cab-pull-crouch",
+   "door-push-tense",
+   "cab-pull-tense",
+   "door-pull-tense",
+   "locked-push",
+   "locked-pull"
+  ],
+  "suffixes-mesh-effect-rope-material": [
+   "rope-climb-zuz-leg",
+   "rope-swing",
+   "rope-coil-grab",
+   "rope-coil-flap",
+   "rope-collision-hit",
+   "rope-coil-hit",
+   "rope-end-collision-slide",
+   "rope-climb-zuz-short",
+   "rope-edge-slide",
+   "rope-coil",
+   "rope-slide",
+   "rope-end-collision-hit",
+   "rope-collision-slide",
+   "rope-coil-zuz",
+   "rope-throw",
+   "rope-grab",
+   "rope-creak",
+   "rope-climb-zuz-hand",
+   "rope-climb-grab",
+   "rope-climb-creak",
+   "rope-climb-foot-land",
+   "rope-climb-zuz-long"
+  ],
+  "suffixes-grab-effect": [
+   "parry",
+   "meatshield",
+   "maul-detach",
+   "maul-attach",
+   "tackle",
+   "pull",
+   "push",
+   "pat-fire",
+   "swipe"
+  ],
+  "suffixes-carry-effect": [
+   "tbd"
+  ],
+  "suffixes-mesh-effect-door-handle": [
+   "shiv-push-release",
+   "shiv-push-start",
+   "start-pushbar",
+   "shiv-pull-start",
+   "release",
+   "locked",
+   "shiv-pull-release",
+   "start"
+  ],
+  "suffixes-general-effect": [
+   "scuff",
+   "dog-dland",
+   "prone-arm-pat-pistol",
+   "body-knee",
+   "gear-move-melee",
+   "hit-punch",
+   "on",
+   "hit-push",
+   "bp-off-stealth",
+   "stealth-lift-bw",
+   "heel",
+   "squeeze-front-01m",
+   "bp-mvmt-soft",
+   "gear-upper-pistol-holster",
+   "squeeze-front-crouch",
+   "sland",
+   "off",
+   "dog-bodyfall-torso",
+   "runthrough",
+   "squeeze-front-01m-relaxed",
+   "gear-upper-pistol-unholster",
+   "finisher-nose",
+   "squeeze-front-crouch-tense-01m",
+   "ladder-hand-grab",
+   "finisher-slice",
+   "prone-body-roll-0-off",
+   "settle",
+   "squeeze-front-tense",
+   "prone-torso-land-soft",
+   "wall-body-vault",
+   "supine-off",
+   "scav-remove-item",
+   "prone-back-drag",
+   "wall-impact-body",
+   "bp-melee-hard",
+   "hit",
+   "toe-bw",
+   "gear-lower-pistol-leg-unholster",
+   "prone-front-drag",
+   "wall-impact-shoulder",
+   "squeeze-front-crouch-01m",
+   "prone-back-heel-push",
+   "prone-back-heel-pull",
+   "prone-body-roll-0-on",
+   "wall-impact-slam-body",
+   "hoof-scuff-soft",
+   "finisher-longgun",
+   "prone-torso-getup",
+   "npc-gear-lower-pistol-leg-unholster",
+   "hoof",
+   "bodyfall-torso",
+   "gear-impact",
+   "gear-move-melee-lrg",
+   "stealth-toe-bw",
+   "finisher",
+   "prone-body-roll-45-off",
+   "stealth-lift",
+   "stealth-sland",
+   "toe",
+   "bp-off-ambi",
+   "throw",
+   "animal-vox",
+   "bodyfall-torso-bp-only",
+   "gear-move-lower-stealth",
+   "prone-torso-land-hard",
+   "torso",
+   "hoof-dland-rear",
+   "gear-move-upper-stealth",
+   "bp-land",
+   "stealth-plant",
+   "bp-off-supine",
+   "hoof-rear",
+   "bp-melee-soft",
+   "bodyfall-arm",
+   "hand-grab",
+   "bp-dodge-soft",
+   "npc-gear-upper-pistol-holster",
+   "prone-body-roll-180-on",
+   "slide-land",
+   "prone-arm-pat",
+   "prone-body-roll-180-off",
+   "dog-paw",
+   "stealth-toe",
+   "bp-roll-hit-med",
+   "wall-impact-slam-head",
+   "pat-fire",
+   "impact-med",
+   "bodyfall-head",
+   "impact-hard",
+   "prone-back-lift",
+   "stealth-heel-bw",
+   "prone-off",
+   "turn",
+   "gear-move-upper",
+   "prone-arm-drag-pistol",
+   "wall-impact-body-hard",
+   "climb",
+   "ladder-scuff",
+   "bodyfall-foot",
+   "scav-insert-item",
+   "prone-arm-lift-pistol",
+   "prone-body-roll-135-off",
+   "stealth-heel",
+   "npc-gear-upper-pistol-unholster",
+   "bodyfall-leg",
+   "bp-mvmt-hard",
+   "close",
+   "pickup",
+   "pick-up",
+   "gear-lower-pistol-leg-holster",
+   "hit-elbow",
+   "hit-stab",
+   "wall-body-clamber-large",
+   "stealth-scuff",
+   "flip-back",
+   "bodyfall-hand",
+   "qp-scuff",
+   "heel-bw",
+   "hand-brush",
+   "hand-lift",
+   "lift-bw",
+   "prone-body-roll-90-on",
+   "bp-roll-hit-hard",
+   "carry",
+   "supine-on",
+   "prone-torso-pullout-long",
+   "roll-evade-torso",
+   "hoof-dland-front",
+   "impact-soft",
+   "gear-ammo-pull",
+   "npc-gear-lower-pistol-leg-holster",
+   "gear-swish",
+   "slide-plant-foot",
+   "prone-torso-pullout-short",
+   "lift",
+   "wall-body-clamber-small",
+   "dog-leap",
+   "prone-arm-lift",
+   "hit-handle",
+   "crouch-off",
+   "wall-impact-body-soft",
+   "prone-body-roll-135-on",
+   "hand-pat",
+   "stealth-dland",
+   "impact-slam",
+   "slide",
+   "prone-body-roll-45-on",
+   "flip",
+   "prone-arm-drag",
+   "qp-plant",
+   "dland",
+   "prone-on",
+   "gear-move-lower",
+   "squeeze-front",
+   "flip-front",
+   "bp-roll-hit-soft",
+   "prone-front-toe-push",
+   "prone-front-toe-pull",
+   "hit-kick",
+   "squeeze-front-relaxed",
+   "gear-throw",
+   "dog-settle",
+   "bp-dodge-hard",
+   "hit-knee",
+   "prone-arm-drag-turn",
+   "bp-off-prone",
+   "crouch-on",
+   "prone-body-roll-90-off",
+   "drag",
+   "drop",
+   "hoof-front",
+   "dog-scuff",
+   "hoof-scuff-hard",
+   "breaker",
+   "open",
+   "grab",
+   "plant",
+   "wall-impact-body-med"
+  ]
+ },
+ "mesh_effect_material_counts": {
+  "wood": 284,
+  "metal": 150,
+  "metal-big": 4,
+  "wood-track": 11,
+  "metal-fence-gate": 20,
+  "wood-screen": 4,
+  "metal-glass": 6,
+  "metal-locker": 4,
+  "metal-fridge": 1,
+  "wood-glass": 2,
+  "metal-military": 2
+ },
+ "mesh_effect_handle_counts": {
+  "metal-handle": 196,
+  "knob": 52,
+  "latch": 151,
+  "wood-knob": 39,
+  "metal-big-handle": 5,
+  "metal-bar": 27
+ },
+ "door_material_coverage": {
+  "metal": {
+   "resolved": 22,
+   "of": 32,
+   "examples": [
+    "sfx-metal-drawer-pull-relaxed",
+    "sfx-metal-cab-pull-relaxed",
+    "sfx-metal-door-rattle-med",
+    "sfx-metal-drawer-close-crouch"
+   ]
+  },
+  "metal-big": {
+   "resolved": 6,
+   "of": 32,
+   "examples": [
+    "sfx-metal-big-drawer-pull-relaxed",
+    "sfx-metal-big-drawer-close-crouch",
+    "sfx-metal-big-drawer-close-relaxed",
+    "sfx-metal-big-drawer-pull-crouch"
+   ]
+  },
+  "metal-fence-gate": {
+   "resolved": 8,
+   "of": 32,
+   "examples": [
+    "sfx-metal-fence-gate-door-rattle-med",
+    "sfx-metal-fence-gate-door-rattle-lrg",
+    "sfx-metal-fence-gate-door-rattle-sml",
+    "sfx-metal-fence-gate-bits-burst-aggr-push"
+   ]
+  },
+  "metal-fridge": {
+   "resolved": 6,
+   "of": 32,
+   "examples": [
+    "sfx-metal-fridge-cab-pull-relaxed",
+    "sfx-metal-fridge-cab-close-crouch",
+    "sfx-metal-fridge-cab-close-relaxed",
+    "sfx-metal-fridge-cab-close-tense"
+   ]
+  },
+  "metal-glass": {
+   "resolved": 5,
+   "of": 32,
+   "examples": [
+    "sfx-metal-glass-bits-burst-aggr-push",
+    "sfx-metal-glass-door-push-crouch",
+    "sfx-metal-glass-door-push-relaxed",
+    "sfx-metal-glass-door-latch"
+   ]
+  },
+  "metal-locker": {
+   "resolved": 6,
+   "of": 32,
+   "examples": [
+    "sfx-metal-locker-cab-pull-relaxed",
+    "sfx-metal-locker-cab-close-crouch",
+    "sfx-metal-locker-cab-close-relaxed",
+    "sfx-metal-locker-cab-close-tense"
+   ]
+  },
+  "metal-military": {
+   "resolved": 13,
+   "of": 32,
+   "examples": [
+    "sfx-metal-military-door-rattle-med",
+    "sfx-metal-military-door-rattle-lrg",
+    "sfx-metal-military-door-wall-hit",
+    "sfx-metal-military-door-rattle-sml"
+   ]
+  },
+  "wood": {
+   "resolved": 29,
+   "of": 32,
+   "examples": [
+    "sfx-wood-drawer-pull-relaxed",
+    "sfx-wood-cab-pull-relaxed",
+    "sfx-wood-door-rattle-med",
+    "sfx-wood-drawer-close-crouch"
+   ]
+  },
+  "wood-glass": {
+   "resolved": 8,
+   "of": 32,
+   "examples": [
+    "sfx-wood-glass-door-rattle-med",
+    "sfx-wood-glass-door-rattle-lrg",
+    "sfx-wood-glass-door-rattle-sml",
+    "sfx-wood-glass-bits-burst-aggr-push"
+   ]
+  },
+  "wood-screen": {
+   "resolved": 6,
+   "of": 32,
+   "examples": [
+    "sfx-wood-screen-door-rattle-med",
+    "sfx-wood-screen-door-rattle-lrg",
+    "sfx-wood-screen-door-wall-hit",
+    "sfx-wood-screen-door-rattle-sml"
+   ]
+  },
+  "wood-track": {
+   "resolved": 6,
+   "of": 32,
+   "examples": [
+    "sfx-wood-track-drawer-pull-relaxed",
+    "sfx-wood-track-drawer-close-crouch",
+    "sfx-wood-track-drawer-close-relaxed",
+    "sfx-wood-track-drawer-pull-crouch"
+   ]
+  }
+ },
+ "door_handle_coverage": {
+  "knob": {
+   "resolved": 7,
+   "of": 8,
+   "examples": [
+    "sfx-knob-shiv-push-release",
+    "sfx-knob-shiv-push-start",
+    "sfx-knob-shiv-pull-start",
+    "sfx-knob-release"
+   ]
+  },
+  "latch": {
+   "resolved": 7,
+   "of": 8,
+   "examples": [
+    "sfx-latch-shiv-push-release",
+    "sfx-latch-shiv-push-start",
+    "sfx-latch-shiv-pull-start",
+    "sfx-latch-release"
+   ]
+  },
+  "metal-bar": {
+   "resolved": 3,
+   "of": 8,
+   "examples": [
+    "sfx-metal-bar-release",
+    "sfx-metal-bar-locked",
+    "sfx-metal-bar-start"
+   ]
+  },
+  "metal-big-handle": {
+   "resolved": 1,
+   "of": 8,
+   "examples": [
+    "sfx-metal-big-handle-start"
+   ]
+  },
+  "metal-handle": {
+   "resolved": 1,
+   "of": 8,
+   "examples": [
+    "sfx-metal-handle-start"
+   ]
+  },
+  "wood-knob": {
+   "resolved": 1,
+   "of": 8,
+   "examples": [
+    "sfx-wood-knob-start"
+   ]
+  }
+ },
+ "rope_material_coverage": {
+  "cable": {
+   "resolved": 19,
+   "of": 22,
+   "examples": [
+    "sfx-cable-rope-climb-zuz-leg",
+    "sfx-cable-rope-swing",
+    "sfx-cable-rope-coil-grab",
+    "sfx-cable-rope-coil-flap"
+   ]
+  },
+  "chain": {
+   "resolved": 4,
+   "of": 22,
+   "examples": [
+    "sfx-chain-rope-collision-hit",
+    "sfx-chain-rope-edge-slide",
+    "sfx-chain-rope-end-collision-hit",
+    "sfx-chain-rope-collision-slide"
+   ]
+  },
+  "cord": {
+   "resolved": 17,
+   "of": 22,
+   "examples": [
+    "sfx-cord-rope-climb-zuz-leg",
+    "sfx-cord-rope-swing",
+    "sfx-cord-rope-coil-grab",
+    "sfx-cord-rope-coil-flap"
+   ]
+  },
+  "hemp": {
+   "resolved": 17,
+   "of": 22,
+   "examples": [
+    "sfx-hemp-rope-climb-zuz-leg",
+    "sfx-hemp-rope-swing",
+    "sfx-hemp-rope-coil-grab",
+    "sfx-hemp-rope-coil-flap"
+   ]
+  },
+  "hose": {
+   "resolved": 17,
+   "of": 22,
+   "examples": [
+    "sfx-hose-rope-climb-zuz-leg",
+    "sfx-hose-rope-swing",
+    "sfx-hose-rope-coil-grab",
+    "sfx-hose-rope-coil-flap"
+   ]
+  },
+  "igc-med": {
+   "resolved": 0,
+   "of": 22,
+   "examples": []
+  },
+  "igc-med-lev": {
+   "resolved": 1,
+   "of": 22,
+   "examples": [
+    "sfx-igc-med-lev-rope-slide"
+   ]
+  },
+  "igc-pat": {
+   "resolved": 0,
+   "of": 22,
+   "examples": []
+  },
+  "main-menu": {
+   "resolved": 0,
+   "of": 22,
+   "examples": []
+  },
+  "nylon": {
+   "resolved": 17,
+   "of": 22,
+   "examples": [
+    "sfx-nylon-rope-climb-zuz-leg",
+    "sfx-nylon-rope-swing",
+    "sfx-nylon-rope-coil-grab",
+    "sfx-nylon-rope-coil-flap"
+   ]
+  },
+  "phy-gong": {
+   "resolved": 0,
+   "of": 22,
+   "examples": []
+  },
+  "phy-t2r": {
+   "resolved": 0,
+   "of": 22,
+   "examples": []
+  }
+ },
+ "look_audio_config_meshes": [
+  "chain-tether-3m",
+  "hose-red-thick-14m",
+  "rope-white-14m",
+  "power-cord-3pin-plug-male",
+  "power-cord-plug-male",
+  "test-rope-coil-throwable",
+  "cabe14m",
+  "powerline14m",
+  "garden-hose-14m",
+  "rope-nylon-green-14m",
+  "cord14m",
+  "firehose14m",
+  "endcap-hose-red-thick",
+  "rope-thick-14m",
+  "rope14m"
+ ],
+ "mesh_material_table": [
+  {
+   "mesh": "cab-high-desk-garage-shop-large-door-l",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-desk-garage-shop-large-door-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-ferry-door-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-ferry-door-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-flo-kitchen-door-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-flo-kitchen-door-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-flo-office-door-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-flo-office-door-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-gym-locker-door-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-cathedral-pantry-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-traditional-b-upper-b-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-traditional-b-upper-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-traditional-b-upper-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-traditional-lower-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-cabinet-traditional-upper-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-shaker-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-shaker-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-kitchen-traditional-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-l",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-med-apartment-kitchen-upper-b-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-med-apt-kitchen-upper-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-med-apt-kitchen-upper-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-wat-kitchen-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-wat-kitchen-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-wat-kitchen-apartment-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-high-watchtower-apartment-kitchen-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-afm-cafe-counter-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-afm-cafe-counter-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-bank-counter-c-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-bank-counter-c-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-bath-vanity-contemporary-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-bookshelf-modern-c-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-bookshelf-modern-c-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-command-cabinet-door-l",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-command-cabinet-door-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-counter-bakery-b-l",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "cab-short-counter-bakery-b-r",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "cab-short-dining-cabinet-set-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flo-arcade-cabinet-right-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flo-bsshop-counter-door-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flo-bsshop-counter-door-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flo-drink-counter-door-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flo-drink-counter-door-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flower-shop-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-flower-shop-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-fridge-french-door-l",
+   "material": "metal-fridge",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-hotel-dresser-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-hotel-dresser-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-cabinet-shaker-a-lower-double-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-cabinet-shaker-a-lower-double-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-cabinet-traditional-b-pantry-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-shaker-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-shaker-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-traditional-b-lower-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-traditional-b-lower-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-kitchen-tradtional-house-g-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-l",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-living-room-high-set-a-bookshelf-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-living-room-high-set-a-bookshelf-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-locker-shelf-b-r",
+   "material": "metal-locker",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-locker-shelf-c-r",
+   "material": "metal-locker",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-midcentury-a-bookshelf-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-midcentury-bookshelf-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-midcentury-bookshelf-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-babinet-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-cabinet-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-cabinet-a-r-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-furn-cab-door-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-furn-sink-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-opt-furn-sink-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-paper-store-shelf-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-paper-store-shelf-door-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-pat-counter-bakery-a-l",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "cab-short-pat-sup-confroom-bookshelf-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-pat-sup-confroom-bookshelf-b-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-pat-sup-confroom-bookshelf-b-r-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-post-office-kitchen-unit-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-res-bike-shop-workbench-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-res-tattoo-shop-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-res-tattoo-shop-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-res-tattoo-shop-a-short-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-room-bar-a-2-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-room-bar-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-room-bar-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-rv-trailer-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-rv-trailer-b-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-san-resort-weapon-locker-a-l",
+   "material": "metal-locker",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-san-resort-weapon-locker-a-r",
+   "material": "metal-locker",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-sea-hub-mil-cache-case-med-b-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-tvs-office-shelf-large-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-wat-kitchen-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-wat-kitchen-a-long-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-wat-kitchen-a-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-short-wat-tunnel-fire-locker-r",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-thin-high-l",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "cab-thin-high-r",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "cab-thin-short-kitchen-cabinet-traditional-lower-single-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-thin-short-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-thin-short-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-thin-short-res-metal-workshop-kitchen-cabinet-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "cab-thin-short-res-metal-workshop-kitchen-cabinet-r",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "door--tra-cha-interior-b-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-afd-fence-gate-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-afd-fence-gate-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-afm-brew-door-window-a-l",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-afm-brew-door-window-a-r",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-afm-retail-a-r",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-aqu-atrium-employee-bar-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-atrium-employee-bar-r",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-atrium-single-handle-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-blue-seaweed-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-blue-seaweed-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-dock-l",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-aqu-employee-window-seaweed-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-employee-window-seaweed-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-empolyee-glass-window-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-empolyee-glass-window-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-entrance-l",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-freckle-front-employee-back-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-jelly-front-employee-back-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-jelly-front-employee-back-r",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-jelly-front-random-back-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-jelly-front-random-back-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-maxs-place-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-maxs-place-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-peanut-front-employee-back-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-aqu-shark-front-bub-back-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-shark-front-oscar-back-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-aqu-shark-front-oscar-back-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-boarded-forward-base-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-boarded-forward-base-r",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-efp-lobby-door-left-b-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-bar-door-left-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-bar-door-right-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-bar-seethrough-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-bar-seethrough-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-lobby-door-left-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efp-mot-lobby-door-left-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efu-hosp-red-l",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-efu-hosp-red-r",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-efu-hosp-white-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efu-hosp-white-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-efu-metal-single-c-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-exterior-b-l",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-exterior-c-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-exterior-c-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-far-house-door-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-far-house-door-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-far-screen-l",
+   "material": "wood-screen",
+   "handle": ""
+  },
+  {
+   "mesh": "door-far-screen-porch-l",
+   "material": "wood-screen",
+   "handle": ""
+  },
+  {
+   "mesh": "door-far-screen-porch-r",
+   "material": "wood-screen",
+   "handle": ""
+  },
+  {
+   "mesh": "door-far-screen-r",
+   "material": "wood-screen",
+   "handle": ""
+  },
+  {
+   "mesh": "door-fence-wire-a-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fence-wire-solid-a-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-flo-backroom-restroom-r",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-flo-hotel-ir-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-flo-hotel-ir-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-flo-industrial-a-l",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-flo-industrial-a-r",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-flo-office-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-flo-office-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-fob-exit-gate",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-gunrange-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-hallway-wood-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-hallway-wood-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-medical-l",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-fob-medical-r",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-fob-school-single-metal-e-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-stadium-single-metal-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-fob-stadium-single-metal-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-interior-b-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-interior-b-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-interior-d-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-interior-d-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-joe-single-metal-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-joel-front-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-jordan-a",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-jordan-b",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-jordan-c",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-jordan-c-wrapped-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "door-knob-hidden-test",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-lab-white-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-lab-white-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-lab-white-signs-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-lab-white-signs-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-red-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-knob-red-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-med-apartement-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-ascent-metal-door-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-ascent-metal-door-a-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-downtown-hotel-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-downtown-hotel-b-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-gasmask-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-gasmask-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-gym-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-med-hos-lobby-entrance-single-l",
+   "material": "metal",
+   "handle": ""
+  },
+  {
+   "mesh": "door-med-hos-lobby-entrance-single-r",
+   "material": "metal",
+   "handle": ""
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-a-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-c-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-c-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-a-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-c-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-office-door-window-nolock-c-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-c-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-c-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-nolock-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-nolock-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-nolock-c-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hos-single-plain-door-nolock-c-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hosp-single-plain-door-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hosp-single-plain-door-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hosp-single-plain-door-nolock-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hosp-single-plain-door-nolock-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-bathroom-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-bathroom-men-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-bathroom-men-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-bathroom-women-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-bathroom-women-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-stairway-door-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-stairway-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-med-hotel-stairway-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-metal-e-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-metal-e-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-metal-g-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-monorail-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-bar-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-bar-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-employee-glass-window-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-mus-back-door-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-mus-back-door-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-mus-emergency-exit-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-mus-emergency-exit-a-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-park-entrance-b-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-park-entrance-b-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-park-office-a-l",
+   "material": "metal-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-nor-park-office-a-r",
+   "material": "metal-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-nor-scar-intro-transition-bldg-l",
+   "material": "metal-glass",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-scar-intro-transition-bldg-r",
+   "material": "metal-glass",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-sewer-puzzle-gate-a-l",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-nor-sewer-puzzle-gate-a-r",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-nor-theater-streets-ambush-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-nor-theater-streets-ambush-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-nor-wood-conference-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-nor-wood-conference-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-growroom-dbl",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-growroom-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-growroom-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-wood-conference-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-wood-latch-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-wood-window-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-pat-wood-window-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-artscrafts-door-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-door-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-door-b-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-door-b-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-door-c-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-interior-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-artscrafts-interior-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-res-downhill-exterior-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-downhill-exterior-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-downhill-reunite-door_1-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-downhill-reunite-door_1-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-petstore-door-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-petstore-door-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-petstore-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-petstore-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-retail-a-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-retail-a-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-single-metal-e-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-res-single-metal-e-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-saf-interior-door-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-saf-interior-door-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-san-outpost-fireflyhouse-security-b-l",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-san-resort-conference-a-l",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-san-resort-conference-a-r",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-court-wood-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-court-wood-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-courthouse-b-front-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-courthouse-b-front-r",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-courthouse-front-l",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-hotel-hallway-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-hotel-hallway-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-hotel-lobby-entrance-l",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-hotel-lobby-entrance-r",
+   "material": "wood",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-metal--l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-metal--r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-metal-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-metal-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-hub-single-glass-a-l",
+   "material": "metal",
+   "handle": ""
+  },
+  {
+   "mesh": "door-sea-hub-single-glass-a-r",
+   "material": "metal",
+   "handle": ""
+  },
+  {
+   "mesh": "door-sea-hub-single-glass-b-l",
+   "material": "wood-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-single-glass-b-r",
+   "material": "wood-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-sea-hub-window-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mil-chainlink-fence-alt-l",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mil-chainlink-fence-alt-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mil-chainlink-fence-l",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mil-chainlink-fence-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mil-chainlink-fence-rope",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-sea-mobile-command-l",
+   "material": "metal-military",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-sea-mobile-command-r",
+   "material": "metal-military",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-sea-qz-security-l",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-sea-qz-security-r",
+   "material": "metal-fence-gate",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-single-metal-b-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-single-metal-b-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-single-metal-d-thickbar-l",
+   "material": "metal-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-single-metal-thickbar-r",
+   "material": "metal-glass",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-ski-interior-d-l",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-theater-employee-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-theater-employee-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-tra-cha-interior-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-tra-cha-interior-a-r",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "door-tra-horde-tommy-close-door-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-tra-ski-single-plain-a-l",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-tra-ski-single-plain-a-r",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-wat-cap-bar-a-l",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "door-wat-cap-grocery-r",
+   "material": "metal",
+   "handle": "metal-bar"
+  },
+  {
+   "mesh": "door-wat-cap-motel-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-cap-motel-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-infected-tunnels-explore-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-infected-tunnels-explore-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-interior-a-l",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-interior-a-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-tunnel-door-fence-a-l",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wat-tunnel-door-fence-a-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wood-interior-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "door-wood-interior-r",
+   "material": "wood",
+   "handle": "latch"
+  },
+  {
+   "mesh": "drawer",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-a-dresser-colonial-set-a-vanity-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-afm-shelf-counter-small-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-aqu-gift-shop-counter-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-artscraft-shelf-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-b-dresser-colonial-set-a-vanity-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-bank-cubicle-b",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-bath-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-bath-vanity-contemporary-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-bath-vanity-contemporary-a-double-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-bath-vanity-contemporary-wide-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cab-ferry",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cabinet-metal-a-short",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cabinet-metal-a-tall",
+   "material": "metal-big",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cabinet-midcentury-a-bookshelf-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cel-store-display-a",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-cellphone-display-wall-drawer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-chinese-buffet-table-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-clothing-store-counter",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-contemporary-set-side-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-desk-a",
+   "material": "metal",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-desk-b",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-desk-drawer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-desk-garage-shop-large-drawer-top",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-desser-colonial-set-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dining-cabinet-set-a-cabinet-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-dresser-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-a-large-double-handle",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-a-side",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-colonial-set-a-dresser-b",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-large-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-set-a-nightstand-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-dresser-table-traditional-set-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-dresser-traditional-set-a-dresser-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-efu-jerry-office-file-cabinet-a",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-far-dresser",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-a-short",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-b",
+   "material": "metal-big",
+   "handle": "metal-big-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-b-scaled",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-middle-top",
+   "material": "metal-big",
+   "handle": "metal-big-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-short-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-tall-open",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-filing-cabinet-wet",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flc-furniture-office-counter",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flo-desk-drawer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flo-kitchen-drawer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flo-office-drawer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flo-office-drawer-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-flo-steal-cabinet",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-fob-office-cabinet-b-short-drawer-a",
+   "material": "metal",
+   "handle": "metal-big-handle"
+  },
+  {
+   "mesh": "drawer-fob-office-desk-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-fob-table-science-a-l",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-garage-file-cabinet-drawer",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-gas-garage-shop-desk-d",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-gas-garage-shop-shelf-system",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-gas-garage-shop-shelf-system-a-drawer-b",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-glass-top-side-table-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-home-side-table-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-hotel-cabinet-tv-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-hotel-desk",
+   "material": "wood",
+   "handle": ""
+  },
+  {
+   "mesh": "drawer-hotel-dresser-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-hunting-store-checkout-counter",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-hunting-store-stepped-checkout-counter",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-jewelry-store-counter",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-joe-school-science-table",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-juicery-counter",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-cabinet-cathedral-lower",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-cabinet-traditional-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-cabinet-traditional-b-lower",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-cabinet-traditional-lower",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-cabinet-traditional-wide",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-shaker-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-kitchen-traditional-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-living-room-high-set-a-bookshelf-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-living-room-high-set-a-console-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-living-room-mid-set-a-tv-stand-a-coin-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-living-room-mid-set-tv-stand-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-med-apt-bathroom-b",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-apt-kitchen-drawer-a",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-ascent-ani-desk-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-ascent-ani-desk-b",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-barber-station-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-bike-design-reception-desk-a",
+   "material": "metal",
+   "handle": ""
+  },
+  {
+   "mesh": "drawer-med-furniture-store-breakroom-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-med-infected-hotel-nightstand-drawer",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-mid-century-set-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-nor-hosp-cabinet-lower-d",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-nor-offices-cabinet-metal",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-office-counter-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-office-desk-a-drawer",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-office-desk-a-scaled",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-opt-furn-cabinent-drawer-a",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-opt-furn-cabinet-drawer-b",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-opt-shelf-long-scaled",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-opt-table-short",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-paper-store-shelf-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-pat-counter-breakroom-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-pat-pharmacy-counter-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-post-office-counter-a-2x-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-post-office-counter-a-2x-c",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-ratking-ambulance",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-res-bike-shop-workbench",
+   "material": "metal",
+   "handle": "metal-big-handle"
+  },
+  {
+   "mesh": "drawer-res-dresser-tradtional-set-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-res-liquor-store-checkout-counter",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-res-metal-workshop-kitchen-desk",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-res-salon",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-res-table-traditional-set-a",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "drawer-room-bar-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-rv-trailer-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-rv-trailer-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-san-train-station-breakroom",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sea-filing-metal-short",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sea-hub-desk-extension-drawer-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sea-hub-guitar-counter-a-entry",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sea-hub-hotel-bedside-table-a-drawer",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-sea-hub-hotel-lobby-cabinet-mail-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-sea-hub-hotel-lobby-wall-section-b-drawer",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-sea-hub-rustons-a",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sea-hub-safety-deposit-box-a",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-sle-cafe-drawer",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-small-garage-file-cabinet",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-table-traditional-set-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-table-traditional-set-a-console-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-table-traditional-set-a-dresser-b",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-table-traditional-set-a-dresser-b-2",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-table-traditional-set-a-dresser-b-2x",
+   "material": "wood",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-table-traditional-side-set-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-tattoo-shop-counter-a",
+   "material": "wood-track",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-test",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-tool-machinist-storage-a",
+   "material": "metal-big",
+   "handle": "metal-big-handle"
+  },
+  {
+   "mesh": "drawer-tool-machinist-storage-b",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-tool-machinist-storage-c",
+   "material": "metal",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-traditional-set-a-dresser-b",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-traditional-set-a-nightstand-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-vanity-modern-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-wat-explore-start-glass-top-side-table-a",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "drawer-wat-explore-start-glass-top-side-table-b",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "drawer-wat-kitchen-a",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-wat-kitchen-apartment",
+   "material": "wood-track",
+   "handle": "metal-handle"
+  },
+  {
+   "mesh": "drawer-writing-desk",
+   "material": "wood",
+   "handle": "wood-knob"
+  },
+  {
+   "mesh": "flo-boat-gate-door",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "knob-door-l",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "knob-door-r",
+   "material": "metal",
+   "handle": "knob"
+  },
+  {
+   "mesh": "latch-door-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "latch-door-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "med-hosp-recovery-dbl-door-l",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "med-hosp-recovery-dbl-door-r",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "med-hosp-recovery-door",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "med-hosp-supplies-door",
+   "material": "metal",
+   "handle": "latch"
+  },
+  {
+   "mesh": "t2r-door-res-artscrafts-interior-a-l",
+   "material": "wood",
+   "handle": "knob"
+  },
+  {
+   "mesh": "wat-perimeter-bolt-door-l",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  },
+  {
+   "mesh": "wat-perimeter-bolt-door-r",
+   "material": "metal-fence-gate",
+   "handle": "latch"
+  }
+ ],
+ "sfx_entry_names_scanned": 86157
+}

@@ -1,0 +1,834 @@
+{
+ "_source": "derived from weapon-upgrades.bin (*weapon-upgrade-bundles*, *weapon-upgrade-bundles-grounded-override*) via tools/analysis/workbench_extract_data.py; numbers only, no raw data",
+ "_schema": "weapon -> [ {upgrade bundle id, cost {item: [count]}, stat_refs: weapon-upgrade-ref-array entries resolved against *weapon-upgrade-type-names*} ]",
+ "_confidence": "CONFIRMED (data). Which table is used at runtime (normal vs grounded) is chosen natively by lookup-weapon-upgrade-bundle-resources: UNKNOWN / NEEDS NATIVE RESEARCH",
+ "normal": {
+  "pistol-beretta": [
+   {
+    "upgrade": "increase-rate-of-fire",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "compensator-recoil-reduction",
+    "cost": {
+     "parts": [
+      30
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "recoil",
+      "set_index": 1
+     },
+     {
+      "type": "accuracy",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "increase-capacity",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "bow-ellie": [
+   {
+    "upgrade": "new-string",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "charge-curve",
+      "set_index": 1
+     },
+     {
+      "type": "reload-speed",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "rangefinder",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "range-finder-settings",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "shotgun-remington-pump-ellie-npc": [
+   {
+    "upgrade": "increase-rate-of-fire",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip-upgrade-reduce-recoil",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "recoil",
+      "set_index": 1
+     },
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "increase-capacity",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "pistol-xcaliber": [
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     },
+     {
+      "type": "accuracy",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "armor-penetration",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "stopping-power",
+      "set_index": 1
+     },
+     {
+      "type": "power-mult",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "shotgun-baserri-over-under": [
+   {
+    "upgrade": "stock",
+    "cost": {
+     "parts": [
+      30
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     },
+     {
+      "type": "recoil",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "bullet-loops",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "reload-speed",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "barrel",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "power-mult",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "rifle-vepr": [
+   {
+    "upgrade": "stock",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "increase-capacity",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     },
+     {
+      "type": "accuracy",
+      "set_index": 3
+     },
+     {
+      "type": "scope-sway",
+      "set_index": 2
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "burst-fire-kit",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "pistol-glock": [
+   {
+    "upgrade": "increase-rate-of-fire",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "compensator-recoil-reduction",
+    "cost": {
+     "parts": [
+      30
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "recoil",
+      "set_index": 1
+     },
+     {
+      "type": "accuracy",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "increase-capacity",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "crossbow": [
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     },
+     {
+      "type": "scope-sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "quiver",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "shotgun-remington-pump": [
+   {
+    "upgrade": "increase-rate-of-fire",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip-upgrade-reduce-recoil",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "recoil",
+      "set_index": 1
+     },
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "increase-capacity",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "rifle-remington-bolt": [
+   {
+    "upgrade": "stock",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     },
+     {
+      "type": "recoil",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "magazine-reload",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "reload-multiple",
+      "set_index": 1
+     },
+     {
+      "type": "clip-capacity",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     },
+     {
+      "type": "scope-sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "longer-barrel",
+    "cost": {
+     "parts": [
+      100
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "stopping-power",
+      "set_index": 1
+     },
+     {
+      "type": "power-mult",
+      "set_index": 1
+     },
+     {
+      "type": "penetration",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "pistol-revolver-taurus": [
+   {
+    "upgrade": "increase-rate-of-fire",
+    "cost": {
+     "parts": [
+      30
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "fire-rate",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     },
+     {
+      "type": "recoil",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "speed-loader",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "reload-multiple",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "new-grip-longer-barrel",
+    "cost": {
+     "parts": [
+      70
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "accuracy",
+      "set_index": 1
+     },
+     {
+      "type": "power-mult",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ]
+ },
+ "grounded_override": {
+  "bow-ellie": [
+   {
+    "upgrade": "rangefinder",
+    "cost": {
+     "parts": [
+      100
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "range-finder-settings",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "pistol-xcaliber": [
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      80
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "grip",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "armor-penetration",
+    "cost": {
+     "parts": [
+      50
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "accuracy",
+      "set_index": 1
+     },
+     {
+      "type": "stopping-power",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "shotgun-baserri-over-under": [
+   {
+    "upgrade": "stock",
+    "cost": {
+     "parts": [
+      30
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "barrel",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "recoil",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "rifle-remington-bolt": [
+   {
+    "upgrade": "longer-barrel",
+    "cost": {
+     "parts": [
+      60
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "stopping-power",
+      "set_index": 1
+     },
+     {
+      "type": "penetration",
+      "set_index": 1
+     },
+     {
+      "type": "accuracy",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   },
+   {
+    "upgrade": "scope",
+    "cost": {
+     "parts": [
+      100
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "scope",
+      "set_index": 1
+     },
+     {
+      "type": "scope-sway",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ],
+  "pistol-revolver-taurus": [
+   {
+    "upgrade": "new-grip-longer-barrel",
+    "cost": {
+     "parts": [
+      40
+     ]
+    },
+    "stat_refs": [
+     {
+      "type": "accuracy",
+      "set_index": 1
+     }
+    ],
+    "craft_sfx": "sfx-craft-upgrade-generic"
+   }
+  ]
+ }
+}

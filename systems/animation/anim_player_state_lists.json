@@ -1,0 +1,9224 @@
+{
+ "source": "anim-player/*.bin (dconstruct asm), summarised by tools/analysis/animation_statelist.py",
+ "schema": {
+  "actor-state-list": "{sid owner-actor (anim-player), int count, array<state>}",
+  "state": "{0x00 string name, 0x08 sid name, 0x18 anim-node tree root (anim-node-animation | -blend | -parametric | -gesture | -subsystem-ik | -instance-0), 0x20 sid primary anim, 0x28 sid state tag/family, 0x48 anim-transition-group, 0x60 script-lambda (phase/speed update; calls player-anim-speed-mult), 0x70 hash-table of per-subsystem info {player: anim-state-player-info, door: door-state-info, subsystem: subsystem-state-info(symbol-array of native *Action classes), dynamic: dynamic-state-info-array([sid flag, float phase, int mode, boxed value])}}",
+  "transition": "{0x00 sid event ('auto' or named event e.g. ladder-up), 0x08 int flags, 0x10 array of conditions (anim-transition-condition {int type, float phase} | anim-transition-condition-lambda {script-lambda}), 0x20 sid target state, 0x38 float blend seconds, 0x3C float, 0x4C int curve?}"
+ },
+ "modules": {
+  "anim-player/player-door.bin.asm": {
+   "name": "anim-player-door-states",
+   "owner": "anim-player",
+   "state_count": 8,
+   "states": [
+    {
+     "name": "s_door-open-push-quick",
+     "tag": "door-open",
+     "primary_anim": "ellie-door-stand-right-open-push-quick",
+     "anims": [
+      "ellie-door-stand-right-open-push-quick"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.90",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-door-stand-right-open-push-quick-door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-push-far",
+     "tag": "door-open",
+     "primary_anim": "ellie-relaxed-door-right-open-push-fw",
+     "anims": [
+      "ellie-relaxed-door-right-open-push-fw"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.85",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-relaxed-door-right-open-push-fw--door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-push-left",
+     "tag": "door-open",
+     "primary_anim": "ellie-relaxed-door-right-open-push-90lt",
+     "anims": [
+      "ellie-relaxed-door-right-open-push-90lt"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.85",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-relaxed-door-right-open-push-90lt--door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-push-right",
+     "tag": "door-open",
+     "primary_anim": "ellie-relaxed-door-right-open-push-90rt",
+     "anims": [
+      "ellie-relaxed-door-right-open-push-90rt"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.85",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-relaxed-door-right-open-push-90rt--door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-pull-quick",
+     "tag": "door-open",
+     "primary_anim": "ellie-door-stand-right-open-pull-quick",
+     "anims": [
+      "ellie-door-stand-right-open-pull-quick"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.90",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-door-stand-right-open-pull-quick-door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-locked",
+     "tag": "door-open",
+     "primary_anim": "ellie-door-relaxed-right-try-locked",
+     "anims": [
+      "ellie-door-relaxed-right-try-locked"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.90",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-door-relaxed-right-try-locked-door",
+     "transitions": []
+    },
+    {
+     "name": "s_door-open-unlock",
+     "tag": "door-open",
+     "primary_anim": "ellie-door-relaxed-right-unlock",
+     "anims": [
+      "ellie-door-relaxed-right-unlock"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "ellie-door-relaxed-right-unlock-door",
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_door-open-push-quick",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.92"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_door-open-push-quick",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_door-combat-open",
+     "tag": "door-open",
+     "primary_anim": "combat-door-open",
+     "anims": [
+      "combat-door-open"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "DoorHandleIkAction",
+      "PlayerFeatherBlendPartialAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.90",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "door-state-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": "t2-door-right-open-combat",
+     "transitions": []
+    }
+   ]
+  },
+  "anim-player/player-investigate.bin.asm": {
+   "name": "anim-player-investigate-states",
+   "owner": "anim-player",
+   "state_count": 33,
+   "states": [
+    {
+     "name": "investigate-enter-1",
+     "tag": null,
+     "primary_anim": "investigate-enter",
+     "anims": [
+      "investigate-enter"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-enter-2",
+     "tag": null,
+     "primary_anim": "investigate-enter-2",
+     "anims": [
+      "investigate-enter-2"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-exit",
+     "tag": null,
+     "primary_anim": "investigate-exit",
+     "anims": [
+      "investigate-exit"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.70",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-exit-2",
+     "tag": null,
+     "primary_anim": "investigate-exit-2",
+     "anims": [
+      "investigate-exit-2"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRebootCloth"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.70",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0",
+       "2"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-idle-front",
+     "tag": null,
+     "primary_anim": "investigate-idle-front",
+     "anims": [],
+     "node_types": [
+      "parametric",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "InvestigateTurnSpringAction",
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "flip",
+       "target": "investigate-idle-front^idle-back",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "abort",
+       "target": "investigate-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "investigate-idle-front",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "investigate-idle-back",
+     "tag": null,
+     "primary_anim": "investigate-idle-back",
+     "anims": [],
+     "node_types": [
+      "parametric"
+     ],
+     "native_actions": [
+      "InvestigateTurnSpringAction",
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "flip",
+       "target": "investigate-idle-back^idle-front",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "investigate-idle-front^idle-back",
+     "tag": null,
+     "primary_anim": "investigate-idle-front^idle-back",
+     "anims": [
+      "investigate-idle-front^idle-back"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-idle-back^idle-front",
+     "tag": null,
+     "primary_anim": "investigate-idle-back^idle-front",
+     "anims": [
+      "investigate-idle-back^idle-front"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close",
+       "target": "investigate-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "3",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "investigate-close",
+     "tag": null,
+     "primary_anim": "investigate-idle-front^close",
+     "anims": [
+      "investigate-idle-front^close"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "idle",
+       "target": "idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "investigate-swap-enter",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-swap--enter",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--enter"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "investigate-swap",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "investigate-swap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "investigate-swap",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-swap--loop",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--loop"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "investigate-swap-exit",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-swap--exit",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--exit"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "investigate-idle-front",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-enter-2",
+     "tag": null,
+     "primary_anim": "investigate-enter-2",
+     "anims": [
+      "investigate-enter-2"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "horse-investigate-exit",
+     "tag": null,
+     "primary_anim": "investigate-exit",
+     "anims": [
+      "investigate-exit"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "horse-investigate-exit-2",
+     "tag": null,
+     "primary_anim": "investigate-exit-2",
+     "anims": [
+      "investigate-exit-2"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "horse-investigate-idle-front",
+     "tag": null,
+     "primary_anim": "investigate-idle-front",
+     "anims": [],
+     "node_types": [
+      "parametric"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "flip",
+       "target": "horse-investigate-idle-front^idle-back",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "abort",
+       "target": "horse-investigate-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-front",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-idle-back",
+     "tag": null,
+     "primary_anim": "investigate-idle-back",
+     "anims": [],
+     "node_types": [
+      "parametric"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "flip",
+       "target": "horse-investigate-idle-back^idle-front",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-back",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-idle-front^idle-back",
+     "tag": null,
+     "primary_anim": "investigate-idle-front^idle-back",
+     "anims": [
+      "investigate-idle-front^idle-back"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-back",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-back",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-idle-back^idle-front",
+     "tag": null,
+     "primary_anim": "investigate-idle-back^idle-front",
+     "anims": [
+      "investigate-idle-back^idle-front"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close",
+       "target": "horse-investigate-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "3",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-front",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-front",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-close",
+     "tag": null,
+     "primary_anim": "investigate-idle-front^close",
+     "anims": [
+      "investigate-idle-front^close"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "idle",
+       "target": "idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-swap-enter",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-horse-swap--enter",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--enter"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "horse-investigate-swap",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "horse-investigate-swap",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-horse-swap--loop",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--loop"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "horse-investigate-swap-exit",
+     "tag": null,
+     "primary_anim": "ellie-inspect-paper-backpack-horse-swap--exit",
+     "anims": [
+      "ellie-inspect-paper-backpack-swap--exit"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "horse-investigate-idle-front",
+       "blend": "0.10",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-enter",
+     "tag": null,
+     "primary_anim": "cit-tower-stand^photograph-mode-hero",
+     "anims": [
+      "cit-tower-stand^photograph-mode-hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "idle",
+       "target": "idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-enter-fast",
+     "tag": null,
+     "primary_anim": "cit-tower-stand^photograph-mode-hero",
+     "anims": [
+      "cit-tower-stand^photograph-mode-hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "idle",
+       "target": "idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-enter-idle",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-enter--hero",
+     "anims": [
+      "cit-tower-photograph-mode-enter--hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "photograph-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "photograph-idle",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-idle",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-idle--hero-stand",
+     "anims": [
+      "cit-tower-photograph-mode-idle--hero-stand"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "button",
+       "target": "photograph-button",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-exit",
+     "tag": null,
+     "primary_anim": "photograph-mode^cit-tower-stand-pose-hero",
+     "anims": [
+      "photograph-mode^cit-tower-stand-pose-hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "idle",
+       "blend": "0.50",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "2",
+       "target": "-1",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-button",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-button-press--hero",
+     "anims": [
+      "cit-tower-photograph-mode-button-press--hero-stand"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "photograph-idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-enter-kneel-idle",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-kneel-enter--hero",
+     "anims": [
+      "cit-tower-photograph-mode-kneel-enter--hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "photograph-kneel-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "photograph-kneel-idle",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-kneel-idle",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-kneel-idle--hero",
+     "anims": [
+      "cit-tower-photograph-mode-kneel-idle--hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "button",
+       "target": "photograph-kneel-button",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "idle",
+       "target": "photograph-kneel-exit",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "photograph-kneel-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-kneel-exit",
+     "tag": null,
+     "primary_anim": "kneel-photograph-mode^cit-tower--stand-pose-hero",
+     "anims": [
+      "kneel-photograph-mode^cit-tower--stand-pose-hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "idle",
+       "blend": "0.50",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "2",
+       "target": "-1",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "photograph-kneel-button",
+     "tag": null,
+     "primary_anim": "cit-tower-photograph-mode-kneel-button-press--hero",
+     "anims": [
+      "cit-tower-photograph-mode-kneel-button-press--hero"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "photograph-kneel-idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "photograph-kneel-idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "anim-player/player-journal.bin.asm": {
+   "name": "anim-player-journal-states",
+   "owner": "anim-player",
+   "state_count": 7,
+   "states": [
+    {
+     "name": "journal-open",
+     "tag": null,
+     "primary_anim": "hero-journal-open",
+     "anims": [
+      "hero-journal-open"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close",
+       "target": "journal-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "64",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-idle",
+     "tag": null,
+     "primary_anim": "hero-journal-open-idle",
+     "anims": [
+      "hero-journal-open-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "journal-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "close",
+       "target": "journal-close",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-close",
+     "tag": null,
+     "primary_anim": "hero-journal-close",
+     "anims": [
+      "hero-journal-close"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0",
+       "2"
+      ],
+      [
+       "abort-prone",
+       "1.00",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close-cut",
+       "target": "journal-close",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "close-2-cut",
+       "target": "journal-close-2",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "close-prone-2-cut",
+       "target": "journal-prone-close-2",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-close-2",
+     "tag": null,
+     "primary_anim": "hero-journal-close-2",
+     "anims": [
+      "hero-journal-close-2"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.70",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.70",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close-cut",
+       "target": "journal-close",
+       "blend": "0",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-turn-left",
+     "tag": null,
+     "primary_anim": "hero-page-turn-left",
+     "anims": [
+      "hero-page-turn-left"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close",
+       "target": "journal-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-turn-right",
+     "tag": null,
+     "primary_anim": "hero-page-turn-right",
+     "anims": [
+      "hero-page-turn-right"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "close",
+       "target": "journal-close",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "journal-prone-close-2",
+     "tag": null,
+     "primary_anim": "prone-craft-idle",
+     "anims": [
+      "prone-craft-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "PlayerInventoryAnimAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "player-backpack-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    }
+   ]
+  },
+  "anim-player/player-ladder.bin.asm": {
+   "name": "anim-player-ladder-states",
+   "owner": "anim-player",
+   "state_count": 20,
+   "states": [
+    {
+     "name": "s_ladder-enter-placeholder",
+     "tag": null,
+     "primary_anim": "ellie-ladder-idle-l-hand",
+     "anims": [
+      "ellie-ladder-idle-l-hand"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.20"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-enter-jump-landing",
+     "tag": null,
+     "primary_anim": "ellie-ladder-jump-land",
+     "anims": [
+      "ellie-ladder-jump-land"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderEnter",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-rot",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.25",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-swim-enter-bot",
+     "tag": null,
+     "primary_anim": "ellie-ladder-swim^enter-fw",
+     "anims": [
+      "ellie-ladder-swim^enter-fw"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-rot",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-enter-bot",
+     "tag": null,
+     "primary_anim": "ellie-ladder-idle^enter-fw-0-5m",
+     "anims": [
+      "ellie-ladder-idle^enter-fw-0-5m"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-rot",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-block-movement-beyond-ap-plane",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-enter-top",
+     "tag": null,
+     "primary_anim": "ellie-ladder-enter-top-railing-bw",
+     "anims": [
+      "ellie-ladder-enter-top-railing-bw"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderEnter",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-enter-bot-bw",
+     "tag": null,
+     "primary_anim": "ellie-ladder-idle^enter-fw-0-5m",
+     "anims": [
+      "ellie-ladder-idle^enter-fw-0-5m"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-enter"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-rot",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-idle",
+     "tag": null,
+     "primary_anim": "ellie-ladder-idle-l-hand",
+     "anims": [
+      "ellie-ladder-idle-l-hand"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "character-ladder-state-idle"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-look-down",
+       "target": "s_ladder-look-down",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-look-down",
+     "tag": null,
+     "primary_anim": "ellie-ladder-idle-l-hand-lookdown",
+     "anims": [
+      "ellie-ladder-idle-l-hand-lookdown"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "character-ladder-state-idle"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-idle",
+       "target": "s_ladder-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-look-down",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-drop",
+     "tag": null,
+     "primary_anim": "ellie-ladder-drop-start",
+     "anims": [
+      "ellie-ladder-drop-start"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-exit"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "fall",
+       "blend": "0.25",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-up",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-up-a",
+     "anims": [
+      "ellie-ladder-climb-up-a"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0.10",
+       "6"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-idle",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-dn",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-dn-a",
+     "anims": [
+      "ellie-ladder-climb-dn-a"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-idle",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-look-down",
+       "target": "s_ladder-look-down",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-up-2rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-up-2rung-a",
+     "anims": [
+      "ellie-ladder-climb-up-2rung-a"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-2rung",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-dn-2rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-dn-2rung-a",
+     "anims": [
+      "ellie-ladder-climb-dn-2rung-a"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "character-ladder-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "-1375372100",
+       "target": "-1822057957",
+       "blend": "16025",
+       "cond": []
+      },
+      {
+       "event": "724712169",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "39301",
+       "target": "46447",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-up-1^2rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-up-1^2rung",
+     "anims": [
+      "ellie-ladder-climb-up-1^2rung"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-dn-1^2rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-dn-1^2rung",
+     "anims": [
+      "ellie-ladder-climb-dn-1^2rung"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn-2^1rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "-1375372100",
+       "target": "-1822057957",
+       "blend": "16025",
+       "cond": []
+      },
+      {
+       "event": "724712169",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "39301",
+       "target": "46447",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-up-2^1rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-up-2^1rung",
+     "anims": [
+      "ellie-ladder-climb-up-2^1rung"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-slide",
+       "target": "s_ladder-climb-dn-slide",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-dn-2^1rung",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-dn-2^1rung",
+     "anims": [
+      "ellie-ladder-climb-dn-2^1rung"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderMove",
+      "CharacterLadderPhase",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-climb-dn",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-climb-up",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-climb-dn-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-climb-up-1^2rung",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_ladder-idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-dn-slide",
+     "tag": null,
+     "primary_anim": "ellie-ladder-climb-dn-slide-b",
+     "anims": [
+      "ellie-ladder-climb-dn-slide-b"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "CharacterLadderSlideDown",
+      "character-ladder-state-move"
+     ],
+     "dynamic_flags": [
+      [
+       "ladder-can-drop",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-top",
+       "0",
+       "1"
+      ],
+      [
+       "ladder-can-climb-off-bot",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "ladder-dn",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-dn-2rung",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-up-2rung",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-idle",
+       "target": "s_ladder-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "ladder-look-down",
+       "target": "s_ladder-look-down",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_ladder-climb-off-top-stand",
+     "tag": null,
+     "primary_anim": "bindpose-anim",
+     "anims": [
+      "bindpose-anim"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-exit"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "motion-matching-suppress-change",
+       "0",
+       "1"
+      ],
+      [
+       "motion-matching-suppress-change-abort-angle",
+       "0",
+       "1"
+      ],
+      [
+       "exit-move",
+       "0.20",
+       "6"
+      ],
+      [
+       "character-leg-ik",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_ladder-climb-off-top-fall",
+     "tag": null,
+     "primary_anim": "bindpose-anim",
+     "anims": [
+      "bindpose-anim"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLadder",
+      "character-ladder-state-exit"
+     ],
+     "dynamic_flags": [
+      [
+       "custom-motion-fade-channel-xz",
+       "0",
+       "1"
+      ],
+      [
+       "custom-motion-fade-channel-y",
+       "0",
+       "1"
+      ],
+      [
+       "exit-fall",
+       "0.20",
+       "6"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    }
+   ]
+  },
+  "anim-player/player-climb.bin.asm": {
+   "name": "anim-player-climb-states",
+   "owner": "anim-player",
+   "state_count": 10,
+   "states": [
+    {
+     "name": "idle-climb-180",
+     "tag": null,
+     "primary_anim": "ellie-idle-clamber-up-180",
+     "anims": [
+      "ellie-idle-clamber-up-180"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "PlayerRotationBlendAction"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "end",
+       "target": "run",
+       "blend": "0.10",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-begin-close",
+     "tag": null,
+     "primary_anim": "clamber-up-close-start",
+     "anims": [
+      "clamber-up-close-start"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-start"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "clamber-mid",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "clamber-mid",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-begin",
+     "tag": null,
+     "primary_anim": "clamber-up-start",
+     "anims": [
+      "clamber-up-start"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-start"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "clamber-mid",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "clamber-mid",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-mid",
+     "tag": null,
+     "primary_anim": "clamber-up-mid",
+     "anims": [
+      "clamber-up-mid"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-mid"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-camera-blend-start",
+       "0.50",
+       "2"
+      ],
+      [
+       "climb-camera-blend-time",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hl",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hr",
+       "0",
+       "1"
+      ],
+      [
+       "vault-pull-in",
+       "0.40",
+       "6"
+      ],
+      [
+       "vault-pull-in-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "clamber-mid-rot",
+     "tag": null,
+     "primary_anim": "clamber-up-mid",
+     "anims": [
+      "clamber-up-mid"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-mid"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-camera-blend-start",
+       "0.50",
+       "2"
+      ],
+      [
+       "climb-camera-blend-time",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hl",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hr",
+       "0",
+       "1"
+      ],
+      [
+       "vault-pull-in",
+       "0.40",
+       "6"
+      ],
+      [
+       "vault-pull-in-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "clamber-ue",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-ue",
+     "tag": null,
+     "primary_anim": "clamber-up-ue",
+     "anims": [
+      "clamber-up-ue"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "CharacterUpdateApRefY",
+      "character-ledge-climb-up-ue"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "early-exit-move",
+       "0",
+       "1"
+      ],
+      [
+       "early-exit-prone",
+       "0",
+       "1"
+      ],
+      [
+       "climb-camera-blend-start",
+       "0",
+       "1"
+      ],
+      [
+       "camera-blend-time",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hl",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hr",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "vault",
+       "target": "s_ledge-climb-up^vault",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "stand",
+       "target": "s_ledge-climb-up^stand",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-low-begin-close",
+     "tag": null,
+     "primary_anim": "clamber-up-close-start",
+     "anims": [
+      "clamber-up-close-start"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-start"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "clamber-low-mid",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-low-begin",
+     "tag": null,
+     "primary_anim": "clamber-up-start",
+     "anims": [
+      "clamber-up-start"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-start"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "clamber-low-mid",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "clamber-low-mid",
+     "tag": null,
+     "primary_anim": "clamber-up-mid",
+     "anims": [
+      "clamber-up-mid"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterLedgeClimbUp",
+      "character-ledge-climb-up-mid"
+     ],
+     "dynamic_flags": [
+      [
+       "climb-camera-blend-start",
+       "0.50",
+       "2"
+      ],
+      [
+       "climb-camera-blend-time",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hl",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-ik-contact-hr",
+       "0",
+       "1"
+      ],
+      [
+       "vault-pull-in",
+       "0.40",
+       "6"
+      ],
+      [
+       "vault-pull-in-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-spring",
+       "0",
+       "1"
+      ],
+      [
+       "climb-up-camera-pan-up-start",
+       "0",
+       "1"
+      ]
+     ],
+     "info_blocks": [
+      "all-weapons-state-info",
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info",
+      "weapon-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "vault",
+       "target": "s_ledge-climb-up^vault",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "stand",
+       "target": "s_ledge-climb-up^stand",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ledge-grab",
+     "tag": null,
+     "primary_anim": "bindpose-anim",
+     "anims": [
+      "bindpose-anim"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    }
+   ]
+  },
+  "anim-player/player-push-object.bin.asm": {
+   "name": "anim-player-push-object-states",
+   "owner": "anim-player",
+   "state_count": 5,
+   "states": [
+    {
+     "name": "relax-idle^push-idle",
+     "tag": null,
+     "primary_anim": "relaxed-idle^push-idle",
+     "anims": [
+      "relaxed-idle^push-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "push-idle^relax-idle",
+     "tag": null,
+     "primary_anim": "push-idle^relaxed-idle",
+     "anims": [
+      "push-idle^relaxed-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "idle",
+       "blend": "0.50",
+       "cond": [
+        [
+         "2",
+         "0.90"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "idle",
+       "blend": "0.50",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "push-object-idle",
+     "tag": null,
+     "primary_anim": "push-idle",
+     "anims": [
+      "push-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "push-object-fwd",
+       "blend": "0.75",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "514",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "push-object-fwd",
+     "tag": "push-pull",
+     "primary_anim": "push-fwd",
+     "anims": [
+      "push-fwd",
+      "push-fwd-left",
+      "push-fwd-right"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "pull-object-bkwd",
+       "blend": "0.75",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "push-object-idle",
+       "blend": "0.75",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "push-object-fwd",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "pull-object-bkwd",
+     "tag": "push-pull",
+     "primary_anim": "pull-bkwd",
+     "anims": [
+      "pull-bkwd",
+      "pull-bkwd-left",
+      "pull-bkwd-right"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "push-object-fwd",
+       "blend": "0.75",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "push-object-idle",
+       "blend": "0.75",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "pull-object-bkwd",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "anim-player/player-squeeze-through.bin.asm": {
+   "name": "anim-player-squeeze-through-states",
+   "owner": "anim-player",
+   "state_count": 1,
+   "states": [
+    {
+     "name": "squeeze-through",
+     "tag": null,
+     "primary_anim": "bindpose-anim",
+     "anims": [
+      "bindpose-anim"
+     ],
+     "node_types": [
+      "animation",
+      "subsystem-ik"
+     ],
+     "native_actions": [
+      "PlayerSqueezeThroughAction"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.90",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.70",
+       "2"
+      ]
+     ],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    }
+   ]
+  },
+  "anim-player/player-rope.bin.asm": {
+   "name": "anim-player-rope-states",
+   "owner": "anim-player",
+   "state_count": 41,
+   "states": [
+    {
+     "name": "s_rope-climb-2-75m",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-enter-jump",
+     "anims": [
+      "ellie-free-rope-enter-jump"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.55"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.55"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": [
+          "player-animation-abort-active?"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-drop-down",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-drop-grab",
+     "anims": [
+      "ellie-free-rope-drop-grab"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1285423213",
+       "target": "-315734357",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "493833374",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-2113905209",
+       "target": "7498",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-drop-down-left",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-drop-grab-90l",
+     "anims": [
+      "ellie-free-rope-drop-grab-90l"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1285423213",
+       "target": "-315734357",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "493833374",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-2113905209",
+       "target": "7498",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-drop-down-right",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-drop-grab-90r",
+     "anims": [
+      "ellie-free-rope-drop-grab-90r"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1285423213",
+       "target": "-315734357",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "493833374",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-2113905209",
+       "target": "7498",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-drop-down-backwards",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-drop-grab-bw",
+     "anims": [
+      "ellie-free-rope-drop-grab-bw"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1285423213",
+       "target": "-315734357",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "493833374",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-2113905209",
+       "target": "7498",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-start-custom",
+     "tag": null,
+     "primary_anim": "bindpose-anim",
+     "anims": [
+      "bindpose-anim"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-start-fall",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-enter^from-jump-ledge",
+     "anims": [
+      "ellie-free-rope-enter^from-jump-ledge"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.50"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "2",
+         "0.50"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-start-swim",
+     "tag": null,
+     "primary_anim": "ellie-swim-idle^free-rope-idle",
+     "anims": [
+      "ellie-swim-idle^free-rope-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1285423213",
+       "target": "1368488386",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "493833374",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "2",
+         "0.50"
+        ]
+       ]
+      },
+      {
+       "event": "-2113905209",
+       "target": "23203",
+       "blend": "49024",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle",
+     "anims": [
+      "ellie-free-rope-idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-left",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-right",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-turn-left",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-turn-on-spot-l",
+     "anims": [
+      "ellie-free-rope-idle-turn-on-spot-l"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-left",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-turn-right",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-turn-on-spot-r",
+     "anims": [
+      "ellie-free-rope-idle-turn-on-spot-r"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-right",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-mirror",
+     "tag": "s_rope-climb-idle",
+     "primary_anim": "ellie-free-rope-idle-mirror",
+     "anims": [
+      "ellie-free-rope-idle-mirror"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-1644128125",
+       "target": "-0.00",
+       "blend": "4082892",
+       "cond": []
+      },
+      {
+       "event": "-1259054725",
+       "target": "1573466359",
+       "blend": "15948",
+       "cond": []
+      },
+      {
+       "event": "1307587557",
+       "target": "325275209",
+       "blend": "-2147483586",
+       "cond": []
+      },
+      {
+       "event": "1733804764",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "6145911",
+       "target": "5939975",
+       "blend": "12550144",
+       "cond": []
+      },
+      {
+       "event": "24007",
+       "target": "26075",
+       "blend": "49024",
+       "cond": []
+      },
+      {
+       "event": "93",
+       "target": "231",
+       "blend": "191",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-turn-left-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-mirror-turn-on-spot-l",
+     "anims": [
+      "ellie-free-rope-idle-mirror-turn-on-spot-l"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-left-mirror",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-turn-right-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-mirror-turn-on-spot-r",
+     "anims": [
+      "ellie-free-rope-idle-mirror-turn-on-spot-r"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-turn-right-mirror",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-idle^climb-up",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle^start-up",
+     "anims": [
+      "ellie-free-rope-idle^start-up"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up-auto",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-up",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-up",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-idle^climb-up-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-mirror^start-up",
+     "anims": [
+      "ellie-free-rope-idle-mirror^start-up"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up-auto",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-up",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-up",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-up",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-climb",
+     "anims": [
+      "ellie-free-rope-climb"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-up^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up-auto",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-up",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-up^idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-climb^stop-idle",
+     "anims": [
+      "ellie-free-rope-climb^stop-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up-auto",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-up^idle-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-climb^stop-idle-mirror",
+     "anims": [
+      "ellie-free-rope-climb^stop-idle-mirror"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up-auto",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-idle^climb-dn",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle^start-down",
+     "anims": [
+      "ellie-free-rope-idle^start-down"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground-auto",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-dn",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-dn",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-idle^climb-dn-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-mirror^start-down",
+     "anims": [
+      "ellie-free-rope-idle-mirror^start-down"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground-auto",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-dn",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-dn",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-dn",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-down",
+     "anims": [
+      "ellie-free-rope-down"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-dn^idle-mirror",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-swing",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground-auto",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-dn",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-dn^idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-down^stop-idle",
+     "anims": [
+      "ellie-free-rope-down^stop-idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground-auto",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-dn^idle-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-down^stop-idle-mirror",
+     "anims": [
+      "ellie-free-rope-down^stop-idle-mirror"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-idle^climb-up-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground-auto",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-idle^climb-dn-mirror",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-mid",
+     "anims": [
+      "ellie-free-rope-swing-mid"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "-1644139222",
+       "target": "-1541008542",
+       "blend": "4115660",
+       "cond": []
+      },
+      {
+       "event": "1285423256",
+       "target": "1654924769",
+       "blend": "16076",
+       "cond": []
+      },
+      {
+       "event": "498398297",
+       "target": "-1252144848",
+       "blend": "-2147483586",
+       "cond": []
+      },
+      {
+       "event": "1733804764",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "6145911",
+       "target": "3739322",
+       "blend": "12550144",
+       "cond": []
+      },
+      {
+       "event": "24007",
+       "target": "14592",
+       "blend": "49024",
+       "cond": []
+      },
+      {
+       "event": "93",
+       "target": "12",
+       "blend": "191",
+       "cond": []
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-idle^fw",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle^swing-forward",
+     "anims": [
+      "ellie-free-rope-idle^swing-forward"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-idle^bk",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        },
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-idle^bk",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle^swing-back",
+     "anims": [
+      "ellie-free-rope-idle^swing-back"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "rope-idle",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-up",
+       "target": "s_rope-climb-up",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-climb-dn",
+       "target": "s_rope-climb-dn",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-ledge-climb-up",
+       "target": "s_rope-climb-ledge-idle^chest",
+       "blend": "0.20",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "rope-exit-to-ground",
+       "target": "s_rope-climb-exit-dn^idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "0",
+         "0"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-idle^fw",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        },
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-fw",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-forward-new",
+     "anims": [
+      "ellie-free-rope-swing-forward-new"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^bk",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-bk",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-back-new",
+     "anims": [
+      "ellie-free-rope-swing-back-new"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^fw",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-fw^bk",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-forward^swing-back",
+     "anims": [
+      "ellie-free-rope-swing-forward^swing-back"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-bk^fw",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-back^swing-forward",
+     "anims": [
+      "ellie-free-rope-swing-back^swing-forward"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^idle",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-fw^idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-forward^idle",
+     "anims": [
+      "ellie-free-rope-swing-forward^idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-fw^bk",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "0",
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": null,
+       "target": "0",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-swing-bk^idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-swing-back^idle",
+     "anims": [
+      "ellie-free-rope-swing-back^idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-swing-bk^fw",
+       "blend": "0.20",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.40",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-ledge-idle^chest",
+     "tag": null,
+     "primary_anim": "ledge-grab^ledge-grab-chest",
+     "anims": [
+      "ledge-grab^ledge-grab-chest"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-ledge-chest^knee",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-ledge-chest^knee",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-ledge-chest^knee",
+     "tag": null,
+     "primary_anim": "ledge-grab-chest^ledge-grab-knee",
+     "anims": [
+      "ledge-grab-chest^ledge-grab-knee"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-ledge-knee^idle",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-ledge-knee^idle",
+     "tag": null,
+     "primary_anim": "ledge-grab-knee^idle",
+     "anims": [
+      "ledge-grab-knee^idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.20",
+       "6"
+      ],
+      [
+       "abort-out",
+       "0.25",
+       "2"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_rope-climb-exit-dn^idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-exit^from-climb-down",
+     "anims": [
+      "ellie-free-rope-exit^from-climb-down"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [
+      [
+       "enable-motion-matching",
+       "0",
+       "1"
+      ],
+      [
+       "abort-idle",
+       "0.70",
+       "2"
+      ],
+      [
+       "abort-out",
+       "0.90",
+       "2"
+      ]
+     ],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_rope-climb-idle^free-idle-mirror",
+     "tag": null,
+     "primary_anim": "ellie-climb-rope-idle^free-rope-idle-mirror",
+     "anims": [
+      "ellie-climb-rope-idle^free-rope-idle-mirror"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.60"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-climb-idle-mirror^free-idle",
+     "tag": null,
+     "primary_anim": "ellie-climb-rope-idle-mirror^free-rope-idle",
+     "anims": [
+      "ellie-climb-rope-idle-mirror^free-rope-idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.60"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-free-idle^climb-idle-mirror",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle^climb-rope-idle-mirror",
+     "anims": [
+      "ellie-free-rope-idle^climb-rope-idle-mirror"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.60"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle-mirror",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_rope-free-idle-mirror^climb-idle",
+     "tag": null,
+     "primary_anim": "ellie-free-rope-idle-mirror^climb-rope-idle",
+     "anims": [
+      "ellie-free-rope-idle-mirror^climb-rope-idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture",
+      "instance-0"
+     ],
+     "native_actions": [
+      "CharacterRope"
+     ],
+     "dynamic_flags": [],
+     "info_blocks": [],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.30",
+       "cond": [
+        [
+         "2",
+         "0.60"
+        ]
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_rope-climb-idle",
+       "blend": "0.30",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "anim-player/player-script.bin.asm": {
+   "name": "anim-player-script-states",
+   "owner": "anim-player",
+   "state_count": 52,
+   "states": [
+    {
+     "name": "s_script-full-body-loop-ap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-ap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-loop-ap-no-weap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap-no-weap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap-no-weap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-ap-no-weap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-loop-no-weap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-no-weap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-no-weap",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-no-weap",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-0-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-0-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-0",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-1-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-1-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-gesture-1-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-1",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-2-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-2-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-gesture-2-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-2",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-3-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-3-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-gesture-3-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-3",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-add-0-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-add-0-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "auto",
+       "target": "s_script-gesture-add-0-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-add-0",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-add-1-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-add-1-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-add-1",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-add-2-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-add-2-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-add-2",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-gesture-add-3-loop",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-gesture-add-3-loop",
+       "blend": "0",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      },
+      {
+       "event": "1573353348",
+       "target": null,
+       "blend": "-1.00",
+       "cond": [
+        {
+         "lambda_calls": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-gesture-add-3",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-no-weap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-ap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-ap-no-weap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_script-full-body-loop-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-gesture",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-loop-no-weap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-no-weap-gesture",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-loop-ap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap-gesture",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_script-full-body-loop-ap-no-weap-gesture",
+     "tag": null,
+     "primary_anim": "idle",
+     "anims": [
+      "idle"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_script-full-body-loop-ap-no-weap-gesture",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_hero-dancing-box-step-fw",
+     "tag": null,
+     "primary_anim": "hero-dancing-box-step-short-fw",
+     "anims": [
+      "hero-dancing-box-step-fw",
+      "hero-dancing-box-step-short-fw"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-dancing-box-step-fw-rev",
+     "tag": null,
+     "primary_anim": "hero-dancing-box-step-rev-short-fw",
+     "anims": [
+      "hero-dancing-box-step-rev-fw",
+      "hero-dancing-box-step-rev-short-fw"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-dancing-box-step-bw",
+     "tag": null,
+     "primary_anim": "hero-dancing-box-step-short-bw",
+     "anims": [
+      "hero-dancing-box-step-bw",
+      "hero-dancing-box-step-short-bw"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-dancing-box-step-bw-rev",
+     "tag": null,
+     "primary_anim": "hero-dancing-box-step-rev-short-bw",
+     "anims": [
+      "hero-dancing-box-step-rev-bw",
+      "hero-dancing-box-step-rev-short-bw"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-waltz-box-step-fw",
+     "tag": null,
+     "primary_anim": "hero-waltz-box-step-short",
+     "anims": [
+      "hero-waltz-box-step-extrashort",
+      "hero-waltz-box-step-extrashort-left",
+      "hero-waltz-box-step-extrashort-right",
+      "hero-waltz-box-step-short",
+      "hero-waltz-box-step-short-left",
+      "hero-waltz-box-step-short-right"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-waltz-box-step-fw-2",
+     "tag": null,
+     "primary_anim": "hero-waltz-box-step-short-2",
+     "anims": [
+      "hero-waltz-box-step-extrashort-2",
+      "hero-waltz-box-step-extrashort-left-2",
+      "hero-waltz-box-step-extrashort-right-2",
+      "hero-waltz-box-step-short-2",
+      "hero-waltz-box-step-short-left-2",
+      "hero-waltz-box-step-short-right-2"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_hero-waltz-shuffle-fw",
+     "tag": null,
+     "primary_anim": "hero-waltz-shuffle-fw",
+     "anims": [
+      "hero-waltz-shuffle-fw",
+      "hero-waltz-shuffle-fw-left",
+      "hero-waltz-shuffle-fw-right"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_hero-waltz-shuffle-fw",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_hero-sprint-leaning",
+     "tag": null,
+     "primary_anim": "sprint-test-fw",
+     "anims": [
+      "sprint-test-fw",
+      "sprint-test-lt",
+      "sprint-test-rt"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_hero-sprint-leaning",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_hero-run-leaning",
+     "tag": null,
+     "primary_anim": "run-test-fw",
+     "anims": [
+      "run-mocap-test-lt",
+      "run-mocap-test-rt",
+      "run-test-fw"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_hero-run-leaning",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_hero-walk-leaning",
+     "tag": null,
+     "primary_anim": "walk-test-fw",
+     "anims": [
+      "walk-test-fw",
+      "walk-test-lt",
+      "walk-test-rt"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_hero-walk-leaning",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "s_hero-atv-leaning-2",
+     "tag": null,
+     "primary_anim": "hero-atv-steer-range-left",
+     "anims": [
+      "hero-atv-steer-range-backward",
+      "hero-atv-steer-range-forward",
+      "hero-atv-steer-range-left",
+      "hero-atv-steer-range-right"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-climb-up-a",
+     "tag": null,
+     "primary_anim": "buddy-boost-wait-idle^relaxed-idle-ft-a--boosted",
+     "anims": [
+      "buddy-boost-wait-idle^relaxed-idle-ft-a--boosted",
+      "buddy-boost-wait-idle^relaxed-idle-lt-a--boosted",
+      "buddy-boost-wait-idle^relaxed-idle-rt-a--boosted"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-run-climb-up-a",
+     "tag": null,
+     "primary_anim": "buddy-boost-run-wait-idle^relaxed-idle-ft-a--boosted",
+     "anims": [
+      "buddy-boost-run-wait-idle^relaxed-idle-ft-a--boosted",
+      "buddy-boost-run-wait-idle^relaxed-idle-lt-a--boosted",
+      "buddy-boost-run-wait-idle^relaxed-idle-rt-a--boosted"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-climb-up-b",
+     "tag": null,
+     "primary_anim": "buddy-boost-wait-idle^relaxed-idle-ft-b--boosted",
+     "anims": [
+      "buddy-boost-wait-idle^relaxed-idle-ft-b--boosted",
+      "buddy-boost-wait-idle^relaxed-idle-lt-b--boosted",
+      "buddy-boost-wait-idle^relaxed-idle-rt-b--boosted"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-boost-up-a",
+     "tag": null,
+     "primary_anim": "buddy-boost^climb-idle-ft-a--hero",
+     "anims": [
+      "buddy-boost^climb-idle-ft-a--hero",
+      "buddy-boost^climb-idle-lt-a--hero",
+      "buddy-boost^climb-idle-rt-a--hero"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-run-boost-up-a",
+     "tag": null,
+     "primary_anim": "buddy-boost-run^climb-idle-ft-a--hero",
+     "anims": [
+      "buddy-boost-run^climb-idle-ft-a--hero",
+      "buddy-boost-run^climb-idle-lt-a--hero",
+      "buddy-boost-run^climb-idle-rt-a--hero"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-boost-up-b",
+     "tag": null,
+     "primary_anim": "buddy-boost^climb-idle-ft-b--hero",
+     "anims": [
+      "buddy-boost^climb-idle-ft-b--hero",
+      "buddy-boost^climb-idle-lt-b--hero",
+      "buddy-boost^climb-idle-rt-b--hero"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-buddy-boost-boost-up-c",
+     "tag": null,
+     "primary_anim": "buddy-boost^climb-idle-ft-c--hero",
+     "anims": [
+      "buddy-boost^climb-idle-ft-c--hero",
+      "buddy-boost^climb-idle-lt-c--hero",
+      "buddy-boost^climb-idle-rt-c--hero"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "hero-div-salvage-trailer-raise",
+     "tag": null,
+     "primary_anim": "div-salvage-trailer-raise-success--hero",
+     "anims": [
+      "div-salvage-trailer-raise-success--hero"
+     ],
+     "node_types": [
+      "animation",
+      "blend",
+      "gesture"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": []
+    },
+    {
+     "name": "s_ellie-peek-mode",
+     "tag": null,
+     "primary_anim": "ellie-peek--base",
+     "anims": [
+      "ellie-peek--base",
+      "ellie-peek-down",
+      "ellie-peek-left",
+      "ellie-peek-right",
+      "ellie-peek-up"
+     ],
+     "node_types": [
+      "animation",
+      "blend"
+     ],
+     "native_actions": [],
+     "dynamic_flags": [],
+     "info_blocks": [
+      "anim-state-player-info",
+      "face-state-info",
+      "fire-state-info"
+     ],
+     "door_prop_anim": null,
+     "transitions": [
+      {
+       "event": "auto",
+       "target": "s_ellie-peek-mode",
+       "blend": "0",
+       "cond": [
+        [
+         "2",
+         "1.00"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

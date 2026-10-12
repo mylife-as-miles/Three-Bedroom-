@@ -85,7 +85,7 @@ def weapons(fname):
             if off == '0x000' and kind == 'map':
                 keys = []
                 for s2 in seg[k+2:k+40]:
-                    if re.match(r'^    \[\d+\] sid:', s2): keys.append(s2.split('sid: ')[1])
+                    if re.match(r'^      \[\d+\] sid:', s2): keys.append(s2.split('sid: ')[1])
                     elif 'values array' in s2: break
                 d['upgrade_keys'] = keys
         out[m.group(1)] = d

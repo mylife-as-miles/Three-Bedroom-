@@ -1,0 +1,1184 @@
+{
+ "_note": "push-object-def entries from dc1/push-object.bin (field names are positional offsets; meanings INFERRED in README). Plus the anim-player push-object actor-state-list.",
+ "push_object_defs": [
+  {
+   "name": "push-object-wood-large",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_a_attach",
+     "who": "player"
+    },
+    {
+     "joint": "back_ap_b_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_a_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_b_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_a_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_b_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_a_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_b_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-super-heavy",
+    "push-super-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-dumpster",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-dumpster-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-sea-horse-sanc-dumpster",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-generic-mp",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-dumpster-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-heavy",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-scaffold",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "500.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-cart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": null,
+     "who": null
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "500.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-dumpster-proto",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-dumpster-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-sniper-cart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-auc-ball-cart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "player",
+     "who": null
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-cover",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-flo-arcade-cart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-wood",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-phy-wood-rolling-box-roll",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-wood-no-buoyance",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-phy-wood-rolling-box-roll",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-crate-z",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "500.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "0",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-generic",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-flo-gate-pushcart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-tremble-settings-generic",
+   "type": "push-object-tremble-settings",
+   "floats": [
+    "0.10",
+    "0.40",
+    "0.20",
+    "0.30",
+    "0.10",
+    "0.20"
+   ]
+  },
+  {
+   "name": "push-object-wood-spot-fix-in-open-water",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "push-heavy",
+    "push-heavy"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-phy-wood-rolling-box-roll",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-sle-mil-rolling-case-cart",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-metal-utility-cart-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  },
+  {
+   "name": "push-object-generic-quick",
+   "type": "push-object-def",
+   "attach_points": [
+    {
+     "joint": "back_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "front_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "left_ap_attach",
+     "who": "player"
+    },
+    {
+     "joint": "right_ap_attach",
+     "who": "player"
+    }
+   ],
+   "tremble_settings": "push-object-tremble-settings-generic",
+   "camera_strafe_settings": "*camera-strafe-push-pull-default*",
+   "mode_strings": [
+    "default",
+    "push-cover"
+   ],
+   "floats_0x28_0x30": [
+    "0.20",
+    "2.00",
+    "0.50"
+   ],
+   "floats_0xAC_0xB0": [
+    "0.65",
+    "1.80"
+   ],
+   "floats_0xBC_0xCC": [
+    "15.00",
+    "15.00",
+    "10.00",
+    "8.00"
+   ],
+   "kind_sid_0xD0": "push-object",
+   "roll_loop_sfx": "sfx-push-dumpster-roll-lp",
+   "root_joint": "root",
+   "player_strafe_set": "*player-push-pull-set*",
+   "haptics": [
+    "*push-object-grab-haptic-effect*",
+    "*push-object-release-haptic-effect*",
+    "*push-object-move-start-haptic-effect*",
+    "*push-object-move-loop-haptic-effect*",
+    "*push-object-move-stop-haptic-effect*"
+   ]
+  }
+ ],
+ "anim_graphs": [
+  {
+   "entry": "anim-player-push-object-states",
+   "type": "actor-state-list",
+   "source": "dc1/anim-player/player-push-object.bin",
+   "states": [
+    {
+     "state": "relax-idle^push-idle",
+     "anims": [
+      "relaxed-idle^push-idle"
+     ],
+     "subsystem": [],
+     "uses_generic_player_state_info": true,
+     "transitions": [],
+     "dynamic_params": [],
+     "lambda_natives": [
+      "player-anim-speed-mult"
+     ]
+    },
+    {
+     "state": "push-idle^relax-idle",
+     "anims": [
+      "push-idle^relaxed-idle"
+     ],
+     "subsystem": [],
+     "uses_generic_player_state_info": false,
+     "transitions": [
+      {
+       "on": "auto",
+       "to": "idle",
+       "blend": "0.50",
+       "cond": [
+        "anim-transition-condition(2,0.90,0)"
+       ]
+      }
+     ],
+     "dynamic_params": [],
+     "lambda_natives": [
+      "player-animation-abort-active?"
+     ]
+    },
+    {
+     "state": "push-object-idle",
+     "anims": [
+      "push-idle"
+     ],
+     "subsystem": [],
+     "uses_generic_player_state_info": true,
+     "transitions": [
+      {
+       "on": "auto",
+       "to": "push-object-fwd",
+       "blend": "0.75",
+       "cond": [
+        "lambda()"
+       ]
+      }
+     ],
+     "dynamic_params": [],
+     "lambda_natives": []
+    },
+    {
+     "state": "push-object-fwd",
+     "anims": [
+      "push-fwd",
+      "push-fwd-right",
+      "push-fwd-left"
+     ],
+     "subsystem": [],
+     "uses_generic_player_state_info": true,
+     "transitions": [
+      {
+       "on": "auto",
+       "to": "pull-object-bkwd",
+       "blend": "0.75",
+       "cond": [
+        "lambda()"
+       ]
+      },
+      {
+       "on": "auto",
+       "to": "push-object-idle",
+       "blend": "0.75",
+       "cond": [
+        "lambda()"
+       ]
+      },
+      {
+       "on": "auto",
+       "to": "push-object-fwd",
+       "blend": null,
+       "cond": [
+        "anim-transition-condition(2,1.00,0)"
+       ]
+      }
+     ],
+     "dynamic_params": [],
+     "lambda_natives": [
+      "lerp-scale"
+     ]
+    },
+    {
+     "state": "pull-object-bkwd",
+     "anims": [
+      "pull-bkwd",
+      "pull-bkwd-left",
+      "pull-bkwd-right"
+     ],
+     "subsystem": [],
+     "uses_generic_player_state_info": true,
+     "transitions": [
+      {
+       "on": "auto",
+       "to": "push-object-fwd",
+       "blend": "0.75",
+       "cond": [
+        "lambda()"
+       ]
+      },
+      {
+       "on": "auto",
+       "to": "push-object-idle",
+       "blend": "0.75",
+       "cond": [
+        "lambda()"
+       ]
+      },
+      {
+       "on": "auto",
+       "to": "pull-object-bkwd",
+       "blend": null,
+       "cond": [
+        "anim-transition-condition(2,1.00,0)"
+       ]
+      }
+     ],
+     "dynamic_params": [],
+     "lambda_natives": [
+      "lerp-scale",
+      "angle-mod"
+     ]
+    }
+   ]
+  }
+ ]
+}
