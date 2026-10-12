@@ -1,0 +1,3841 @@
+{
+ "source": "drawer-pickup-offset.bin (data-only; no DC code reads these symbols; modules.bin lists them)",
+ "maps": {
+  "*global-drawer-translation-offsets*": [
+   {
+    "key": "drawer-kitchen-cabinet-traditional-b-lower",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-ascent-ani-desk-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-ascent-ani-desk-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.12,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flc-furniture-office-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flo-office-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flo-office-drawer-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cabinet-metal-a-tall",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.34,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-living-room-mid-set-a-tv-stand-a-coin-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.1,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-apt-kitchen-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-san-train-station-breakroom",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.14,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-salon",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.21,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-hotel-lobby-cabinet-mail-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.19,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-side-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-garage-file-cabinet-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-glass-top-side-table-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-shaker-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-filing-metal-short",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-office-desk-a-scaled",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.01,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-nor-offices-cabinet-metal",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.13,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-metal-workshop-kitchen-desk",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-b-dresser-colonial-set-a-vanity-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-traditional-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-rv-trailer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-rv-trailer-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-joe-school-science-table",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.09,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-desser-colonial-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-home-side-table-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cab-ferry",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-safety-deposit-box-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-hunting-store-stepped-checkout-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-hunting-store-checkout-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-hotel-bedside-table-a-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-desk-garage-shop-large-drawer-top",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-liquor-store-checkout-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-set-a-dresser-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-bike-shop-workbench",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-middle-top",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.19,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-nor-hosp-cabinet-lower-d",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-large-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-barber-station-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cellphone-display-wall-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.38,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-clothing-store-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.1,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-desk-extension-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-table-traditional-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-wat-kitchen-apartment",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-contemporary-set-side-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-gas-garage-shop-shelf-system",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-hotel-desk",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.02,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-jewelry-store-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-hotel-lobby-wall-section-b-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-set-a-console-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-apt-bathroom-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-small-garage-file-cabinet",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-fob-office-desk-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.13,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-far-dresser",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-cabinet-traditional-wide",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-test",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-set-a-dresser-b-2",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-wat-explore-start-glass-top-side-table-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-wat-explore-start-glass-top-side-table-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-room-bar-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-tall-open",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.24,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-guitar-counter-a-entry",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-ratking-ambulance",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-hotel-dresser-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.18,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-table-traditional-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-office-counter-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.26,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-paper-store-shelf-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-a-large-double-handle",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-bath-vanity-contemporary-a-double-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-vanity-modern-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-juicery-counter",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.12,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-hotel-cabinet-tv-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.02,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-aqu-gift-shop-counter-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.14,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cel-store-display-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flo-steal-cabinet",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cabinet-metal-a-short",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.12,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-traditional-set-a-nightstand-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-bank-cubicle-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-mid-century-set-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flo-kitchen-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-a-side",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-furniture-store-breakroom-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-wet",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.24,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-b-scaled",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.12,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-cabinet-cathedral-lower",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-gas-garage-shop-desk-d",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-opt-table-short",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.02,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-infected-hotel-nightstand-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-colonial-set-a-dresser-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-afm-shelf-counter-small-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.09,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-hosp-office-desk-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.13,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-bath-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-office-desk-a-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.02,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-living-room-mid-set-tv-stand-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.09,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-artscraft-shelf-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-med-bike-design-reception-desk-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.33,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-flo-desk-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-cabinet-traditional-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-opt-shelf-long-scaled",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-res-dresser-tradtional-set-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-pat-pharmacy-counter-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.25,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-desk-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-desk-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-a-short",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-cabinet-midcentury-a-bookshelf-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-filing-cabinet-short-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-set-a-nightstand-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-opt-furn-cabinet-drawer-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.14,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-kitchen-cabinet-traditional-lower",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-bath-vanity-contemporary-wide-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-a-dresser-colonial-set-a-vanity-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-fob-office-cabinet-b-short-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.29,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-traditional-set-a-dresser-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-efu-jerry-office-file-cabinet-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-tool-machinist-storage-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.19,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-tool-machinist-storage-c",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.11,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-tool-machinist-storage-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.14,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-desk-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.08,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-table-traditional-set-a-dresser-b-2x",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sea-hub-rustons-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-opt-furn-cabinent-drawer-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.1,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-bath-vanity-contemporary-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-living-room-high-set-a-bookshelf-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.04,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-chinese-buffet-table-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-post-office-counter-a-2x-c",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.26,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-post-office-counter-a-2x-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dining-cabinet-set-a-cabinet-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-sle-cafe-drawer",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-tattoo-shop-counter-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-pat-counter-breakroom-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-writing-desk",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.05,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-wat-kitchen-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.07,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-fob-table-science-a-l",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.1,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-living-room-high-set-a-console-a",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.03,
+     "0x018": -0.16,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0
+    }
+   },
+   {
+    "key": "drawer-dresser-traditional-set-a-dresser-b",
+    "struct": "drawer-trans-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.06,
+     "0x018": -0.16,
+     "0x01C": 1.0
+    }
+   }
+  ],
+  "*global-junk-rotation-offsets*": [
+   {
+    "key": "drawer-junk-l",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-m",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-h",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-i",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-k",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-d",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-e",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-f",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-g",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "drawer-junk-b",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0.08,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   }
+  ],
+  "*global-pickup-rotation-offsets*": [
+   {
+    "key": "rag-washcloth",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-duct",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-blasting-caps",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.06,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "weapon-parts-standard-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-scissors",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.61,
+     "0x028": 0,
+     "0x02C": 0.79,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-simple",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.77,
+     "0x028": 0,
+     "0x02C": 0.64,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rifle-mini-14-mag",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.01,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0.71,
+     "0x02C": 0.71,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-small",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.06,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "pistol-357-ammo-box",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.04,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "shotgun-ammo-box",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.09,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-med-standard-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-mug",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.09,
+     "0x014": -0.04,
+     "0x018": -0.03,
+     "0x01C": 1.0,
+     "0x020": -0.57,
+     "0x024": 0.42,
+     "0x028": 0.39,
+     "0x02C": 0.59,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "weapon-parts-ellie",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-fireworks-med",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.09,
+     "0x014": -0.05,
+     "0x018": -0.01,
+     "0x01C": 1.0,
+     "0x020": -0.54,
+     "0x024": -0.45,
+     "0x028": -0.45,
+     "0x02C": 0.54,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-metal",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.08,
+     "0x014": -0.05,
+     "0x018": 0.03,
+     "0x01C": 1.0,
+     "0x020": -0.48,
+     "0x024": -0.52,
+     "0x028": -0.52,
+     "0x02C": 0.48,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rag-cloth",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-booze",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.11,
+     "0x014": -0.03,
+     "0x018": 0.02,
+     "0x01C": 1.0,
+     "0x020": -0.44,
+     "0x024": 0.56,
+     "0x028": 0.54,
+     "0x02C": 0.45,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-dehydratedfruit",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-hand-shovel",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.64,
+     "0x028": 0,
+     "0x02C": 0.77,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-fertilizer",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.1,
+     "0x014": -0.04,
+     "0x018": -0.02,
+     "0x01C": 1.0,
+     "0x020": -0.55,
+     "0x024": -0.44,
+     "0x028": -0.44,
+     "0x02C": 0.55,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "medkit-scar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-lighter-fluid",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.1,
+     "0x014": -0.03,
+     "0x018": -0.01,
+     "0x01C": 1.0,
+     "0x020": -0.54,
+     "0x024": -0.45,
+     "0x028": -0.45,
+     "0x02C": 0.54,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "pistol-ammo-box",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.09,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rifle-ammo-box",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.06,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-med",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.04,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-masking",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-tin",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.03,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "pistol-ruger-mag",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.05,
+     "0x014": -0.01,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0.04,
+     "0x024": -0.04,
+     "0x028": -0.72,
+     "0x02C": 0.7,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-pickup-revolver-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": -0.07,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-energybar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-pickup-pistol-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.07,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-tin-box",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.09,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-med-scar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-clamp",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-tray-pistol-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.09,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "pistol-browning-scar-mag",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.05,
+     "0x014": -0.01,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": -0.03,
+     "0x024": 0.03,
+     "0x028": -0.72,
+     "0x02C": 0.7,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-medical",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-surgical",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.66,
+     "0x028": 0,
+     "0x02C": 0.75,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-scar-portable-soup",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-shears",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.64,
+     "0x028": 0,
+     "0x02C": 0.77,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-tools-standard",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-packagednuts",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-water-bottle",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.1,
+     "0x014": -0.04,
+     "0x018": 0.03,
+     "0x01C": 1.0,
+     "0x020": 0.09,
+     "0x024": -0.09,
+     "0x028": -0.7,
+     "0x02C": 0.7,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-vitamins",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.06,
+     "0x014": -0.04,
+     "0x018": 0.01,
+     "0x01C": 1.0,
+     "0x020": 0.64,
+     "0x024": 0.55,
+     "0x028": -0.29,
+     "0x02C": 0.45,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-scar-pemmikan",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-turpentine",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.1,
+     "0x014": -0.02,
+     "0x018": 0.02,
+     "0x01C": 1.0,
+     "0x020": -0.45,
+     "0x024": -0.54,
+     "0x028": -0.54,
+     "0x02C": 0.45,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-granolabar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-large-briefcase-scar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-gunpowder-sml",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.06,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-scar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0.04,
+     "0x024": 0.64,
+     "0x028": 0.06,
+     "0x02C": 0.76,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-maglite",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.09,
+     "0x014": -0.02,
+     "0x018": -0.03,
+     "0x01C": 1.0,
+     "0x020": -0.58,
+     "0x024": 0.41,
+     "0x028": 0.41,
+     "0x02C": 0.58,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-scar-single-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-soda-bottle",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.09,
+     "0x014": -0.04,
+     "0x018": 0.03,
+     "0x01C": 1.0,
+     "0x020": -0.43,
+     "0x024": 0.56,
+     "0x028": 0.56,
+     "0x02C": 0.43,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-tools-scar-light",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-isopropyl",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.09,
+     "0x014": -0.03,
+     "0x018": 0.01,
+     "0x01C": 1.0,
+     "0x020": -0.45,
+     "0x024": -0.54,
+     "0x028": -0.54,
+     "0x02C": 0.45,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-scar-jerky",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-tray-revolver-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.09,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-pickup-rifle-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.1,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-flask",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.1,
+     "0x014": -0.05,
+     "0x018": -0.01,
+     "0x01C": 1.0,
+     "0x020": -0.6,
+     "0x024": 0.38,
+     "0x028": 0.5,
+     "0x02C": 0.5,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-large",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.04,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-pill-bottle-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.06,
+     "0x014": -0.03,
+     "0x018": -0.03,
+     "0x01C": 1.0,
+     "0x020": -0.69,
+     "0x024": 0.68,
+     "0x028": -0.06,
+     "0x02C": 0.26,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-pill-bottle-b",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.05,
+     "0x014": -0.03,
+     "0x018": 0.01,
+     "0x01C": 1.0,
+     "0x020": -0.67,
+     "0x024": 0.71,
+     "0x028": 0.21,
+     "0x02C": -0.01,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rag-towel",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-box-cutter",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": -0.01,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.81,
+     "0x028": 0,
+     "0x02C": 0.59,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rag-kitchen",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-tools-scar",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-electric",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-twine",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-bleach-bottle",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.13,
+     "0x014": -0.04,
+     "0x018": -0.03,
+     "0x01C": 1.0,
+     "0x020": -0.57,
+     "0x024": -0.42,
+     "0x028": -0.42,
+     "0x02C": 0.57,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-large-standard-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "pistol-cz75-mag",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.05,
+     "0x014": -0.01,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": -0.01,
+     "0x024": 0.01,
+     "0x028": -0.72,
+     "0x02C": 0.7,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-ammo-pickup-shotgun-look",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": -0.1,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "alcohol-thinner",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.1,
+     "0x014": -0.03,
+     "0x018": -0.01,
+     "0x01C": 1.0,
+     "0x020": -0.54,
+     "0x024": 0.45,
+     "0x028": 0.45,
+     "0x02C": 0.54,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-scar-large-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "explosive-gunpowder-med",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.09,
+     "0x014": -0.05,
+     "0x018": -0.01,
+     "0x01C": 1.0,
+     "0x020": -0.52,
+     "0x024": 0.48,
+     "0x028": 0.48,
+     "0x02C": 0.52,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-scar-wrapped-cheese",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-scar-small-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "medkit",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-letter-opener",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.79,
+     "0x028": 0,
+     "0x02C": 0.61,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "blade-kitchen-knife",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0.82,
+     "0x028": 0,
+     "0x02C": 0.57,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-med-scar-alt",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "binding-wire",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-beefjerky",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "parts-box-small-standard-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "gun-tools-standard-light",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rag-simple",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-ceramic-bottle",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": -0.09,
+     "0x014": -0.05,
+     "0x018": -0.03,
+     "0x01C": 1.0,
+     "0x020": 0.19,
+     "0x024": -0.46,
+     "0x028": 0.68,
+     "0x02C": 0.54,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-leather",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.1,
+     "0x014": -0.04,
+     "0x018": 0.03,
+     "0x01C": 1.0,
+     "0x020": 0.09,
+     "0x024": -0.09,
+     "0x028": -0.7,
+     "0x02C": 0.7,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "weapon-parts-abby",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "supplement-scar-medium-a",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "rag-work",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "health-pickup-scar-hard-tack",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0,
+     "0x014": 0,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0,
+     "0x024": 0,
+     "0x028": 0,
+     "0x02C": 1.0,
+     "0x030": 0,
+     "0x034": 0
+    }
+   },
+   {
+    "key": "canister-oil-filter",
+    "struct": "pickup-rot-offset",
+    "values": {
+     "0x008": 0,
+     "0x00C": 0,
+     "0x010": 0.06,
+     "0x014": -0.04,
+     "0x018": 0,
+     "0x01C": 1.0,
+     "0x020": 0.25,
+     "0x024": -0.01,
+     "0x028": -0.66,
+     "0x02C": 0.71,
+     "0x030": 0,
+     "0x034": 0
+    }
+   }
+  ]
+ }
+}

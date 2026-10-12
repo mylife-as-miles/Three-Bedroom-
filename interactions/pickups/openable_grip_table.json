@@ -1,0 +1,659 @@
+{
+ "fallback": {
+  "scale": 0.8,
+  "grip_anim": "ellie-scav-pickup-grip-r-hand--rifle-shells"
+ },
+ "source": "ss-t2/ss-openable-grips.bin",
+ "grip_and_scale": [
+  {
+   "art_group": "canister-bleach-bottle",
+   "scale": 0.6,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-bleach-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-ceramic-bottle",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-ceramic-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-maglite",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-maglite",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-metal",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-metal",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-oil-filter",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-oil-filter",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-water-bottle",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-water-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-soda-bottle",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-soda-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-tin-box",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-tin-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-mug",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-ceramic-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-pill-single",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-pill-single",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-pill-bottle-a",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-pill-bottle-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-pill-bottle-b",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-pill-bottle-b",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-vitamins",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-vitamins",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-single",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-scar-single",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-small-a",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-scar-small-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-small-b",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-scar-small-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-medium-a",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-scar-medium-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-medium-b",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement-scar-medium-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-large-a",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "supplement-scar-large-b",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--supplement",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-clamp",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-clamp",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-duct",
+   "scale": 0.9,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-duct",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-electric",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-electric",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-masking",
+   "scale": 0.9,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-masking",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-medical",
+   "scale": 0.9,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-medical",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-twine",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-twine",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "binding-wire",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--binding-wire",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-scissors",
+   "scale": 0.9,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-scissors",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-box-cutter",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-box-cutter",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-hand-shovel",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-hand-shovel",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-kitchen-knife",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-kitchen-knife",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-letter-opener",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-letter-opener",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-shears",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-shears",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-simple",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-simple",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "blade-surgical",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--blade-surgical",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-bleach-bottle",
+   "scale": 0.6,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-bleach-bottle",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-ceramic-bottle",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-ceramic-bottle",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-leather",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-water-bottle",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-metal",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-metal",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-oil-filter",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-oil-filter",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-water-bottle",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-water-bottle",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-soda-bottle",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-water-bottle",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "canister-mug",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--canister-ceramic-bottle",
+   "shadowed_duplicate": true,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-fertilizer",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-fertilizer",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-fireworks-med",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-fireworks-med",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-blasting-caps",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-blasting-caps",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-gunpowder-med",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-gunpowder-med",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-gunpowder-sml",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-gunpowder-sml",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-scar",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-scar",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "explosive-tin",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--explosive-scar",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-cloth",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-cloth",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-kitchen",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-kitchen",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-simple",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-simple",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-towel",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-towel",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-washcloth",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-washcloth",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rag-work",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rag-work",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-isopropyl",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-isopropyl",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-booze",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-booze",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-flask",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-flask",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-lighter-fluid",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-lighter-fluid",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-thinner",
+   "scale": 0.6,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-thinner",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "alcohol-turpentine",
+   "scale": 0.7,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--alcohol-turpentine",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rifle-ammo-box",
+   "scale": 0.75,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "shotgun-ammo-box",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "gun-ammo-pickup-shotgun-look",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--shotgun-shells",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "gun-ammo-pickup-revolver-look",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--shotgun-shells",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "shotgun-dbl-barrel-scar",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "gun-ammo-pickup-rifle-look",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rifle-shells",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rifle-remington-bolt-mag",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rifle-shells",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rifle-mpx5-mag",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rifle-shells",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-ruger-mag",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ruger-mag",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-browning-scar-mag",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ruger-mag",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-cz75-mag",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ruger-mag",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "gun-ammo-tray-pistol-look",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-357-ammo-box",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-uber-ammo-box",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "pistol-ammo-box",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "gun-ammo-tray-revolver-look",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--pistol-ammo-box",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "health-pickup-beefjerky",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--health-beefjerky",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "health-pickup-dehydratedfruit",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--health-dehydratedfruit",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "health-pickup-granolabar",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--health-granolabar",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "health-pickup-packagednuts",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--health-packagednuts",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "health-pickup-energybar",
+   "scale": 0.85,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--health-energybar",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "rifle-mini-14-mag",
+   "scale": 0.8,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--rifle-mini-14",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  },
+  {
+   "art_group": "weapon-parts-ellie",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--parts-single-collect-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "single-collect-a"
+  },
+  {
+   "art_group": "weapon-parts-abby",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--parts-single-collect-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "single-collect-a"
+  },
+  {
+   "art_group": "weapon-parts-scar",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--parts-scar-single-collect-a",
+   "shadowed_duplicate": false,
+   "collect_anim": "single-collect-a"
+  },
+  {
+   "art_group": "super-hero-card-base",
+   "scale": 1.0,
+   "grip_anim": "ellie-scav-pickup-grip-r-hand--superhero-card",
+   "shadowed_duplicate": false,
+   "collect_anim": "collect (default)"
+  }
+ ],
+ "left_hand_mirror_supported_grips": [
+  "ellie-scav-pickup-grip-r-hand--superhero-card",
+  "ellie-scav-pickup-grip-r-hand--shotgun-shells",
+  "ellie-scav-pickup-grip-r-hand--rifle-shells",
+  "ellie-scav-pickup-grip-r-hand--rifle-mini-14",
+  "ellie-scav-pickup-grip-r-hand--rag-towel",
+  "ellie-scav-pickup-grip-r-hand--rag-simple",
+  "ellie-scav-pickup-grip-r-hand--rag-kitchen",
+  "ellie-scav-pickup-grip-r-hand--rag-cloth",
+  "ellie-scav-pickup-grip-r-hand--note",
+  "ellie-scav-pickup-grip-r-hand--blade-surgical",
+  "ellie-scav-pickup-grip-r-hand--blade-shears",
+  "ellie-scav-pickup-grip-r-hand--blade-scissors",
+  "ellie-scav-pickup-grip-r-hand--blade-letter-opener",
+  "ellie-scav-pickup-grip-r-hand--blade-kitchen-knife",
+  "ellie-scav-pickup-grip-r-hand--parts-large-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-large-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-med-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-med-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-large-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-large-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-med-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-med-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-single-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-single-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-single-collect-c",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-small-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-scar-small-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-single-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-single-collect-b",
+  "ellie-scav-pickup-grip-r-hand--parts-single-collect-c",
+  "ellie-scav-pickup-grip-r-hand--parts-small-collect-a",
+  "ellie-scav-pickup-grip-r-hand--parts-small-collect-b"
+ ]
+}
