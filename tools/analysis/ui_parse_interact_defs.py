@@ -169,18 +169,18 @@ def raw_words(dc, p, sids):
     o = 0
     while o < SIZE:
         if o % 8 == 0 and dc.is_ptr(p + o):
-            raw[f"0x{o:03X}"] = {"ptr": dc.cstr(dc.u64(p + o))}
+            raw[f"0x{o:03X}"] = "ptr:" + repr(dc.cstr(dc.u64(p + o)))
             o += 8
             continue
         if o % 8 == 0:
             q = dc.u64(p + o)
             nm = sids.get(q) if q else None
             if nm is not None:
-                raw[f"0x{o:03X}"] = {"sid": nm}
+                raw[f"0x{o:03X}"] = "sid:" + nm
                 o += 8
                 continue
         u = dc.u32(p + o)
-        raw[f"0x{o:03X}"] = {"u32": f"0x{u:08X}", "i32": dc.i32(p + o), "f32": round(dc.f32(p + o), 6)}
+        raw[f"0x{o:03X}"] = f"u32:0x{u:08X} i32:{dc.i32(p + o)} f32:{dc.f32(p + o):.6g}"
         o += 4
     return raw
 
@@ -415,7 +415,8 @@ def main():
         "notes": [
             "Def assignment to a world object comes from the object's level-data tag `interactable-def` "
             "(read in DC via tag-symbol(interactable-def, obj)); scripts swap it with override-interact-def.",
-            "raw = every word; ptr = decoded string pointer; sid = resolved 64-bit SID; u32/i32/f32 otherwise. "
+            "raw = every word of the 0x200 struct keyed by offset: 'ptr:<string>' (8-byte relocated pointer), "
+            "'sid:<name>' (8-byte resolved SID), else 'u32/i32/f32' views of the 4-byte word. "
             "Flag words are byte-packed bools; see field_map u8 entries.",
         ],
     }

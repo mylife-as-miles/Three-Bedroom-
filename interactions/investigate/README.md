@@ -17,7 +17,7 @@ Confidence labels: **CONFIRMED** (seen in code or data) · **HIGH** · **INFERRE
 
 | File | Kind | Role |
 |---|---|---|
-| `ss/ss-investigate-object.bin` | state script, 8 states, ~92 declarations, 3 helper lambdas | Generic world inspectable: notes, photos, manuals, coins, cards, holsters. It sets the object up, aligns the player, plays enter-1/enter-2, attaches the object, then **hands control to native `player-investigate-object`**. When the native side asks to exit, it plays exit-1/exit-2, detaches the object or collects it as a treasure, and restores gameplay. |
+| `ss/ss-investigate-object.bin` | state script, 8 states, 104 declarations, 3 helper lambdas | Generic world inspectable: notes, photos, manuals, coins, cards, holsters. It sets the object up, aligns the player, plays enter-1/enter-2, attaches the object, then **hands control to native `player-investigate-object`**. When the native side asks to exit, it plays exit-1/exit-2, detaches the object or collects it as a treasure, and restores gameplay. |
 | `ss/ss-investigate-in-igc.bin` | state script, 2 states | Same native hand-off without the approach/attach. A level IGC script sends it `investigate-object` once its own animation already has the object in Ellie's hand. |
 | `script-funcs-investigate.bin` | 1 lambda | `player-investigate-clear-readable()` = `player-investigate-make-readable(0,0,0)` **CONFIRMED** |
 | `script-user-funcs-impl.bin` | helpers | `investigate-object-restart(obj)` → `send-event(re-investigate, obj)`; `investigate-object-ignore-exit/allow-exit(obj)` → set `ignore-exit?` on the object script; `force-examine-object(obj)` → `send-event(skip-pickup, obj)` **CONFIRMED** |

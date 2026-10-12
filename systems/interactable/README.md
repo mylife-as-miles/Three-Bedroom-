@@ -152,7 +152,10 @@ wait-for-player
   `interactable-set-accessibility-used(obj)` = exclude + mute all 5 accessibility sounds (CONFIRMED).
 
 ### 4.3 Interaction-definition structure (field map)
-Full per-offset map with confidence is in the JSON `meta.field_map`. Highlights:
+Full per-offset map with confidence is in the JSON `meta.field_map`; every word is also kept raw.
+Parse from the `.bin`, not the `.asm`: dconstruct mis-types 0x00C/0x010 (prints `int -971227136`
+and `sid #BF800000461C4000`, which are really the floats −10000 / 10000 / −1). Byte-packed bool words
+(0x048, 0x0B4, 0x0B8, 0x12C, 0x1A8, 0x1F8 …) are split into single-byte fields. Highlights:
 
 | Off | Meaning | Conf. |
 |---|---|---|
