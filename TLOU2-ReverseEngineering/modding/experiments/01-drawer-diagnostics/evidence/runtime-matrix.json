@@ -1,0 +1,108 @@
+{
+  "game_executed": false,
+  "environment": {
+    "os": "Linux",
+    "input_scope": "script archive/extracted dc1 only; no runnable game install",
+    "wine_available": false
+  },
+  "windows_build_status": "NOT RUN",
+  "loader_integration_status": "NOT VERIFIED; no loader installed or mod deployed",
+  "cases": [
+    {
+      "id": 1,
+      "case": "unmodified baseline",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 2,
+      "case": "instrumented with F2 off",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 3,
+      "case": "F2 toggle and other drawer isolation",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 4,
+      "case": "normal standing opening",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 5,
+      "case": "crouched interaction",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 6,
+      "case": "item pickup with empty/available inventory",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 7,
+      "case": "pickup with full capacity for the applicable item",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 8,
+      "case": "drawer with no remaining item",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 9,
+      "case": "cancel/evade interruption",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 10,
+      "case": "being attacked interruption",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 11,
+      "case": "normal exit and control restoration",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    },
+    {
+      "id": 12,
+      "case": "save/reload and package removal",
+      "status": "NOT RUN",
+      "baseline_recording": null,
+      "instrumented_recording": null,
+      "result": null
+    }
+  ]
+}

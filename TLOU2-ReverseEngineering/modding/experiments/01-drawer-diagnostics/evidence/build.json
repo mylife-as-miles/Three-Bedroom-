@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "dconstruct_commit": "583b38d8b25b2f0b2cd079db70d8caac0a69f3a7",
+  "compiler_sha256": "6563a551f60444fa784f84727a3a1393be359c1888c60f9e2913bd7d979294bb",
+  "decompiler_sha256": "a3d51f0df6de4aec1a43499a62c48630012fbbe3f72dbd5b8a2f75b0a72a5782",
+  "actor": "drawer-wat-kitchen-apartment-1",
+  "actor_sid": "BBCBBCE24067406D",
+  "actor_binding_runtime_verified": false,
+  "original_sha256": "b69fb082a493a76a97405b052542047e530ae4d6da33ca15787114a487e3a0a5",
+  "patched_sha256": "80f643ff53b117a6ae32a0bd61eba9ad54a25be024902cf86ad03203357e3f92",
+  "original_bytes": 125044,
+  "patched_bytes": 185470,
+  "template_sha256": "4daf055c4622e47ead2a6cb81a7d3b9dc38020c09c1d8891caeac881a4727dc5",
+  "states": [
+    {
+      "state": "wait-interact",
+      "original_block_count": 2,
+      "patched_block_count": 3,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "interact",
+      "original_block_count": 2,
+      "patched_block_count": 2,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "scavenge-move-to",
+      "original_block_count": 3,
+      "patched_block_count": 3,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "scavenge-enter",
+      "original_block_count": 4,
+      "patched_block_count": 4,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "scavenge-pickup",
+      "original_block_count": 5,
+      "patched_block_count": 5,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "scavenge-exit",
+      "original_block_count": 5,
+      "patched_block_count": 5,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "scavenge-early-exit",
+      "original_block_count": 6,
+      "patched_block_count": 6,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "spawned-open",
+      "original_block_count": 1,
+      "patched_block_count": 2,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "wait-pickup",
+      "original_block_count": 6,
+      "patched_block_count": 6,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "melee-abort",
+      "original_block_count": 1,
+      "patched_block_count": 2,
+      "added_update_tracks": 1
+    },
+    {
+      "state": "complete",
+      "original_block_count": 5,
+      "patched_block_count": 6,
+      "added_update_tracks": 1
+    }
+  ],
+  "runtime_status": "NOT RUN",
+  "output_relative": "mod/bin/dc1/ss-t2/ss-openable-drawer.bin",
+  "modules_original_sha256": "980a4d4a1878a4054178e9e6fed7be9d15083bd3d3c1b938270354f7042ac982",
+  "modules_patched_sha256": "b6345590771936296d17ab210528f41a3b5143b691529be19c35e290e6390afc",
+  "modules_size_slot": 214952,
+  "modules_change": "one existing module size field only"
+}

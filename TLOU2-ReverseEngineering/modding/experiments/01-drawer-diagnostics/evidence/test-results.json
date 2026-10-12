@@ -1,0 +1,7 @@
+{
+  "suite": "test_static.py",
+  "tests_passed": 6,
+  "execution_kind": "Python structural checks and mocked bytecode prefix only",
+  "game_executed": false,
+  "original_assets_in_version_control": false
+}

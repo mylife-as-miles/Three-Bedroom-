@@ -1,0 +1,2 @@
+// Original, type-unambiguous smoke fixture; no game code, assets, or native calls.
+u16 #drawer_diag_roundtrip() { return 42; }

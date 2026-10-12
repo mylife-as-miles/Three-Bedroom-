@@ -1,0 +1,69 @@
+// Independently authored observer body, expanded once per existing state by build.py.
+// @TARGET@ is a verified FNV SID literal. @STATE@ is the owning state's SID.
+// Only two newly appended diagnostic declarations are written.
+if (#get-self-id() != @TARGET@) { return; }
+bool pressed = #keyboard-button-pressed?(158);
+bool previous = #get-boolean(#drawer-diag-key-latch, #self);
+if (pressed && !previous) {
+    #set-boolean(#drawer-diag-enabled, !#get-boolean(#drawer-diag-enabled, #self), #self);
+}
+#set-boolean(#drawer-diag-key-latch, pressed, #self);
+if (!#get-boolean(#drawer-diag-enabled, #self)) { return; }
+// Animation symbols are selected script values, not an inferred native active clip.
+u64 enter = #get-symbol(#scav-enter-animation, #self);
+u64 pickup = #get-symbol(#scav-pickup-animation, #self);
+u64 exit = #get-symbol(#scav-exit-animation, #self);
+f32 enterPhase = 0.0 - 1.0;
+f32 pickupPhase = 0.0 - 1.0;
+f32 exitPhase = 0.0 - 1.0;
+i32 liveStance = -1;
+if (#entity-exists?(#player)) {
+    if (#player-is-crouched?()) { liveStance = 1; } else { liveStance = 0; }
+    if (enter != #bindpose && #get-animation-playing?(#player, enter, 2)) {
+        enterPhase = #get-animation-phase(#player, 2, enter);
+    }
+    if (pickup != #bindpose && #get-animation-playing?(#player, pickup, 2)) {
+        pickupPhase = #get-animation-phase(#player, 2, pickup);
+    }
+    if (exit != #bindpose && #get-animation-playing?(#player, exit, 2)) {
+        exitPhase = #get-animation-phase(#player, 2, exit);
+    }
+}
+string status = #dc:format(
+    "Drawer Diagnostics [F2] state=%s\nhandle relative=%0.4f edge height=%0.4f width=%0.4f\nselected crouch=%d live crouch=%d full=%d picked=%d\nenter=%s phase=%0.4f\npickup=%s phase=%0.4f\nexit=%s phase=%0.4f",
+    #string-debug(@STATE@), #get-float(#object-height, #self),
+    #get-float(#drawer-edge-height, #self), #get-float(#drawer-edge-width, #self),
+    #get-boolean(#is-crouch?, #self), liveStance,
+    #get-boolean(#pickup-is-full, #self), #get-boolean(#obj-picked-up?, #self),
+    #string-debug(enter), enterPhase, #string-debug(pickup), pickupPhase,
+    #string-debug(exit), exitPhase);
+#debug-draw-string-2d(#alloc-point(0.03, 0.08, 0.0, 0), status, 3, 2.0, 0.9, 0, 0, 0, 1.0);
+string alignment = #dc:format(
+    "align: handleAnimHeight=%0.4f anglePlus=%0.4f rotationAdjust=%0.4f mirror=%d holster=%d\nIK main=%d second=%d pickup=%d useSecond=%d\nsolvers R=%s L=%s pickup=%s\nIK R on/off=%0.4f/%0.4f L on/off=%0.4f/%0.4f",
+    #get-float(#handle-height-in-animation, #self), #get-float(#player-handle-angle-plus, #self),
+    #get-float(#handle-rotation-adjustment, #self), #get-boolean(#mirror?, #self),
+    #get-boolean(#is-holstering?, #self), #get-boolean(#main-ik-in-use?, #self),
+    #get-boolean(#second-ik-in-use?, #self), #get-boolean(#pickup-ik-in-use?, #self),
+    #get-boolean(#use-second-ik, #self), #string-debug(#get-symbol(#r-ik-solver, #self)),
+    #string-debug(#get-symbol(#l-ik-solver, #self)), #string-debug(#get-symbol(#pickup-ik-solver, #self)),
+    #get-float(#r-ik-on-frame, #self), #get-float(#r-ik-off-frame, #self),
+    #get-float(#l-ik-on-frame, #self), #get-float(#l-ik-off-frame, #self));
+#debug-draw-string-2d(#alloc-point(0.03, 0.48, 0.0, 0), alignment, 3, 2.0, 0.9, 0, 0, 0, 1.0);
+
+// Match the original move-to query contract; never query a path frame in idle/exit.
+f32 pathDistance = 0.0 - 1.0;
+f32 facingDelta = 0.0 - 1.0;
+if (@STATE@ == #scavenge-move-to && #entity-exists?(#player)) {
+    u8* path = #get-bound-frame(#path-goal, #self);
+    u8* playerLocator = #get-object-locator(#player);
+    if (path != null && playerLocator != null) {
+        pathDistance = #get-locator-distance-xz(playerLocator, path);
+        facingDelta = #angle-in-between-locators(playerLocator, path, 2);
+    }
+}
+string goalStatus = #dc:format(
+    "move-to: XZ path distance=%0.4f facing delta(axis2)=%0.4f
+IK proxies main=%s second=%s [inactive phase/distance=-1]",
+    pathDistance, facingDelta, #string-debug(#get-symbol(#invis-proxy-ik-main, #self)),
+    #string-debug(#get-symbol(#invis-proxy-ik-second, #self)));
+#debug-draw-string-2d(#alloc-point(0.03, 0.76, 0.0, 0), goalStatus, 3, 2.0, 0.9, 0, 0, 0, 1.0);

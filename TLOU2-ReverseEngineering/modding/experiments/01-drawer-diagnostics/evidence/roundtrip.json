@@ -1,0 +1,12 @@
+{
+  "kind": "authored no-argument smoke fixture; not a full drawer or native API round-trip",
+  "compiler_sha256": "6563a551f60444fa784f84727a3a1393be359c1888c60f9e2913bd7d979294bb",
+  "decompiler_sha256": "a3d51f0df6de4aec1a43499a62c48630012fbbe3f72dbd5b8a2f75b0a72a5782",
+  "source_sha256": "86159f92f1bbc45c274187fa8e42d98719efca3dd0235a2bef03aa52c06cc466",
+  "before_sha256": "9ffa9ee1703786ab1b41553c8e22ec0412d7d5fde1dddb90182a0f2434c3eb33",
+  "after_sha256": "9ffa9ee1703786ab1b41553c8e22ec0412d7d5fde1dddb90182a0f2434c3eb33",
+  "byte_identical": true,
+  "seed_restored": true,
+  "seed_extension": "one sorted entry for our authored function; not an upstream SID database change",
+  "runtime_game_tested": false
+}

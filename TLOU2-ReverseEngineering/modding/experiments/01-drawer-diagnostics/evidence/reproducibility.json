@@ -1,0 +1,6 @@
+{
+  "two_isolated_mod_outputs_byte_identical": true,
+  "two_isolated_registry_outputs_byte_identical": true,
+  "game_executed": false,
+  "proof_method": "cmp build/mod outputs against build-repeat/mod outputs after same pinned compilation"
+}

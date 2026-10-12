@@ -7,3 +7,6 @@ extracted/
 *.asm
 *.dcpl
 __pycache__/
+
+!modding/experiments/01-drawer-diagnostics/src/roundtrip.dcpl
+!modding/experiments/01-drawer-diagnostics/src/observer_body.dcpl

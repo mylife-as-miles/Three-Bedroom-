@@ -46,3 +46,7 @@ All 621 prior exported state scripts agree with known names and counts; 402 prev
 ## Limits
 
 The supplied archive contains script/data, not the complete game executable, animations, geometry, models, sound banks or save files. Native inventory mutations, interaction scoring, animation solver math, AI decisions and resource residency cannot be reconstructed completely from it. No live game trace, save/reload experiment or new mod compilation was performed. The analysis does not bypass DRM or anti-cheat and includes no redistributed original game assets.
+
+## Subsequent mod experiment
+
+[Mod Experiment 01 — Drawer Diagnostics](modding/experiments/01-drawer-diagnostics/README.md) builds an isolated, filtered observer using the pinned dconstruct core. Its authored smoke round-trip and static preservation checks pass. Original assets stay private; Windows/game behavior tests have not run. The limits above describe the original corpus-analysis phase; the experiment's evidence records the subsequent compilation separately.

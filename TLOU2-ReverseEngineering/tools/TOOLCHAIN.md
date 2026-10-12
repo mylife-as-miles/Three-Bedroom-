@@ -9,3 +9,7 @@
 Place upstream clones under .private/vendor/. Avoid recursive git staging of vendor fixtures or game files. Prefer shallow clones to reduce storage. The full SID database is not republished; only corpus-used symbol metadata is retained publicly.
 
 Sources in the original Three-Bedroom handoff contain a version discrepancy: architecture/README describe 1.6, SOURCE_NOTES describes 1.4. This run independently acquires the requested 1.6 archive and identifies every extracted file by hash. Prior artifacts are preserved and reconciled as leads, not silently substituted for primary evidence.
+
+## Subsequent experiment checkpoint
+
+The statements above describe the corpus-analysis phase at the base commit. Mod Experiment 01 subsequently built the pinned compiler/decompiler core through a private Linux adapter, performed an authored smoke round-trip, and compiled isolated observer tracks. Its [provenance and limits](../modding/experiments/01-drawer-diagnostics/IMPLEMENTATION.md) distinguish those results from unexecuted Windows/game tests. No official Windows build, native runtime validation or proprietary source redistribution is claimed.
