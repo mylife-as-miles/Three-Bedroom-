@@ -6,6 +6,7 @@ REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 S = json.load(open(os.path.join(REPO, "databases", "state_scripts.json")))
 GENERIC_DIRS = {"ss-t2", "ss", "ss-fx", "ss-hud2", "ss-test", "ss-t2r-test", "ss-tool", "ss-main-menu", "ss-rogue"}
 def level_of(f):
+    if "/" not in f: return None
     d = f.split("/")[0]
     return d if d.startswith("ss-") and d not in GENERIC_DIRS else None
 tot = collections.Counter(); per_level = collections.defaultdict(collections.Counter)
@@ -42,6 +43,19 @@ for k, v in S.items():
         "calls-wait-player-move-to-entry": "wait-player-move-to-entry" in allcalls,
         "calls-script-caption": bool(allcalls & {"wait-script-caption", "script-caption"}),
         "calls-set-combat-checkpoint": "set-combat-checkpoint" in allcalls,
+        "calls-ss-svar": "ss-svar" in allcalls,
+        "calls-auto-save-game": "auto-save-game" in allcalls,
+        "calls-say/wait-say": bool(allcalls & {"say", "wait-say"}),
+        "calls-holster-player-weapon": "holster-player-weapon" in allcalls,
+        "calls-camera-fade-out-animated": bool(allcalls & {"camera-fade-out-animated", "camera-fade-out-auto-gen-animated", "wait-camera-fade-out-animated-to-remap"}),
+        "calls-wait-animate_": "wait-animate_" in allcalls,
+        "handles-on-set-active-continue": "on-set-active-continue" in evs,
+        "handles-investigate-events": bool(evs & {"entered-into-investigate", "entering-investigate", "exiting-investigate", "done-with-investigate"}),
+        "handles-tension-changed": "tension-changed" in evs,
+        "calls-task-continue-active?": "task-continue-active?" in allcalls,
+        "calls-has-collected-treasure?": "has-collected-treasure?" in allcalls,
+        "IGC-shell(move-to-entry+camera-anim+wait-animate_)": {"wait-player-move-to-entry", "camera-enable-animated", "wait-animate_"} <= allcalls,
+        "greybox-caption-only(caption,no say,no animate)": bool(allcalls & {"wait-script-caption", "script-caption"}) and not (allcalls & {"say", "wait-say", "wait-animate_", "animate_"}),
     }
     for f, b in feats.items():
         if b: tot[f] += 1; per_level[lv][f] += 1

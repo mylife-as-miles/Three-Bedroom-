@@ -212,7 +212,7 @@ per character elsewhere (INFERRED; see `systems/animation`).
 | 6 | Which reach animation? | §4 table: handle height × tension mode × crouch/prone. Mirror when the entry angle is ≥ 20°. | CONFIRMED |
 | 7 | How is drawer height considered? | Three ways: (a) the handle joint height picks the set; (b) `player-ik-root-adjust(anim-handle-height − real-height)` shifts the hips; (c) hand IK on proxy cubes placed at the `handle` joint, tracked each frame through `get-ap-ref-from-align(… apReference-hand-l[-alt] …)` and raised by `drawer-edge-height` (rigid-body OBB). | CONFIRMED |
 | 8 | How is the prop animated? | `animate_(drawer, "<anim>--drawer", …)` runs in lock-step with the player anim. Both use the same mirror flag, and the drawer is put in update bucket `MainDriver` while the proxies use `Platform`. | CONFIRMED |
-| 9 | When does the drawer sound play? | Not in this script. There's no audio call for the drawer itself, only the item pickup sounds. Drawer SFX are almost certainly triggered by animation events in the `--drawer` prop anims and resolved per material by the `aud-sfx-gbl-drawer-*` packages (see `systems/audio`). | INFERRED |
+| 9 | When does the drawer sound play? | Not from this script, which makes no audio call for the drawer itself. The prop anim `<anim>--drawer` carries the clip events (INFERRED; clip data isn't in DC). The sound name is resolved from the mesh's material via `mesh-audio-config.bin` as `sfx-<material>-<suffix>`, e.g. `sfx-wood-drawer-pull-relaxed`, on bus `objects-doors` (HIGH). The relaxed/tense suffixes mirror the anim-set families (see `systems/audio`). | HIGH (resolution) / INFERRED (trigger) |
 | 10 | How does an item become available? | The item is either a tagged pre-placed or IGC actor, or one spawned by the openable (`get-openable-spawned-pickup`, native). It stays `interactable-disable`d until the reach anim passes `r-ik-on-frame+16`, then `interactable-enable` and `interactable-draw-icon`. | CONFIRMED |
 | 11 | How does the hand attach? | Between `scav-pickup-object-phase` and `stow-phase`: `detach-without-physicalizing` → `attach(item, player, leftHand/rightHand)`, with a grip overlay set and optional grip anim and scale. | CONFIRMED |
 | 12 | How does inventory receive it? | `player-apply-pickup(item)` (native) at the stow phase, or `player-pickup(item,1,-1,0,0)` (native) on the auto-collect path. Fullness is pre-checked with `player-pickup-is-full(item-pickup-get-item-id(item))`. | CONFIRMED boundary; internals native |
@@ -258,7 +258,7 @@ events and `player-apply-pickup`). See `interactions/cabinets`. Shared helpers c
 | Script-driven hand IK on spawned invisible proxy cubes | CONFIRMED |
 | Inventory hand-off at `player-apply-pickup` / `player-pickup` | CONFIRMED |
 | `animate_` option keys: 10 ap-ref, 28 fade-in s, 30 fade-out s, 31 loop, 44 mirror, 56 speed, 58 start-phase (CONFIRMED); 12 camera mode, 24 exit mode, 27 fade-in curve (HIGH); 13 collision mode, 45 motion blend (INFERRED); 1/3/5/32/49/87 flags (UNKNOWN) | see `systems/animation/animate_option_keys.json` |
-| Drawer SFX via prop-anim events + material packages | INFERRED |
+| Drawer SFX: material lookup via `mesh-audio-config` | HIGH · triggering by prop-anim clip events INFERRED |
 | tension 3 = combat | CONFIRMED · 1 = relaxed HIGH · 2/4 INFERRED |
 | Who writes `has-been-opened?` etc. | UNKNOWN here (see persistence) |
 
