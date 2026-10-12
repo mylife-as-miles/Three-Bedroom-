@@ -41,7 +41,7 @@ and others). That correlates with option key 13.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> s_door_open_unlock: native door system (player-is-door-scripted-move?)
+    [*] --> s_door_open_unlock: entered by native door system (INFERRED)
     s_door_open_unlock --> s_door_open_push_quick: auto @phase 0.92 / abort lambda (blend 0.20)
     s_door_open_push_quick --> [*]: dynamic abort-idle/abort-out @0.90 -> motion matching
     s_door_open_push_far --> [*]
@@ -160,7 +160,7 @@ the start alignment. `get-ap-ref-from-align` (223) does the inverse. `wait-playe
 (64) and `player-scripted-move-new` (10) are native. `wait-player-move-to-entry` (644) and `player-move-to-entry`
 (42) are DC wrappers. The only `player-is-*-scripted-move?` predicates in the corpus are
 `player-is-door-scripted-move?` and `player-is-pickup-scripted-move?` (native, 1 call each, in the accessibility
-sound script). Doors and pickups therefore run native scripted moves without a DC state script.
+sound script). That suggests doors and pickups use native scripted moves that DC only queries (INFERRED).
 
 ### 4.4 IK, attach and holster
 `joint-ik-characters` (28, native), `stop-joint-ik` (DC, 53), `player-ik-root-adjust` (3, native),
