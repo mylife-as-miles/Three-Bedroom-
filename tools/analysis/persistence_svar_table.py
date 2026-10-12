@@ -18,6 +18,7 @@ for line in open(os.path.join(D, "player-stat.bin.asm"), encoding="utf-8", error
     if m and cur["flags"] is None: cur["flags"] = int(m.group(1))
     if line.startswith("*pickup-cluster-time*"): break
 names = {r["name"] for r in rows}
+JUNK = {"*", "arg", "u64?", "ss-svar", "tag-symbol", "var"}  # decompiler tokens, not svar names
 written = collections.Counter(); read = collections.Counter()
 for dp, _, fs in os.walk(D):
     for f in fs:
@@ -27,8 +28,8 @@ for dp, _, fs in os.walk(D):
         for m in re.finditer(r"\b(?:get-svar(?:-as-boolean|-bit)?|stat-value\?)\(([a-z0-9?!*-]+)", t): read[m.group(1)] += 1
 flagh = collections.Counter(r["flags"] for r in rows)
 out = {"stats": len(rows), "flag_histogram": flagh.most_common(),
-       "script_written_names": len(written), "written_not_in_table": sorted(n for n in written if n not in names)[:50],
-       "read_not_in_table": sorted(n for n in read if n not in names)[:50],
+       "script_written_names": len(written), "written_not_in_table_count": sum(1 for n in written if n not in names and n not in JUNK), "written_not_in_table": sorted(n for n in written if n not in names and n not in JUNK)[:60],
+       "read_not_in_table": sorted(n for n in read if n not in names and n not in JUNK)[:60],
        "titled_stats": sum(1 for r in rows if r["title"] and r["title"].startswith("STAT_")),
        "flags_of_written": collections.Counter(next((r["flags"] for r in rows if r["name"] == n), None) for n in written).most_common()}
 if "--json" in sys.argv: print(json.dumps(rows, indent=0))
