@@ -52,6 +52,7 @@ Python lib: `tools/analysis/dclib.py` (DCFile, SidDB, Tracer, fnv1a64). Always r
   `player-ik-root-adjust(handle-height-in-animation − object-height, 0.7)`.
 - `animate_` takes an option array of (i32 key, value) pairs. INFERRED key meanings: 28 = blend-in time, 44 = mirror,
   56 = playback speed, 10 = ap-ref bound-frame, 30 = start phase, 46 = blend-out(?), 31 = loop(?) — label these INFERRED.
+  **UPDATE (animation agent):** 30 = fade-out seconds and 58 = start phase, both CONFIRMED; see systems/animation/animate_option_keys.json.
 - Inventory ownership begins at native `player-apply-pickup(item)` (called at stow phase) or `player-pickup(item,1,-1,0,0)`;
   sounds via `item-pickup-play-pickup-sound(item, l_wrist|r_wrist)` / `...-done-sound`; `attach(item, player, leftHand|rightHand)`.
 - Events: broadcast `scav-obj-been-opened`; send `scavenge-obj-is-empty`, `contact-completed`, `contact-cancelled`,

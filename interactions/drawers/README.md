@@ -118,7 +118,7 @@ scavenge-move-to
 
 scavenge-enter
  ├─ wait (≤ 4 s) for holster
- ├─ animate_(scav, "<enter-anim>--drawer", {56:speed, 44:mirror?, 28:0.4, 30:0.0})!   [PROP animation]
+ ├─ animate_(scav, "<enter-anim>--drawer", {56:speed, 44:mirror?, 28:fade-in 0.4, 30:fade-out 0.0})!   [PROP animation]
  ├─ animate_(player, <enter-anim>, {56, 28:0.5, 27:2, 45:0.5, 30:0, 13:3, 49:1, 10:goal, 32:1, 44:mirror?, 1:1,
  │                                  3:1, 12:camera-required-low?, 24:crouch?18:1, 87:1, 5:1})!   [PLAYER animation]
  ├─ player-ik-root-adjust(handle-height-in-animation − object-height (+0.01 if Abby), 0.70)!
@@ -257,7 +257,7 @@ events and `player-apply-pickup`). See `interactions/cabinets`. Shared helpers c
 | Stand position derived from anim apReference via `get-align-from-ap-ref` | CONFIRMED |
 | Script-driven hand IK on spawned invisible proxy cubes | CONFIRMED |
 | Inventory hand-off at `player-apply-pickup` / `player-pickup` | CONFIRMED |
-| `animate_` option keys (28 blend-in, 44 mirror, 56 speed, 10 ap-ref, 30 start-phase) | INFERRED (see `systems/animation`) |
+| `animate_` option keys: 10 ap-ref, 28 fade-in s, 30 fade-out s, 31 loop, 44 mirror, 56 speed, 58 start-phase (CONFIRMED); 12 camera mode, 24 exit mode, 27 fade-in curve (HIGH); 13 collision mode, 45 motion blend (INFERRED); 1/3/5/32/49/87 flags (UNKNOWN) | see `systems/animation/animate_option_keys.json` |
 | Drawer SFX via prop-anim events + material packages | INFERRED |
 | tension 3 = combat | CONFIRMED · 1 = relaxed HIGH · 2/4 INFERRED |
 | Who writes `has-been-opened?` etc. | UNKNOWN here (see persistence) |
