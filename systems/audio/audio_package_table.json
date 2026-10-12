@@ -1,0 +1,6278 @@
+{
+ "source": "dconstruct asm of DC audio modules",
+ "entry_type_totals": {
+  "sfx-info": 163297,
+  "sfx-info-full": 9338,
+  "sfx-info-light": 28073,
+  "mix-snapshot-info": 248,
+  "vox-info": 28282
+ },
+ "by_group": {
+  "aud-sfx1.bin": {
+   "sfx-info": 40695,
+   "sfx-info-full": 2140,
+   "sfx-info-light": 7276
+  },
+  "aud-sfx2.bin": {
+   "sfx-info-full": 2495,
+   "sfx-info": 40845,
+   "sfx-info-light": 6713
+  },
+  "audio-sfx/abby-ellie-fight": {
+   "sfx-info-light": 241,
+   "sfx-info": 267,
+   "sfx-info-full": 24
+  },
+  "audio-sfx/abby-fights-militia": {
+   "sfx-info-full": 211,
+   "sfx-info": 691,
+   "sfx-info-light": 449
+  },
+  "audio-sfx/abby-flashback-dad": {
+   "sfx-info": 127,
+   "sfx-info-light": 103,
+   "sfx-info-full": 17
+  },
+  "audio-sfx/amputation": {
+   "sfx-info": 84,
+   "sfx-info-light": 70,
+   "sfx-info-full": 13
+  },
+  "audio-sfx/animals": {
+   "sfx-info-light": 84,
+   "sfx-info": 2370,
+   "sfx-info-full": 112
+  },
+  "audio-sfx/aquarium": {
+   "sfx-info-light": 13,
+   "sfx-info": 14,
+   "sfx-info-full": 1
+  },
+  "audio-sfx/cinematics": {
+   "sfx-info": 1,
+   "sfx-info-full": 1
+  },
+  "audio-sfx/common-amb": {
+   "sfx-info-light": 109,
+   "sfx-info": 171,
+   "sfx-info-full": 9
+  },
+  "audio-sfx/common-objects": {
+   "sfx-info": 2825,
+   "sfx-info-light": 1865,
+   "sfx-info-full": 48
+  },
+  "audio-sfx/ellie-flashback-guitar": {
+   "sfx-info-light": 60,
+   "sfx-info-full": 21,
+   "sfx-info": 81
+  },
+  "audio-sfx/ellie-flashback-museum": {
+   "sfx-info-light": 342,
+   "sfx-info-full": 28,
+   "sfx-info": 393
+  },
+  "audio-sfx/ellie-flashback-patrol": {
+   "sfx-info": 235,
+   "sfx-info-light": 182,
+   "sfx-info-full": 22
+  },
+  "audio-sfx/ellie-flashback-ultimatum": {
+   "sfx-info-light": 50,
+   "sfx-info": 53,
+   "sfx-info-full": 3
+  },
+  "audio-sfx/epilogue": {
+   "sfx-info": 65,
+   "sfx-info-light": 48,
+   "sfx-info-full": 14
+  },
+  "audio-sfx/find-aquarium": {
+   "sfx-info": 130,
+   "sfx-info-light": 74,
+   "sfx-info-full": 55
+  },
+  "audio-sfx/find-nora": {
+   "sfx-info-light": 670,
+   "sfx-info-full": 161,
+   "sfx-info": 905
+  },
+  "audio-sfx/flooded-city": {
+   "sfx-info": 658,
+   "sfx-info-light": 314,
+   "sfx-info-full": 305
+  },
+  "audio-sfx/foley": {
+   "sfx-info-full": 296,
+   "sfx-info": 59730,
+   "sfx-info-light": 2871
+  },
+  "audio-sfx/forward-base": {
+   "sfx-info-full": 103,
+   "sfx-info": 1756,
+   "sfx-info-light": 1455
+  },
+  "audio-sfx/global": {
+   "sfx-info": 1355,
+   "sfx-info-full": 160,
+   "sfx-info-light": 275
+  },
+  "audio-sfx/gore": {
+   "sfx-info": 32,
+   "sfx-info-light": 19
+  },
+  "audio-sfx/greenlight": {
+   "sfx-info-full": 19,
+   "sfx-info": 70,
+   "sfx-info-light": 51
+  },
+  "audio-sfx/guitar-freeplay": {
+   "sfx-info": 1,
+   "sfx-info-light": 1
+  },
+  "audio-sfx/hud": {
+   "sfx-info-full": 105,
+   "sfx-info": 216,
+   "sfx-info-light": 50
+  },
+  "audio-sfx/infected": {
+   "sfx-info-full": 21,
+   "sfx-info-light": 9,
+   "sfx-info": 36
+  },
+  "audio-sfx/jordan-escape": {
+   "sfx-info-light": 208,
+   "sfx-info-full": 21,
+   "sfx-info": 271
+  },
+  "audio-sfx/look-dev": {
+   "sfx-info": 6,
+   "sfx-info-light": 6
+  },
+  "audio-sfx/medicine": {
+   "sfx-info": 898,
+   "sfx-info-full": 266,
+   "sfx-info-light": 593
+  },
+  "audio-sfx/menu": {
+   "sfx-info": 50,
+   "sfx-info-full": 37
+  },
+  "audio-sfx/mix": {
+   "sfx-info": 77,
+   "sfx-info-full": 31
+  },
+  "audio-sfx/patrol": {
+   "sfx-info": 946,
+   "sfx-info-light": 766,
+   "sfx-info-full": 88
+  },
+  "audio-sfx/rescue-jessie": {
+   "sfx-info-light": 272,
+   "sfx-info-full": 46,
+   "sfx-info": 402
+  },
+  "audio-sfx/santa-barbara": {
+   "sfx-info-full": 64,
+   "sfx-info-light": 272,
+   "sfx-info": 345
+  },
+  "audio-sfx/save-lev": {
+   "sfx-info-full": 65,
+   "sfx-info": 222,
+   "sfx-info-light": 137
+  },
+  "audio-sfx/saving-kids": {
+   "sfx-info-light": 401,
+   "sfx-info-full": 189,
+   "sfx-info": 625
+  },
+  "audio-sfx/seattle-arrival": {
+   "sfx-info-light": 545,
+   "sfx-info-full": 160,
+   "sfx-info": 731
+  },
+  "audio-sfx/test": {
+   "sfx-info": 64,
+   "sfx-info-full": 17,
+   "sfx-info-light": 1
+  },
+  "audio-sfx/test-levels": {
+   "sfx-info": 7,
+   "sfx-info-light": 2,
+   "sfx-info-full": 5
+  },
+  "audio-sfx/the-farm": {
+   "sfx-info-full": 30,
+   "sfx-info": 300,
+   "sfx-info-light": 209
+  },
+  "audio-sfx/theater": {
+   "sfx-info-light": 85,
+   "sfx-info": 122,
+   "sfx-info-full": 37
+  },
+  "audio-sfx/theater-ambush": {
+   "sfx-info": 19,
+   "sfx-info-light": 18,
+   "sfx-info-full": 1
+  },
+  "audio-sfx/tracking": {
+   "sfx-info-light": 88,
+   "sfx-info": 121,
+   "sfx-info-full": 32
+  },
+  "audio-sfx/tracking-horde": {
+   "sfx-info-light": 193,
+   "sfx-info": 310,
+   "sfx-info-full": 82
+  },
+  "audio-sfx/vehicles": {
+   "sfx-info": 21,
+   "sfx-info-full": 18,
+   "sfx-info-light": 2
+  },
+  "audio-sfx/vert-slice": {
+   "sfx-info": 43,
+   "sfx-info-light": 32,
+   "sfx-info-full": 11
+  },
+  "audio-sfx/vox": {
+   "sfx-info-light": 3,
+   "sfx-info": 214,
+   "sfx-info-full": 5
+  },
+  "audio-sfx/watchtower": {
+   "sfx-info-light": 332,
+   "sfx-info-full": 167,
+   "sfx-info": 530
+  },
+  "audio-sfx/weapons": {
+   "sfx-info-light": 514,
+   "sfx-info": 3167,
+   "sfx-info-full": 1582
+  },
+  "audio.bin": {
+   "mix-snapshot-info": 248
+  },
+  "vox-igc-abby-ellie-fight.bin": {
+   "vox-info": 210
+  },
+  "vox-igc-abby-fights-militia.bin": {
+   "vox-info": 839
+  },
+  "vox-igc-abby-flashback-dad.bin": {
+   "vox-info": 369
+  },
+  "vox-igc-amputation.bin": {
+   "vox-info": 205
+  },
+  "vox-igc-ellie-flashback-guitar.bin": {
+   "vox-info": 82
+  },
+  "vox-igc-ellie-flashback-museum.bin": {
+   "vox-info": 648
+  },
+  "vox-igc-ellie-flashback-patrol.bin": {
+   "vox-info": 755
+  },
+  "vox-igc-ellie-flashback-ultimatum.bin": {
+   "vox-info": 33
+  },
+  "vox-igc-farm.bin": {
+   "vox-info": 728
+  },
+  "vox-igc-find-aquarium.bin": {
+   "vox-info": 160
+  },
+  "vox-igc-find-nora.bin": {
+   "vox-info": 1017
+  },
+  "vox-igc-flooded-city.bin": {
+   "vox-info": 724
+  },
+  "vox-igc-forward-base-issac.bin": {
+   "vox-info": 859
+  },
+  "vox-igc-forward-base-on-foot.bin": {
+   "vox-info": 961
+  },
+  "vox-igc-forward-base-stadium.bin": {
+   "vox-info": 475
+  },
+  "vox-igc-forward-base.bin": {
+   "vox-info": 778
+  },
+  "vox-igc-greenlight.bin": {
+   "vox-info": 1
+  },
+  "vox-igc-jordan-escape.bin": {
+   "vox-info": 124
+  },
+  "vox-igc-medicine-hospital.bin": {
+   "vox-info": 743
+  },
+  "vox-igc-medicine.bin": {
+   "vox-info": 899
+  },
+  "vox-igc-patrol.bin": {
+   "vox-info": 1825
+  },
+  "vox-igc-rescue-jesse.bin": {
+   "vox-info": 465
+  },
+  "vox-igc-santa-barbara-fight.bin": {
+   "vox-info": 146
+  },
+  "vox-igc-santa-barbara.bin": {
+   "vox-info": 713
+  },
+  "vox-igc-save-lev.bin": {
+   "vox-info": 952
+  },
+  "vox-igc-saving-kids.bin": {
+   "vox-info": 931
+  },
+  "vox-igc-sea-intrpt.bin": {
+   "vox-info": 55
+  },
+  "vox-igc-seattle-arrival-hub.bin": {
+   "vox-info": 2232
+  },
+  "vox-igc-seattle-arrival.bin": {
+   "vox-info": 574
+  },
+  "vox-igc-theater.bin": {
+   "vox-info": 118
+  },
+  "vox-igc-tracking-horde.bin": {
+   "vox-info": 397
+  },
+  "vox-igc-tracking.bin": {
+   "vox-info": 253
+  },
+  "vox-igc-watchtower.bin": {
+   "vox-info": 940
+  },
+  "vox-igc.bin": {
+   "vox-info": 507
+  },
+  "vox2-rl.bin": {
+   "vox-info": 3821
+  },
+  "vox2.bin": {
+   "vox-info": 3743
+  }
+ },
+ "script_literal_sfx_calls": 1069,
+ "common_objects_packages": [
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-dead-drop.bin",
+   "counts": {
+    "sfx-info": 13,
+    "sfx-info-light": 13
+   },
+   "categories": {
+    "igc-sfx": 13
+   },
+   "routes": {
+    "unknown (anim effect / native)": 13
+   },
+   "examples": [
+    "sfx-t2r-igc-loot-crate-open-hinge",
+    "sfx-t2r-igc-loot-crate-open-lid",
+    "sfx-t2r-igc-hub-loot-crate-open-latch",
+    "sfx-t2r-igc-wood-loot-crate-open-lid"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-doors.bin",
+   "counts": {
+    "sfx-info": 17,
+    "sfx-info-light": 7
+   },
+   "categories": {
+    "objects-doors": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 17
+   },
+   "examples": [
+    "sfx-wood-glass-crouch-pull",
+    "sfx-wood-glass-crouch-push",
+    "sfx-metal-gate-crouch-pull",
+    "sfx-wood-swing-aggr-push"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-foliage-sound.bin",
+   "counts": {
+    "sfx-info-light": 75,
+    "sfx-info": 78
+   },
+   "categories": {
+    "foliage-physics": 41,
+    "foliage-shader": 33,
+    "igc-sfx": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 78
+   },
+   "examples": [
+    "sfx-foli-phy-vines-long-singles",
+    "sfx-foli-phy-grass-tall",
+    "sfx-foli-phy-palm-small-accel",
+    "sfx-foli-phy-birds-of-parad-high"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-cabinet-metal-fridge.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-doors": 6
+   },
+   "routes": {
+    "mesh-effect:door-material": 6
+   },
+   "examples": [
+    "sfx-metal-fridge-cab-close-relaxed",
+    "sfx-metal-fridge-cab-pull-relaxed",
+    "sfx-metal-fridge-cab-close-tense",
+    "sfx-metal-fridge-cab-close-crouch"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-cabinet-metal-locker.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-doors": 4
+   },
+   "routes": {
+    "mesh-effect:door-material": 6
+   },
+   "examples": [
+    "sfx-metal-locker-cab-close-crouch",
+    "sfx-metal-locker-cab-pull-relaxed",
+    "sfx-metal-locker-cab-pull-crouch",
+    "sfx-metal-locker-cab-close-tense"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-cabinet-metal.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-doors": 3
+   },
+   "routes": {
+    "mesh-effect:door-material": 3
+   },
+   "examples": [
+    "sfx-metal-cab-pull-tense",
+    "sfx-metal-cab-pull-crouch",
+    "sfx-metal-cab-pull-relaxed"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-cabinet-wood.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-doors": 6
+   },
+   "routes": {
+    "mesh-effect:door-material": 6
+   },
+   "examples": [
+    "sfx-wood-cab-pull-tense",
+    "sfx-wood-cab-close-tense",
+    "sfx-wood-cab-pull-crouch",
+    "sfx-wood-cab-close-relaxed"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-handle-knob.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-doors": 2
+   },
+   "routes": {
+    "mesh-effect:door-handle": 7
+   },
+   "examples": [
+    "sfx-knob-shiv-push-release",
+    "sfx-knob-shiv-push-start",
+    "sfx-knob-release",
+    "sfx-knob-shiv-pull-start"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-handle-latch.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 7
+   },
+   "categories": {
+    "objects-doors": 2
+   },
+   "routes": {
+    "mesh-effect:door-handle": 7
+   },
+   "examples": [
+    "sfx-latch-shiv-push-release",
+    "sfx-latch-release",
+    "sfx-latch-shiv-pull-start",
+    "sfx-latch-start"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-handle-metal-bar.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-doors": 3
+   },
+   "routes": {
+    "mesh-effect:door-handle": 3
+   },
+   "examples": [
+    "sfx-metal-bar-release",
+    "sfx-metal-bar-locked",
+    "sfx-metal-bar-start"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-handle-pushbar.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-doors": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-pushbar-release",
+    "sfx-pushbar-start",
+    "sfx-pushbar-try"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-metal-gate.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-doors": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5,
+    "mesh-effect:door-material": 4
+   },
+   "examples": [
+    "sfx-metal-fence-door-push-npc-open-relaxed",
+    "sfx-metal-fence-gate-door-push-crouch",
+    "sfx-metal-gate-fence-door-wall-hit",
+    "sfx-metal-fence-gate-door-push-tense"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-metal-glass.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-doors": 4
+   },
+   "routes": {
+    "mesh-effect:door-material": 4
+   },
+   "examples": [
+    "sfx-metal-glass-bits-burst-aggr-push",
+    "sfx-metal-glass-door-push-tense",
+    "sfx-metal-glass-door-push-relaxed",
+    "sfx-metal-glass-door-push-crouch"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-metal.bin",
+   "counts": {
+    "sfx-info-light": 16,
+    "sfx-info": 36
+   },
+   "categories": {
+    "objects-doors": 16
+   },
+   "routes": {
+    "mesh-effect:door-material": 16,
+    "unknown (anim effect / native)": 20
+   },
+   "examples": [
+    "sfx-metal-military-door-push-tense",
+    "sfx-metal-military-door-push-npc-open-relaxed",
+    "sfx-metal-bits-door-debris-child",
+    "sfx-metal-door-push-relaxed"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-wood-glass.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-doors": 4
+   },
+   "routes": {
+    "mesh-effect:door-material": 4
+   },
+   "examples": [
+    "sfx-wood-glass-door-push-relaxed",
+    "sfx-wood-glass-door-push-tense",
+    "sfx-wood-glass-bits-burst-aggr-push",
+    "sfx-wood-glass-door-push-crouch"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-wood-screen.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-doors": 1
+   },
+   "routes": {
+    "mesh-effect:door-material": 1
+   },
+   "examples": [
+    "sfx-wood-screen-door-push-relaxed"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-door-wood.bin",
+   "counts": {
+    "sfx-info": 20,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-doors": 6
+   },
+   "routes": {
+    "mesh-effect:door-material": 12,
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-wood-door-push-npc-close-relaxed",
+    "sfx-wood-bits-door-aggr-rattle",
+    "sfx-wood-swing-bits-burst-aggr-push",
+    "sfx-wood-door-pull-relaxed"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-drawer-and-cabinet-handle.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-doors": 3
+   },
+   "routes": {
+    "mesh-effect:door-handle": 3
+   },
+   "examples": [
+    "sfx-wood-knob-start",
+    "sfx-metal-handle-start",
+    "sfx-metal-big-handle-start"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-drawer-metal.bin",
+   "counts": {
+    "sfx-info": 12,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-doors": 6
+   },
+   "routes": {
+    "mesh-effect:door-material": 12
+   },
+   "examples": [
+    "sfx-metal-big-drawer-pull-relaxed",
+    "sfx-metal-drawer-pull-tense",
+    "sfx-metal-big-drawer-close-tense",
+    "sfx-metal-big-drawer-pull-crouch"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-drawer-wood.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 12
+   },
+   "categories": {
+    "objects-doors": 6
+   },
+   "routes": {
+    "mesh-effect:door-material": 12
+   },
+   "examples": [
+    "sfx-wood-track-drawer-close-tense",
+    "sfx-wood-track-drawer-pull-crouch",
+    "sfx-wood-drawer-pull-crouch",
+    "sfx-wood-drawer-close-tense"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-military-generator.bin",
+   "counts": {
+    "sfx-info": 58,
+    "sfx-info-full": 6,
+    "sfx-info-light": 34
+   },
+   "categories": {
+    "igc-sfx": 40
+   },
+   "routes": {
+    "script-call": 12,
+    "unknown (anim effect / native)": 46
+   },
+   "examples": [
+    "sfx-igc-hub-last-gate-generator-lp",
+    "sfx-igc-sea-hub-generator-pull-a-cloth",
+    "sfx-igc-sea-hub-last-gate-generator-success-startup",
+    "sfx-igc-hub-hotel-generator-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-cable.bin",
+   "counts": {
+    "sfx-info": 40,
+    "sfx-info-light": 40
+   },
+   "categories": {
+    "objects-ropes": 40
+   },
+   "routes": {
+    "mesh-effect:rope-material": 38,
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-cable-rope-coil-flap",
+    "sfx-powerline-cable-rope-climb-zuz-leg",
+    "sfx-cable-rope-creak",
+    "sfx-powerline-cable-rope-collision-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-chain.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-ropes": 5,
+    "objects-physics": 1
+   },
+   "routes": {
+    "script-call": 2,
+    "mesh-effect:rope-material": 4
+   },
+   "examples": [
+    "sfx-chain-rope-yank",
+    "sfx-chain-rope-unchain-infected",
+    "sfx-chain-rope-collision-slide",
+    "sfx-chain-rope-collision-hit"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-cord.bin",
+   "counts": {
+    "sfx-info": 17,
+    "sfx-info-light": 17
+   },
+   "categories": {
+    "objects-ropes": 17
+   },
+   "routes": {
+    "mesh-effect:rope-material": 17
+   },
+   "examples": [
+    "sfx-cord-rope-collision-slide",
+    "sfx-cord-rope-swing",
+    "sfx-cord-rope-climb-zuz-leg",
+    "sfx-cord-rope-coil-grab"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-hemp.bin",
+   "counts": {
+    "sfx-info-light": 17,
+    "sfx-info": 18
+   },
+   "categories": {
+    "objects-ropes": 17
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1,
+    "mesh-effect:rope-material": 17
+   },
+   "examples": [
+    "sfx-hose-rope-slide-rope-slide-loop-snd-off",
+    "sfx-hemp-rope-coil-flap",
+    "sfx-hemp-rope-climb-foot-land",
+    "sfx-hemp-rope-edge-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-hose.bin",
+   "counts": {
+    "sfx-info-light": 18,
+    "sfx-info": 18
+   },
+   "categories": {
+    "objects-ropes": 18
+   },
+   "routes": {
+    "mesh-effect:rope-material": 17,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-hose-rope-climb-zuz-hand",
+    "sfx-hose-rope-coil-grab",
+    "sfx-hose-rope-coil",
+    "sfx-hose-rope-swing"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-rope-nylon.bin",
+   "counts": {
+    "sfx-info-light": 17,
+    "sfx-info": 17
+   },
+   "categories": {
+    "objects-ropes": 17
+   },
+   "routes": {
+    "mesh-effect:rope-material": 17
+   },
+   "examples": [
+    "sfx-nylon-rope-coil",
+    "sfx-nylon-rope-creak",
+    "sfx-nylon-rope-coil-grab",
+    "sfx-nylon-rope-climb-grab"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-gbl-safe.bin",
+   "counts": {
+    "sfx-info-light": 32,
+    "sfx-info": 32
+   },
+   "categories": {
+    "igc-sfx": 32
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 18,
+    "script-call": 10,
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-gbl-safe-open-fail--safe-handle",
+    "sfx-gbl-safe-exit--cloth",
+    "sfx-gbl-safe-ui-confirm-number",
+    "sfx-gbl-safe-ui-select-forward"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-leather-armor-sets.bin",
+   "counts": {
+    "sfx-info": 14,
+    "sfx-info-light": 14
+   },
+   "categories": {
+    "objects-physics": 14
+   },
+   "routes": {
+    "unknown (anim effect / native)": 14
+   },
+   "examples": [
+    "sfx-phy-leather-armor-roman-chest-imp",
+    "sfx-phy-leather-armor-movement-roman-loop",
+    "sfx-phy-horse-saddle-imp",
+    "sfx-phy-leather-armor-metal-helmet-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-metal-circuit-breaker-box.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-circuit-breaker-box-imp",
+    "sfx-phy-metal-change-machine-imp",
+    "sfx-phy-metal-circuit-breaker-box-hinge-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-banjo.bin",
+   "counts": {
+    "sfx-info": 59,
+    "sfx-info-full": 2,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1,
+    "anim-effect:joint-suffixed (IGC)": 58
+   },
+   "examples": [
+    "sfx-the-banjo-tuning",
+    "sfx-mus-acoustic-banjo-note--tuning--e1",
+    "sfx-mus-acoustic-banjo-note--single--clean--fretted-b2",
+    "sfx-mus-acoustic-banjo-note--single--clean--fretted-a1"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-custom-tlou.bin",
+   "counts": {
+    "sfx-info-full": 2,
+    "sfx-info": 59,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 58,
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-mus-acoustic-custom-tlou-note--single--clean--e#3",
+    "sfx-mus-acoustic-custom-tlou-note--single--clean--e#2",
+    "sfx-mus-acoustic-custom-tlou-note--single--clean--e#1",
+    "sfx-mus-acoustic-custom-tlou-note--single--clean--d#2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar-joel-epilogue.bin",
+   "counts": {
+    "sfx-info-full": 2,
+    "sfx-info": 48
+   },
+   "categories": {
+    "music-source": 2
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 48
+   },
+   "examples": [
+    "sfx-mus-joel-epilogue-acoustic-guitar-note--single--clean--a1",
+    "sfx-mus-joel-epilogue-acoustic-guitar-note--single--clean--a2",
+    "sfx-mus-joel-epilogue-acoustic-guitar-note--single--clean--a3",
+    "sfx-mus-joel-epilogue-acoustic-guitar-note--single--clean--c2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar-joel.bin",
+   "counts": {
+    "sfx-info-full": 2,
+    "sfx-info": 48
+   },
+   "categories": {
+    "music-source": 2
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 48
+   },
+   "examples": [
+    "sfx-mus-joel-acoustic-guitar-note--single--clean--d#1",
+    "sfx-mus-joel-acoustic-guitar-note--single--clean--d#3",
+    "sfx-mus-joel-acoustic-guitar-note--single--clean--d#2",
+    "sfx-mus-joel-acoustic-guitar-note--single--clean--e#1"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar-seattle.bin",
+   "counts": {
+    "sfx-info-full": 2,
+    "sfx-info": 49,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 48,
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-mus-seattle-acoustic-guitar-note--tuning--d2",
+    "sfx-mus-seattle-acoustic-guitar-note--tuning--e3",
+    "sfx-mus-seattle-acoustic-guitar-note--tuning--e1",
+    "sfx-mus-seattle-acoustic-guitar-note--tuning--g2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar-shared.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-full": 2,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 3
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 6,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-mus-shared-acoustic-guitar-note--single--bad--a1",
+    "sfx-mus-shared-acoustic-guitar-note--single--bad--a2",
+    "sfx-mus-shared-acoustic-guitar-note--single--bad--d2",
+    "sfx-mus-shared-acoustic-guitar--string-scrape--fast"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar-theater.bin",
+   "counts": {
+    "sfx-info": 49,
+    "sfx-info-full": 2,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 48,
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-mus-theater-acoustic-guitar-note--single--clean--a#1",
+    "sfx-mus-theater-acoustic-guitar-note--single--clean--a#3",
+    "sfx-mus-theater-acoustic-guitar-note--single--clean--a#2",
+    "sfx-mus-theater-acoustic-guitar-note--single--clean--c#3"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-guitar.bin",
+   "counts": {
+    "sfx-info": 60,
+    "sfx-info-full": 3
+   },
+   "categories": {
+    "music-source": 3
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 60
+   },
+   "examples": [
+    "sfx-music-ellie-acoustic-guitar-chord--clean--g#m",
+    "sfx-music-ellie-acoustic-guitar--fingering-change",
+    "sfx-music-ellie-acoustic-guitar-note--single--bad--a2",
+    "sfx-music-ellie-acoustic-guitar-note--single--bad--a1"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-nylon.bin",
+   "counts": {
+    "sfx-info": 59,
+    "sfx-info-light": 1,
+    "sfx-info-full": 2
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 58,
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-mus-acoustic-nylon-note--single--clean--g#1",
+    "sfx-mus-acoustic-nylon-note--single--clean--g#3",
+    "sfx-mus-acoustic-nylon-note--single--clean--g#2",
+    "sfx-mus-acoustic-nylon-note--single--clean--f#1"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-acoustic-steel-resonator.bin",
+   "counts": {
+    "sfx-info": 59,
+    "sfx-info-full": 2,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "music-source": 2,
+    "movie": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 58,
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-mus-acoustic-steel-resonator-note--single--clean--a3",
+    "sfx-mus-acoustic-steel-resonator-note--single--clean--a2",
+    "sfx-mus-acoustic-steel-resonator-note--single--clean--b3",
+    "sfx-mus-acoustic-steel-resonator-note--single--clean--b1"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-electric-jazz.bin",
+   "counts": {
+    "sfx-info": 118,
+    "sfx-info-full": 4,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "music-source": 4,
+    "movie": 2
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 116,
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-mus-electric-jazz-di-note--single--clean--fretted-g2",
+    "sfx-mus-electric-jazz-di-note--single--clean--fretted-e3",
+    "sfx-mus-electric-jazz-di-note--single--clean--fretted-d2",
+    "sfx-mus-electric-jazz-di-note--single--clean--fretted-b2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-electric-strat.bin",
+   "counts": {
+    "sfx-info": 118,
+    "sfx-info-light": 2,
+    "sfx-info-full": 4
+   },
+   "categories": {
+    "music-source": 4,
+    "movie": 2
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 116,
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-mus-electric-strat-amp-note--single--clean--open-f#3",
+    "sfx-mus-electric-strat-amp-note--single--clean--fretted-a1",
+    "sfx-mus-electric-strat-amp-note--single--clean--fretted-b2",
+    "sfx-mus-electric-strat-amp-note--single--clean--fretted-e3"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-generator.bin",
+   "counts": {
+    "sfx-info": 18,
+    "sfx-info-light": 17
+   },
+   "categories": {
+    "igc-sfx": 17
+   },
+   "routes": {
+    "unknown (anim effect / native)": 14,
+    "script-call": 4
+   },
+   "examples": [
+    "sfx-sfx-generator-pullstart-succeed-3",
+    "sfx-generator-pullstart-succeed",
+    "sfx-igc-med-generator-idle-lp",
+    "sfx-generator-enter-start-hand"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-hanging-deer-shared.bin",
+   "counts": {
+    "sfx-info": 37,
+    "sfx-info-light": 8
+   },
+   "categories": {
+    "igc-sfx": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 37
+   },
+   "examples": [
+    "sfx-igc-pat-crowd-butcher-idles-01-grab",
+    "sfx-igc-crowd-butchering-male-left-hand-12",
+    "sfx-igc-crowd-butchering-male-left-hand-13",
+    "sfx-igc-crowd-butchering-male-left-hand-10"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-obj-keypad.bin",
+   "counts": {
+    "sfx-info": 13,
+    "sfx-info-light": 13
+   },
+   "categories": {
+    "igc-sfx": 12,
+    "hud": 1
+   },
+   "routes": {
+    "anim-effect:joint-suffixed (IGC)": 8,
+    "script-call": 5
+   },
+   "examples": [
+    "sfx-igc-sea-hub-keypad--select-press-key",
+    "sfx-igc-sea-hub-keypad--exit-cloth",
+    "sfx-igc-sea-hub-keypad--fail-cloth-p1",
+    "sfx-igc-sea-hub-keypad--fail-cloth-p2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-afe-armor-sets.bin",
+   "counts": {
+    "sfx-info-light": 8,
+    "sfx-info": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-metal-knight-armor-a-large-imp",
+    "sfx-phy-metal-knight-armor-movement-loop",
+    "sfx-phy-metal-knight-armor-a-piece-imp",
+    "sfx-phy-leather-armor-metal-helmet-conquistador-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-afm-burning-planks.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-full": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-phy-afm-plank-large-imp",
+    "sfx-phy-afm-plank-imp",
+    "sfx-dst-afm-plank-collapse",
+    "sfx-dst-afm-plank-near-hit"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-curtains.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-aqu-curtain-imp",
+    "sfx-phy-plastic-aqu-curtain-movement",
+    "sfx-phy-plastic-aqu-curtain-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-hanging-clothes.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-aqu-clothes-hanging-set-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-hose.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-aqu-hose-imp",
+    "sfx-phy-aqu-hose-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-swing-door.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-aqu-swing-door-imp",
+    "sfx-phy-aqu-swing-door-swing-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-tank.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-aqu-tank-lid-imp",
+    "sfx-phy-plastic-aqu-tank-imp",
+    "sfx-phy-plastic-aqu-tank-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-aqu-wetsuits.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-wetsuit-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bar-bottles.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 7
+   },
+   "categories": {
+    "objects-physics": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-metal-bar-soda-can-imp",
+    "sfx-phy-metal-bar-soda-can-roll-loop",
+    "sfx-phy-glass-bar-bottles-slide",
+    "sfx-phy-glass-bar-bottles-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-barn-pulley.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-barn-pulley-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bicycle.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-bicycle-metal-hit-imp",
+    "sfx-phy-bicycle-wheel-spin-lp",
+    "sfx-phy-bicycle-pedal-spin-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bike-frame.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-bicycle-metal-hanging-frame-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bike-helmet.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-bike-ulock-slide",
+    "sfx-phy-metal-bike-ulock-imp",
+    "sfx-phy-bike-helmet-imp",
+    "sfx-phy-bike-helmet-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bike-tire.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-bicycle-rubber-hanging-tires-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-billiard-ball.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-billiards-ball-roll",
+    "sfx-phy-billiards-ball-imp",
+    "sfx-phy-billiard-rack-slide",
+    "sfx-phy-billiard-rack-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-boat-model.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-boat-model-slide",
+    "sfx-phy-boat-model-collapse",
+    "sfx-phy-boat-model-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-bones.bin",
+   "counts": {
+    "sfx-info-light": 10,
+    "sfx-info": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-bone-skull-roll",
+    "sfx-phy-skeleton-boot-impact",
+    "sfx-phy-bone-imp",
+    "sfx-phy-bone-hosp-skel-skull-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-books.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-books-hardback-imp-hard",
+    "sfx-phy-books-slide-hard",
+    "sfx-phy-books-paperback-imp-hard",
+    "sfx-paper-files-set-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-boots.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-hunting-boot-slide",
+    "sfx-phy-hunting-boot-impact"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-branches.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-branch-trunk-imp",
+    "sfx-phy-dead-res-branch-imp",
+    "sfx-phy-leafy-branch-imp",
+    "sfx-phy-leafy-branch-movement-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-brick.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-dst-brick-piece-break-lrg",
+    "sfx-dst-brick-piece-break-med",
+    "sfx-dst-brick-break-collapse",
+    "sfx-phy-brick-res-jesse-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-camping-pad.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-foam-camping-pad-imp",
+    "sfx-foam-camping-pad-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cannabis-plant.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-cannabis-plant-mature-lp",
+    "sfx-phy-cannabis-plant-lp",
+    "sfx-phy-cannabis-plant-mature-imp",
+    "sfx-phy-cannabis-plant-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-canteen.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-canteen-slide",
+    "sfx-phy-canteen-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-canvas-pool-umbrella.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-canvas-pool-umbrella-imp",
+    "sfx-phy-canvas-umbrella-set-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-canvas-roller-blinds.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-canvas-roller-blind-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cardboard-boxes.bin",
+   "counts": {
+    "sfx-info": 39,
+    "sfx-info-light": 33
+   },
+   "categories": {
+    "objects-physics": 33
+   },
+   "routes": {
+    "unknown (anim effect / native)": 39
+   },
+   "examples": [
+    "sfx-phy-cardboard-boardgame-box-imp",
+    "sfx-phy-cardboard-medium-med-box-slide",
+    "sfx-phy-cardboard-box-med-closed-imp",
+    "sfx-phy-cardboard-box-a-med-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cardboard-standup.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-cardboard-standup-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cardboard-targets.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cardboard-target-slide",
+    "sfx-phy-cardboard-target-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cash-register.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-plastic-cash-register-slide-lp",
+    "sfx-phy-plastic-cash-register-imp-e",
+    "sfx-phy-plastic-cash-register-imp-d",
+    "sfx-phy-plastic-cash-register-swtnr-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-cup.bin",
+   "counts": {
+    "sfx-info": 13,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 4,
+    "objects-destructibles": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 13
+   },
+   "examples": [
+    "sfx-phy-res-ceramic-coffee-cup-imp",
+    "sfx-phy-res-ceramic-coffee-cup-slide",
+    "sfx-phy-ceramic-coffee-cup-imp-b-classic",
+    "sfx-phy-ceramic-coffee-cup-imp-colorful-a"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-dishes.bin",
+   "counts": {
+    "sfx-info-light": 17,
+    "sfx-info": 17
+   },
+   "categories": {
+    "objects-physics": 13,
+    "objects-destructibles": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 17
+   },
+   "examples": [
+    "sfx-phy-ceramic-fob-plate-imp",
+    "sfx-phy-ceramic-plate-imp",
+    "sfx-plastic-dish-rack-imp",
+    "sfx-phy-metal-mug-rack-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-jug-carboy.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-ceramic-jug-carboy-lg-imp-hard",
+    "sfx-phy-ceramic-jug-carboy-sm-imp",
+    "sfx-phy-ceramic-jug-carboy-sm-sld",
+    "sfx-phy-ceramic-jug-carboy-lg-sld-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-ramen-dishes.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-ceramic-ramen-plate-slide-lp",
+    "sfx-phy-ceramic-ramen-dishes-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-theater-vase.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 2,
+    "objects-destructibles": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-dst-ceramic-theater-vase-collapse",
+    "sfx-dst-ceramic-theater-vase-piece-break",
+    "sfx-phy-ceramic-theater-vase-slide",
+    "sfx-phy-ceramic-theater-vase-piece-impact"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-toilet.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-destruction": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-ceramic-toilet-seat-impact",
+    "sfx-phy-ceramic-toilet-collapse",
+    "sfx-phy-ceramic-toilet-piece-imp",
+    "sfx-phy-ceramic-toilet-seat-squeak"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-ceramic-vase.bin",
+   "counts": {
+    "sfx-info-light": 15,
+    "sfx-info": 15
+   },
+   "categories": {
+    "objects-physics": 10,
+    "objects-destructibles": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 15
+   },
+   "examples": [
+    "sfx-phy-ceramic-small-vase-piece-e-impact",
+    "sfx-dst-ceramic-vase-collapse",
+    "sfx-phy-ceramic-small-vase-slide",
+    "sfx-dst-ceramic-jar-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-chemical-bottles.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-chemical-bottle-imp",
+    "sfx-phy-chemical-bottle-slide-loop",
+    "sfx-phy-chemical-bottle-large-slide-loop",
+    "sfx-phy-chemical-bottle-large-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-chinatown-ceramic-vase.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 4,
+    "objects-destructibles": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-ceramic-chinatown-small-vase-slide",
+    "sfx-dst-ceramic-chinatown-vase-collapse",
+    "sfx-dst-ceramic-chinatown-small-vase-collapse",
+    "sfx-phy-ceramic-chinatown-vase-piece-impact"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-basement-curtains.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-cloth-basement-curtains-movement-loop",
+    "sfx-phy-cloth-basement-curtains-imp",
+    "sfx-phy-cloth-basement-curtains-small-imp",
+    "sfx-phy-cloth-basement-curtains-movement-loop-2"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-clothing.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cloth-hat-slide",
+    "sfx-phy-cloth-hat-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-dojo-curtains.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cloth-dojo-curtains-movement-loop",
+    "sfx-phy-cloth-dojo-curtains-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-downtown-curtains.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-cloth-downtown-curtains-infected-imp",
+    "sfx-phy-cloth-downtown-curtains-infected-movement-loop",
+    "sfx-phy-cloth-downtown-curtains-movement-loop",
+    "sfx-phy-cloth-downtown-curtains-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-generic-curtains.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-cloth-crane-ascent-curtains-imp",
+    "sfx-phy-cloth-generic-curtains-imp",
+    "sfx-phy-cloth-crane-curtains-imp",
+    "sfx-phy-cloth-stair-cloth-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-halloween-hanging-ghoul.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-cloth-halloween-hanging-ghoul-rope-creak-loop",
+    "sfx-phy-cloth-halloween-hanging-ghoul-imp",
+    "sfx-phy-cloth-halloween-hanging-ghoul-movement-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-hotel-curtains.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cloth-hotel-curtains-movement-loop",
+    "sfx-phy-cloth-hotel-curtains-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-pillow.bin",
+   "counts": {
+    "sfx-info-light": 7,
+    "sfx-info": 7
+   },
+   "categories": {
+    "objects-physics": 5,
+    "default": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-cloth-decorative-pillow-imp",
+    "sfx-phy-cloth-couch-pillow-slide",
+    "sfx-phy-cloth-decorative-pillow-top-imp",
+    "sfx-phy-cloth-pillow-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cloth-san-resort-curtains.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cloth-san-resort-curtains-movement-loop",
+    "sfx-phy-cloth-san-resort-curtains-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-coffee-bean-bag.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-coffee-beans-bag-slide-loop",
+    "sfx-phy-rustons-coffee-beans-bag-imp",
+    "sfx-phy-ruston-coffee-mug-impact",
+    "sfx-phy-plastic-coffee-beans-bag-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-coffee-tea-sugar-set-a.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-coffee-tea-sugar-set-b-imp",
+    "sfx-phy-coffee-tea-sugar-set-a-sld-lp",
+    "sfx-dst-ceramic-tea-set-collapse",
+    "sfx-phy-coffee-tea-sugar-set-b-sld-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-corn-plant.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-corn-movement-loop",
+    "sfx-corn-movement-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-cutting-board.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-cutting-board-a-imp",
+    "sfx-phy-wood-cutting-board-a-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-desk-props.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-travel-mug-slide",
+    "sfx-phy-travel-mug-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-display-rope-stanchion.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-nor-display-rope-stanchion-a-sld-lp",
+    "sfx-phy-nor-display-rope-stanchion-a-bump-imp",
+    "sfx-phy-nor-display-rope-stanchion-single-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-dog-toy.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "script-call": 3,
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-dog-toy-squeeze-squeak-in",
+    "sfx-phy-dog-toy-squeeze-squeak-out",
+    "sfx-phy-dog-toy-squeeze-alice-pick-up",
+    "sfx-phy-rubber-dog-toy-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-door-hinge-and-latch.bin",
+   "counts": {
+    "sfx-info": 42,
+    "sfx-info-light": 16
+   },
+   "categories": {
+    "objects-doors": 11,
+    "objects-physics": 5
+   },
+   "routes": {
+    "mesh-effect:door-material": 28,
+    "unknown (anim effect / native)": 13,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-wood-screen-door-rattle-lrg",
+    "sfx-metal-military-door-wall-hit",
+    "sfx-wood-screen-door-rattle-med",
+    "sfx-wood-glass-door-latch"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-door-trap.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-metal-trap-soda-can-roll",
+    "sfx-phy-glass-broom-bottle-roll",
+    "sfx-phy-metal-hook-movement-loop",
+    "sfx-phy-glass-broom-bottle-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-drum-kit.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-hi-hat-imp",
+    "sfx-phy-metal-ride-cymbal-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-efp-shingles.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-efp-shingles-imp",
+    "sfx-phy-efp-shingles-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-efp-walls.bin",
+   "counts": {
+    "sfx-info-full": 1,
+    "sfx-info-light": 4,
+    "sfx-info": 7
+   },
+   "categories": {
+    "objects-physics": 4,
+    "explosions": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-dst-efp-breakable-wall-short-collapse",
+    "sfx-dst-efp-conf-shutter-blind-collapse",
+    "sfx-dst-efp-breakable-wall-collapse",
+    "sfx-phy-wood-efp-wall-panel-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-fabric.bin",
+   "counts": {
+    "sfx-info-light": 20,
+    "sfx-info": 20
+   },
+   "categories": {
+    "objects-physics": 20
+   },
+   "routes": {
+    "unknown (anim effect / native)": 20
+   },
+   "examples": [
+    "sfx-phys-cloth-line-b-lp",
+    "sfx-clothes-hanging-set-a",
+    "sfx-clothes-hanger-only",
+    "sfx-phys-cloth-shirt-dress-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-fishing-net.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-cloth-fishing-net-curtains-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-flesh-hanging-meat.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-flesh-hanging-animals-imp",
+    "sfx-phy-flesh-hanging-meat-imp",
+    "sfx-phy-hanging-meat-rope-movement-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-floating-debris.bin",
+   "counts": {
+    "sfx-info": 8,
+    "sfx-info-light": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-plastic-floating-jug-imp",
+    "sfx-phy-cardboard-takeout-container-imp",
+    "sfx-phy-plastic-floating-crate-imp",
+    "sfx-phy-water-floating-debris-small-surface-skim-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-fungus-stalks.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-fungus-stalk-imp",
+    "sfx-dst-fungus-stalk-break",
+    "sfx-phy-fungus-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-bottle-break.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-glass-mason-jar-piece-imp",
+    "sfx-phy-glass-mason-jar-collapse",
+    "sfx-phy-glass-mason-jar-piece-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-bottle.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-carnival-gametruck-glass-bottles-imp",
+    "sfx-carnival-gametruck-glass-bottles-rll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-chandelier.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-flo-ceiling-lamp-glass-slide",
+    "sfx-phy-flo-ceiling-lamp-glass-imp",
+    "sfx-phy-flo-ceiling-lamp-glass-collapse",
+    "sfx-phy-flo-ceiling-lamp-metal-base-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-small-container.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-glass-small-container-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-stein.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-dst-ceramic-stein-collapse",
+    "sfx-phy-glass-growler-imp",
+    "sfx-phy-ceramic-stein-imp",
+    "sfx-dst-glass-pint-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-windows.bin",
+   "counts": {
+    "sfx-info": 20,
+    "sfx-info-light": 15
+   },
+   "categories": {
+    "objects-destructibles": 11,
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11,
+    "anim-effect:joint-suffixed (IGC)": 9
+   },
+   "examples": [
+    "sfx-dst-glass-car-window",
+    "sfx-dst-glass-car-window-res-jesse",
+    "sfx-dst-glass-window--collapse-vending-machine",
+    "sfx-dst-glass-window--collapse-large-window"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-glass-wine-bottle.bin",
+   "counts": {
+    "sfx-info-light": 9,
+    "sfx-info": 9
+   },
+   "categories": {
+    "objects-physics": 8,
+    "objects-destruction": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-glass-bottle-wine-break-collapse",
+    "sfx-dst-glass-bottle-wine-rack-collapse",
+    "sfx-phy-glass-wine-glass-collapse",
+    "sfx-dst-glass-bottle-wine-rack-pieces-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-guitar-stand.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-guitar-stand-imp",
+    "sfx-phy-metal-guitar-stand-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hanging-cables.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-hanging-cables-movement-loop",
+    "sfx-phy-hanging-cables-connected-imp",
+    "sfx-phy-hanging-cables-imp",
+    "sfx-phy-hanging-cables-connected-movement-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hanging-chains.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-hanging-chain-imp",
+    "sfx-phy-metal-hanging-chain-movement-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hanging-pelts.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-deer-carcus-body-imp",
+    "sfx-phy-deer-hook-squeak-loop",
+    "sfx-phy-scar-small-pelt-imp",
+    "sfx-phy-scar-large-pelt-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hangman-noose.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-hangman-noose-movement-loop",
+    "sfx-phy-t2r-hanging-rope-movement-loop",
+    "sfx-phy-t2r-rope-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hose-reel.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-plastic-hose-reel-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hosp-container-collection.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-cardboard-group-med-box-slide",
+    "sfx-phy-plastic-hosp-group-bottle-med-imp",
+    "sfx-phy-plastic-hosp-group-bottle-slide",
+    "sfx-phy-plastic-hosp-group-tray-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hospital-poster.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-poster-imp",
+    "sfx-phy-plastic-poster-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hotel-lamp.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-med-hotel-lamp-a-shade-slide-loop",
+    "sfx-phy-med-downtown-infected-hotel-lamp-shade-c-imp",
+    "sfx-phy-med-hotel-lamp-a-slide-loop",
+    "sfx-phy-med-downtown-infected-hotel-lamp-c-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-hunting-store-accessories.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-hunting-accessory-bag-imp",
+    "sfx-phy-hunting-accessory-bag-slide",
+    "sfx-phy-hunting-accessory-box-imp",
+    "sfx-phy-hunting-accessory-box-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-laptop.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-laptop-imp",
+    "sfx-phy-plastic-laptop-slide",
+    "sfx-phy-plastic-laptop-rugged-imp",
+    "sfx-phy-plastic-laptop-rugged-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-loudspeaker.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-loudspeaker-imp",
+    "sfx-phy-metal-loudspeaker-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-luggage.bin",
+   "counts": {
+    "sfx-info-light": 7,
+    "sfx-info": 7
+   },
+   "categories": {
+    "objects-physics": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-cloth-suitcase-slide",
+    "sfx-phy-plastic-hardshell-suitcase-slide",
+    "sfx-phy-plastic-hardshell-suitcase-penguin-imp",
+    "sfx-phy-cloth-suitcase-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-mahjong-stones.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-mahjong-stones-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-makeup-bag.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-leather-makeup-bag-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-med-walls.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-full": 3
+   },
+   "categories": {
+    "explosions": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-igc-med-hospital-basement-ratking-fight-wall-break-a",
+    "sfx-igc-med-hospital-basement-ratking-fight-wall-break-b",
+    "sfx-igc-med-hospital-basement-ratking-fight-wall-break-c",
+    "sfx-dst-med-infected-building-corridor-wall-collapse-lrg"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-medical-opt-supplies.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-opt-eye-model-small-piece-slide",
+    "sfx-phy-opt-display-case-sld-lp",
+    "sfx-phy-opt-rotating-display-case-sld-lp",
+    "sfx-phy-opt-eye-model-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-antique-lamps.bin",
+   "counts": {
+    "sfx-info-light": 11,
+    "sfx-info": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-phy-metal-hanging-camping-lantern-squeak-loop",
+    "sfx-phy-antique-lamps-set-a-lamp-b-imp",
+    "sfx-phy-antique-lamps-set-a-lamp-d-imp",
+    "sfx-phy-antique-lamps-set-a-lamp-b-handle"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-antique-telescope.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-wood-telescope-legs-imp",
+    "sfx-phy-metal-telescope-imp",
+    "sfx-phy-metal-telescope-chain-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-barrel.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phys-floating-barrel-a-imp",
+    "sfx-phys-floating-barrel-a-rll-lp",
+    "sfx-phys-floating-barrel-a-slide-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-birdcage.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-birdcage-hinge-squak-accel",
+    "sfx-phy-birdcage-hits"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-blinds.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-metal-blinds-imp",
+    "sfx-phy-metal-blinds-lp",
+    "sfx-phy-metal-blinds-bottom-wood-hit",
+    "sfx-phy-metal-blinds-beads-hit"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-bottle.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-water-bottle-imp",
+    "sfx-phy-metal-water-bottle-slide-loop",
+    "sfx-phy-metal-water-bottle-roll-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-bucket.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-barn-bucket-large-low-imp",
+    "sfx-phy-metal-barn-bucket-large-low-roll",
+    "sfx-metal-barn-bucket-large-handles"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-can.bin",
+   "counts": {
+    "sfx-info": 13,
+    "sfx-info-light": 12
+   },
+   "categories": {
+    "objects-physics": 12
+   },
+   "routes": {
+    "unknown (anim effect / native)": 13
+   },
+   "examples": [
+    "sfx-phy-plastic-gas-can-imp",
+    "sfx-phy-plastic-gas-can-slide",
+    "sfx-phy-metal-rolling-lrg-can-imp",
+    "sfx-phy-metal-soup-can-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-ceiling-fan.bin",
+   "counts": {
+    "sfx-info-light": 9,
+    "sfx-info": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-metal-ceiling-fan-base-squeak-large",
+    "sfx-phy-metal-ceiling-fan-imp-small",
+    "sfx-phy-metal-ceiling-fan-imp-large",
+    "sfx-phy-metal-ceiling-fan-blade-loop-small"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-chainlink-fence.bin",
+   "counts": {
+    "sfx-info": 11,
+    "sfx-info-light": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-metal-chainlink-fence-lp-2",
+    "sfx-phy-metal-boat-chainlink-fence-movement-loop",
+    "sfx-phy-boat-chainlink-fence-imp",
+    "sfx-metal-theater-fence-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-chains.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-garage-chain-movement-loop",
+    "sfx-phy-metal-garage-chain-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-chairs-and-stools.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-metal-shop-stool-a-imp",
+    "sfx-phy-metal-mil-chair-imp",
+    "sfx-phy-metal-stool-slide",
+    "sfx-phy-metal-mil-chair-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-chandelier.bin",
+   "counts": {
+    "sfx-info": 11,
+    "sfx-info-light": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-phys-metal-chandelier-transitional-rotation-loop",
+    "sfx-phys-metal-chandeliers-rotation-lp",
+    "sfx-phys-metal-chandelier-transitional-imp",
+    "sfx-phys-metal-chandelier-hotel-rotation-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-cleaning-net.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-cleaning-net-slide",
+    "sfx-phy-metal-cleaning-net-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-coffee-pot.bin",
+   "counts": {
+    "sfx-info": 15,
+    "sfx-info-light": 13
+   },
+   "categories": {
+    "objects-physics": 13
+   },
+   "routes": {
+    "unknown (anim effect / native)": 15
+   },
+   "examples": [
+    "sfx-phy-metal-coffee-pot-rll",
+    "sfx-phy-metal-coffee-pot-slide",
+    "sfx-phy-metal-tea-kettle-cover-imp",
+    "sfx-phy-metal-tea-brewer-b-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-computer.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-desktop-computer-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-container.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-tool-jerry-can-imp",
+    "sfx-phy-metal-tool-jerry-can-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-cutlery.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-spoon-imp",
+    "sfx-phy-metal-spoon-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-desk-lamp.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-metal-desk-lamp-sld-lp",
+    "sfx-metal-desk-lamp-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-desk-paper-tray.bin",
+   "counts": {
+    "sfx-info-light": 10,
+    "sfx-info": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-paper-desk-paper-tray-medium-folder-thin-imp",
+    "sfx-phy-paper-desk-paper-tray-folder-thin-slide",
+    "sfx-phy-paper-desk-paper-tray-folder-thick-imp",
+    "sfx-phy-paper-desk-paper-tray-folder-thin-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-display.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-arcade-display-imp",
+    "sfx-phy-metal-boot-shelf-imp",
+    "sfx-phy-metal-boot-shelf-slide",
+    "sfx-phy-arcade-shelf-rotate-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-diver-helmet.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-diver-helmet-slide",
+    "sfx-phy-metal-diver-helmet-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-faucet.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-metal-faucet-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-fire-hydrant.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-fire-hydrant-hard",
+    "sfx-phy-fire-hydrant-roll-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-folding-chair.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-table-imp",
+    "sfx-phy-metal-folding-chair-imp-hard",
+    "sfx-phys-folding-chair-squeak",
+    "sfx-phy-metal-folding-chair-sld-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-garage-door.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phys-metal-nora-garage-door-movement-loop",
+    "sfx-phys-metal-nora-garage-door-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-gun-sled.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-metal-gun-target-flip-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-hammer.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-metal-hammer-slide",
+    "sfx-phy-wood-metal-hammer-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-hanging-lights.bin",
+   "counts": {
+    "sfx-info-light": 13,
+    "sfx-info": 13
+   },
+   "categories": {
+    "objects-physics": 13
+   },
+   "routes": {
+    "unknown (anim effect / native)": 13
+   },
+   "examples": [
+    "sfx-phy-t2r-hanging-light-constraint-loop",
+    "sfx-phy-metal-hanging-light-gift-shop-constraint-loop",
+    "sfx-phy-metal-hanging-fluorescent-light-squeak",
+    "sfx-phy-glass-hanging-light-piece-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-hose-end.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "mesh-effect:rope-material": 2
+   },
+   "examples": [
+    "sfx-metal-hose-endcap-rope-end-collision-hit",
+    "sfx-metal-hose-endcap-rope-end-collision-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-kitch-pot.bin",
+   "counts": {
+    "sfx-info-light": 18,
+    "sfx-info": 18
+   },
+   "categories": {
+    "objects-physics": 18
+   },
+   "routes": {
+    "unknown (anim effect / native)": 18
+   },
+   "examples": [
+    "sfx-phy-metal-cookware-set-small-imp",
+    "sfx-phy-metal-pot-rack-swing-loop",
+    "sfx-phy-metal-cookware-set-lid-sld",
+    "sfx-phy-metal-cookware-set-large-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-kitchen-applicance.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-metal-toaster-sld-lp",
+    "sfx-phy-metal-coffee-grinder",
+    "sfx-phy-metal-mixer-stand",
+    "sfx-phy-metal-toaster-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-ladder.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-ladder-squeaks",
+    "sfx-phy-metal-ladder-b-imp",
+    "sfx-phy-metal-ladder-imp",
+    "sfx-phy-metal-ladder-slide-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-lamp.bin",
+   "counts": {
+    "sfx-info-light": 11,
+    "sfx-info": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-phy-metal-floor-lamp-d-stand-slide",
+    "sfx-phy-vitorian-lamp-shade-imp",
+    "sfx-phy-metal-desk-lamp-slide",
+    "sfx-phy-metal-floor-lamp-d-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-laundromat.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-dryer-imp-hard",
+    "sfx-phy-metal-dryer-rotation"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-lawn-chair.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phys-lawn-chair-imp",
+    "sfx-phys-lawn-chair-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-mailbox.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-mailbox-imp-hard-slide-lp",
+    "sfx-phy-metal-mailbox-open-handle-bits",
+    "sfx-phy-metal-mailbox-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-microwave.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-metal-microwave-hits-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-music-stand.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-metal-music-stand-base-sld-lp",
+    "sfx-metal-music-stand-base-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-musical-instruments.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-trumpet-imp",
+    "sfx-phy-gong-rope-movement-loop",
+    "sfx-phy-metal-trumpet-slide",
+    "sfx-phy-metal-gong-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-paint-cans.bin",
+   "counts": {
+    "sfx-info-light": 10,
+    "sfx-info": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-phy-paint-can-half-full-slide-loop",
+    "sfx-phy-the-paint-can-imp",
+    "sfx-phy-har-paint-can-med-a-hinge",
+    "sfx-phy-paint-can-half-full-large-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-paint-spray-cans.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-spraycan-a-roll",
+    "sfx-phy-wood-paint-brush-imp",
+    "sfx-phy-spray-paint-can-a-roll",
+    "sfx-phy-spray-paint-can-set-a-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-planter.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-planter-imp",
+    "sfx-phy-metal-planter-roll-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-rack.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-metal-ticket-shelf-imp",
+    "sfx-phy-metal-postcard-rack-small-imp",
+    "sfx-phy-metal-ticket-shelf-slide",
+    "sfx-phy-metal-postcard-rack-large-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-scar-chimes.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-scar-chimes-imp",
+    "sfx-phy-metal-scar-chimes-rope-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-shelf.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-metal-shelf-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-shopping-cart.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-metal-shopping-cart-imp",
+    "sfx-phy-metal-shopping-cart-wheels-sld-lp",
+    "sfx-phy-metal-shopping-cart-squeaks",
+    "sfx-phy-shopping-cart-wheels"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-sign.bin",
+   "counts": {
+    "sfx-info-light": 8,
+    "sfx-info": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-metal-standing-sign-imp",
+    "sfx-dst-wood-sign-collapse",
+    "sfx-phy-store-sign-sale-stand-b",
+    "sfx-phy-metal-cruise-sign-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-speaker-set.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-speaker-set-a-sound-system-imp",
+    "sfx-phy-speaker-set-a-sound-system-sld-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-street-sign.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-dead-end-sign-imp",
+    "sfx-phy-street-parking-sign-imp-no-turn",
+    "sfx-phy-crossing-sign-slide",
+    "sfx-phy-street-parking-sign-imp-crosswalk-stop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-swingset.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-swingset-seat-imp",
+    "sfx-phy-metal-swingset-chain-movement-loop",
+    "sfx-phy-metal-swingset-chain-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-table-mirror.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-med-opt-table-mirror-a-imp",
+    "sfx-phy-jewelry-table-mirror-a-imp",
+    "sfx-phy-jewelry-table-mirror-a-sld-lp",
+    "sfx-phy-med-opt-table-mirror-a-sld-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-tank.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-welding-tank-imp",
+    "sfx-welding-tank-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-tibet-incense-burner.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-metal-tibet-burner-imp",
+    "sfx-phy-metal-incense-burner-slide-loop",
+    "sfx-phy-metal-incense-burner-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-tins.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-metal-vintage-tin-lid-imp",
+    "sfx-phy-metal-vintage-tin-imp",
+    "sfx-phy-metal-vintage-tin-c-slide",
+    "sfx-phy-metal-vintage-tin-c-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-toolbox.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-metal-toolbox-imp",
+    "sfx-phy-metal-partsbox-med-imp",
+    "sfx-phy-toolbox-lrg-imp",
+    "sfx-phy-toolbox-handle-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-tools.bin",
+   "counts": {
+    "sfx-info-light": 11,
+    "sfx-info": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-phy-t2r-metal-kitchen-scale-imp",
+    "sfx-phy-t2r-metal-fireplace-tools-slide-loop",
+    "sfx-phy-t2r-metal-blacksmith-pliers-slide-loop",
+    "sfx-phy-t2r-metal-blacksmith-pliers-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-toy.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "default": 3,
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-metal-toy-sld",
+    "sfx-phy-metal-toy-train-imp",
+    "sfx-phy-metal-toy-train-cabin-imp",
+    "sfx-phy-metal-plane-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-train-handles.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-metal-train-handle-imp",
+    "sfx-phy-metal-train-handle-creak"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-trashcan.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-metal-trashcan-imp",
+    "sfx-phy-metal-trashcan-lid-squeak-lp",
+    "sfx-phys-metal-trashcan-wire-imp",
+    "sfx-phy-metal-trashcan-lid-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-trophy.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-metal-trophy-small-slide",
+    "sfx-phy-metal-trophy-medium-imp",
+    "sfx-phy-metal-trophy-small-imp",
+    "sfx-phy-metal-trophy-large-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-metal-windchime.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-metal-windchime-chime-f-imp",
+    "sfx-phy-metal-windchime-chime-a-imp",
+    "sfx-phy-metal-windchime-chime-c-imp",
+    "sfx-phy-metal-windchime-chime-d-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-microphone.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-plastic-microphone-imp",
+    "sfx-phy-plastic-microphone-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-office-chairs.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-office-chair-roll",
+    "sfx-phy-office-rolling-chair-imp",
+    "sfx-phy-med-office-chair-imp",
+    "sfx-phy-office-chair-hydraulic"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-office-phone.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-office-phone-receiver-imp",
+    "sfx-phy-office-phone-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-office-supplies.bin",
+   "counts": {
+    "sfx-info-light": 14,
+    "sfx-info": 14
+   },
+   "categories": {
+    "objects-physics": 14
+   },
+   "routes": {
+    "unknown (anim effect / native)": 14
+   },
+   "examples": [
+    "sfx-phy-plastic-pencil-holder-pen-slide",
+    "sfx-phy-plastic-pencil-sharpener-slide",
+    "sfx-phy-plastic-stapler-slide",
+    "sfx-phy-plastic-pencil-holder-pen-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-paper-cup.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-plastic-lid-sld-lp",
+    "sfx-phy-paper-cup-imp",
+    "sfx-phy-paper-cup-sld-lp",
+    "sfx-phy-paper-cup-rll-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-paper-decoration.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-paper-halloween-drawing-imp",
+    "sfx-phy-halloween-paper-pumpkin-shake-loop",
+    "sfx-phy-halloween-paper-chain-pumpkin-imp",
+    "sfx-phy-paper-window-papers-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-paper-music-folder.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-paper-music-folder-imp",
+    "sfx-phy-paper-music-folder-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-paper-ream.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-paper-ream-imp",
+    "sfx-phy-paper-ream-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-paper.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-paper-towel-holder-imp",
+    "sfx-phy-paper-towel-holder-slide-loop",
+    "sfx-phy-paper-pile-imp",
+    "sfx-phy-paper-pile-trash"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-pat-mail-paper-box-group.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-pat-mail-spray-can-slide",
+    "sfx-phy-pat-mail-tape-imp",
+    "sfx-phy-pat-mail-bottle-slide",
+    "sfx-phy-pat-mail-remote-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-barrel.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-construction-barrel-imp",
+    "sfx-phy-cit-plastic-barrel-rll-hard",
+    "sfx-phy-cit-plastic-barrel-sld-hard",
+    "sfx-phy-cit-plastic-barrel-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-bones.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-plastic-skeleton-bones-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-bottles.bin",
+   "counts": {
+    "sfx-info-light": 34,
+    "sfx-info": 34
+   },
+   "categories": {
+    "objects-physics": 34
+   },
+   "routes": {
+    "unknown (anim effect / native)": 34
+   },
+   "examples": [
+    "sfx-phy-plastic-salon-supplies-slide-loop",
+    "sfx-phy-plastic-cleaner-bottle-crushed-slide-loop",
+    "sfx-phy-plastic-insect-bottle-imp",
+    "sfx-phy-plastic-hosp-bottle-small-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-bucket.bin",
+   "counts": {
+    "sfx-info-light": 19,
+    "sfx-info": 19
+   },
+   "categories": {
+    "objects-physics": 19
+   },
+   "routes": {
+    "unknown (anim effect / native)": 19
+   },
+   "examples": [
+    "sfx-phy-plastic-bucket-med-imp",
+    "sfx-phy-plastic-janitor-bucket-wheels",
+    "sfx-phy-plastic-bucket-med-rll",
+    "sfx--phy-plastic-halloween-bucket-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-car-mirrors.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-asphalt-cover-break",
+    "sfx-phy-plastic-car-mirror-break",
+    "sfx-phy-metal-big-rig-top-mirror-break",
+    "sfx-phy-metal-big-rig-mirror-impact"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-computer-parts.bin",
+   "counts": {
+    "sfx-info": 40,
+    "sfx-info-light": 40
+   },
+   "categories": {
+    "objects-physics": 36,
+    "objects-destruction": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 40
+   },
+   "examples": [
+    "sfx-phy-plastic-fax-machine-headset-imp",
+    "sfx-plastic-designer-computer-mouse-imp",
+    "sfx-phy-plastic-money-counter-imp-swtnr",
+    "sfx-phy-plastic-cintiq-computer-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-container.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-container-set-a-imp",
+    "sfx-phy-plastic-container-set-a-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-cooler.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-cooler-mini-imp",
+    "sfx-phy-cooler-mini-lid-imp",
+    "sfx-phy-cooler-mini-slide-lp",
+    "sfx-phy-cooler-styrofoam-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-counter-ads.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-counter-ad-small-imp",
+    "sfx-phy-plastic-counter-ad-small-slide",
+    "sfx-phy-plastic-counter-tower-ad-small-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-floodlight.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx--phy-plastic-security-camera-rotation-loop",
+    "sfx-phy-plastic-floodlight-imp",
+    "sfx-phy-plastic-security-camera-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-glasses.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-sun-glasses-imp",
+    "sfx-phy-plastic-eye-glasses-sld-lp",
+    "sfx-phy-plastic-eye-glasses-imp",
+    "sfx-phy-plastic-safety-glasses-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-herb-container-set.bin",
+   "counts": {
+    "sfx-info-light": 14,
+    "sfx-info": 14
+   },
+   "categories": {
+    "objects-physics": 14
+   },
+   "routes": {
+    "unknown (anim effect / native)": 14
+   },
+   "examples": [
+    "sfx-phy-plastic-herb-container-c-lid-imp",
+    "sfx-phy-ceramic-herb-container-f-imp",
+    "sfx-phy-metal-herb-container-slide-loop",
+    "sfx-phy-ceramic-herb-container-f-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-hospital-bin.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-med-bin-medium-imp",
+    "sfx-phy-plastic-med-bin-small-imp",
+    "sfx-phy-plastic-med-bin-small-slide",
+    "sfx-phy-plastic-med-bin-medium-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-hospital-tray-packets.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-hosp-packet-imp",
+    "sfx-phy-plastic-hosp-tray-slide",
+    "sfx-phy-plastic-hosp-tray-imp",
+    "sfx-phy-plastic-hosp-packet-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-kitchen-appliances.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-plasctic-coffee-grinder-b-metal-funnel-imp",
+    "sfx-phy-plasctic-coffee-grinder-b-metal-insert-sld-lp",
+    "sfx-phy-plastic-electric-kettle-imp",
+    "sfx-phy-plasctic-coffee-grinder-b-metal-insert-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-mannequins.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 3,
+    "physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-jewelry-hand-imp",
+    "sfx-phy-plastic-mannequin-head-imp",
+    "sfx-phy-plastic-mannequin-head-slide",
+    "sfx-phy-plastic-mannequin-body-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-medical-machines.bin",
+   "counts": {
+    "sfx-info": 8,
+    "sfx-info-light": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-glass-magnifier-collapse",
+    "sfx-phy-plastic-diagnostic-machine-imp",
+    "sfx-phy-glass-magnifier-piece-slide",
+    "sfx-phy-plastic-visual-field-analyzer-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-milk-crate.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-plastic-milk-crate-rounded-sld-lp",
+    "sfx-phy-plastic-milk-crate-sld-hard",
+    "sfx-phy-plastic-milk-crate-rounded-buoyant-imp",
+    "sfx-phy-plastic-milk-crate-rounded-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-music-case.bin",
+   "counts": {
+    "sfx-info-light": 8,
+    "sfx-info": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-plastic-trumpet-case-imp",
+    "sfx-phy-metal-music-case-clips",
+    "sfx-phy-plastic-music-handle",
+    "sfx-phy-plastic-tuba-case-slide-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-musical-instrument.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-recorder-slide",
+    "sfx-phy-plastic-recorder-imp",
+    "sfx-phy-plastic-recorder-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-parts-box.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-plastic-parts-box-lid-close"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-patio-chair.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-plastic-patio-chair-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-pet-food-bag.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-pet-food-bag-slide-loop",
+    "sfx-phy-plastic-pet-food-bag-imp-tip",
+    "sfx-phy-plastic-pet-food-bag-imp-large-tip",
+    "sfx-phy-plastic-pet-food-bag-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-planter.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-plastic-hanging-planter-imp",
+    "sfx-phy-plastic-planter-tray-planter-imp",
+    "phy-plastic-planter-tray-collapse",
+    "sfx-phy-plastic-hanging-planter-hook-squeak"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-power-cord.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "mesh-effect:rope-material": 2
+   },
+   "examples": [
+    "sfx-plastic-plug-rope-end-collision-slide",
+    "sfx-plastic-plug-rope-end-collision-hit"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-printer.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-copy-machine-imp",
+    "sfx-phy-plastic-copy-machine-slide",
+    "sfx-phy-plastic-printer-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-reading-glasses.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-glasses-slide",
+    "sfx-plastic-reading-glasses-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-riot-helmet.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-riot-helmet-slide",
+    "sfx-phy-plastic-riot-helmet-imp",
+    "sfx-phy-plastic-riot-helmet-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-rope-extension-end.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "mesh-effect:rope-material": 2
+   },
+   "examples": [
+    "sfx-plastic-extension-rope-end-collision-hit",
+    "sfx-plastic-extension-rope-end-collision-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-shopping-basket.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-plastic-shopping-basket-slide-loop",
+    "sfx-phy-plastic-shopping-basket-handle-slides",
+    "sfx-phy-plastic-shopping-basket-handle-slide-loop",
+    "sfx-plastic-shopping-basket-handle-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-shopvac.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-shopvac-roll-hard",
+    "sfx-phy-shopvac-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-stand.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-phone-stand-imp",
+    "sfx-phy-plastic-phone-stand-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-storage-bin.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-hospital-bin-med-imp",
+    "sfx-phy-plastic-hospital-bin-med-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-tarp.bin",
+   "counts": {
+    "sfx-info": 8,
+    "sfx-info-light": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-plastic-cooler-door-imp",
+    "sfx-phy-plastic-strip-door",
+    "sfx-phy-tarp-lp",
+    "sfx-phy-plastic-zip-door-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-tool-box.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-tool-box-large-slide",
+    "sfx-phy-plastic-tool-box-med-slide",
+    "sfx-phy-plastic-tool-box-large-imp",
+    "sfx-phy-plastic-tool-box-med-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-tools.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-screwgun-imp",
+    "sfx-phy-plastic-screwgun-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-toy.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-toy-robot-imp",
+    "sfx-phy-plastic-toy-imp",
+    "sfx-phy-plastic-toy-robot-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-trashcan-round.bin",
+   "counts": {
+    "sfx-info-light": 7,
+    "sfx-info": 7
+   },
+   "categories": {
+    "objects-physics": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-plastic-round-trashcan-a-imp",
+    "sfx-phy-plastic-round-trashcan-sld",
+    "sfx-phy-plastic-round-trashcan-imp",
+    "sfx-phy-plastic-round-trashcan-a-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-trashcan.bin",
+   "counts": {
+    "sfx-info-light": 11,
+    "sfx-info": 17
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 17
+   },
+   "examples": [
+    "sfx-phy-plastic-trash-bag-can-slide",
+    "sfx-phy-plastic-storage-bin-med-sld-hard",
+    "sfx-phy-plastic-trash-bag-can-imp",
+    "sfx-phy-plastic-storage-bin-lrg-imp-hard-res-jesse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-tray.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-tray-imp",
+    "sfx-phy-plastic-cutting-board-imp",
+    "sfx-phy-plastic-cutting-board-slide",
+    "sfx-phy-plastic-tray-sld"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-vacuum.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-shopvac-roll-hard",
+    "sfx-phy-shopvac-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-vintage-earphones.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-headphone-imp",
+    "sfx-phy-plastic-headphone-slide-loop",
+    "sfx-plastic-earphones-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-water-cooler.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plastic-water-cooler-roll",
+    "sfx-phy-plastic-water-cooler-base-imp",
+    "sfx-phy-plastic-water-cooler-jug-slide",
+    "sfx-phy-water-cooler-breaks"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-plastic-window-blinds.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-bank-window-blinds-imp",
+    "sfx-phy-plastic-joe-exit-window-blinds-imp",
+    "sfx-phy-plastic-joe-exit-window-blinds-e-imp",
+    "sfx-phy-plastic-med-window-blinds-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-playground-spring-animal.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-playground-spring-animal-imp",
+    "sfx-phy-playground-spring-animal-spring-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-projector-screen.bin",
+   "counts": {
+    "sfx-info": 1,
+    "sfx-info-light": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-canvas-projector-screen-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-restuarant-menus.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-restuarant-menu-imp",
+    "sfx-phy-restuarant-menu-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-retail-sign.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-wood-restuarant-sign-imp",
+    "sfx-phy-wood-restuarant-sign-slide",
+    "sfx-phy-metal-retail-canyon-sign-imp",
+    "sfx-phy-metal-retail-centeral-sign-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-rock-drywall.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 7
+   },
+   "categories": {
+    "objects-physics": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-rock-office-ceiling-tile-piece-break",
+    "sfx-phy-rock-office-ceiling-tile-collapse",
+    "sfx-phy-rock-drywall-slide-loop",
+    "sfx-phy-rock-breakable-wall-piece-break"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-rolling-table.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-metal-rolling-med-table-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-roof-shingle.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-roof-shingles-slide",
+    "sfx-phy-roof-shingles-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-save-lev-mil-rolling-cart.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "igc-sfx": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-dst-save-lev-compressor-cart-collapse",
+    "sfx-dst-save-lev-wood-box-cart-collapse",
+    "sfx-dst-save-lev-welding-tank-cart-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-scar-candles.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wax-candle-imp",
+    "sfx-phys-scar-candle-roll-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-scar-produce.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 7
+   },
+   "categories": {
+    "objects-physics": 7
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-wicker-produce-basket-imp",
+    "sfx-phy-brute-watermelon-collapse",
+    "sfx-phy-lettuce-imp",
+    "sfx-phy-apple-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-scar-wood-crates.bin",
+   "counts": {
+    "sfx-info-light": 12,
+    "sfx-info": 12
+   },
+   "categories": {
+    "objects-physics": 10,
+    "objects-destructibles": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 12
+   },
+   "examples": [
+    "sfx-phy-scar-wood-crate-a-piece-imp",
+    "sfx-phy-plastic-spraybottle-scar-slide-loop",
+    "sfx-dst-scar-wood-ski-collapse",
+    "sfx-phy-scar-wood-fishing-traps-piece-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-sea-prop-blueprints.bin",
+   "counts": {
+    "sfx-info-light": 9,
+    "sfx-info": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-paper-sea-prop-blueprint-roll",
+    "sfx-phy-cardboard-sea-prop-blueprint-imp",
+    "sfx-phy-plastic-sea-prop-blueprint-roll",
+    "sfx-phy-paper-sea-prop-blueprint-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-serving-tray.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-plastic-serving-tray-imp",
+    "sfx-phy-plastic-serving-tray-sld-lp",
+    "sfx-phy-plastic-china-serving-tray-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-snow-branch.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-snow-debris-no-ground",
+    "sfx-phy-dy-tree-branch",
+    "sfx-phy-snow-debris",
+    "sfx-dst-snow-debris"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-snowman-parts.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-snowman-arm-imp",
+    "sfx-phy-snowman-chippable"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-soccer-ball.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-leather-basketball-imp",
+    "sfx-phy-leather-basketball-roll",
+    "sfx-phy-leather-kick-ball-imp",
+    "sfx-phy-leather-kick-ball-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-sparring-gear.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-sparring-gear-sld-lp",
+    "sfx-phy-sparring-gear-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-steelflask.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-canteen-slide",
+    "sfx-phy-canteen-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stone-chinatown-statues.bin",
+   "counts": {
+    "sfx-info": 8,
+    "sfx-info-light": 8
+   },
+   "categories": {
+    "objects-destructibles": 4,
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-dst-stone-emperor-collapse",
+    "sfx-dst-stone-lucky-cat-collapse",
+    "sfx-phy-stone-lucky-cat-slide",
+    "sfx-phy-stone-emperor-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stone-foo-lion.bin",
+   "counts": {
+    "sfx-info": 10,
+    "sfx-info-light": 10
+   },
+   "categories": {
+    "objects-physics": 6,
+    "objects-destructibles": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-dst-stone-fob-statue-foo-lion-a-piece-break",
+    "sfx-phy-stone-fob-statue-foo-lion-a-slide",
+    "sfx-phy-stone-fob-statue-fob-lion-slide",
+    "sfx-dst-stone-fob-statue-fob-lion-piece-break"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stone-planters.bin",
+   "counts": {
+    "sfx-info-light": 10,
+    "sfx-info": 10
+   },
+   "categories": {
+    "objects-physics": 10
+   },
+   "routes": {
+    "unknown (anim effect / native)": 10
+   },
+   "examples": [
+    "sfx-phy-stone-planter-imp",
+    "sfx-phy-stone-round-planter-collapse",
+    "sfx-phy-stone-shore-rectangle-planter-imp",
+    "sfx-phy-stone-round-planter-piece-break"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stone-small-rocks.bin",
+   "counts": {
+    "sfx-info": 17,
+    "sfx-info-light": 17
+   },
+   "categories": {
+    "objects-physics": 17
+   },
+   "routes": {
+    "unknown (anim effect / native)": 17
+   },
+   "examples": [
+    "sfx-phy-concrete-debris-slide-large",
+    "sfx-phy-stone-rock-small-imp",
+    "sfx-phy-concrete-debris-wat-slide",
+    "sfx-phy-stone-rock-roll"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stone-statue.bin",
+   "counts": {
+    "sfx-info-light": 8,
+    "sfx-info": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-stone-skull-slide",
+    "sfx-phy-stone-dracula-bust-imp",
+    "sfx-phy-stone-orca-imp",
+    "sfx-phy-stone-skull-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-stuffed-toys.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-plush-sheep-imp",
+    "sfx-phy-plush-bear-imp",
+    "sfx-phy-plush-corn-imp",
+    "sfx-phy-plush-sheep-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-table-lamp.bin",
+   "counts": {
+    "sfx-info-light": 30,
+    "sfx-info": 38
+   },
+   "categories": {
+    "objects-physics": 25,
+    "objects-destructibles": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 38
+   },
+   "examples": [
+    "sfx-dst-table-lamp-ceramic-collapse",
+    "sfx-dst-table-lamp-victorian-ceramic-collapse",
+    "sfx-phy-table-lamp-imp-hard",
+    "sfx-dst-table-lamp-theater-lamp-c-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-tennis-ball.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-rubber-tennis-ball-pick-up-hard",
+    "sfx-phy-rubber-tennis-ball-pick-up-soft",
+    "sfx-phy-rubber-tennis-ball-imp",
+    "sfx-tennis-ball-bounce-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-toy-car.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-toy-car-a-slide",
+    "sfx-plastic-toy-car-a-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-traffic-cone.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-traffic-cone-imp",
+    "sfx-phy-plastic-traffic-cone-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-training-dummy.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-cloth-punching-bag-imp",
+    "sfx-phy-plastic-training-dummy-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-trapped-infected.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-trapped-infected-piece-break",
+    "sfx-phy-trapped-infected-piece-imp",
+    "sfx-phy-trapped-infected-collapse"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-trash-pile.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-junk-cardboard-box-imp",
+    "sfx-foam-yoga-pad-imp",
+    "sfx-foam-yoga-pad-slide",
+    "sfx-phy-junk-cardboard-box-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-tv.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-tv-imp",
+    "sfx-phy-tv-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wall-clock.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-dst-wall-clock-glass-break",
+    "sfx-phy-metal-wall-clock-imp",
+    "sfx-phy-metal-wall-clock-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wall-light.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-canvas-wall-sconce-shade-imp",
+    "sfx-phy-canvas-wall-sconce-shade-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-water-filter.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-plastic-water-filter-slide-loop",
+    "sfx-phy-plastic-water-filter-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-water-floating-logs.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-log-imp",
+    "sfx-phy-water-floating-surface-skim-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-watermelon.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-watermelon-collapse",
+    "sfx-phy-watermelon-large-chunk-imp",
+    "sfx-phy-watermelon-small-chunk-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wicker-baskets.bin",
+   "counts": {
+    "sfx-info": 24,
+    "sfx-info-light": 23
+   },
+   "categories": {
+    "objects-physics": 23
+   },
+   "routes": {
+    "unknown (anim effect / native)": 24
+   },
+   "examples": [
+    "sfx-phy-wicker-fishing-trap-c-imp",
+    "sfx-phy-wicker-fishing-trap-a-slide-loop",
+    "sfx-phy-wicker-fishing-trap-c-roll",
+    "sfx-phy-wicker-fishing-trap-d-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-arcade-machine.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info-full": 1,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 2,
+    "objects-destructibles": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3,
+    "script-call": 1
+   },
+   "examples": [
+    "sfx-phy-arcade-cabinet-piece-slide",
+    "sfx-dst-arcade-machine-collapse",
+    "sfx-dst-arcade-machine-piece-break",
+    "sfx-phy-arcade-cabinet-piece-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-bird-house.bin",
+   "counts": {
+    "sfx-info": 7,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 5,
+    "objects-destructibles": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 7
+   },
+   "examples": [
+    "sfx-phy-wood-birdhouse-slide",
+    "sfx-phy-wood-birdhouse-imp",
+    "sfx-phy-bird-house-imp-b",
+    "sfx-phy-bird-house-imp-a"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-broom.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-broom-imp",
+    "sfx-phy-wood-broom-sld-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-caution-barrier.bin",
+   "counts": {
+    "sfx-info": 4,
+    "sfx-info-light": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-caution-barrier-folding-efp-front-imp",
+    "sfx-phy-caution-barrier-folding-a-slide-lp",
+    "sfx-phy-caution-barrier-folding-efp-slide-lp",
+    "sfx-phy-caution-barrier-folding-a-front-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-chair.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-wood-scar-stump-imp",
+    "sfx-phy-wood-scar-stool-slide-loop",
+    "sfx-phy-wood-scar-stump-roll",
+    "sfx-phy-wood-scar-stool-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-chairs-and-stools.bin",
+   "counts": {
+    "sfx-info": 9,
+    "sfx-info-light": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-wood-stool-sml-sld-hard",
+    "sfx-phy-wood-chair-uphol-large-imp-hard",
+    "sfx-phy-wood-stool-short-drag-06-slide",
+    "sfx-phy-wood-stool-sml-imp-low-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-clock.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-clock-sld",
+    "sfx-phy-wood-clock-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-crate.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phys-wooden-crate-imp",
+    "sfx-phy-wooden-crate-sm-a-slide-lp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-debris.bin",
+   "counts": {
+    "sfx-info-light": 9,
+    "sfx-info": 9
+   },
+   "categories": {
+    "objects-physics": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 9
+   },
+   "examples": [
+    "sfx-phy-wood-debris-joe-slide-loop",
+    "sfx-phy-wood-debris-slide-loop",
+    "sfx-phy-wood-debris-pile-log-imp",
+    "sfx-phy-wood-shelf-debris-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-fences.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 2,
+    "destructibles": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-dst-res-wooden-fence-collapse",
+    "sfx-phy-wood-fence-piece-break",
+    "sfx-dst-chippable-wood-break"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-gun-target-sled.bin",
+   "counts": {
+    "sfx-info-light": 1,
+    "sfx-info": 1
+   },
+   "categories": {
+    "objects-physics": 1
+   },
+   "routes": {
+    "unknown (anim effect / native)": 1
+   },
+   "examples": [
+    "sfx-phy-wood-gun-target-sled-hinge-squeak-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-hanging-chalkboard.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-hanging-chalkboard-sign-hinge-loop",
+    "sfx-phy-wood-hanging-chalkboard-sign-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-hanging-sign.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-t2r-hanging-signs-chain-movement-loop",
+    "sfx-phy-wood-hanging-sign-broken-imp",
+    "sfx-phy-wood-hanging-sign-rope-creak-loop",
+    "sfx-phy-wood-hanging-sign"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-lamp.bin",
+   "counts": {
+    "sfx-info": 6,
+    "sfx-info-light": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-wood-res-floor-lamp-imp",
+    "sfx-phy-canvas-floor-lamp-shade-imp",
+    "sfx-phy-wood-res-table-lamp-imp",
+    "sfx-phy-wood-floor-lamp-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-mailbox.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-dst-wood-mailbox-collapse-imp",
+    "sfx-phy-wood-mailbox-post-imp",
+    "sfx-phy-wood-mailbox-post-sld-lp",
+    "sfx-phy-metal-mailbox-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-picture-frame.bin",
+   "counts": {
+    "sfx-info": 13,
+    "sfx-info-light": 13
+   },
+   "categories": {
+    "objects-physics": 13
+   },
+   "routes": {
+    "unknown (anim effect / native)": 13
+   },
+   "examples": [
+    "sfx-phy-wood-painting-imp",
+    "sfx-phy-wood-picture-frame-rattle-big-imp",
+    "sfx-phy-wood-picture-frame-sml-imp",
+    "sfx-phy-wood-picture-frame-rattle-med-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-plank.bin",
+   "counts": {
+    "sfx-info": 3,
+    "sfx-info-light": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-wood-plank-large-imp",
+    "sfx-phy-wood-plank-box-large-imp",
+    "sfx-phy-wood-plank-large-slide"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-retail-wall.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-destruction": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-retail-wall-collapse",
+    "sfx-phy-metal-retail-hook-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-roof-tiles.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-tiles-sld",
+    "sfx-phy-wood-tiles"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-scar-bucket.bin",
+   "counts": {
+    "sfx-info-light": 2,
+    "sfx-info": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-scar-bucket-slide",
+    "sfx-phy-wood-scar-bucket-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-shelf.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-phy-wood-shelf-imp",
+    "sfx-phy-wood-tool-rack-slide",
+    "sfx-phy-wood-shelf-grow-house-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-soildier-toy.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-wood-toy-soilder-sld",
+    "sfx-phy-wood-toy-soilder-set-a-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-statue.bin",
+   "counts": {
+    "sfx-info-light": 6,
+    "sfx-info": 6
+   },
+   "categories": {
+    "objects-physics": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 6
+   },
+   "examples": [
+    "sfx-phy-wood-bear-statue-slide",
+    "sfx-phy-wood-bear-statue-imp",
+    "sfx-phy-wood-statue-collapse",
+    "sfx-phy-wood-piece-break"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wood-toy-wagon.bin",
+   "counts": {
+    "sfx-info-light": 3,
+    "sfx-info": 3
+   },
+   "categories": {
+    "objects-physics": 3
+   },
+   "routes": {
+    "unknown (anim effect / native)": 3
+   },
+   "examples": [
+    "sfx-metal-toy-wagon-handle-imp",
+    "sfx-phy-wood-toy-wagon-sld-lp",
+    "sfx-phy-wood-toy-wagon-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wooden-furniture.bin",
+   "counts": {
+    "sfx-info": 5,
+    "sfx-info-light": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-efp-wood-table-piece-slide",
+    "sfx-dst-efp-wood-chair-collapse",
+    "sfx-phy-efp-wood-bench-imp",
+    "sfx-phy-efp-wood-table-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-wooden-trophy.bin",
+   "counts": {
+    "sfx-info-light": 5,
+    "sfx-info": 5
+   },
+   "categories": {
+    "objects-physics": 5
+   },
+   "routes": {
+    "unknown (anim effect / native)": 5
+   },
+   "examples": [
+    "sfx-phy-metal-trophy-big-imp",
+    "sfx-phy-wood-trophy-imp",
+    "sfx-phy-wood-trophy-sld-lp",
+    "sfx-phy-wood-realtor-trophy-slide-loop"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-worklight-tripod.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-phy-floodlight-imp-hard",
+    "sfx-phy-floodlight-head-imp-hard"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics-world-globe.bin",
+   "counts": {
+    "sfx-info-light": 8,
+    "sfx-info": 8
+   },
+   "categories": {
+    "objects-physics": 8
+   },
+   "routes": {
+    "unknown (anim effect / native)": 8
+   },
+   "examples": [
+    "sfx-phy-globe-roll-lp",
+    "sfx-phy-globe-home-spin",
+    "sfx-phy-globe-slide-hard",
+    "sfx-phy-globe-metal-pivot-bar-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-physics.bin",
+   "counts": {
+    "sfx-info": 33,
+    "sfx-info-light": 23
+   },
+   "categories": {
+    "objects-physics": 14,
+    "objects-destructibles": 9
+   },
+   "routes": {
+    "unknown (anim effect / native)": 33
+   },
+   "examples": [
+    "sfx-dst-rock-tile-pillar-break",
+    "sfx-phy-plastic-bucket-lrg-imp",
+    "sfx-phy-plastic-bucket-tiny-rll",
+    "sfx-phy-glass-flask-a-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-plastic-coffee-maker.bin",
+   "counts": {
+    "sfx-info-light": 4,
+    "sfx-info": 4
+   },
+   "categories": {
+    "objects-physics": 4
+   },
+   "routes": {
+    "unknown (anim effect / native)": 4
+   },
+   "examples": [
+    "sfx-phy-plastic-coffee-maker-slide-loop",
+    "sfx-phy-plastic-coffee-maker-imp",
+    "sfx-phy-glass-coffee-pot-slide-loop",
+    "sfx-phy-glass-coffee-pot-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-plastic-garment-bag.bin",
+   "counts": {
+    "sfx-info-light": 11,
+    "sfx-info": 11
+   },
+   "categories": {
+    "objects-physics": 11
+   },
+   "routes": {
+    "unknown (anim effect / native)": 11
+   },
+   "examples": [
+    "sfx-phy-plastic-dry-cleaning-bag-a-med-imp",
+    "sfx-phy-plastic-garment-bag-large-imp",
+    "sfx-plastic-dry-cleaning-bag-movement-loop",
+    "sfx-phy-plastic-dry-cleaning-bag-a-large-imp"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-pushables.bin",
+   "counts": {
+    "sfx-info-light": 15,
+    "sfx-info": 20,
+    "sfx-info-full": 4
+   },
+   "categories": {
+    "objects-physics": 13,
+    "objects-pushables": 6
+   },
+   "routes": {
+    "unknown (anim effect / native)": 20
+   },
+   "examples": [
+    "sfx-phy-plastic-rolling-caster-impact",
+    "sfx-push-metal-utility-cart-roll-lp",
+    "sfx-phy-dumpster-impact-soft",
+    "sfx-phy-plastic-rolling-box-impact"
+   ]
+  },
+  {
+   "module": "audio-sfx/common-objects/aud-sfx-wood-plank-carry.bin",
+   "counts": {
+    "sfx-info": 2,
+    "sfx-info-light": 2
+   },
+   "categories": {
+    "objects-physics": 2
+   },
+   "routes": {
+    "unknown (anim effect / native)": 2
+   },
+   "examples": [
+    "sfx-wood-plank-place-ground",
+    "sfx-wood-plank-pickup-ground"
+   ]
+  }
+ ]
+}
