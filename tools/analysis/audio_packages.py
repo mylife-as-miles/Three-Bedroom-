@@ -59,6 +59,10 @@ def main():
         for s in rope_suf:
             if b.endswith("-" + s):
                 return "mesh-effect:rope-material"
+        if re.match(r"(dst-)?phy-", b) or re.search(r"-(imp|rll|roll|impact|scrape|slide)(-[a-z0-9]+)?$", b):
+            return "physics impact/roll (native physics; name-convention)"
+        if b.startswith("dst-"):
+            return "destruction (native; name-convention)"
         if "--" in b:
             return "anim-effect:joint-suffixed (IGC)"
         return "unknown (anim effect / native)"

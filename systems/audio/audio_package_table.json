@@ -416,7 +416,8 @@
     "igc-sfx": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 78
+    "unknown (anim effect / native)": 77,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-foli-phy-vines-long-singles",
@@ -915,7 +916,7 @@
     "objects-physics": 14
    },
    "routes": {
-    "unknown (anim effect / native)": 14
+    "physics impact/roll (native physics; name-convention)": 14
    },
    "examples": [
     "sfx-phy-leather-armor-roman-chest-imp",
@@ -934,7 +935,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-metal-circuit-breaker-box-imp",
@@ -1266,7 +1267,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-metal-knight-armor-a-large-imp",
@@ -1285,7 +1286,8 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 3,
+    "physics impact/roll (native physics; name-convention)": 2,
+    "destruction (native; name-convention)": 1,
     "script-call": 1
    },
    "examples": [
@@ -1305,7 +1307,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-aqu-curtain-imp",
@@ -1323,7 +1325,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-aqu-clothes-hanging-set-imp"
@@ -1339,7 +1341,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-aqu-hose-imp",
@@ -1356,7 +1358,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-aqu-swing-door-imp",
@@ -1373,7 +1375,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-aqu-tank-lid-imp",
@@ -1391,7 +1393,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-wetsuit-imp"
@@ -1407,7 +1409,7 @@
     "objects-physics": 7
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-metal-bar-soda-can-imp",
@@ -1426,7 +1428,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-barn-pulley-imp"
@@ -1442,7 +1444,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-bicycle-metal-hit-imp",
@@ -1460,7 +1462,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-bicycle-metal-hanging-frame-imp"
@@ -1476,7 +1478,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-metal-bike-ulock-slide",
@@ -1495,7 +1497,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-bicycle-rubber-hanging-tires-imp"
@@ -1511,7 +1513,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-billiards-ball-roll",
@@ -1530,7 +1532,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-boat-model-slide",
@@ -1548,7 +1550,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-bone-skull-roll",
@@ -1567,7 +1569,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-books-hardback-imp-hard",
@@ -1586,7 +1588,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-hunting-boot-slide",
@@ -1603,7 +1605,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-branch-trunk-imp",
@@ -1622,7 +1624,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "destruction (native; name-convention)": 3,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-dst-brick-piece-break-lrg",
@@ -1641,7 +1644,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 1,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-foam-camping-pad-imp",
@@ -1658,7 +1662,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-cannabis-plant-mature-lp",
@@ -1677,7 +1681,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-canteen-slide",
@@ -1694,7 +1698,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-canvas-pool-umbrella-imp",
@@ -1711,7 +1715,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-canvas-roller-blind-imp"
@@ -1727,7 +1731,7 @@
     "objects-physics": 33
    },
    "routes": {
-    "unknown (anim effect / native)": 39
+    "physics impact/roll (native physics; name-convention)": 39
    },
    "examples": [
     "sfx-phy-cardboard-boardgame-box-imp",
@@ -1746,7 +1750,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-cardboard-standup-imp"
@@ -1762,7 +1766,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cardboard-target-slide",
@@ -1779,7 +1783,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-plastic-cash-register-slide-lp",
@@ -1799,7 +1803,8 @@
     "objects-destructibles": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 13
+    "physics impact/roll (native physics; name-convention)": 9,
+    "destruction (native; name-convention)": 4
    },
    "examples": [
     "sfx-phy-res-ceramic-coffee-cup-imp",
@@ -1819,7 +1824,9 @@
     "objects-destructibles": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 17
+    "physics impact/roll (native physics; name-convention)": 12,
+    "destruction (native; name-convention)": 4,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-phy-ceramic-fob-plate-imp",
@@ -1838,7 +1845,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-ceramic-jug-carboy-lg-imp-hard",
@@ -1857,7 +1864,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-ceramic-ramen-plate-slide-lp",
@@ -1875,7 +1882,8 @@
     "objects-destructibles": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "destruction (native; name-convention)": 2,
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-dst-ceramic-theater-vase-collapse",
@@ -1894,7 +1902,7 @@
     "objects-destruction": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-ceramic-toilet-seat-impact",
@@ -1914,7 +1922,8 @@
     "objects-destructibles": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 15
+    "physics impact/roll (native physics; name-convention)": 8,
+    "destruction (native; name-convention)": 7
    },
    "examples": [
     "sfx-phy-ceramic-small-vase-piece-e-impact",
@@ -1933,7 +1942,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-chemical-bottle-imp",
@@ -1953,7 +1962,8 @@
     "objects-destructibles": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 4,
+    "destruction (native; name-convention)": 2
    },
    "examples": [
     "sfx-phy-ceramic-chinatown-small-vase-slide",
@@ -1972,7 +1982,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-cloth-basement-curtains-movement-loop",
@@ -1991,7 +2001,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cloth-hat-slide",
@@ -2008,7 +2018,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cloth-dojo-curtains-movement-loop",
@@ -2025,7 +2035,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-cloth-downtown-curtains-infected-imp",
@@ -2044,7 +2054,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-cloth-crane-ascent-curtains-imp",
@@ -2063,7 +2073,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-cloth-halloween-hanging-ghoul-rope-creak-loop",
@@ -2081,7 +2091,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cloth-hotel-curtains-movement-loop",
@@ -2099,7 +2109,7 @@
     "default": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-cloth-decorative-pillow-imp",
@@ -2118,7 +2128,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cloth-san-resort-curtains-movement-loop",
@@ -2135,7 +2145,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-coffee-beans-bag-slide-loop",
@@ -2154,7 +2164,8 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 4,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-coffee-tea-sugar-set-b-imp",
@@ -2173,7 +2184,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "unknown (anim effect / native)": 1,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-corn-movement-loop",
@@ -2190,7 +2202,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-cutting-board-a-imp",
@@ -2207,7 +2219,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-travel-mug-slide",
@@ -2224,7 +2236,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-nor-display-rope-stanchion-a-sld-lp",
@@ -2243,7 +2255,7 @@
    },
    "routes": {
     "script-call": 3,
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-dog-toy-squeeze-squeak-in",
@@ -2264,7 +2276,8 @@
    },
    "routes": {
     "mesh-effect:door-material": 28,
-    "unknown (anim effect / native)": 13,
+    "physics impact/roll (native physics; name-convention)": 5,
+    "unknown (anim effect / native)": 8,
     "script-call": 1
    },
    "examples": [
@@ -2284,7 +2297,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-metal-trap-soda-can-roll",
@@ -2303,7 +2316,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-hi-hat-imp",
@@ -2320,7 +2333,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-efp-shingles-imp",
@@ -2339,7 +2352,8 @@
     "explosions": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "destruction (native; name-convention)": 3,
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-dst-efp-breakable-wall-short-collapse",
@@ -2358,7 +2372,8 @@
     "objects-physics": 20
    },
    "routes": {
-    "unknown (anim effect / native)": 20
+    "unknown (anim effect / native)": 14,
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phys-cloth-line-b-lp",
@@ -2377,7 +2392,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-cloth-fishing-net-curtains-imp"
@@ -2393,7 +2408,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-flesh-hanging-animals-imp",
@@ -2411,7 +2426,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-plastic-floating-jug-imp",
@@ -2430,7 +2445,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 2,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-fungus-stalk-imp",
@@ -2448,7 +2464,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-glass-mason-jar-piece-imp",
@@ -2466,7 +2482,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-carnival-gametruck-glass-bottles-imp",
@@ -2483,7 +2499,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-flo-ceiling-lamp-glass-slide",
@@ -2502,7 +2518,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-glass-small-container-imp"
@@ -2518,7 +2534,8 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "destruction (native; name-convention)": 5,
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-dst-ceramic-stein-collapse",
@@ -2538,8 +2555,9 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 11,
-    "anim-effect:joint-suffixed (IGC)": 9
+    "destruction (native; name-convention)": 14,
+    "physics impact/roll (native physics; name-convention)": 4,
+    "unknown (anim effect / native)": 2
    },
    "examples": [
     "sfx-dst-glass-car-window",
@@ -2559,7 +2577,8 @@
     "objects-destruction": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 7,
+    "destruction (native; name-convention)": 2
    },
    "examples": [
     "sfx-phy-glass-bottle-wine-break-collapse",
@@ -2578,7 +2597,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-guitar-stand-imp",
@@ -2595,7 +2614,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-hanging-cables-movement-loop",
@@ -2614,7 +2633,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-hanging-chain-imp",
@@ -2631,7 +2650,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-deer-carcus-body-imp",
@@ -2650,7 +2669,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-hangman-noose-movement-loop",
@@ -2668,7 +2687,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-plastic-hose-reel-imp"
@@ -2684,7 +2703,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-cardboard-group-med-box-slide",
@@ -2703,7 +2722,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-poster-imp",
@@ -2720,7 +2739,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-med-hotel-lamp-a-shade-slide-loop",
@@ -2739,7 +2758,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-hunting-accessory-bag-imp",
@@ -2758,7 +2777,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-laptop-imp",
@@ -2777,7 +2796,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-loudspeaker-imp",
@@ -2794,7 +2813,7 @@
     "objects-physics": 7
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-cloth-suitcase-slide",
@@ -2813,7 +2832,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-mahjong-stones-imp"
@@ -2829,7 +2848,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-leather-makeup-bag-imp"
@@ -2845,7 +2864,8 @@
     "explosions": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "unknown (anim effect / native)": 3,
+    "destruction (native; name-convention)": 2
    },
    "examples": [
     "sfx-igc-med-hospital-basement-ratking-fight-wall-break-a",
@@ -2864,7 +2884,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-opt-eye-model-small-piece-slide",
@@ -2883,7 +2903,7 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "physics impact/roll (native physics; name-convention)": 11
    },
    "examples": [
     "sfx-phy-metal-hanging-camping-lantern-squeak-loop",
@@ -2902,7 +2922,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-wood-telescope-legs-imp",
@@ -2920,7 +2940,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phys-floating-barrel-a-imp",
@@ -2938,7 +2958,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-birdcage-hinge-squak-accel",
@@ -2955,7 +2975,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-metal-blinds-imp",
@@ -2974,7 +2994,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-metal-water-bottle-imp",
@@ -2992,7 +3012,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 2,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-phy-metal-barn-bucket-large-low-imp",
@@ -3010,7 +3031,7 @@
     "objects-physics": 12
    },
    "routes": {
-    "unknown (anim effect / native)": 13
+    "physics impact/roll (native physics; name-convention)": 13
    },
    "examples": [
     "sfx-phy-plastic-gas-can-imp",
@@ -3029,7 +3050,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-metal-ceiling-fan-base-squeak-large",
@@ -3048,7 +3069,8 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "unknown (anim effect / native)": 4,
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-metal-chainlink-fence-lp-2",
@@ -3067,7 +3089,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-garage-chain-movement-loop",
@@ -3084,7 +3106,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-metal-shop-stool-a-imp",
@@ -3103,7 +3125,8 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "unknown (anim effect / native)": 6,
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phys-metal-chandelier-transitional-rotation-loop",
@@ -3122,7 +3145,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-cleaning-net-slide",
@@ -3139,7 +3162,7 @@
     "objects-physics": 13
    },
    "routes": {
-    "unknown (anim effect / native)": 15
+    "physics impact/roll (native physics; name-convention)": 15
    },
    "examples": [
     "sfx-phy-metal-coffee-pot-rll",
@@ -3158,7 +3181,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-desktop-computer-imp"
@@ -3174,7 +3197,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-tool-jerry-can-imp",
@@ -3191,7 +3214,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-spoon-imp",
@@ -3208,7 +3231,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "unknown (anim effect / native)": 1,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-metal-desk-lamp-sld-lp",
@@ -3225,7 +3249,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-paper-desk-paper-tray-medium-folder-thin-imp",
@@ -3244,7 +3268,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-metal-arcade-display-imp",
@@ -3263,7 +3287,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-diver-helmet-slide",
@@ -3280,7 +3304,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-faucet-imp"
@@ -3296,7 +3320,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-fire-hydrant-hard",
@@ -3313,7 +3337,8 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 3,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-phy-metal-table-imp",
@@ -3332,7 +3357,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "unknown (anim effect / native)": 1,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phys-metal-nora-garage-door-movement-loop",
@@ -3349,7 +3375,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-gun-target-flip-imp"
@@ -3365,7 +3391,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-metal-hammer-slide",
@@ -3382,7 +3408,7 @@
     "objects-physics": 13
    },
    "routes": {
-    "unknown (anim effect / native)": 13
+    "physics impact/roll (native physics; name-convention)": 13
    },
    "examples": [
     "sfx-phy-t2r-hanging-light-constraint-loop",
@@ -3418,7 +3444,7 @@
     "objects-physics": 18
    },
    "routes": {
-    "unknown (anim effect / native)": 18
+    "physics impact/roll (native physics; name-convention)": 18
    },
    "examples": [
     "sfx-phy-metal-cookware-set-small-imp",
@@ -3437,7 +3463,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-metal-toaster-sld-lp",
@@ -3456,7 +3482,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-metal-ladder-squeaks",
@@ -3475,7 +3501,7 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "physics impact/roll (native physics; name-convention)": 11
    },
    "examples": [
     "sfx-phy-metal-floor-lamp-d-stand-slide",
@@ -3494,7 +3520,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-dryer-imp-hard",
@@ -3511,7 +3537,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 1,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-phys-lawn-chair-imp",
@@ -3528,7 +3555,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-metal-mailbox-imp-hard-slide-lp",
@@ -3546,7 +3573,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-microwave-hits-imp"
@@ -3562,7 +3589,8 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "unknown (anim effect / native)": 1,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-metal-music-stand-base-sld-lp",
@@ -3579,7 +3607,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-metal-trumpet-imp",
@@ -3598,7 +3626,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 9,
+    "physics impact/roll (native physics; name-convention)": 9,
     "script-call": 1
    },
    "examples": [
@@ -3618,7 +3646,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-spraycan-a-roll",
@@ -3637,7 +3665,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-planter-imp",
@@ -3654,7 +3682,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-metal-ticket-shelf-imp",
@@ -3673,7 +3701,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-scar-chimes-imp",
@@ -3690,7 +3718,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-shelf-imp"
@@ -3706,7 +3734,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-metal-shopping-cart-imp",
@@ -3725,7 +3753,8 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 7,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-standing-sign-imp",
@@ -3744,7 +3773,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-speaker-set-a-sound-system-imp",
@@ -3761,7 +3790,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-dead-end-sign-imp",
@@ -3780,7 +3809,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-metal-swingset-seat-imp",
@@ -3798,7 +3827,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-med-opt-table-mirror-a-imp",
@@ -3817,7 +3846,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-welding-tank-imp",
@@ -3834,7 +3863,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-metal-tibet-burner-imp",
@@ -3852,7 +3881,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-metal-vintage-tin-lid-imp",
@@ -3871,7 +3900,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-metal-toolbox-imp",
@@ -3890,7 +3919,7 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "physics impact/roll (native physics; name-convention)": 11
    },
    "examples": [
     "sfx-phy-t2r-metal-kitchen-scale-imp",
@@ -3910,7 +3939,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-metal-toy-sld",
@@ -3929,7 +3958,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-metal-train-handle-imp",
@@ -3946,7 +3975,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-metal-trashcan-imp",
@@ -3965,7 +3994,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-metal-trophy-small-slide",
@@ -3984,7 +4013,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-metal-windchime-chime-f-imp",
@@ -4003,7 +4032,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-plastic-microphone-imp",
@@ -4020,7 +4049,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-office-chair-roll",
@@ -4039,7 +4068,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-office-phone-receiver-imp",
@@ -4056,7 +4085,7 @@
     "objects-physics": 14
    },
    "routes": {
-    "unknown (anim effect / native)": 14
+    "physics impact/roll (native physics; name-convention)": 14
    },
    "examples": [
     "sfx-phy-plastic-pencil-holder-pen-slide",
@@ -4075,7 +4104,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-plastic-lid-sld-lp",
@@ -4094,7 +4123,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-paper-halloween-drawing-imp",
@@ -4113,7 +4142,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-paper-music-folder-imp",
@@ -4130,7 +4159,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-paper-ream-imp",
@@ -4147,7 +4176,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-paper-towel-holder-imp",
@@ -4166,7 +4195,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-pat-mail-spray-can-slide",
@@ -4185,7 +4214,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-construction-barrel-imp",
@@ -4204,7 +4233,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-plastic-skeleton-bones-imp"
@@ -4220,7 +4249,7 @@
     "objects-physics": 34
    },
    "routes": {
-    "unknown (anim effect / native)": 34
+    "physics impact/roll (native physics; name-convention)": 34
    },
    "examples": [
     "sfx-phy-plastic-salon-supplies-slide-loop",
@@ -4239,7 +4268,8 @@
     "objects-physics": 19
    },
    "routes": {
-    "unknown (anim effect / native)": 19
+    "physics impact/roll (native physics; name-convention)": 18,
+    "unknown (anim effect / native)": 1
    },
    "examples": [
     "sfx-phy-plastic-bucket-med-imp",
@@ -4258,7 +4288,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-asphalt-cover-break",
@@ -4278,7 +4308,7 @@
     "objects-destruction": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 40
+    "physics impact/roll (native physics; name-convention)": 40
    },
    "examples": [
     "sfx-phy-plastic-fax-machine-headset-imp",
@@ -4297,7 +4327,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-container-set-a-imp",
@@ -4314,7 +4344,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-cooler-mini-imp",
@@ -4333,7 +4363,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-counter-ad-small-imp",
@@ -4351,7 +4381,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "unknown (anim effect / native)": 1,
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx--phy-plastic-security-camera-rotation-loop",
@@ -4369,7 +4400,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-sun-glasses-imp",
@@ -4388,7 +4419,7 @@
     "objects-physics": 14
    },
    "routes": {
-    "unknown (anim effect / native)": 14
+    "physics impact/roll (native physics; name-convention)": 14
    },
    "examples": [
     "sfx-phy-plastic-herb-container-c-lid-imp",
@@ -4407,7 +4438,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-med-bin-medium-imp",
@@ -4426,7 +4457,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-hosp-packet-imp",
@@ -4445,7 +4476,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-plasctic-coffee-grinder-b-metal-funnel-imp",
@@ -4465,7 +4496,7 @@
     "physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-jewelry-hand-imp",
@@ -4484,7 +4515,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-glass-magnifier-collapse",
@@ -4503,7 +4534,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-plastic-milk-crate-rounded-sld-lp",
@@ -4522,7 +4553,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-plastic-trumpet-case-imp",
@@ -4541,7 +4572,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-recorder-slide",
@@ -4575,7 +4606,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-plastic-patio-chair-imp"
@@ -4591,7 +4622,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-pet-food-bag-slide-loop",
@@ -4610,7 +4641,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-plastic-hanging-planter-imp",
@@ -4646,7 +4677,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-copy-machine-imp",
@@ -4664,7 +4695,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-glasses-slide",
@@ -4681,7 +4712,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-riot-helmet-slide",
@@ -4716,7 +4747,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-plastic-shopping-basket-slide-loop",
@@ -4735,7 +4766,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-shopvac-roll-hard",
@@ -4752,7 +4783,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-phone-stand-imp",
@@ -4769,7 +4800,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-hospital-bin-med-imp",
@@ -4786,7 +4817,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-plastic-cooler-door-imp",
@@ -4805,7 +4836,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-tool-box-large-slide",
@@ -4824,7 +4855,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-screwgun-imp",
@@ -4841,7 +4872,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-toy-robot-imp",
@@ -4859,7 +4890,7 @@
     "objects-physics": 7
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-plastic-round-trashcan-a-imp",
@@ -4878,7 +4909,7 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 17
+    "physics impact/roll (native physics; name-convention)": 17
    },
    "examples": [
     "sfx-phy-plastic-trash-bag-can-slide",
@@ -4897,7 +4928,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-tray-imp",
@@ -4916,7 +4947,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-shopvac-roll-hard",
@@ -4933,7 +4964,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-headphone-imp",
@@ -4951,7 +4982,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plastic-water-cooler-roll",
@@ -4970,7 +5001,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-bank-window-blinds-imp",
@@ -4989,7 +5020,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-playground-spring-animal-imp",
@@ -5006,7 +5037,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-canvas-projector-screen-imp"
@@ -5022,7 +5053,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-restuarant-menu-imp",
@@ -5039,7 +5070,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-wood-restuarant-sign-imp",
@@ -5058,7 +5089,7 @@
     "objects-physics": 7
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-rock-office-ceiling-tile-piece-break",
@@ -5077,7 +5108,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-metal-rolling-med-table-imp"
@@ -5093,7 +5124,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-roof-shingles-slide",
@@ -5110,7 +5141,7 @@
     "igc-sfx": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "destruction (native; name-convention)": 3
    },
    "examples": [
     "sfx-dst-save-lev-compressor-cart-collapse",
@@ -5128,7 +5159,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wax-candle-imp",
@@ -5145,7 +5176,7 @@
     "objects-physics": 7
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 7
    },
    "examples": [
     "sfx-phy-wicker-produce-basket-imp",
@@ -5165,7 +5196,8 @@
     "objects-destructibles": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 12
+    "physics impact/roll (native physics; name-convention)": 10,
+    "destruction (native; name-convention)": 2
    },
    "examples": [
     "sfx-phy-scar-wood-crate-a-piece-imp",
@@ -5184,7 +5216,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-paper-sea-prop-blueprint-roll",
@@ -5203,7 +5235,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-plastic-serving-tray-imp",
@@ -5221,7 +5253,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 3,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-snow-debris-no-ground",
@@ -5240,7 +5273,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-snowman-arm-imp",
@@ -5257,7 +5290,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-leather-basketball-imp",
@@ -5276,7 +5309,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-sparring-gear-sld-lp",
@@ -5293,7 +5326,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-canteen-slide",
@@ -5311,7 +5344,8 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "destruction (native; name-convention)": 4,
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-dst-stone-emperor-collapse",
@@ -5331,7 +5365,8 @@
     "objects-destructibles": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "destruction (native; name-convention)": 4,
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-dst-stone-fob-statue-foo-lion-a-piece-break",
@@ -5350,7 +5385,7 @@
     "objects-physics": 10
    },
    "routes": {
-    "unknown (anim effect / native)": 10
+    "physics impact/roll (native physics; name-convention)": 10
    },
    "examples": [
     "sfx-phy-stone-planter-imp",
@@ -5369,7 +5404,9 @@
     "objects-physics": 17
    },
    "routes": {
-    "unknown (anim effect / native)": 17
+    "physics impact/roll (native physics; name-convention)": 15,
+    "unknown (anim effect / native)": 1,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-concrete-debris-slide-large",
@@ -5388,7 +5425,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-stone-skull-slide",
@@ -5407,7 +5444,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-plush-sheep-imp",
@@ -5427,7 +5464,8 @@
     "objects-destructibles": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 38
+    "destruction (native; name-convention)": 5,
+    "physics impact/roll (native physics; name-convention)": 33
    },
    "examples": [
     "sfx-dst-table-lamp-ceramic-collapse",
@@ -5446,7 +5484,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-rubber-tennis-ball-pick-up-hard",
@@ -5465,7 +5503,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-toy-car-a-slide",
@@ -5482,7 +5520,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-traffic-cone-imp",
@@ -5499,7 +5537,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-cloth-punching-bag-imp",
@@ -5516,7 +5554,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-trapped-infected-piece-break",
@@ -5534,7 +5572,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-junk-cardboard-box-imp",
@@ -5553,7 +5591,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-tv-imp",
@@ -5570,7 +5608,8 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "destruction (native; name-convention)": 1,
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-dst-wall-clock-glass-break",
@@ -5588,7 +5627,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-canvas-wall-sconce-shade-imp",
@@ -5605,7 +5644,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-plastic-water-filter-slide-loop",
@@ -5622,7 +5661,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-log-imp",
@@ -5639,7 +5678,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-watermelon-collapse",
@@ -5657,7 +5696,7 @@
     "objects-physics": 23
    },
    "routes": {
-    "unknown (anim effect / native)": 24
+    "physics impact/roll (native physics; name-convention)": 24
    },
    "examples": [
     "sfx-phy-wicker-fishing-trap-c-imp",
@@ -5678,8 +5717,9 @@
     "objects-destructibles": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 3,
-    "script-call": 1
+    "physics impact/roll (native physics; name-convention)": 2,
+    "script-call": 1,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-arcade-cabinet-piece-slide",
@@ -5699,7 +5739,8 @@
     "objects-destructibles": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 7
+    "physics impact/roll (native physics; name-convention)": 6,
+    "destruction (native; name-convention)": 1
    },
    "examples": [
     "sfx-phy-wood-birdhouse-slide",
@@ -5718,7 +5759,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-broom-imp",
@@ -5735,7 +5776,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-caution-barrier-folding-efp-front-imp",
@@ -5754,7 +5795,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-wood-scar-stump-imp",
@@ -5773,7 +5814,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-wood-stool-sml-sld-hard",
@@ -5792,7 +5833,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-clock-sld",
@@ -5809,7 +5850,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phys-wooden-crate-imp",
@@ -5826,7 +5867,7 @@
     "objects-physics": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 9
+    "physics impact/roll (native physics; name-convention)": 9
    },
    "examples": [
     "sfx-phy-wood-debris-joe-slide-loop",
@@ -5846,7 +5887,8 @@
     "destructibles": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "destruction (native; name-convention)": 2,
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-dst-res-wooden-fence-collapse",
@@ -5864,7 +5906,7 @@
     "objects-physics": 1
    },
    "routes": {
-    "unknown (anim effect / native)": 1
+    "physics impact/roll (native physics; name-convention)": 1
    },
    "examples": [
     "sfx-phy-wood-gun-target-sled-hinge-squeak-loop"
@@ -5880,7 +5922,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-hanging-chalkboard-sign-hinge-loop",
@@ -5897,7 +5939,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-t2r-hanging-signs-chain-movement-loop",
@@ -5916,7 +5958,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-wood-res-floor-lamp-imp",
@@ -5935,7 +5977,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-dst-wood-mailbox-collapse-imp",
@@ -5954,7 +5996,7 @@
     "objects-physics": 13
    },
    "routes": {
-    "unknown (anim effect / native)": 13
+    "physics impact/roll (native physics; name-convention)": 13
    },
    "examples": [
     "sfx-phy-wood-painting-imp",
@@ -5973,7 +6015,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-wood-plank-large-imp",
@@ -5991,7 +6033,7 @@
     "objects-destruction": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-retail-wall-collapse",
@@ -6008,7 +6050,7 @@
     "physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-tiles-sld",
@@ -6025,7 +6067,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-scar-bucket-slide",
@@ -6042,7 +6084,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-phy-wood-shelf-imp",
@@ -6060,7 +6102,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-wood-toy-soilder-sld",
@@ -6077,7 +6119,7 @@
     "objects-physics": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 6
+    "physics impact/roll (native physics; name-convention)": 6
    },
    "examples": [
     "sfx-phy-wood-bear-statue-slide",
@@ -6096,7 +6138,7 @@
     "objects-physics": 3
    },
    "routes": {
-    "unknown (anim effect / native)": 3
+    "physics impact/roll (native physics; name-convention)": 3
    },
    "examples": [
     "sfx-metal-toy-wagon-handle-imp",
@@ -6114,7 +6156,8 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 3,
+    "destruction (native; name-convention)": 2
    },
    "examples": [
     "sfx-phy-efp-wood-table-piece-slide",
@@ -6133,7 +6176,7 @@
     "objects-physics": 5
    },
    "routes": {
-    "unknown (anim effect / native)": 5
+    "physics impact/roll (native physics; name-convention)": 5
    },
    "examples": [
     "sfx-phy-metal-trophy-big-imp",
@@ -6152,7 +6195,7 @@
     "objects-physics": 2
    },
    "routes": {
-    "unknown (anim effect / native)": 2
+    "physics impact/roll (native physics; name-convention)": 2
    },
    "examples": [
     "sfx-phy-floodlight-imp-hard",
@@ -6169,7 +6212,7 @@
     "objects-physics": 8
    },
    "routes": {
-    "unknown (anim effect / native)": 8
+    "physics impact/roll (native physics; name-convention)": 8
    },
    "examples": [
     "sfx-phy-globe-roll-lp",
@@ -6189,7 +6232,8 @@
     "objects-destructibles": 9
    },
    "routes": {
-    "unknown (anim effect / native)": 33
+    "destruction (native; name-convention)": 7,
+    "physics impact/roll (native physics; name-convention)": 26
    },
    "examples": [
     "sfx-dst-rock-tile-pillar-break",
@@ -6208,7 +6252,7 @@
     "objects-physics": 4
    },
    "routes": {
-    "unknown (anim effect / native)": 4
+    "physics impact/roll (native physics; name-convention)": 4
    },
    "examples": [
     "sfx-phy-plastic-coffee-maker-slide-loop",
@@ -6227,7 +6271,8 @@
     "objects-physics": 11
    },
    "routes": {
-    "unknown (anim effect / native)": 11
+    "physics impact/roll (native physics; name-convention)": 9,
+    "unknown (anim effect / native)": 2
    },
    "examples": [
     "sfx-phy-plastic-dry-cleaning-bag-a-med-imp",
@@ -6248,7 +6293,7 @@
     "objects-pushables": 6
    },
    "routes": {
-    "unknown (anim effect / native)": 20
+    "physics impact/roll (native physics; name-convention)": 20
    },
    "examples": [
     "sfx-phy-plastic-rolling-caster-impact",
