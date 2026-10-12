@@ -1,0 +1,1614 @@
+{
+ "source": "databases/functions.json + dconstruct .dcpl arg survey",
+ "camera_functions": [
+  {
+   "fn": "camera-enable-animated",
+   "calls": 1099,
+   "files": 891,
+   "kind": "native-confirmed",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-animated",
+   "calls": 818,
+   "files": 680,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "camera-locator",
+   "calls": 452,
+   "files": 197,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-shake",
+   "calls": 449,
+   "files": 104,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-set-overlay",
+   "calls": 245,
+   "files": 144,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-animation-enable",
+   "calls": 240,
+   "files": 32,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-shake-melee",
+   "calls": 228,
+   "files": 66,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-override-near-clip/f",
+   "calls": 206,
+   "files": 114,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-auto-gen-animated",
+   "calls": 167,
+   "files": 160,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "is-camera-animated?",
+   "calls": 145,
+   "files": 67,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-enable",
+   "calls": 69,
+   "files": 37,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out",
+   "calls": 64,
+   "files": 27,
+   "kind": "native-confirmed",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-disable",
+   "calls": 63,
+   "files": 27,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-locator",
+   "calls": 63,
+   "files": 46,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wait-until-camera-is-looking-at",
+   "calls": 59,
+   "files": 43,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-get-locator",
+   "calls": 56,
+   "files": 29,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-camera-look-at",
+   "calls": 52,
+   "files": 38,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-animated-stick",
+   "calls": 51,
+   "files": 41,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-animated-stick",
+   "calls": 46,
+   "files": 33,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wait-camera-fade-out-animated-to-remap",
+   "calls": 45,
+   "files": 43,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-animated-with-id",
+   "calls": 43,
+   "files": 12,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "force-camera-dof-focus",
+   "calls": 42,
+   "files": 37,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-set-melee",
+   "calls": 41,
+   "files": 30,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-object",
+   "calls": 40,
+   "files": 34,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-strafe-set-fade-out-time",
+   "calls": 33,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "is-camera-underwater?",
+   "calls": 30,
+   "files": 8,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "is-current-camera-melee?",
+   "calls": 28,
+   "files": 14,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-through-reticle-locator",
+   "calls": 24,
+   "files": 9,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-get-fov-degrees",
+   "calls": 24,
+   "files": 9,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-auto-gen",
+   "calls": 23,
+   "files": 21,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-disable-animated",
+   "calls": 23,
+   "files": 21,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "interactable-camera-remap-default",
+   "calls": 22,
+   "files": 12,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "interrupt-forced-camera-dof-focus",
+   "calls": 20,
+   "files": 20,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-dir",
+   "calls": 19,
+   "files": 17,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-follow-camera-constraints",
+   "calls": 18,
+   "files": 18,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-enable-animated-stick-simple",
+   "calls": 18,
+   "files": 16,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "suppress-camera-updates",
+   "calls": 17,
+   "files": 12,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "interactable-camera-remap-force-active",
+   "calls": 17,
+   "files": 14,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "downhill-aim-camera-enable",
+   "calls": 17,
+   "files": 10,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rescue-jesse/res-downhill-funcs.bin"
+   ]
+  },
+  {
+   "fn": "force-melee-camera-target",
+   "calls": 16,
+   "files": 11,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-follow-camera-collision",
+   "calls": 16,
+   "files": 15,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "enable-camera-updates",
+   "calls": 16,
+   "files": 11,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-animated-stick-with-id",
+   "calls": 15,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "debug-set-camera-position/f",
+   "calls": 15,
+   "files": 9,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-camera-adjust-to-water-surface",
+   "calls": 14,
+   "files": 14,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-disable-animated-stick",
+   "calls": 12,
+   "files": 6,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-get-dir-through-reticle",
+   "calls": 12,
+   "files": 11,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-set-player-fade-out-expand/f",
+   "calls": 11,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-set-npc-fade-out-expand/f",
+   "calls": 11,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-dir-vec",
+   "calls": 11,
+   "files": 10,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-camera-angle-to-locator",
+   "calls": 10,
+   "files": 7,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-animated-blend-time-from-angle",
+   "calls": 10,
+   "files": 9,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-flashlight-force-facing-camera",
+   "calls": 10,
+   "files": 7,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "cloth-no-reboot-on-camera-cut",
+   "calls": 10,
+   "files": 9,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-locator-scaled",
+   "calls": 9,
+   "files": 8,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-enable-no-focus",
+   "calls": 9,
+   "files": 2,
+   "kind": "native-confirmed",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "signal-camera-cut",
+   "calls": 8,
+   "files": 7,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-strafe-camera-collision-pull-in/f",
+   "calls": 8,
+   "files": 5,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-camera-vector-in-obj-space",
+   "calls": 8,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-mmach/ss-mmach-test-move-performances.bin"
+   ]
+  },
+  {
+   "fn": "force-camera-below-water",
+   "calls": 7,
+   "files": 7,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-abandon",
+   "calls": 7,
+   "files": 7,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "player-disable-camera-additives",
+   "calls": 7,
+   "files": 7,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-player-locator-in-camera-dir",
+   "calls": 7,
+   "files": 5,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-investigate-set-camera-indices",
+   "calls": 7,
+   "files": 5,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-abandon-animated-stick",
+   "calls": 6,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-fade-out-animated-and-set-next-camera-dir",
+   "calls": 6,
+   "files": 6,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "start-aim-camera-anim",
+   "calls": 6,
+   "files": 5,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rescue-jesse/res-downhill-funcs.bin"
+   ]
+  },
+  {
+   "fn": "allow-all-objects-to-animate-camera",
+   "calls": 6,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-dodge-offset",
+   "calls": 5,
+   "files": 5,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-swing-to-locator",
+   "calls": 5,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-force-camera-facing/f",
+   "calls": 5,
+   "files": 5,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-auto-detect-animated-camera-underwater",
+   "calls": 5,
+   "files": 4,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "boat-spawn-motor-start-camera",
+   "calls": 5,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-vehicle-boat/boat-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "is-camera-aimed-at-locator?",
+   "calls": 5,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-enable-animated-camera-with-collision-checks",
+   "calls": 4,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-look-at-object-scaled",
+   "calls": 4,
+   "files": 4,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-auto-gen-animated-stick",
+   "calls": 4,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-force-camera-look-at-vert-offset",
+   "calls": 4,
+   "files": 4,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "spawn-camera",
+   "calls": 4,
+   "files": 4,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "force-camera-above-water",
+   "calls": 4,
+   "files": 4,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-ocean-camera-distortion",
+   "calls": 4,
+   "files": 4,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wait-until-camera-is-looking-at-npc",
+   "calls": 4,
+   "files": 4,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "set-camera-animated-stick-follow",
+   "calls": 4,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rescue-jesse/ss-res-downhill-escape-drive-aim.bin"
+   ]
+  },
+  {
+   "fn": "update-fg-camera-full-view",
+   "calls": 4,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rogue/ss-map-table-fg-controller.bin"
+   ]
+  },
+  {
+   "fn": "debug-is-manual-camera?",
+   "calls": 4,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-locator-to-string",
+   "calls": 4,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-tool/ss-tool-actor-viewer-plus.bin"
+   ]
+  },
+  {
+   "fn": "camera-dodge-offset-restore",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "is-melee-camera-left?",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "clear-follow-camera-constraints",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "player-and-camera-use-regular-displacement-water-query/f",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-aim-camera-constraints",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-enable-animated-stick-pan",
+   "calls": 3,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "interactable-camera-remap-force-inactive",
+   "calls": 3,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "force-camera-stick",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wait-camera-fade-out-animated-stick-to-remap",
+   "calls": 3,
+   "files": 3,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "set-aim-camera-override-settings",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-camera-yaw-speed-mult",
+   "calls": 3,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "is-camera-assist-enabled?",
+   "calls": 3,
+   "files": 3,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-aim-at-locator",
+   "calls": 3,
+   "files": 2,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "player-check-for-interactables-during-igc-use-camera-loc",
+   "calls": 3,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "apply-peek-mode-horizontal-camera-lerp",
+   "calls": 3,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-player-peek-mode.bin"
+   ]
+  },
+  {
+   "fn": "apply-peek-mode-vertical-camera-lerp",
+   "calls": 3,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-player-peek-mode.bin"
+   ]
+  },
+  {
+   "fn": "get-target-camera-position",
+   "calls": 3,
+   "files": 2,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-jlei/ss-jlei-test-motion-matching.bin",
+    "ss-test/ss-test-mmach/ss-mmach-test-task-funcs.bin"
+   ]
+  },
+  {
+   "fn": "camera-update-animated-stick-ranges",
+   "calls": 3,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wait-until-camera-frame",
+   "calls": 3,
+   "files": 2,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-joncooper/ss-igc-door-barricade.bin",
+    "ss-test/ss-test-joncooper/ss-igc-template-boost-pullup.bin",
+    "ss-watchtower/ss-wat-freeway-checkpoint-boost.bin"
+   ]
+  },
+  {
+   "fn": "camera-fade-out-and-set-next-camera-dir",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "interactable-use-dist-camera-remap-from-other",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-offset-look-at-locator",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-disable-2",
+   "calls": 2,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-interactable-keep-camera-remap",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-ellie-flashback-museum/ss-efm-igc-pickup-hat.bin"
+   ]
+  },
+  {
+   "fn": "camera-disable-all",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "force-camera-query-water-at",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "fob-set-car-camera",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-forwardbase/ss-fob-car-ride-convo-camera.bin"
+   ]
+  },
+  {
+   "fn": "melee-camera-disable",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "rk-split-get-camera-checkpoint",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-medicine/hospital-annex/ss-med-ratking-fight-split-checkpoints.bin"
+   ]
+  },
+  {
+   "fn": "camera-look-at-active?",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "med-hospital-approach-camera",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-medicine/ss-med-hospital-approach-checkpoint.bin"
+   ]
+  },
+  {
+   "fn": "set-camera-animated-stick-aim",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rescue-jesse/ss-res-downhill-escape-drive-aim.bin"
+   ]
+  },
+  {
+   "fn": "update-fg-camera-location-internal",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rogue/ss-map-table-fg-controller.bin"
+   ]
+  },
+  {
+   "fn": "get-player-weapon-aim-camera-no-fire-time",
+   "calls": 2,
+   "files": 2,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "update-camera-position-for-test",
+   "calls": 2,
+   "files": 2,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-jlei/ss-jlei-test-motion-matching.bin",
+    "ss-test/ss-test-mmach/ss-mmach-test-task-funcs.bin"
+   ]
+  },
+  {
+   "fn": "debug-view-load-camera-from-network",
+   "calls": 2,
+   "files": 2,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "debug-view-go-to-camera",
+   "calls": 2,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "mm-tool-get-target-camera-position",
+   "calls": 2,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-tool/ss-tool-motion-matching.bin"
+   ]
+  },
+  {
+   "fn": "prevent-camera-pull-in-lock-during-squeeze-through/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "player-squeeze-through-camera-blend-time-in-override/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "interactable-clear-dist-camera-remap-from-other",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-weapon-aim-camera-no-fire-time",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "ss-afm-horse-controller-set-camera-overlay/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-abby-fights-militia/ss-afm-horse-chase-controller-horse.bin"
+   ]
+  },
+  {
+   "fn": "override-camera-water-dist-uw",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "efm-mirror-camera-zoom",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-ellie-flashback-museum/ss-efm-igc-dinosaur-use-mirror.bin"
+   ]
+  },
+  {
+   "fn": "camera-set-zoomed-in",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-fade-out-animated-stick-pan",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-look-at-dir-scaled",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-car-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-forwardbase/ss-fob-car-camera-test.bin"
+   ]
+  },
+  {
+   "fn": "set-car-zoom-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-forwardbase/ss-fob-car-camera-test.bin"
+   ]
+  },
+  {
+   "fn": "fob-set-aim-by-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-forwardbase/ss-fob-car-ride-ambush-abby-controller.bin"
+   ]
+  },
+  {
+   "fn": "disable-vehicle-death-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "fob-set-car-camera-zoom",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-forwardbase/ss-fob-car-ride-convo-camera.bin"
+   ]
+  },
+  {
+   "fn": "player-disable-look-in-camera-direction",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-cancel-aim-override",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "player-rope-force-camera-facing/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-ladder-camera-pull-around",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "disable-camera-assist/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-update-animated-stick-ranges-with-id",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-aim-by-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rescue-jesse/ss-res-downhill-escape-drive-aim.bin"
+   ]
+  },
+  {
+   "fn": "update-fg-camera-location",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-rogue/ss-map-table-fg-controller.bin"
+   ]
+  },
+  {
+   "fn": "melee-camera-switch-side",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "set-camera-pitch-speed-mult/f",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-camera-locator-from-anim",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "world-space-to-screen-space-virtual-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "get-camera-recenter-delay",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/accessibility/ss-accessibility-pathfind.bin"
+   ]
+  },
+  {
+   "fn": "set-accessibility-pathfind-camera-recenter-delay",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "wall-break-camera-shake",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/infected/ss-infected-bloater-breakable-wall.bin"
+   ]
+  },
+  {
+   "fn": "horse-camera-is-angle-valid?",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-horse-petting.bin"
+   ]
+  },
+  {
+   "fn": "force-camera-aim-point",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "camera-set-overlay-dist-to-obj",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "apply-peek-mode-camera-lerp",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-player-peek-mode.bin"
+   ]
+  },
+  {
+   "fn": "camera-adjustment-upgrade-manual",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-player-upgrade-manual.bin"
+   ]
+  },
+  {
+   "fn": "vehicle-request-strafe-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "upright-animated-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "gap-dodge-camera-mode",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-mgallant/ss-proto-squeeze-through.bin"
+   ]
+  },
+  {
+   "fn": "debug-view-get-camera-count",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "enable-manual-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "mm-tool-update-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-tool/ss-tool-motion-matching.bin"
+   ]
+  },
+  {
+   "fn": "recenter-vehicle-camera",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "turn-camera-to-face-shimmy",
+   "calls": 1,
+   "files": 1,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-watchtower/ss-wat-watchtower-shimmy.bin"
+   ]
+  },
+  {
+   "fn": "camera-animation-disable",
+   "calls": 1,
+   "files": 1,
+   "kind": "native-or-builtin",
+   "dc_defined_in": []
+  },
+  {
+   "fn": "player-dodge-camera-logic",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "melee-script-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "melee-camera-shake",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "melee-script-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-animated-no-fail-over",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-very-tight-squeeze-through/f",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "camera-abandon-animated",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "nd-script-funcs.bin"
+   ]
+  },
+  {
+   "fn": "lerped-camera-override-near-clip",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-enable-split",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "spawn-particles-at-camera-origin",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "spawn-particles-oriented-attached-camera",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-disable-animated-stick-pan",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-disable-2-animated-stick",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "spawn-particles-oriented-camera",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-shake-screen",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "set-interior-camera-only",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "does-camera-match-locator?",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "get-big-bump-camera-additive--INTERNAL",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-disable-2-animated-stick-pan",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "spawn-particles-attached-camera",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "get-bump-camera-additive--INTERNAL",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "script-user-funcs-impl.bin"
+   ]
+  },
+  {
+   "fn": "camera-adjustment-cabinet",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-openable-cabinet.bin"
+   ]
+  },
+  {
+   "fn": "camera-adjustment-drawer",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-t2/ss-openable-drawer.bin"
+   ]
+  },
+  {
+   "fn": "setup-camera-non-aim",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-test/ss-test-jwright/ss-jwright-fob-car-controller.bin"
+   ]
+  },
+  {
+   "fn": "boat--get-angle-plus-between-anim-cameras-at-phases",
+   "calls": 0,
+   "files": 0,
+   "kind": "dc-script",
+   "dc_defined_in": [
+    "ss-vehicle-boat/ss-vehicle-boat-motor-start-igc.bin"
+   ]
+  }
+ ],
+ "camera-set-overlay": {
+  "signature": "camera-set-overlay(remap-map-symbol | 0, [i32 key, value]...)  (0 = clear)",
+  "calls": 245,
+  "first_arg_top": {
+   "*camera-remap-close*": 41,
+   "0": 36,
+   "*camera-remap-melee-strafe*": 14,
+   "*camera-remap-close-crouch-map*": 8,
+   "*camera-remap-crouch-map*": 6
+  },
+  "keys": {
+   "1": {
+    "meaning": "blend-in seconds",
+    "confidence": "HIGH",
+    "evidence": "wait-camera-fade-out-animated-to-remap passes its fade time arg_0 as key 1; values 1.0-3.5"
+   },
+   "2": {
+    "meaning": "blend-out seconds",
+    "confidence": "INFERRED",
+    "evidence": "values 1.0-4.0; drawer/cabinet 1.0/2.4"
+   },
+   "3": {
+    "meaning": "unknown (f32, 15.0 typical)",
+    "confidence": "UNKNOWN"
+   },
+   "4": {
+    "meaning": "remap distance",
+    "confidence": "HIGH",
+    "evidence": "wait-camera-fade-out-animated-to-remap passes remap-distance as key 4"
+   },
+   "5": {
+    "meaning": "unknown (f32 1.5)",
+    "confidence": "UNKNOWN"
+   },
+   "6": {
+    "meaning": "priority",
+    "confidence": "INFERRED",
+    "evidence": "values 10/100/1000/10000"
+   },
+   "7": {
+    "meaning": "unknown (wrapper arg_4)",
+    "confidence": "UNKNOWN"
+   }
+  },
+  "note": "called every frame inside while/wait-one-frame loops, so the overlay is a per-frame request (INFERRED)"
+ },
+ "camera-enable-animated": {
+  "signature": "camera-enable-animated(blend-in f32, -1.0, camera-index i32 (1 typical, tag camera-index), priority 1000, 0, 0, 0)",
+  "calls": 1099,
+  "arg0_top": {
+   "2.00": 368,
+   "0.00": 323,
+   "1.00": 147
+  },
+  "confidence": "CONFIRMED (arg values) / INFERRED (arg meanings)"
+ },
+ "camera-enable-animated-stick": {
+  "signature": "(get-channel-locator-from-ap-ref(player, anim, ap, phase, apReference-camera1, apReference), stick-camera-settings, f32, f32, maya-index, 1000, 0, locator, f32, 1)",
+  "calls": 46
+ },
+ "camera-fade-out": {
+  "signature": "camera-fade-out(owner-id | camera-name, seconds, 0)  -- DC wrapper camera-fade-out-animated(t,x) = camera-fade-out(self,t,x)",
+  "calls": 64
+ },
+ "remap_maps": "camera.bin holds 213 *camera-remap-* maps: current camera-settings symbol -> replacement settings symbol",
+ "data_modules": {
+  "camera.bin": {
+   "camera-strafe-settings": 313,
+   "map": 219,
+   "camera-melee-settings": 25,
+   "camera-zoom-offsets": 12,
+   "camera-vehicle-settings": 10,
+   "camera-lookaround-settings": 6
+  },
+  "animated-camera-settings.bin": {
+   "stick-camera-settings": 24,
+   "animated-camera-settings": 1,
+   "animated-camera-category-list": 1,
+   "map": 2
+  },
+  "camera-focus-settings.bin": {
+   "camera-focus-settings": 20,
+   "fact-map": 1,
+   "point-curve": 1
+  },
+  "camera-zoom.bin": {
+   "camera-zoom-offsets": 121,
+   "camera-dof-settings": 24,
+   "fact-map": 1
+  },
+  "camera-shake.bin": {
+   "*camera-state-shakes*": "map",
+   "*projectile-camera-shake-map*": "list",
+   "*horse-jump-camera-shake-map*": "map"
+  }
+ }
+}

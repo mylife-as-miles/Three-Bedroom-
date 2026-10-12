@@ -135,7 +135,7 @@ svar flag word (`player-stat.bin` +0x10, 1,354 rows). The values are CONFIRMED; 
 `0x8000` on 331 designer svars (e.g. `wat-explore-load-cleaners`, `aef-bridge-loaded`); `0x4000` on bitfield svars
 (`safes-found` 0x8C000, `sea-horse-load-levels` 0xC000, both read with `get-bit`); `0x80000` on trophy and collectible
 counters (`trophy-*`, `pick-up-treasure` 0x80080); `0x80` on counted gameplay stats (`kill-total`); `0x200000` on
-415 + 348 svars (Rogue run counters, `pat-load-supermarket`, `buddy-dina`). 55 svar names written by DC are
+415 + 348 svars (Rogue run counters, `pat-load-supermarket`, `buddy-dina`). 49 svar names written by DC (of 1,027 distinct; decompiler tokens excluded) are
 **not** in the table (e.g. `hun-has-done-jokebook`, `san-streets-resort-key-found`). Writes to them are presumably
 ignored or created on demand: **UNKNOWN**.
 

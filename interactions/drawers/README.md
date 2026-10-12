@@ -24,7 +24,7 @@ Entries in the module (CONFIRMED):
 | `let-drawer-close` | script-lambda | closes drawer via `animate_(self, motor-ajar, …)` + 2 s `drawer-closing-timer` |
 | `drawer-atachments` (sic) | script-lambda | per-frame IK-proxy placement, pickup stow + `player-apply-pickup`, pickup icon gating |
 | `drawer-stick-early-abort` | script-lambda | left-stick away from drawer (> 0.14, outside 60°) → `scavenge-early-exit` |
-| `camera-adjustment-drawer` | script-lambda | `camera-set-overlay(*camera-remap-crouch-map*, …)` when `camera-required-low?` |
+| `camera-adjustment-drawer` | script-lambda | `camera-set-overlay(*camera-remap-crouch-map*, …)` when `camera-required-low?`. **0 callers** (CONFIRMED), so the low-camera flag is effectively dead; it only reaches `animate_` key 12 |
 | `abort-if-evade` | script-lambda | dodge (`evade-start`) cancels; before hand contact → full reset to `wait-interact` |
 
 61 declared state variables (CONFIRMED) include geometry (`object-height`, `drawer-edge-height`, `drawer-edge-width`,
@@ -216,7 +216,7 @@ per character elsewhere (INFERRED; see `systems/animation`).
 | 10 | How does an item become available? | The item is either a tagged pre-placed or IGC actor, or one spawned by the openable (`get-openable-spawned-pickup`, native). It stays `interactable-disable`d until the reach anim passes `r-ik-on-frame+16`, then `interactable-enable` and `interactable-draw-icon`. | CONFIRMED |
 | 11 | How does the hand attach? | Between `scav-pickup-object-phase` and `stow-phase`: `detach-without-physicalizing` → `attach(item, player, leftHand/rightHand)`, with a grip overlay set and optional grip anim and scale. | CONFIRMED |
 | 12 | How does inventory receive it? | `player-apply-pickup(item)` (native) at the stow phase, or `player-pickup(item,1,-1,0,0)` (native) on the auto-collect path. Fullness is pre-checked with `player-pickup-is-full(item-pickup-get-item-id(item))`. | CONFIRMED boundary; internals native |
-| 13 | How does the UI react? | Native, downstream of `player-apply-pickup` (pickup notification). The script only suppresses the duplicate pickup sound (`suppress-pickup-sound`). | INFERRED |
+| 13 | How does the UI react? | The engine broadcasts `player-pickup` (item id, amount, …) after `player-apply-pickup`. `ss-hud2-notification-manager` queues and merges repeats, then calls native `hud2-request-item-pickup-notification(item, amount, total, speak?)` after 1.5 s (see `interactions/pickups` §3). The drawer only sends `suppress-pickup-sound` to the item. | HIGH (event source native; HUD script CONFIRMED) |
 | 14 | How does the game remember it? | The script *reads* `has-been-opened?`, `has-item?` and `item-has-been-picked?` but never writes them, so another layer sets them (native save of state-script vars or another script; see `systems/persistence`). It restores to `spawned-open` (shows the opened pose with the item) or to `complete`. | CONFIRMED read-only; writer UNKNOWN here |
 | 15 | How is control restored? | `stop-player-script-ik` → stop joint IK → `player-set-capsule-size(0.10)` → anim exit. The input lock is per-frame (`joypad-disable-all-commands-except` is re-issued each update), so control returns once the state stops issuing it. `fact-set-bool-safe(scav-anim-active, 0)` marks the end. | HIGH |
 
